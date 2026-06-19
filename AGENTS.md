@@ -46,6 +46,22 @@ python3 scripts/reconstruct_site.py --with-js  # full faithful copy incl. JS (wi
 WARNING: re-running the script **overwrites** `frontend/`, discarding hand edits. Only
 regenerate when you want to reset to the original capture.
 
+### Rebuild reference docs (`docs/`)
+
+`docs/` contains the reverse-engineered map of the system for rebuilding/modifying the
+frontend, derived from the `*.webarchive.zip` captures:
+
+- `docs/SYSTEM_MAP.md` — system overview, route/page inventory, app-shell map, runtime
+  states to build, and the piece-by-piece component build-up plan (built vs stub).
+- `docs/DESIGN_THEME_GUIDE.md` — design tokens (colors/type/spacing/radius/shadows) with
+  real values + `color-mix` formulas, and all `@keyframes`.
+- `docs/COMPONENT_REFERENCE.md` — per-component markup signatures, states, runtime labels
+  (Thinking/Thought, "Worked for", running spinners), and status enums.
+
+The captures are Safari `.webarchive` bundles (full rendered DOM + subresources). Parse
+them with the same binary-plist approach as `scripts/reconstruct_site.py`. The
+`AskUserForm`/questions interface is a stub (not present in any capture) — see reference §K.
+
 ### Other contents
 
 - `cursor.com (2).zip` — an earlier partial scrape (mostly Next.js RSC stream payloads

@@ -1,0 +1,9 @@
+# Raw extracted archive (not committed — run unzip locally)
+.source/
+
+# Dependencies
+node_modules/
+
+# OS / editor
+.DS_Store
+*.swp

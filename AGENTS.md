@@ -2,35 +2,45 @@
 
 ## Cursor Cloud specific instructions
 
-### Current repository state (IMPORTANT)
+### Purpose of this repo
 
-This repository does **not** currently contain a runnable application or any source code.
+This repo is used to **modify / build out the front end in preparation for a new
+system** — it is NOT meant to be deployed/operationalized. Work happens both in code
+and visually in a browser inside the Cloud Agent VM.
+
+### Visual / browser access in the VM (confirmed working)
+
+- The VM has a desktop with Google Chrome. Agents can open and drive the browser
+  visually via computer-use, take screenshots, and record the screen.
+- The edit-in-code → reload-in-browser loop works: edit a source file, serve it with a
+  local dev server, and reload the page in Chrome to see the change.
+- Quick static dev server for viewing/iterating on plain HTML/CSS/JS:
+  `python3 -m http.server <port>` from the folder you want to serve, then open
+  `http://localhost:<port>/` in Chrome. Node 22 / npm 10 and Python 3.12 are available.
+
+### Current contents (IMPORTANT)
+
 The only tracked files are:
 
-- `README.md` — a single-line placeholder title.
+- `README.md` — single-line placeholder title.
 - `cursor.com (2).zip` — an ~8.7 MB static snapshot (web crawl) of `cursor.com`.
 
-There is **no** `package.json`/lockfile, no build system, no framework source, no
-services, and no `.env`/config. As a result there is nothing to install, build, or run
-as a development environment, and there is no application "hello world" flow to exercise.
+There is currently **no editable framework source** (no `package.json`/lockfile, no
+`src`/`app`, no build system). Notes on the ZIP snapshot:
 
-Notes for future agents:
+- Extract with `unzip "cursor.com (2).zip" -d <dir>`.
+- The 219 `.html` files are Next.js **RSC stream payloads** (they begin with `0:{"f":...}`
+  or `1:"$Sreact.fragment"`); there is no `<!DOCTYPE html>` anywhere. They are NOT
+  standalone pages and will show as raw text in the browser. The JS/CSS under
+  `_next/static` are content-hashed build chunks (build output, not editable source).
+- Serving the extracted folder works (assets return HTTP 200) but no page renders,
+  because there is no source/entry HTML and no Next.js runtime. Use it as a visual/design
+  reference, not as a runnable app.
 
-- The `.html` files inside the ZIP are Next.js **RSC stream payloads** (they begin with
-  things like `0:{"f":...}` or `1:"$Sreact.fragment"`), not standalone HTML documents —
-  there is not a single `<!DOCTYPE html>` in the archive. Serving the extracted folder
-  with a static server (e.g. `python3 -m http.server`) will serve the `_next/static`
-  JS/CSS assets (HTTP 200) but will **not** render any usable page, because there is no
-  Next.js server runtime and no source.
-- The ZIP is just a frozen scrape of the Cursor dashboard (agents/automations/
-  marketplace/profile pages) plus content-hashed build chunks. It is build output, not
-  source you can edit or run.
-- The repo name/README (`intelligence-insider-V1-Frontend-DRAFT-`) implies an intended
-  Next.js frontend, but that source is **not present** in this checkout.
+### If/when real frontend source is added
 
-### If/when real source is added
-
-If a real frontend (likely Next.js with `npm`) is committed later, the standard flow
-will apply: install with the package manager matching the lockfile and run the dev
-server (e.g. `npm install` then `npm run dev`). The startup update script already guards
-on `package.json` so it becomes a no-op until such source exists.
+If a real frontend (likely Next.js with `npm`) is committed, the standard flow applies:
+install with the package manager matching the lockfile, then run the dev server (e.g.
+`npm install` then `npm run dev`) and view it in Chrome. The startup update script
+already guards on `package.json`, so it becomes a real `npm install` automatically once
+that source exists.

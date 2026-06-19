@@ -47,13 +47,26 @@ URL_REWRITES = [
 ]
 
 
-def find_webarchive_zip() -> str:
-    matches = glob.glob(os.path.join(REPO_ROOT, "*.webarchive.zip"))
+# When several captures exist, default to the agents dashboard shell for `frontend/`.
+DEFAULT_ZIP_PREFERENCE = ("Development environment setup",)
+
+
+def find_webarchive_zip(explicit: str | None = None) -> str:
+    if explicit:
+        path = explicit if os.path.isabs(explicit) else os.path.join(REPO_ROOT, explicit)
+        if not os.path.exists(path):
+            sys.exit(f"Capture not found: {path}")
+        return path
+    matches = sorted(glob.glob(os.path.join(REPO_ROOT, "*.webarchive.zip")))
     if not matches:
         sys.exit(
-            "No '*.webarchive.zip' found in repo root. Expected the uploaded "
+            "No '*.webarchive.zip' found in repo root. Expected an uploaded "
             "Safari webarchive snapshot."
         )
+    for pref in DEFAULT_ZIP_PREFERENCE:
+        for m in matches:
+            if os.path.basename(m).startswith(pref):
+                return m
     return matches[0]
 
 
@@ -104,6 +117,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", default="frontend", help="output directory (default: frontend)")
     parser.add_argument(
+        "--zip",
+        default=None,
+        help="specific *.webarchive.zip to build (default: agents dashboard capture)",
+    )
+    parser.add_argument(
         "--with-js",
         action="store_true",
         help="include JavaScript and keep the page interactive (note: hydration "
@@ -116,7 +134,7 @@ def main() -> None:
         shutil.rmtree(out_dir)
     os.makedirs(out_dir, exist_ok=True)
 
-    pl = load_webarchive(find_webarchive_zip())
+    pl = load_webarchive(find_webarchive_zip(args.zip))
 
     written = 0
     for sub in pl.get("WebSubresources", []):

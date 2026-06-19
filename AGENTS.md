@@ -2,45 +2,59 @@
 
 ## Cursor Cloud specific instructions
 
-### Purpose of this repo
+### Purpose
 
-This repo is used to **modify / build out the front end in preparation for a new
-system** — it is NOT meant to be deployed/operationalized. Work happens both in code
-and visually in a browser inside the Cloud Agent VM.
+This repo is for **building out / modifying the front end in preparation for a new
+system** — not for deploying or operationalizing it. Work happens both in code and
+visually in a browser inside the Cloud Agent VM.
 
-### Visual / browser access in the VM (confirmed working)
+### The front end you can see and edit: `frontend/`
 
-- The VM has a desktop with Google Chrome. Agents can open and drive the browser
-  visually via computer-use, take screenshots, and record the screen.
-- The edit-in-code → reload-in-browser loop works: edit a source file, serve it with a
-  local dev server, and reload the page in Chrome to see the change.
-- Quick static dev server for viewing/iterating on plain HTML/CSS/JS:
-  `python3 -m http.server <port>` from the folder you want to serve, then open
-  `http://localhost:<port>/` in Chrome. Node 22 / npm 10 and Python 3.12 are available.
+`frontend/` is a viewable, editable static reconstruction of the Cursor "agents"
+dashboard. It renders as the real dark-themed Cursor UI (sidebar, agent list, header,
+Files tab, etc.) and is the thing to modify for front-end work.
 
-### Current contents (IMPORTANT)
+Serve it and open it in Chrome (Node 22 / Python 3.12 available in the VM):
 
-The only tracked files are:
+```
+python3 -m http.server 8102 --directory frontend
+# open http://localhost:8102/ in the VM's Chrome
+```
 
-- `README.md` — single-line placeholder title.
-- `cursor.com (2).zip` — an ~8.7 MB static snapshot (web crawl) of `cursor.com`.
+Edit the files under `frontend/` (mainly `frontend/index.html` and the CSS under
+`frontend/_next/static/chunks/*.css`) and reload the browser to see changes — the
+edit→reload loop is confirmed working in the VM.
 
-There is currently **no editable framework source** (no `package.json`/lockfile, no
-`src`/`app`, no build system). Notes on the ZIP snapshot:
+Important: `frontend/` is a **static** render with the page's JavaScript intentionally
+removed. The original app is a Next.js client app; if its JS runs offline it fails
+hydration (no live auth/API) and shows a "Something went wrong" error boundary. Removing
+the scripts lets the server-rendered DOM + CSS render faithfully and stay stable and
+editable. So treat `frontend/` as an editable visual/markup template, not an interactive
+app.
 
-- Extract with `unzip "cursor.com (2).zip" -d <dir>`.
-- The 219 `.html` files are Next.js **RSC stream payloads** (they begin with `0:{"f":...}`
-  or `1:"$Sreact.fragment"`); there is no `<!DOCTYPE html>` anywhere. They are NOT
-  standalone pages and will show as raw text in the browser. The JS/CSS under
-  `_next/static` are content-hashed build chunks (build output, not editable source).
-- Serving the extracted folder works (assets return HTTP 200) but no page renders,
-  because there is no source/entry HTML and no Next.js runtime. Use it as a visual/design
-  reference, not as a runnable app.
+### Regenerating `frontend/` from the source capture
 
-### If/when real frontend source is added
+`frontend/` is generated from the committed Safari capture
+`*.webarchive.zip` (a binary-plist bundle of the fully rendered page + all subresources)
+via `scripts/reconstruct_site.py`:
 
-If a real frontend (likely Next.js with `npm`) is committed, the standard flow applies:
-install with the package manager matching the lockfile, then run the dev server (e.g.
-`npm install` then `npm run dev`) and view it in Chrome. The startup update script
-already guards on `package.json`, so it becomes a real `npm install` automatically once
-that source exists.
+```
+python3 scripts/reconstruct_site.py            # rebuild ./frontend (static, no JS)
+python3 scripts/reconstruct_site.py --with-js  # full faithful copy incl. JS (will error on hydration)
+```
+
+WARNING: re-running the script **overwrites** `frontend/`, discarding hand edits. Only
+regenerate when you want to reset to the original capture.
+
+### Other contents
+
+- `cursor.com (2).zip` — an earlier partial scrape (mostly Next.js RSC stream payloads
+  and compiled chunks, with no full HTML document). Not directly renderable; use the
+  `.webarchive` capture / `frontend/` instead. Kept as a reference only.
+- `README.md` — placeholder title.
+
+### If a real Next.js source project is added later
+
+Standard flow applies: install with the package manager matching the lockfile and run the
+dev server (e.g. `npm install` then `npm run dev`). The startup update script already
+guards on `package.json`, so it auto-runs `npm install` once such source exists.

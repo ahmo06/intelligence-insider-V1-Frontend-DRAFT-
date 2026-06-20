@@ -21,16 +21,27 @@ python3 mock-backend/server.py --host 0.0.0.0 --port 4055
 - Requests to `/api/<path>` are served from `data/api/<path>.json` or
   `data/api/<path>.txt`, as declared in `endpoints.json`.
 - Query strings are ignored.
-- `GET` and `POST` both return the same captured fixture. Request bodies are
-  ignored.
+- For static fixtures, `GET` and `POST` both return the same captured response.
+  POST bodies are parsed and passed to dynamic handlers (below); for static
+  fixtures they are ignored.
 - JSON fixtures use `Content-Type: application/json`; text fixtures use
   `Content-Type: text/plain`.
 - CORS is permissive for local frontend work.
 - `GET /__mock/health` returns server status and fixture count.
 - `GET /__mock/endpoints` returns the endpoint manifest.
+- `GET /__mock/dynamic` returns the list of dynamic routes (see below).
 
 Unknown paths return a JSON 404 and are logged to stderr so missing captures are
 easy to spot.
+
+## Dynamic endpoints
+
+Some endpoints are served by `handlers.py` (dispatched **before** the static
+fixture fallback) so the frontend can develop against realistic, *mutable* shapes
+— e.g. creating a session that then appears in `GET /api/projects/list`. Stateful
+handlers persist JSON under `state/` (git-ignored; only `state/.gitkeep` tracked).
+Request bodies are parsed as JSON for POST handlers. See
+[`docs/MOCK_BACKEND_API.md`](../docs/MOCK_BACKEND_API.md) for the full contract.
 
 ## Add or override a fixture
 

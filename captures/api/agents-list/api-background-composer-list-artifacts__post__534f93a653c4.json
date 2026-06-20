@@ -1,0 +1,22 @@
+{
+  "url": "https://cursor.com/api/background-composer/list-artifacts",
+  "path": "/api/background-composer/list-artifacts",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:30:42.011550+00:00",
+  "page_slug": "agents-list",
+  "body": {
+    "artifacts": [
+      {
+        "absolutePath": "/opt/cursor/artifacts/screenshots/issues_collapsed.png",
+        "sizeBytes": "278227",
+        "updatedAtUnixMs": "1781539050000"
+      },
+      {
+        "absolutePath": "/opt/cursor/artifacts/screenshots/issues_expanded.png",
+        "sizeBytes": "281485",
+        "updatedAtUnixMs": "1781539050000"
+      }
+    ]
+  }
+}

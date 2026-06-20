@@ -1,1 +1,4 @@
-{"bugbotBillingMode":"BUGBOT_BILLING_MODE_SEAT","bugbotUsageBasedOnEnable":true}
+{
+  "bugbotBillingMode": "BUGBOT_BILLING_MODE_SEAT",
+  "bugbotUsageBasedOnEnable": true
+}

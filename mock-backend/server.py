@@ -9,8 +9,10 @@ import sys
 from dataclasses import dataclass
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 from urllib.parse import urlsplit
+
+import handlers
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -74,17 +76,50 @@ def make_handler(
         def do_GET(self) -> None:
             path = urlsplit(self.path).path
             if path == "/__mock/health":
-                self._send_json(200, {"status": "ok", "endpoints": len(fixtures)})
+                self._send_json(
+                    200,
+                    {
+                        "status": "ok",
+                        "endpoints": len(fixtures),
+                        "dynamicRoutes": len(handlers.registered_routes()),
+                    },
+                )
                 return
             if path == "/__mock/endpoints":
                 self._send_json(200, manifest)
                 return
+            if path == "/__mock/dynamic":
+                self._send_json(200, handlers.registered_routes())
+                return
 
+            if self._try_dynamic("GET", path, None):
+                return
             self._serve_fixture(path)
 
         def do_POST(self) -> None:
-            self._discard_request_body()
-            self._serve_fixture(urlsplit(self.path).path)
+            body = self._read_request_body()
+            path = urlsplit(self.path).path
+            if self._try_dynamic("POST", path, body):
+                return
+            self._serve_fixture(path)
+
+        def _try_dynamic(
+            self, method: str, path: str, body: Optional[dict[str, Any]]
+        ) -> bool:
+            """Run a dynamic handler if one is registered. Returns True if handled."""
+            try:
+                result = handlers.dispatch(method, path, body)
+            except Exception as exc:  # noqa: BLE001 - surface handler errors as 500
+                self._send_json(
+                    500,
+                    {"error": "dynamic handler failed", "path": path, "detail": str(exc)},
+                )
+                return True
+            if result is None:
+                return False
+            status, payload = result
+            self._send_json(status, payload)
+            return True
 
         def _serve_fixture(self, path: str) -> None:
             fixture = fixtures.get(path)
@@ -134,16 +169,22 @@ def make_handler(
             self.send_header("Access-Control-Allow-Methods", "GET,POST,OPTIONS")
             self.send_header("Access-Control-Allow-Headers", "*")
 
-        def _discard_request_body(self) -> None:
+        def _read_request_body(self) -> Optional[dict[str, Any]]:
             raw_length = self.headers.get("Content-Length")
             if raw_length is None:
-                return
+                return None
             try:
                 length = int(raw_length)
             except ValueError:
-                return
-            if length > 0:
-                self.rfile.read(length)
+                return None
+            if length <= 0:
+                return None
+            raw = self.rfile.read(length)
+            try:
+                parsed = json.loads(raw.decode("utf-8"))
+            except (ValueError, UnicodeDecodeError):
+                return None
+            return parsed if isinstance(parsed, dict) else None
 
         def _log_missing_fixture(self, path: str) -> None:
             print(

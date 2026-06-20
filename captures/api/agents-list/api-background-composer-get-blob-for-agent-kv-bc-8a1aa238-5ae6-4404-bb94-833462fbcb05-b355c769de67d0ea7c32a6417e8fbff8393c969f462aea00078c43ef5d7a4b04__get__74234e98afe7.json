@@ -1,0 +1,9 @@
+{
+  "url": "https://cursor.com/api/background-composer/get-blob-for-agent-kv/bc-8a1aa238-5ae6-4404-bb94-833462fbcb05/b355c769de67d0ea7c32a6417e8fbff8393c969f462aea00078c43ef5d7a4b04",
+  "path": "/api/background-composer/get-blob-for-agent-kv/bc-8a1aa238-5ae6-4404-bb94-833462fbcb05/b355c769de67d0ea7c32a6417e8fbff8393c969f462aea00078c43ef5d7a4b04",
+  "method": "GET",
+  "status": 200,
+  "captured_at": "2026-06-20T10:27:30.578455+00:00",
+  "page_slug": "agents-list",
+  "body": null
+}

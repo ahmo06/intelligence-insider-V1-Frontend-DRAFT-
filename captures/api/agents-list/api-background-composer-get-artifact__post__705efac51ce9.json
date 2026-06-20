@@ -1,0 +1,12 @@
+{
+  "url": "https://cursor.com/api/background-composer/get-artifact",
+  "path": "/api/background-composer/get-artifact",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:27:30.349254+00:00",
+  "page_slug": "agents-list",
+  "body": {
+    "url": "https://cloud-agent-artifacts.s3.us-east-1.amazonaws.com/artifacts/bc-6bf8ca49-69ae-486e-857c-3f36759346bf/opt/cursor/artifacts/crush-visual-validation-after-setup.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIA5YTTCJ6RWSPYHSPK%2F20260620%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260620T101410Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAsaCXVzLWVhc3QtMSJHMEUCIAvMeuBiVIYA%2Fpb7b5IXwo6uKMVhLiDruAbGJAY2p4FBAiEAj1TuCZ%2BVJkW0Fvi8OXCj%2B7Fcmb7s3Ml%2BjPxvJU3zyQQq%2FAMI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgw5NDYyMDc4NzA4ODMiDDduyQmoisj9aQzrBSrQA2Bl01jarObwK0ItZ3yAd1wMscOFEUqbA3Dt8BwvnSK%2FddNvK54JxgdqOq2v9yrmdyg7bjUWhBwsP8FOZmUFBjXmhZmV6Q42iCZ3P0RCL1fgOftJfWZm6PrHSVDi%2FtSTR9DKrkJbEcSGkCHklO37l5URKsJynCNZ8IdXOal%2FJYp7so7f2lRttOS4IQGvHSP7OP8JXvM68dVg17yN9iRv4qJd9z0S%2Bv5yozkptTCc2CiWuVgSIzBoWMeU6neafgm2Mx8hEm5opVQEYyabgub7PIrv8Ll134dD0BFhu8ptchES%2BAkUJE3AdFXuwbHLufN5G7Ic4Hak%2B9cBo1qCPgw5udjxbqL4zoYF%2Bhk5uANyEdOMgsc217OySRPHwcyVF6sWop3nuyD74UUV%2BZv2i%2FEAUQXg%2B1gsYbthifvlR41eJb2M30ZaTR%2FQzSyJXLxWNbNCLy7yzMH9M2qxbgb5Zm9s8ta%2FKu7w7EVLiwaOZP7Ak8GjZ62EfoE6MlPLS9ulk2iQ4MTuwhJ35ZMPI%2BPzGciPlP0DrGPanmkHZmqb8nbqn6b6Q79Ak4rcWRlgF5B8hnc77OfZkvsTl7S%2FBXTnPZF%2B%2FHi0CCXEYvPr%2FD1ZshBYivUNMOvN2dEGOqUBB9MqWhRGqn%2BLKMR7BRo5uybbkwhguEjRrjhkRKqJNMWNFaPzCAJweetxMQAhkVmvH8x5CmJipiAWyokgs%2BX%2B1bi52dQfHwNWG2ZWxE8%2FF4M%2FAIydla68X1VtYqa8PQYYU7cueS2xIIf5%2FcE%2BChtbdrGk8iz9l8%2BFPxT5mzIZQ3FcFRaf1Tb4A3SKYd2epP15eHHwO%2FQZ8s%2ByRqmWA5Dj11OqkYLY&X-Amz-Signature=d414fbdc505d749e13253db71a6b33ea717eef0fe065c0eb39060f1086807977&X-Amz-SignedHeaders=host&response-cache-control=private%2C%20max-age%3D604800%2C%20immutable&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiresAt": "2026-06-20T10:29:10.503Z"
+  }
+}

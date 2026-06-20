@@ -1,0 +1,19 @@
+{
+  "bcId": "bc-b11c3ab1-6cbe-43e0-b147-c453cc2ee38b",
+  "root": "/workspace",
+  "files": [
+    { "path": "/workspace/README.md", "type": "file", "sizeBytes": "2048", "updatedAtUnixMs": "1781949299188" },
+    { "path": "/workspace/package.json", "type": "file", "sizeBytes": "1536", "updatedAtUnixMs": "1781949299188" },
+    { "path": "/workspace/next.config.mjs", "type": "file", "sizeBytes": "412", "updatedAtUnixMs": "1781949299188" },
+    { "path": "/workspace/tsconfig.json", "type": "file", "sizeBytes": "780", "updatedAtUnixMs": "1781949299188" },
+    { "path": "/workspace/src/app/layout.tsx", "type": "file", "sizeBytes": "1320", "updatedAtUnixMs": "1781949299188" },
+    { "path": "/workspace/src/app/page.tsx", "type": "file", "sizeBytes": "980", "updatedAtUnixMs": "1781949299188" },
+    { "path": "/workspace/src/app/agents/page.tsx", "type": "file", "sizeBytes": "2410", "updatedAtUnixMs": "1781949299188" },
+    { "path": "/workspace/src/components/captured/CapturedShell.tsx", "type": "file", "sizeBytes": "6210", "updatedAtUnixMs": "1781949299188" },
+    { "path": "/workspace/src/components/captured/CapturedDocument.tsx", "type": "file", "sizeBytes": "2180", "updatedAtUnixMs": "1781949299188" },
+    { "path": "/workspace/src/lib/captured/rightPanelTransform.ts", "type": "file", "sizeBytes": "9870", "updatedAtUnixMs": "1781949299188" },
+    { "path": "/workspace/src/lib/captured/sidebarTransform.ts", "type": "file", "sizeBytes": "12440", "updatedAtUnixMs": "1781949299188" },
+    { "path": "/workspace/src/types/project.ts", "type": "file", "sizeBytes": "1180", "updatedAtUnixMs": "1781949299188" },
+    { "path": "/workspace/src/types/background-composer.ts", "type": "file", "sizeBytes": "3020", "updatedAtUnixMs": "1781949299188" }
+  ]
+}

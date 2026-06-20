@@ -1,0 +1,254 @@
+{
+  "captured_at": "2026-06-20T10:33:40.819224+00:00",
+  "pages": 7,
+  "api_endpoints": 79,
+  "actions": 0,
+  "api_log": [
+    {
+      "url": "https://cursor.com/api/background-composer/get-machine",
+      "method": "POST",
+      "status": 501,
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-machine__post__74234e98afe7.json"
+    },
+    {
+      "url": "https://cursor.com/api/auth/me",
+      "method": "GET",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-auth-me__get__c154113e264a.json"
+    },
+    {
+      "url": "https://cursor.com/api/auth/is-impersonating",
+      "method": "GET",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-auth-is-impersonating__get__8dc242d516ee.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/get-user-privacy-mode",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-user-privacy-mode__post__5cfc3462641a.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/get-plan-info",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-plan-info__post__a18d8be30568.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/get-user-organizations",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-user-organizations__post__44136fa355b3.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/get-p2p-referral-status",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-p2p-referral-status__post__880d443dd584.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/list-github-enterprise-apps",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-list-github-enterprise-apps__post__44136fa355b3.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/list-gitlab-enterprise-instances",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-list-gitlab-enterprise-instances__post__44136fa355b3.json"
+    },
+    {
+      "url": "https://cursor.com/api/geo/country",
+      "method": "GET",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-geo-country__get__1724f9323a18.json"
+    },
+    {
+      "url": "https://cursor.com/api/background-composer/get-background-composer-user-settings",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-background-composer-user-settings__post__abe2470d4109.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/get-github-installations",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-github-installations__post__28a2b87ee223.json"
+    },
+    {
+      "url": "https://cursor.com/api/auth/stripe",
+      "method": "GET",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-auth-stripe__get__7f591a652ea9.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/teams",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-teams__post__44136fa355b3.json"
+    },
+    {
+      "url": "https://cursor.com/api/usage?user=user_01KF8FPPZMV5XBDD3X99H61CVE",
+      "method": "GET",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-usage__get__6e6ecf4287ef.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/get-user-profile",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-user-profile__post__0304b128cfae.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/is-on-new-pricing",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-is-on-new-pricing__post__d5d996f20404.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/get-user-api-keys",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-user-api-keys__post__44136fa355b3.json"
+    },
+    {
+      "url": "https://cursor.com/api/background-composer/get-detailed-composer",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-detailed-composer__post__cd5188ce3d39.json"
+    },
+    {
+      "url": "https://cursor.com/api/background-composer/list-artifacts",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-list-artifacts__post__e6779048293d.json"
+    },
+    {
+      "url": "https://cursor.com/api/background-composer/get-diff-details",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-diff-details__post__68e63bc0c86b.json"
+    },
+    {
+      "url": "https://cursor.com/api/background-composer/list",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-list__post__90ad5267a204.json"
+    },
+    {
+      "url": "https://cursor.com/api/auth/sessions",
+      "method": "GET",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-auth-sessions__get__07f86f20ac51.json"
+    },
+    {
+      "url": "https://cursor.com/api/background-composer/listPendingFollowups",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-listpendingfollowups__post__44136fa355b3.json"
+    },
+    {
+      "url": "https://cursor.com/api/background-composer/available-models",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-available-models__post__7b5b08079bf9.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/get-hard-limit",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-hard-limit__post__a13bf4f31d4b.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/client-action",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-client-action__post__3fb4d8c8e44b.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/get-monthly-invoice",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-monthly-invoice__post__d2691d8fe051.json"
+    },
+    {
+      "url": "https://cursor.com/api/analytics/track-events",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-analytics-track-events__post__44136fa355b3.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/get-team-commands",
+      "method": "POST",
+      "status": 401,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-team-commands__post__42ce1de75f11.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/get-cloud-agent-plugins-snapshot",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-cloud-agent-plugins-snapshot__post__1d57bbdd3a69.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/get-global-commands",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-global-commands__post__08a99917a6f7.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/get-managed-skills",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-managed-skills__post__8b232f784c90.json"
+    },
+    {
+      "url": "https://cursor.com/api/background-composer/get-artifact",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-artifact__post__245c55f11f91.json"
+    },
+    {
+      "url": "https://cursor.com/api/background-composer/get-available-mcp-servers",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-available-mcp-servers__post__44136fa355b3.json"
+    },
+    {
+      "url": "https://cursor.com/api/background-composer/get-mcp-config",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-mcp-config__post__382b9d8279f8.json"
+    },
+    {
+      "url": "https://cursor.com/api/background-composer/get-detailed-pull-request-status",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-detailed-pull-request-status__post__b2c69a6ee8f6.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/get-background-composer-slash-commands",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-background-composer-slash-commands__post__44136fa355b3.json"
+    },
+    {
+      "url": "https://cursor.com/api/dashboard/list-marketplace-plugins",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-list-marketplace-plugins__post__0b9b3a89e5fc.json"
+    },
+    {
+      "url": "https://cursor.com/api/background-composer/batch-refresh-pull-request-status",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-batch-refresh-pull-request-status__post__79fde4e02b5c.json"
+    },
+    {
+      "url": "https://cursor.com/api/background-composer/get-pull-request-merge-status",
+      "method": "POST",
+      "status": 200,
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-pull-request-merge-status__post__6b3a5e7852ba.json"
+    }
+  ]
+}

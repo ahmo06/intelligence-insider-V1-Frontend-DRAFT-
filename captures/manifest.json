@@ -1,0 +1,671 @@
+{
+  "created_at": null,
+  "source": "live-browser-capture",
+  "pages": [
+    {
+      "route": "/agents",
+      "slug": "agents",
+      "captured_at": "2026-06-20T10:05:04.020321+00:00",
+      "screenshot": null,
+      "notes": "Agents list shell with composer and sidebar"
+    },
+    {
+      "route": "/dashboard/bugbot",
+      "slug": "dashboard__bugbot",
+      "captured_at": "2026-06-20T10:05:04.093909+00:00",
+      "screenshot": null,
+      "notes": "Bugbot GitHub/GitLab connections"
+    },
+    {
+      "slug": "agents-list",
+      "route": "/agents",
+      "url": "https://cursor.com/agents",
+      "title": "Agents list",
+      "captured_at": "2026-06-20T10:33:03.629927+00:00",
+      "html": "captures/pages/agents-list/index.html",
+      "screenshot": "captures/screenshots/agents-list.png",
+      "components": "captures/components/agents-list.json",
+      "api_fixtures": [
+        "captures/api/agents-list/api-auth-me__get__c154113e264a.json",
+        "captures/api/agents-list/api-auth-is-impersonating__get__8dc242d516ee.json",
+        "captures/api/agents-list/api-dashboard-get-user-privacy-mode__post__5cfc3462641a.json",
+        "captures/api/agents-list/api-geo-country__get__1724f9323a18.json",
+        "captures/api/agents-list/api-v2-components-json__get__46a77f9c5f3b.json",
+        "captures/api/agents-list/api-dashboard-teams__post__44136fa355b3.json",
+        "captures/api/agents-list/api-dashboard-get-user-organizations__post__44136fa355b3.json",
+        "captures/api/agents-list/api-dashboard-list-github-enterprise-apps__post__44136fa355b3.json",
+        "captures/api/agents-list/api-dashboard-list-gitlab-enterprise-instances__post__44136fa355b3.json",
+        "captures/api/agents-list/api-dashboard-get-global-commands__post__08a99917a6f7.json",
+        "captures/api/agents-list/api-dashboard-get-p2p-referral-status__post__880d443dd584.json",
+        "captures/api/agents-list/api-dashboard-get-team-commands__post__42ce1de75f11.json",
+        "captures/api/agents-list/api-dashboard-get-managed-skills__post__8b232f784c90.json",
+        "captures/api/agents-list/api-dashboard-get-user-profile__post__0304b128cfae.json",
+        "captures/api/agents-list/api-dashboard-get-cloud-agent-plugins-snapshot__post__1d57bbdd3a69.json",
+        "captures/api/agents-list/api-dashboard-get-github-installations__post__44136fa355b3.json",
+        "captures/api/agents-list/api-background-composer-get-background-composer-user-settings__post__abe2470d4109.json",
+        "captures/api/agents-list/api-usage__get__6e6ecf4287ef.json",
+        "captures/api/agents-list/api-dashboard-is-on-new-pricing__post__d5d996f20404.json",
+        "captures/api/agents-list/api-auth-sessions__get__07f86f20ac51.json",
+        "captures/api/agents-list/api-dashboard-get-user-api-keys__post__44136fa355b3.json",
+        "captures/api/agents-list/api-background-composer-get-available-mcp-servers__post__44136fa355b3.json",
+        "captures/api/agents-list/api-background-composer-list__post__71220e1b8be2.json",
+        "captures/api/agents-list/api-background-composer-list-private-workers__post__44136fa355b3.json",
+        "captures/api/agents-list/api-background-composer-list-environments__post__95dcdbfee2fb.json",
+        "captures/api/agents-list/api-auth-stripe__get__7f591a652ea9.json",
+        "captures/api/agents-list/api-background-composer-available-models__post__7b5b08079bf9.json",
+        "captures/api/agents-list/api-analytics-track-events__post__44136fa355b3.json",
+        "captures/api/agents-list/api-background-composer-list-team-pool-workers__post__3d96b8140686.json",
+        "captures/api/agents-list/api-background-composer-list-artifacts__post__44136fa355b3.json",
+        "captures/api/agents-list/api-background-composer-get-pull-request-merge-status__post__9e8b70fb4979.json",
+        "captures/api/agents-list/api-dashboard-get-hard-limit__post__a13bf4f31d4b.json",
+        "captures/api/agents-list/api-dashboard-client-action__post__3fb4d8c8e44b.json",
+        "captures/api/agents-list/api-background-composer-batch-refresh-pull-request-status__post__79fde4e02b5c.json",
+        "captures/api/agents-list/api-dashboard-get-monthly-invoice__post__d2691d8fe051.json",
+        "captures/api/agents-list/api-background-composer-get-artifact__post__ff0e749195d8.json",
+        "captures/api/agents-list/api-background-composer-get-mcp-config__post__382b9d8279f8.json",
+        "captures/api/agents-list/api-background-composer-get-detailed-composer__post__20838b44bc83.json",
+        "captures/api/agents-list/api-dashboard-get-plan-info__post__a18d8be30568.json",
+        "captures/api/agents-list/api-dashboard-list-marketplace-plugins__post__0b9b3a89e5fc.json"
+      ],
+      "interactions": []
+    },
+    {
+      "slug": "dashboard",
+      "route": "/dashboard",
+      "url": "https://cursor.com/dashboard",
+      "title": "Dashboard",
+      "captured_at": "2026-06-20T10:33:08.226840+00:00",
+      "html": "captures/pages/dashboard/index.html",
+      "screenshot": "captures/screenshots/dashboard.png",
+      "components": "captures/components/dashboard.json",
+      "api_fixtures": [
+        "captures/api/dashboard/api-auth-me__get__c154113e264a.json",
+        "captures/api/dashboard/api-auth-is-impersonating__get__8dc242d516ee.json",
+        "captures/api/dashboard/api-auth-get-login-scope__get__df4eae5dbe7f.json",
+        "captures/api/dashboard/api-dashboard-get-user-privacy-mode__post__5cfc3462641a.json",
+        "captures/api/dashboard/api-usage__get__6e6ecf4287ef.json",
+        "captures/api/dashboard/api-auth-sessions__get__07f86f20ac51.json",
+        "captures/api/dashboard/api-dashboard-get-user-api-keys__post__44136fa355b3.json",
+        "captures/api/dashboard/api-dashboard-teams__post__44136fa355b3.json",
+        "captures/api/dashboard/api-auth-stripe__get__7f591a652ea9.json",
+        "captures/api/dashboard/api-dashboard-is-on-new-pricing__post__d5d996f20404.json",
+        "captures/api/dashboard/api-dashboard-check-user-api-key-access__post__0d3011e46254.json",
+        "captures/api/dashboard/api-usage-summary__get__a81b5b7d1810.json",
+        "captures/api/dashboard/api-dashboard-get-p2p-referral-status__post__880d443dd584.json",
+        "captures/api/dashboard/api-analytics-track-events__post__44136fa355b3.json",
+        "captures/api/dashboard/api-geo-country__get__1724f9323a18.json",
+        "captures/api/dashboard/api-dashboard-get-user-profile__post__0304b128cfae.json",
+        "captures/api/dashboard/api-dashboard-get-active-offboarding-banner__post__44136fa355b3.json",
+        "captures/api/dashboard/api-dashboard-get-effective-user-plugins__post__3660bb7417ed.json",
+        "captures/api/dashboard/api-dashboard-list-microsoft-teams-channels__post__44136fa355b3.json",
+        "captures/api/dashboard/api-dashboard-get-linear-status__post__28c91a8e9555.json",
+        "captures/api/dashboard/api-dashboard-get-slack-settings__post__69f13433edc8.json",
+        "captures/api/dashboard/api-dashboard-get-github-installations__post__44136fa355b3.json",
+        "captures/api/dashboard/api-dashboard-list-jira-user-links__post__44136fa355b3.json",
+        "captures/api/dashboard/api-dashboard-get-plan-info__post__a18d8be30568.json",
+        "captures/api/dashboard/api-dashboard-get-pagerduty-status__post__44136fa355b3.json",
+        "captures/api/dashboard/api-get-pending-downgrade__get__abde3270eee7.json",
+        "captures/api/dashboard/api-dashboard-get-hard-limit__post__a13bf4f31d4b.json",
+        "captures/api/dashboard/api-dashboard-list-gitlab-enterprise-instances__post__44136fa355b3.json",
+        "captures/api/dashboard/api-dashboard-get-current-billing-cycle__post__e415e378e0e6.json",
+        "captures/api/dashboard/api-dashboard-get-slack-user-settings__post__2085b61faf7d.json",
+        "captures/api/dashboard/api-dashboard-list-github-enterprise-apps__post__44136fa355b3.json",
+        "captures/api/dashboard/api-dashboard-get-sentry-status__post__44136fa355b3.json",
+        "captures/api/dashboard/api-dashboard-get-credit-grants-balance__post__4b227c44d779.json",
+        "captures/api/dashboard/api-dashboard-client-action__post__3fb4d8c8e44b.json",
+        "captures/api/dashboard/api-dashboard-get-client-visible-credit-grants__post__44136fa355b3.json",
+        "captures/api/dashboard/api-dashboard-get-scm-connection-status__post__44136fa355b3.json",
+        "captures/api/dashboard/api-dashboard-get-slack-install-url__post__d1db76bda050.json",
+        "captures/api/dashboard/api-dashboard-get-slack-model-options__post__131c4bc258b9.json",
+        "captures/api/dashboard/api-dashboard-get-user-analytics__post__14928ed60424.json",
+        "captures/api/dashboard/api-dashboard-get-monthly-invoice__post__d2691d8fe051.json",
+        "captures/api/dashboard/api-get-downgrade-options__get__5e8b7e886739.json"
+      ],
+      "interactions": []
+    },
+    {
+      "slug": "automations",
+      "route": "/automations",
+      "url": "https://cursor.com/automations",
+      "title": "Automations",
+      "captured_at": "2026-06-20T10:33:15.559790+00:00",
+      "html": "captures/pages/automations/index.html",
+      "screenshot": "captures/screenshots/automations.png",
+      "components": "captures/components/automations.json",
+      "api_fixtures": [
+        "captures/api/automations/api-auth-me__get__c154113e264a.json",
+        "captures/api/automations/api-auth-is-impersonating__get__8dc242d516ee.json",
+        "captures/api/automations/api-dashboard-get-user-privacy-mode__post__5cfc3462641a.json",
+        "captures/api/automations/api-geo-country__get__1724f9323a18.json",
+        "captures/api/automations/api-dashboard-get-plan-info__post__a18d8be30568.json",
+        "captures/api/automations/api-usage__get__6e6ecf4287ef.json",
+        "captures/api/automations/api-dashboard-get-user-profile__post__0304b128cfae.json",
+        "captures/api/automations/api-dashboard-is-on-new-pricing__post__d5d996f20404.json",
+        "captures/api/automations/api-dashboard-get-user-organizations__post__44136fa355b3.json",
+        "captures/api/automations/api-dashboard-get-p2p-referral-status__post__880d443dd584.json",
+        "captures/api/automations/api-dashboard-get-user-api-keys__post__44136fa355b3.json",
+        "captures/api/automations/api-dashboard-teams__post__44136fa355b3.json",
+        "captures/api/automations/api-auth-stripe__get__7f591a652ea9.json",
+        "captures/api/automations/api-auth-sessions__get__07f86f20ac51.json",
+        "captures/api/automations/api-background-composer-list__post__71220e1b8be2.json",
+        "captures/api/automations/api-dashboard-list-github-enterprise-apps__post__44136fa355b3.json",
+        "captures/api/automations/api-dashboard-list-microsoft-teams-channels__post__44136fa355b3.json",
+        "captures/api/automations/api-dashboard-get-slack-install-url__post__728a5917ba01.json",
+        "captures/api/automations/api-dashboard-get-linear-status__post__28c91a8e9555.json",
+        "captures/api/automations/api-automations-list-workflow-templates__post__7a34bcd5bd4f.json",
+        "captures/api/automations/api-dashboard-get-slack-user-settings__post__2085b61faf7d.json",
+        "captures/api/automations/api-dashboard-get-sentry-status__post__44136fa355b3.json",
+        "captures/api/automations/api-dashboard-get-pagerduty-status__post__44136fa355b3.json",
+        "captures/api/automations/api-automations-get-run-summary__post__6897455eafc8.json",
+        "captures/api/automations/api-dashboard-list-gitlab-enterprise-instances__post__44136fa355b3.json",
+        "captures/api/automations/api-automations-list-automations__post__e7b356b59266.json",
+        "captures/api/automations/api-analytics-track-events__post__44136fa355b3.json",
+        "captures/api/automations/api-dashboard-client-action__post__3fb4d8c8e44b.json",
+        "captures/api/automations/api-dashboard-get-github-installations__post__3eb73103c064.json",
+        "captures/api/automations/api-dashboard-get-hard-limit__post__a13bf4f31d4b.json",
+        "captures/api/automations/api-dashboard-list-slack-conversations__post__44136fa355b3.json",
+        "captures/api/automations/api-dashboard-get-monthly-invoice__post__d2691d8fe051.json",
+        "captures/api/automations/api-background-composer-batch-refresh-pull-request-status__post__79fde4e02b5c.json",
+        "captures/api/automations/api-background-composer-get-detailed-composer__post__20838b44bc83.json",
+        "captures/api/automations/api-background-composer-get-pull-request-merge-status__post__96d9fea2d551.json"
+      ],
+      "interactions": []
+    },
+    {
+      "slug": "bugbot",
+      "route": "/dashboard/bugbot",
+      "url": "https://cursor.com/dashboard/bugbot",
+      "title": "Bugbot settings",
+      "captured_at": "2026-06-20T10:33:20.777562+00:00",
+      "html": "captures/pages/bugbot/index.html",
+      "screenshot": "captures/screenshots/bugbot.png",
+      "components": "captures/components/bugbot.json",
+      "api_fixtures": [
+        "captures/api/bugbot/api-auth-me__get__c154113e264a.json",
+        "captures/api/bugbot/api-dashboard-check-user-api-key-access__post__0d3011e46254.json",
+        "captures/api/bugbot/api-analytics-track-events__post__44136fa355b3.json",
+        "captures/api/bugbot/api-usage-summary__get__4eaf0c1e055c.json",
+        "captures/api/bugbot/api-dashboard-get-user-privacy-mode__post__5cfc3462641a.json",
+        "captures/api/bugbot/api-usage__get__6e6ecf4287ef.json",
+        "captures/api/bugbot/api-auth-is-impersonating__get__8dc242d516ee.json",
+        "captures/api/bugbot/api-auth-sessions__get__07f86f20ac51.json",
+        "captures/api/bugbot/api-dashboard-get-user-api-keys__post__44136fa355b3.json",
+        "captures/api/bugbot/api-dashboard-is-on-new-pricing__post__d5d996f20404.json",
+        "captures/api/bugbot/api-auth-stripe__get__7f591a652ea9.json",
+        "captures/api/bugbot/api-dashboard-get-p2p-referral-status__post__880d443dd584.json",
+        "captures/api/bugbot/api-dashboard-teams__post__44136fa355b3.json",
+        "captures/api/bugbot/api-geo-country__get__1724f9323a18.json",
+        "captures/api/bugbot/api-dashboard-get-plan-info__post__a18d8be30568.json",
+        "captures/api/bugbot/api-dashboard-list-github-enterprise-apps__post__44136fa355b3.json",
+        "captures/api/bugbot/api-dashboard-list-gitlab-enterprise-instances__post__44136fa355b3.json",
+        "captures/api/bugbot/api-dashboard-get-github-installations__post__44136fa355b3.json",
+        "captures/api/bugbot/api-dashboard-get-user-profile__post__0304b128cfae.json",
+        "captures/api/bugbot/api-dashboard-get-current-billing-cycle__post__e415e378e0e6.json",
+        "captures/api/bugbot/api-dashboard-get-hard-limit__post__a13bf4f31d4b.json",
+        "captures/api/bugbot/api-dashboard-get-bugbot-pro-user-settings__post__8199d3584e75.json",
+        "captures/api/bugbot/api-get-pending-downgrade__get__abde3270eee7.json",
+        "captures/api/bugbot/api-dashboard-client-action__post__3fb4d8c8e44b.json",
+        "captures/api/bugbot/api-dashboard-get-service-account-spend-limit__post__0223e110ce14.json",
+        "captures/api/bugbot/api-dashboard-get-bugbot-pr-analytics__post__44136fa355b3.json",
+        "captures/api/bugbot/api-dashboard-get-bugbot-analytics-v2__post__c7fbb1cf83f2.json",
+        "captures/api/bugbot/api-get-downgrade-options__get__5e8b7e886739.json",
+        "captures/api/bugbot/api-dashboard-get-monthly-invoice__post__d2691d8fe051.json",
+        "captures/api/bugbot/api-dashboard-get-bugbot-suggested-repos__post__56fd74749a34.json"
+      ],
+      "interactions": []
+    },
+    {
+      "slug": "thread-merged-portal",
+      "route": "/agents/bc-773361b1-8875-4853-80fb-1540cd28b9ca",
+      "url": "https://cursor.com/agents/bc-773361b1-8875-4853-80fb-1540cd28b9ca?branch=cursor%2Forganize-portal-libreoffice-b9ca",
+      "title": "Portal environment",
+      "captured_at": "2026-06-20T10:33:38.061202+00:00",
+      "html": "captures/pages/thread-merged-portal/index.html",
+      "screenshot": "captures/screenshots/thread-merged-portal.png",
+      "components": "captures/components/thread-merged-portal.json",
+      "api_fixtures": [
+        "captures/api/thread-merged-portal/api-background-composer-get-machine__post__74234e98afe7.json",
+        "captures/api/thread-merged-portal/api-auth-me__get__c154113e264a.json",
+        "captures/api/thread-merged-portal/api-auth-is-impersonating__get__8dc242d516ee.json",
+        "captures/api/thread-merged-portal/api-dashboard-get-user-privacy-mode__post__5cfc3462641a.json",
+        "captures/api/thread-merged-portal/api-dashboard-get-plan-info__post__a18d8be30568.json",
+        "captures/api/thread-merged-portal/api-dashboard-get-user-organizations__post__44136fa355b3.json",
+        "captures/api/thread-merged-portal/api-dashboard-get-p2p-referral-status__post__880d443dd584.json",
+        "captures/api/thread-merged-portal/api-dashboard-list-github-enterprise-apps__post__44136fa355b3.json",
+        "captures/api/thread-merged-portal/api-dashboard-list-gitlab-enterprise-instances__post__44136fa355b3.json",
+        "captures/api/thread-merged-portal/api-geo-country__get__1724f9323a18.json",
+        "captures/api/thread-merged-portal/api-background-composer-get-background-composer-user-settings__post__abe2470d4109.json",
+        "captures/api/thread-merged-portal/api-dashboard-get-github-installations__post__28a2b87ee223.json",
+        "captures/api/thread-merged-portal/api-auth-stripe__get__7f591a652ea9.json",
+        "captures/api/thread-merged-portal/api-dashboard-teams__post__44136fa355b3.json",
+        "captures/api/thread-merged-portal/api-usage__get__6e6ecf4287ef.json",
+        "captures/api/thread-merged-portal/api-dashboard-get-user-profile__post__0304b128cfae.json",
+        "captures/api/thread-merged-portal/api-dashboard-is-on-new-pricing__post__d5d996f20404.json",
+        "captures/api/thread-merged-portal/api-dashboard-get-user-api-keys__post__44136fa355b3.json",
+        "captures/api/thread-merged-portal/api-background-composer-get-detailed-composer__post__cd5188ce3d39.json",
+        "captures/api/thread-merged-portal/api-background-composer-list-artifacts__post__e6779048293d.json",
+        "captures/api/thread-merged-portal/api-background-composer-get-diff-details__post__68e63bc0c86b.json",
+        "captures/api/thread-merged-portal/api-background-composer-list__post__90ad5267a204.json",
+        "captures/api/thread-merged-portal/api-auth-sessions__get__07f86f20ac51.json",
+        "captures/api/thread-merged-portal/api-background-composer-listpendingfollowups__post__44136fa355b3.json",
+        "captures/api/thread-merged-portal/api-background-composer-available-models__post__7b5b08079bf9.json",
+        "captures/api/thread-merged-portal/api-dashboard-get-hard-limit__post__a13bf4f31d4b.json",
+        "captures/api/thread-merged-portal/api-dashboard-client-action__post__3fb4d8c8e44b.json",
+        "captures/api/thread-merged-portal/api-dashboard-get-monthly-invoice__post__d2691d8fe051.json",
+        "captures/api/thread-merged-portal/api-analytics-track-events__post__44136fa355b3.json",
+        "captures/api/thread-merged-portal/api-dashboard-get-team-commands__post__42ce1de75f11.json",
+        "captures/api/thread-merged-portal/api-dashboard-get-cloud-agent-plugins-snapshot__post__1d57bbdd3a69.json",
+        "captures/api/thread-merged-portal/api-dashboard-get-global-commands__post__08a99917a6f7.json",
+        "captures/api/thread-merged-portal/api-dashboard-get-managed-skills__post__8b232f784c90.json",
+        "captures/api/thread-merged-portal/api-background-composer-get-artifact__post__245c55f11f91.json",
+        "captures/api/thread-merged-portal/api-background-composer-get-available-mcp-servers__post__44136fa355b3.json",
+        "captures/api/thread-merged-portal/api-background-composer-get-mcp-config__post__382b9d8279f8.json",
+        "captures/api/thread-merged-portal/api-background-composer-get-detailed-pull-request-status__post__b2c69a6ee8f6.json",
+        "captures/api/thread-merged-portal/api-dashboard-get-background-composer-slash-commands__post__44136fa355b3.json",
+        "captures/api/thread-merged-portal/api-dashboard-list-marketplace-plugins__post__0b9b3a89e5fc.json",
+        "captures/api/thread-merged-portal/api-background-composer-batch-refresh-pull-request-status__post__79fde4e02b5c.json",
+        "captures/api/thread-merged-portal/api-background-composer-get-pull-request-merge-status__post__6b3a5e7852ba.json"
+      ],
+      "interactions": []
+    }
+  ],
+  "api_endpoints": [
+    {
+      "endpoint": "/api/auth/me",
+      "method": "GET",
+      "fixture": "captures/api/thread-merged-portal/api-auth-me__get__c154113e264a.json"
+    },
+    {
+      "endpoint": "/api/auth/is-impersonating",
+      "method": "GET",
+      "fixture": "captures/api/thread-merged-portal/api-auth-is-impersonating__get__8dc242d516ee.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-user-privacy-mode",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-user-privacy-mode__post__5cfc3462641a.json"
+    },
+    {
+      "endpoint": "/api/v2/components.json",
+      "method": "GET",
+      "fixture": "captures/api/agents-list/api-v2-components-json__get__46a77f9c5f3b.json"
+    },
+    {
+      "endpoint": "/api/auth/stripe",
+      "method": "GET",
+      "fixture": "captures/api/thread-merged-portal/api-auth-stripe__get__7f591a652ea9.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-p2p-referral-status",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-p2p-referral-status__post__880d443dd584.json"
+    },
+    {
+      "endpoint": "/api/geo/country",
+      "method": "GET",
+      "fixture": "captures/api/thread-merged-portal/api-geo-country__get__1724f9323a18.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-plan-info",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-plan-info__post__a18d8be30568.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-user-organizations",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-user-organizations__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-team-commands",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-team-commands__post__42ce1de75f11.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-cloud-agent-plugins-snapshot",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-cloud-agent-plugins-snapshot__post__1d57bbdd3a69.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-global-commands",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-global-commands__post__08a99917a6f7.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-managed-skills",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-managed-skills__post__8b232f784c90.json"
+    },
+    {
+      "endpoint": "/api/dashboard/list-github-enterprise-apps",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-list-github-enterprise-apps__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/dashboard/list-gitlab-enterprise-instances",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-list-gitlab-enterprise-instances__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-github-installations",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-github-installations__post__28a2b87ee223.json"
+    },
+    {
+      "endpoint": "/api/background-composer/get-available-mcp-servers",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-available-mcp-servers__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/background-composer/get-background-composer-user-settings",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-background-composer-user-settings__post__abe2470d4109.json"
+    },
+    {
+      "endpoint": "/api/usage",
+      "method": "GET",
+      "fixture": "captures/api/thread-merged-portal/api-usage__get__6e6ecf4287ef.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-user-profile",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-user-profile__post__0304b128cfae.json"
+    },
+    {
+      "endpoint": "/api/dashboard/teams",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-teams__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/background-composer/list",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-list__post__90ad5267a204.json"
+    },
+    {
+      "endpoint": "/api/dashboard/is-on-new-pricing",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-is-on-new-pricing__post__d5d996f20404.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-user-api-keys",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-user-api-keys__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/auth/sessions",
+      "method": "GET",
+      "fixture": "captures/api/thread-merged-portal/api-auth-sessions__get__07f86f20ac51.json"
+    },
+    {
+      "endpoint": "/api/background-composer/get-mcp-config",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-mcp-config__post__382b9d8279f8.json"
+    },
+    {
+      "endpoint": "/api/background-composer/list-private-workers",
+      "method": "POST",
+      "fixture": "captures/api/agents-list/api-background-composer-list-private-workers__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-hard-limit",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-hard-limit__post__a13bf4f31d4b.json"
+    },
+    {
+      "endpoint": "/api/background-composer/list-environments",
+      "method": "POST",
+      "fixture": "captures/api/agents-list/api-background-composer-list-environments__post__95dcdbfee2fb.json"
+    },
+    {
+      "endpoint": "/api/background-composer/available-models",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-available-models__post__7b5b08079bf9.json"
+    },
+    {
+      "endpoint": "/api/dashboard/list-marketplace-plugins",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-list-marketplace-plugins__post__0b9b3a89e5fc.json"
+    },
+    {
+      "endpoint": "/api/dashboard/client-action",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-client-action__post__3fb4d8c8e44b.json"
+    },
+    {
+      "endpoint": "/api/analytics/track-events",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-analytics-track-events__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/background-composer/list-team-pool-workers",
+      "method": "POST",
+      "fixture": "captures/api/agents-list/api-background-composer-list-team-pool-workers__post__3d96b8140686.json"
+    },
+    {
+      "endpoint": "/api/background-composer/list-artifacts",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-list-artifacts__post__e6779048293d.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-monthly-invoice",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-monthly-invoice__post__d2691d8fe051.json"
+    },
+    {
+      "endpoint": "/api/auth/attachBackgroundComposerLogs",
+      "method": "POST",
+      "fixture": "captures/api/agents-list/api-auth-attachbackgroundcomposerlogs__post__1332351be31d.json"
+    },
+    {
+      "endpoint": "/api/background-composer/batch-refresh-pull-request-status",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-batch-refresh-pull-request-status__post__79fde4e02b5c.json"
+    },
+    {
+      "endpoint": "/api/connect-proxy/aiserver.v1.BackgroundComposerService/StreamConversation",
+      "method": "POST",
+      "fixture": "captures/api/agents-list/api-connect-proxy-aiserver-v1-backgroundcomposerservice-streamconversation__post__74234e98afe7.json"
+    },
+    {
+      "endpoint": "/api/background-composer/get-detailed-composer",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-detailed-composer__post__cd5188ce3d39.json"
+    },
+    {
+      "endpoint": "/api/background-composer/get-artifact",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-artifact__post__245c55f11f91.json"
+    },
+    {
+      "endpoint": "/api/background-composer/get-pull-request-merge-status",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-pull-request-merge-status__post__6b3a5e7852ba.json"
+    },
+    {
+      "endpoint": "/api/background-composer/get-blob-for-agent-kv/bc-8a1aa238-5ae6-4404-bb94-833462fbcb05/b355c769de67d0ea7c32a6417e8fbff8393c969f462aea00078c43ef5d7a4b04",
+      "method": "GET",
+      "fixture": "captures/api/agents-list/api-background-composer-get-blob-for-agent-kv-bc-8a1aa238-5ae6-4404-bb94-833462fbcb05-b355c769de67d0ea7c32a6417e8fbff8393c969f462aea00078c43ef5d7a4b04__get__74234e98afe7.json"
+    },
+    {
+      "endpoint": "/api/background-composer/get-blob-for-agent-kv/bc-8a1aa238-5ae6-4404-bb94-833462fbcb05/d98e175b9eb20f05a99704a449e14df1584c3e88da194e6ca5fb3010e1cf7ed2",
+      "method": "GET",
+      "fixture": "captures/api/agents-list/api-background-composer-get-blob-for-agent-kv-bc-8a1aa238-5ae6-4404-bb94-833462fbcb05-d98e175b9eb20f05a99704a449e14df1584c3e88da194e6ca5fb3010e1cf7ed2__get__74234e98afe7.json"
+    },
+    {
+      "endpoint": "/api/auth/get-login-scope",
+      "method": "GET",
+      "fixture": "captures/api/dashboard/api-auth-get-login-scope__get__df4eae5dbe7f.json"
+    },
+    {
+      "endpoint": "/api/dashboard/check-user-api-key-access",
+      "method": "POST",
+      "fixture": "captures/api/bugbot/api-dashboard-check-user-api-key-access__post__0d3011e46254.json"
+    },
+    {
+      "endpoint": "/api/usage-summary",
+      "method": "GET",
+      "fixture": "captures/api/bugbot/api-usage-summary__get__4eaf0c1e055c.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-active-offboarding-banner",
+      "method": "POST",
+      "fixture": "captures/api/dashboard/api-dashboard-get-active-offboarding-banner__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-effective-user-plugins",
+      "method": "POST",
+      "fixture": "captures/api/dashboard/api-dashboard-get-effective-user-plugins__post__3660bb7417ed.json"
+    },
+    {
+      "endpoint": "/api/dashboard/list-microsoft-teams-channels",
+      "method": "POST",
+      "fixture": "captures/api/automations/api-dashboard-list-microsoft-teams-channels__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-linear-status",
+      "method": "POST",
+      "fixture": "captures/api/automations/api-dashboard-get-linear-status__post__28c91a8e9555.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-slack-settings",
+      "method": "POST",
+      "fixture": "captures/api/dashboard/api-dashboard-get-slack-settings__post__69f13433edc8.json"
+    },
+    {
+      "endpoint": "/api/dashboard/list-jira-user-links",
+      "method": "POST",
+      "fixture": "captures/api/dashboard/api-dashboard-list-jira-user-links__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-pagerduty-status",
+      "method": "POST",
+      "fixture": "captures/api/automations/api-dashboard-get-pagerduty-status__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/get-pending-downgrade",
+      "method": "GET",
+      "fixture": "captures/api/bugbot/api-get-pending-downgrade__get__abde3270eee7.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-current-billing-cycle",
+      "method": "POST",
+      "fixture": "captures/api/bugbot/api-dashboard-get-current-billing-cycle__post__e415e378e0e6.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-slack-user-settings",
+      "method": "POST",
+      "fixture": "captures/api/automations/api-dashboard-get-slack-user-settings__post__2085b61faf7d.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-sentry-status",
+      "method": "POST",
+      "fixture": "captures/api/automations/api-dashboard-get-sentry-status__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-credit-grants-balance",
+      "method": "POST",
+      "fixture": "captures/api/dashboard/api-dashboard-get-credit-grants-balance__post__4b227c44d779.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-client-visible-credit-grants",
+      "method": "POST",
+      "fixture": "captures/api/dashboard/api-dashboard-get-client-visible-credit-grants__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-scm-connection-status",
+      "method": "POST",
+      "fixture": "captures/api/dashboard/api-dashboard-get-scm-connection-status__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-slack-install-url",
+      "method": "POST",
+      "fixture": "captures/api/automations/api-dashboard-get-slack-install-url__post__728a5917ba01.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-slack-model-options",
+      "method": "POST",
+      "fixture": "captures/api/dashboard/api-dashboard-get-slack-model-options__post__131c4bc258b9.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-user-analytics",
+      "method": "POST",
+      "fixture": "captures/api/dashboard/api-dashboard-get-user-analytics__post__14928ed60424.json"
+    },
+    {
+      "endpoint": "/api/get-downgrade-options",
+      "method": "GET",
+      "fixture": "captures/api/bugbot/api-get-downgrade-options__get__5e8b7e886739.json"
+    },
+    {
+      "endpoint": "/api/automations/list-workflow-templates",
+      "method": "POST",
+      "fixture": "captures/api/automations/api-automations-list-workflow-templates__post__7a34bcd5bd4f.json"
+    },
+    {
+      "endpoint": "/api/automations/get-run-summary",
+      "method": "POST",
+      "fixture": "captures/api/automations/api-automations-get-run-summary__post__6897455eafc8.json"
+    },
+    {
+      "endpoint": "/api/automations/list-automations",
+      "method": "POST",
+      "fixture": "captures/api/automations/api-automations-list-automations__post__e7b356b59266.json"
+    },
+    {
+      "endpoint": "/api/dashboard/list-slack-conversations",
+      "method": "POST",
+      "fixture": "captures/api/automations/api-dashboard-list-slack-conversations__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-bugbot-pro-user-settings",
+      "method": "POST",
+      "fixture": "captures/api/bugbot/api-dashboard-get-bugbot-pro-user-settings__post__8199d3584e75.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-service-account-spend-limit",
+      "method": "POST",
+      "fixture": "captures/api/bugbot/api-dashboard-get-service-account-spend-limit__post__0223e110ce14.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-bugbot-pr-analytics",
+      "method": "POST",
+      "fixture": "captures/api/bugbot/api-dashboard-get-bugbot-pr-analytics__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-bugbot-analytics-v2",
+      "method": "POST",
+      "fixture": "captures/api/bugbot/api-dashboard-get-bugbot-analytics-v2__post__c7fbb1cf83f2.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-bugbot-suggested-repos",
+      "method": "POST",
+      "fixture": "captures/api/bugbot/api-dashboard-get-bugbot-suggested-repos__post__56fd74749a34.json"
+    },
+    {
+      "endpoint": "/api/background-composer/get-machine",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-machine__post__74234e98afe7.json"
+    },
+    {
+      "endpoint": "/api/background-composer/get-diff-details",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-diff-details__post__68e63bc0c86b.json"
+    },
+    {
+      "endpoint": "/api/background-composer/listPendingFollowups",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-listpendingfollowups__post__44136fa355b3.json"
+    },
+    {
+      "endpoint": "/api/background-composer/get-detailed-pull-request-status",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-background-composer-get-detailed-pull-request-status__post__b2c69a6ee8f6.json"
+    },
+    {
+      "endpoint": "/api/dashboard/get-background-composer-slash-commands",
+      "method": "POST",
+      "fixture": "captures/api/thread-merged-portal/api-dashboard-get-background-composer-slash-commands__post__44136fa355b3.json"
+    }
+  ],
+  "actions": [],
+  "updated_at": "2026-06-20T10:33:38.061310+00:00"
+}

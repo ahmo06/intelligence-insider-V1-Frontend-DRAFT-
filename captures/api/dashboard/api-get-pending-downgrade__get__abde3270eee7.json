@@ -1,0 +1,11 @@
+{
+  "url": "https://cursor.com/api/get-pending-downgrade",
+  "path": "/api/get-pending-downgrade",
+  "method": "GET",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:08.174778+00:00",
+  "page_slug": "dashboard",
+  "body": {
+    "downgrade": null
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-linear-status",
+  "path": "/api/dashboard/get-linear-status",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:15.513238+00:00",
+  "page_slug": "automations",
+  "body": {
+    "status": "{\"isConnected\":false}"
+  }
+}

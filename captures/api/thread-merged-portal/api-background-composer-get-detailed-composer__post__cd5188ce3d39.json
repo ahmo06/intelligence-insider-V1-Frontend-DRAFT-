@@ -1,0 +1,122 @@
+{
+  "url": "https://cursor.com/api/background-composer/get-detailed-composer",
+  "path": "/api/background-composer/get-detailed-composer",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:37.871394+00:00",
+  "page_slug": "thread-merged-portal",
+  "body": {
+    "composers": [
+      {
+        "composer": {
+          "bcId": "bc-773361b1-8875-4853-80fb-1540cd28b9ca",
+          "createdAtMs": 1781006703504,
+          "workspaceRootPath": "/workspace",
+          "name": "Portal environment and libreoffice",
+          "branchName": "cursor/organize-portal-libreoffice-b9ca",
+          "hasStartedVm": true,
+          "repoUrl": "https://github.com/ahmo06/climate-risk-model",
+          "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+          "source": "BACKGROUND_COMPOSER_SOURCE_GLASS",
+          "updatedAtMs": 1781436892368,
+          "prUrl": "https://github.com/ahmo06/climate-risk-model/pull/4",
+          "modelDetails": {
+            "modelName": "composer-2.5",
+            "maxMode": true
+          },
+          "visibility": "user",
+          "workflowId": "cloud-agent-turn-bc-773361b1-8875-4853-80fb-1540cd28b9ca",
+          "lastMessageActivityAtMs": 1781349394918,
+          "prStatus": "PR_STATUS_OPEN",
+          "participantUserIds": [
+            317511232
+          ],
+          "requestedModel": {
+            "modelId": "composer-2.5",
+            "maxMode": true,
+            "parameters": [
+              {
+                "id": "fast",
+                "value": "false"
+              }
+            ]
+          },
+          "usePrivateWorker": false,
+          "repoUrls": [
+            "github.com/ahmo06/climate-risk-model"
+          ]
+        },
+        "startingCommit": "3f7899f3522e6164270e99437f92a50af14843db",
+        "baseBranch": "main",
+        "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "modelDetails": {
+          "modelName": "composer-2.5",
+          "maxMode": true
+        },
+        "openAsCursorGithubApp": false,
+        "skipReviewerRequest": false,
+        "autoBranch": true,
+        "prs": [
+          {
+            "branchName": "cursor/organize-portal-libreoffice-b9ca",
+            "baseBranch": "main",
+            "scmRepoNodeId": "R_kgDOS1W-Ng",
+            "pullNumber": 4,
+            "prStatus": "PR_STATUS_OPEN",
+            "prUrl": "https://github.com/ahmo06/climate-risk-model/pull/4",
+            "scmProvider": "GITHUB"
+          },
+          {
+            "branchName": "cursor/remediation-blast-radius-b9ca",
+            "baseBranch": "cursor/excel-live-review-register-b9ca",
+            "scmRepoNodeId": "R_kgDOS1W-Ng",
+            "pullNumber": 3,
+            "prStatus": "PR_STATUS_OPEN",
+            "prUrl": "https://github.com/ahmo06/climate-risk-model/pull/3",
+            "scmProvider": "GITHUB"
+          },
+          {
+            "branchName": "cursor/excel-live-review-register-b9ca",
+            "baseBranch": "cursor/organize-portal-libreoffice-b9ca",
+            "scmRepoNodeId": "R_kgDOS1W-Ng",
+            "pullNumber": 2,
+            "prStatus": "PR_STATUS_OPEN",
+            "prUrl": "https://github.com/ahmo06/climate-risk-model/pull/2",
+            "scmProvider": "GITHUB"
+          }
+        ],
+        "originalConversationAction": {
+          "userMessageAction": {
+            "userMessage": {
+              "text": "please study the repo unpack the files and organize everything in it in the portal and let prepare the environment with libre office for docx and excel review and working with them",
+              "messageId": "044c328e-ab81-49c4-8f28-e8690b76fef0",
+              "selectedContext": {},
+              "mode": "AGENT_MODE_AGENT",
+              "richText": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"please study the repo unpack the files and organize everything in it in the portal and let prepare the environment with libre office for docx and excel review and working with them \"}]}]}"
+            },
+            "sendToInteractionListener": true
+          }
+        },
+        "environmentName": "ahmo06/climate-risk-model",
+        "requestedModel": {
+          "modelId": "composer-2.5",
+          "maxMode": true,
+          "parameters": [
+            {
+              "id": "fast",
+              "value": "false"
+            }
+          ]
+        }
+      }
+    ],
+    "participants": [
+      {
+        "userId": 317511232,
+        "displayName": "Ameer Mubaslat",
+        "email": "ameermobaslat@gmail.com",
+        "profilePictureUrl": "https://workoscdn.com/images/v1/jNVlQ10SkKP1kaaKrNfTbllAc03iXQvMKY5fwdZcDXo"
+      }
+    ]
+  }
+}

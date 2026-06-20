@@ -1,0 +1,9 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-sentry-status",
+  "path": "/api/dashboard/get-sentry-status",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:08.192948+00:00",
+  "page_slug": "dashboard",
+  "body": {}
+}

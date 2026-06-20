@@ -1,0 +1,92 @@
+{
+  "source": "live-capture",
+  "origin": "https://cursor.com",
+  "pages": [
+    {
+      "slug": "agents-list",
+      "route": "/agents",
+      "title": "Agents",
+      "htmlClass": "light",
+      "stylesheets": [
+        "/captured-static/_next/static/chunks/03uzl1xm~yyyf.css",
+        "/captured-static/_next/static/chunks/05vyfd.w07p~~.css",
+        "/captured-static/_next/static/chunks/05z040qukrtkv.css",
+        "/captured-static/_next/static/chunks/0c.v-yjrjb6e1.css",
+        "/captured-static/_next/static/chunks/0kg5y2fj8~m1k.css",
+        "/captured-static/_next/static/chunks/0stl~p0j_-xu1.css",
+        "/captured-static/_next/static/chunks/0t91degr4k8_h.css",
+        "/captured-static/_next/static/chunks/0vbjbxpjd~evs.css",
+        "/captured-static/_next/static/chunks/0y2s0fg72aq-d.css",
+        "/captured-static/_next/static/chunks/0zz9o68817or3.css",
+        "/captured-static/_next/static/chunks/18d7iik7hearp.css"
+      ],
+      "inlineStylesFile": "captured/agents-list.inline.css",
+      "bodyFile": "captured/agents-list.html",
+      "bytes": 88217
+    },
+    {
+      "slug": "automations",
+      "route": "/automations",
+      "title": "Automations",
+      "htmlClass": "light",
+      "stylesheets": [
+        "/captured-static/_next/static/chunks/03uzl1xm~yyyf.css",
+        "/captured-static/_next/static/chunks/095u-vw0u-s3n.css",
+        "/captured-static/_next/static/chunks/0c.v-yjrjb6e1.css",
+        "/captured-static/_next/static/chunks/0stl~p0j_-xu1.css",
+        "/captured-static/_next/static/chunks/0t91degr4k8_h.css",
+        "/captured-static/_next/static/chunks/0vbjbxpjd~evs.css",
+        "/captured-static/_next/static/chunks/0zz9o68817or3.css",
+        "/captured-static/_next/static/chunks/18d7iik7hearp.css"
+      ],
+      "inlineStylesFile": "captured/automations.inline.css",
+      "bodyFile": "captured/automations.html",
+      "bytes": 78856
+    },
+    {
+      "slug": "thread-merged-portal",
+      "route": "/agents/bc-773361b1-8875-4853-80fb-1540cd28b9ca",
+      "title": "Thread",
+      "htmlClass": "light",
+      "stylesheets": [
+        "/captured-static/_next/static/chunks/03uzl1xm~yyyf.css",
+        "/captured-static/_next/static/chunks/05vyfd.w07p~~.css",
+        "/captured-static/_next/static/chunks/08v.l.16egz0k.css",
+        "/captured-static/_next/static/chunks/0c.v-yjrjb6e1.css",
+        "/captured-static/_next/static/chunks/0kg5y2fj8~m1k.css",
+        "/captured-static/_next/static/chunks/0stl~p0j_-xu1.css",
+        "/captured-static/_next/static/chunks/0t91degr4k8_h.css",
+        "/captured-static/_next/static/chunks/0vbjbxpjd~evs.css",
+        "/captured-static/_next/static/chunks/0y2s0fg72aq-d.css",
+        "/captured-static/_next/static/chunks/0zz9o68817or3.css",
+        "/captured-static/_next/static/chunks/18d7iik7hearp.css"
+      ],
+      "inlineStylesFile": "captured/thread-merged-portal.inline.css",
+      "bodyFile": "captured/thread-merged-portal.html",
+      "bytes": 835430
+    },
+    {
+      "slug": "login",
+      "route": "/login",
+      "title": "Sign in",
+      "htmlClass": "dark",
+      "stylesheets": [
+        "/captured-static/_next/static/chunks/03uzl1xm~yyyf.css",
+        "/captured-static/_next/static/chunks/05vyfd.w07p~~.css",
+        "/captured-static/_next/static/chunks/05z040qukrtkv.css",
+        "/captured-static/_next/static/chunks/0c.v-yjrjb6e1.css",
+        "/captured-static/_next/static/chunks/0kg5y2fj8~m1k.css",
+        "/captured-static/_next/static/chunks/0stl~p0j_-xu1.css",
+        "/captured-static/_next/static/chunks/0t91degr4k8_h.css",
+        "/captured-static/_next/static/chunks/0vbjbxpjd~evs.css",
+        "/captured-static/_next/static/chunks/0y2s0fg72aq-d.css",
+        "/captured-static/_next/static/chunks/0zz9o68817or3.css",
+        "/captured-static/_next/static/chunks/18d7iik7hearp.css"
+      ],
+      "inlineStylesFile": "captured/login.inline.css",
+      "bodyFile": "captured/login.html",
+      "bytes": 9966
+    }
+  ],
+  "assets_cached": 235
+}

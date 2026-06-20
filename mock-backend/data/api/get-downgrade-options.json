@@ -1,1 +1,20 @@
-{"options":[{"productId":"prod_NZkQOuhPo4nGoU","priceId":"price_1MoavwB4TZWxSIGUOn5vlWbD","name":"Pro","isYearly":false},{"productId":"prod_SYMzTA5DouJPes","priceId":"price_1RdGFRB4TZWxSIGUy2IGCVYq","name":"Pro+","isYearly":false}],"cycleEndDate":"2026-07-15T11:34:01.000Z","currentProductId":"prod_SRMc713M0kQuIW","subscriptionId":"sub_1T1i5YB4TZWxSIGUg446BI2c","isCurrentPlanYearly":false}
+{
+  "options": [
+    {
+      "productId": "prod_NZkQOuhPo4nGoU",
+      "priceId": "price_1MoavwB4TZWxSIGUOn5vlWbD",
+      "name": "Pro",
+      "isYearly": false
+    },
+    {
+      "productId": "prod_SYMzTA5DouJPes",
+      "priceId": "price_1RdGFRB4TZWxSIGUy2IGCVYq",
+      "name": "Pro+",
+      "isYearly": false
+    }
+  ],
+  "cycleEndDate": "2026-07-15T11:34:01.000Z",
+  "currentProductId": "prod_SRMc713M0kQuIW",
+  "subscriptionId": "sub_1T1i5YB4TZWxSIGUg446BI2c",
+  "isCurrentPlanYearly": false
+}

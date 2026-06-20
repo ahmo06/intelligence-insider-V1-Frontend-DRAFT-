@@ -1,0 +1,240 @@
+{
+  "url": "https://cursor.com/api/background-composer/batch-refresh-pull-request-status",
+  "path": "/api/background-composer/batch-refresh-pull-request-status",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:03.518713+00:00",
+  "page_slug": "agents-list",
+  "body": {
+    "results": {
+      "bc-6bf8ca49-69ae-486e-857c-3f36759346bf": {
+        "mergeableState": "dirty",
+        "state": "open",
+        "title": "docs(migration): CLI\u2192in-process runtime execution plan + options assessment",
+        "baseBranch": "main",
+        "viewerCanEnableAutoMerge": false
+      },
+      "bc-f430c572-3eae-400c-a541-09562e44d5ad": {
+        "mergeableState": "unstable",
+        "state": "open",
+        "isDraft": true,
+        "title": "Set up AI Agent System with Docker, CI/CD, and multi-agent test suite",
+        "baseBranch": "main",
+        "checkStatus": {
+          "overallState": "FAILURE",
+          "successCount": 2,
+          "failureCount": 4,
+          "skippedCount": 2,
+          "totalCount": 8,
+          "checks": [
+            {
+              "name": "CI / Backend Tests",
+              "status": "failure",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-kimi-/actions/runs/27507365021/job/81300914540",
+              "startedAt": "2026-06-14T18:00:52Z",
+              "completedAt": "2026-06-14T18:02:02Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "81300914540",
+              "canRerun": true
+            },
+            {
+              "name": "CI / Backend Tests",
+              "status": "failure",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-kimi-/actions/runs/27507363973/job/81300911581",
+              "startedAt": "2026-06-14T18:00:42Z",
+              "completedAt": "2026-06-14T18:01:51Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "81300911581",
+              "canRerun": true
+            },
+            {
+              "name": "CI / Frontend Test Agent",
+              "status": "success",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-kimi-/actions/runs/27507365021/job/81300914544",
+              "startedAt": "2026-06-14T18:00:45Z",
+              "completedAt": "2026-06-14T18:01:28Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "81300914544"
+            },
+            {
+              "name": "CI / Frontend Test Agent",
+              "status": "success",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-kimi-/actions/runs/27507363973/job/81300911586",
+              "startedAt": "2026-06-14T18:00:42Z",
+              "completedAt": "2026-06-14T18:01:23Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "81300911586"
+            },
+            {
+              "name": "CI / Frontend Build",
+              "status": "failure",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-kimi-/actions/runs/27507365021/job/81300914526",
+              "startedAt": "2026-06-14T18:00:52Z",
+              "completedAt": "2026-06-14T18:01:22Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "81300914526",
+              "canRerun": true
+            },
+            {
+              "name": "CI / Frontend Build",
+              "status": "failure",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-kimi-/actions/runs/27507363973/job/81300911585",
+              "startedAt": "2026-06-14T18:00:50Z",
+              "completedAt": "2026-06-14T18:01:27Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "81300911585",
+              "canRerun": true
+            },
+            {
+              "name": "CI / Docker Compose Build",
+              "status": "skipped",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-kimi-/actions/runs/27507365021/job/81301014205",
+              "startedAt": "2026-06-14T18:02:03Z",
+              "completedAt": "2026-06-14T18:02:02Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "81301014205"
+            },
+            {
+              "name": "CI / Docker Compose Build",
+              "status": "skipped",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-kimi-/actions/runs/27507363973/job/81301001613",
+              "startedAt": "2026-06-14T18:01:52Z",
+              "completedAt": "2026-06-14T18:01:51Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "81301001613"
+            }
+          ]
+        },
+        "viewerCanEnableAutoMerge": false
+      },
+      "bc-91342439-9842-40c4-a14b-08d11dc86941": {
+        "mergeableState": "clean",
+        "state": "open",
+        "isDraft": true,
+        "title": "CE Roadmap review: content/flow/consistency report + references audit",
+        "baseBranch": "main",
+        "viewerCanEnableAutoMerge": false
+      },
+      "bc-b11c3ab1-6cbe-43e0-b147-c453cc2ee38b": {
+        "mergeableState": "unstable",
+        "state": "open",
+        "isDraft": true,
+        "title": "Scaffold disconnected frontend with reference workflow and layout/theme guides",
+        "baseBranch": "main",
+        "checkStatus": {
+          "overallState": "FAILURE",
+          "successCount": 4,
+          "failureCount": 2,
+          "skippedCount": 4,
+          "totalCount": 10,
+          "checks": [
+            {
+              "name": "CI / validate-scaffold",
+              "status": "success",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-V1/actions/runs/27867622775/job/82474206267",
+              "startedAt": "2026-06-20T09:54:53Z",
+              "completedAt": "2026-06-20T09:55:07Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "82474206267"
+            },
+            {
+              "name": "CI / validate-scaffold",
+              "status": "success",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-V1/actions/runs/27867621987/job/82474204235",
+              "startedAt": "2026-06-20T09:54:51Z",
+              "completedAt": "2026-06-20T09:55:05Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "82474204235"
+            },
+            {
+              "name": "CI / python",
+              "status": "failure",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-V1/actions/runs/27867622775/job/82474206247",
+              "startedAt": "2026-06-20T09:54:53Z",
+              "completedAt": "2026-06-20T09:55:18Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "82474206247",
+              "canRerun": true
+            },
+            {
+              "name": "CI / python",
+              "status": "failure",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-V1/actions/runs/27867621987/job/82474204237",
+              "startedAt": "2026-06-20T09:54:51Z",
+              "completedAt": "2026-06-20T09:55:16Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "82474204237",
+              "canRerun": true
+            },
+            {
+              "name": "CI / integration",
+              "status": "skipped",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-V1/actions/runs/27867622775/job/82474206503",
+              "startedAt": "2026-06-20T09:54:52Z",
+              "completedAt": "2026-06-20T09:54:51Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "82474206503"
+            },
+            {
+              "name": "CI / integration",
+              "status": "skipped",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-V1/actions/runs/27867621987/job/82474204516",
+              "startedAt": "2026-06-20T09:54:49Z",
+              "completedAt": "2026-06-20T09:54:49Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "82474204516"
+            },
+            {
+              "name": "CI / web",
+              "status": "success",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-V1/actions/runs/27867622775/job/82474220517",
+              "startedAt": "2026-06-20T09:55:09Z",
+              "completedAt": "2026-06-20T09:57:08Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "82474220517"
+            },
+            {
+              "name": "CI / web",
+              "status": "success",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-V1/actions/runs/27867621987/job/82474218454",
+              "startedAt": "2026-06-20T09:55:18Z",
+              "completedAt": "2026-06-20T09:57:20Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "82474218454"
+            },
+            {
+              "name": "CI / agent-review",
+              "status": "skipped",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-V1/actions/runs/27867622775/job/82474232599",
+              "startedAt": "2026-06-20T09:55:19Z",
+              "completedAt": "2026-06-20T09:55:18Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "82474232599"
+            },
+            {
+              "name": "CI / agent-review",
+              "status": "skipped",
+              "detailsUrl": "https://github.com/ahmo06/intelligence-insider-V1/actions/runs/27867621987/job/82474230251",
+              "startedAt": "2026-06-20T09:55:17Z",
+              "completedAt": "2026-06-20T09:55:16Z",
+              "provider": "github_actions_job",
+              "providerCheckId": "82474230251"
+            }
+          ]
+        },
+        "viewerCanEnableAutoMerge": false
+      },
+      "bc-a06de87e-6bbc-42f5-8ca8-05047b81be2a": {
+        "mergeableState": "clean",
+        "state": "open",
+        "isDraft": true,
+        "title": "Live site backup, photo extraction, and safe deployment guide",
+        "baseBranch": "main",
+        "viewerCanEnableAutoMerge": false
+      }
+    },
+    "failedBcIds": [
+      "bc-88d4e925-b1a3-466d-8475-9feaeaa5341a"
+    ]
+  }
+}

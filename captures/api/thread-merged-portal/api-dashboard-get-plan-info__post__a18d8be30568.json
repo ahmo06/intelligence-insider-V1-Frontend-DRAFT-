@@ -1,0 +1,16 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-plan-info",
+  "path": "/api/dashboard/get-plan-info",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:37.840297+00:00",
+  "page_slug": "thread-merged-portal",
+  "body": {
+    "planInfo": {
+      "planName": "Ultra",
+      "includedAmountCents": 40000,
+      "price": "$200/mo",
+      "billingCycleEnd": "1784115241000"
+    }
+  }
+}

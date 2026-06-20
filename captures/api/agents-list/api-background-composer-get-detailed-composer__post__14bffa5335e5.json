@@ -1,0 +1,989 @@
+{
+  "url": "https://cursor.com/api/background-composer/get-detailed-composer",
+  "path": "/api/background-composer/get-detailed-composer",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:27:30.339584+00:00",
+  "page_slug": "agents-list",
+  "body": {
+    "composers": [
+      {
+        "composer": {
+          "bcId": "bc-8a1aa238-5ae6-4404-bb94-833462fbcb05",
+          "createdAtMs": 1781917618462,
+          "workspaceRootPath": "/workspace",
+          "name": "Development environment setup",
+          "hasStartedVm": true,
+          "repoUrl": "https://github.com/ahmo06/intelligence-insider-v1-frontend-draft-",
+          "status": "BACKGROUND_COMPOSER_STATUS_RUNNING",
+          "isUnread": true,
+          "source": "BACKGROUND_COMPOSER_SOURCE_GLASS",
+          "updatedAtMs": 1781950447956,
+          "modelDetails": {
+            "modelName": "default",
+            "maxMode": false
+          },
+          "visibility": "user",
+          "workflowId": "cloud-agent-turn-bc-8a1aa238-5ae6-4404-bb94-833462fbcb05",
+          "lastMessageActivityAtMs": 1781950140898,
+          "participantUserIds": [
+            317511232
+          ],
+          "requestedModel": {
+            "modelId": "default",
+            "maxMode": true
+          },
+          "usePrivateWorker": false,
+          "repoUrls": [
+            "github.com/ahmo06/intelligence-insider-v1-frontend-draft-"
+          ],
+          "environmentName": "ahmo06/intelligence-insider-v1-frontend-draft-"
+        },
+        "startingCommit": "33bab524dfa20d5f8e655b6f0cfb61f7859ee9c5",
+        "baseBranch": "main",
+        "prompt": {},
+        "status": "BACKGROUND_COMPOSER_STATUS_RUNNING",
+        "modelDetails": {
+          "modelName": "default",
+          "maxMode": true
+        },
+        "unread": true,
+        "openAsCursorGithubApp": false,
+        "skipReviewerRequest": false,
+        "autoBranch": true,
+        "originalConversationAction": {
+          "userMessageAction": {
+            "userMessage": {
+              "text": "Please set up the development environment for this codebase. Run the application(s) in preperation for next steps.",
+              "messageId": "effd81ce-61ca-40dc-8bc0-f0fb5c500263",
+              "selectedContext": {},
+              "mode": "AGENT_MODE_AGENT",
+              "richText": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Please set up the development environment for this codebase. Run the application(s) in preperation for next steps.\"}]}]}"
+            },
+            "sendToInteractionListener": true
+          }
+        },
+        "repoConfig": {
+          "repos": [
+            {
+              "repoUrl": "github.com/ahmo06/intelligence-insider-v1-frontend-draft-"
+            }
+          ]
+        },
+        "environmentName": "ahmo06/intelligence-insider-v1-frontend-draft-",
+        "usedEnvironmentVersion": {
+          "publicId": "bfc95ed3-c1ae-4caa-8c66-cd199095872c",
+          "sourceKind": "ENVIRONMENT_VERSION_SOURCE_KIND_DATABASE_USER",
+          "environmentPublicId": "14cf1d78-0baa-443f-9b7b-8c3ddebf64ab",
+          "repoConfig": {
+            "repoUrls": [
+              "github.com/ahmo06/intelligence-insider-v1-frontend-draft-"
+            ]
+          },
+          "createdAtMs": "1781917561849",
+          "environmentName": "ahmo06/intelligence-insider-v1-frontend-draft-",
+          "recordedVia": "SETUP_FLOW"
+        },
+        "requestedModel": {
+          "modelId": "default",
+          "maxMode": true
+        }
+      },
+      {
+        "composer": {
+          "bcId": "bc-b11c3ab1-6cbe-43e0-b147-c453cc2ee38b",
+          "createdAtMs": 1781947482497,
+          "workspaceRootPath": "/workspace",
+          "name": "Frontend Development",
+          "branchName": "cursor/frontend-scaffold-e38b",
+          "hasStartedVm": true,
+          "repoUrl": "https://github.com/ahmo06/intelligence-insider-v1",
+          "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+          "isUnread": true,
+          "source": "BACKGROUND_COMPOSER_SOURCE_GLASS",
+          "updatedAtMs": 1781949299570,
+          "prUrl": "https://github.com/ahmo06/intelligence-insider-V1/pull/89",
+          "linesAdded": 8669,
+          "linesRemoved": 1,
+          "filesChanged": 43,
+          "modelDetails": {
+            "modelName": "default",
+            "maxMode": false
+          },
+          "visibility": "user",
+          "workflowId": "cloud-agent-turn-bc-b11c3ab1-6cbe-43e0-b147-c453cc2ee38b",
+          "lastMessageActivityAtMs": 1781949299188,
+          "prStatus": "PR_STATUS_DRAFT",
+          "participantUserIds": [
+            317511232
+          ],
+          "requestedModel": {
+            "modelId": "default",
+            "maxMode": true
+          },
+          "usePrivateWorker": false,
+          "repoUrls": [
+            "github.com/ahmo06/intelligence-insider-v1"
+          ],
+          "environmentName": "ahmo06/intelligence-insider-V1"
+        },
+        "startingCommit": "a31047eb7b43145375be8574cca0f7213b149cb6",
+        "baseBranch": "main",
+        "prompt": {},
+        "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "modelDetails": {
+          "modelName": "default",
+          "maxMode": true
+        },
+        "unread": true,
+        "openAsCursorGithubApp": false,
+        "skipReviewerRequest": false,
+        "autoBranch": true,
+        "prs": [
+          {
+            "branchName": "cursor/frontend-scaffold-e38b",
+            "baseBranch": "main",
+            "scmRepoNodeId": "R_kgDOS6gNPA",
+            "pullNumber": 89,
+            "prStatus": "PR_STATUS_DRAFT",
+            "prUrl": "https://github.com/ahmo06/intelligence-insider-V1/pull/89",
+            "scmProvider": "GITHUB"
+          }
+        ],
+        "originalConversationAction": {
+          "userMessageAction": {
+            "userMessage": {
+              "text": "now we want to build the front end not connected first to make sure functionalities we want are created and then we will map to the backend to seee what we missed or implemented wrong ... use this as base to build from it is only meant as base for everything to start with as it is a snapshot of a page so we need to build code from scratch and themes and components and panels and pages with the same functionalities and options (git@github.com:ahmo06/intelligence-insider-V1-Frontend-DRAFT-.git) i will prompt you how to start but lets start by copying this repo into a dediccated reference folder and create a frontend folder for the new frontend to be developed with proper guidance and also build the layout and theme guidance to be read when developing each component",
+              "messageId": "23684296-d181-4fa1-b162-c4a46bdf4cc9",
+              "selectedContext": {},
+              "mode": "AGENT_MODE_AGENT",
+              "richText": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"now we want to build the front end not connected first to make sure functionalities we want are created and then we will map to the backend to seee what we missed or implemented wrong ... use this as base to build from it is only meant as base for everything to start with as it is a snapshot of a page so we need to build code from scratch and themes and components and panels and pages with the same functionalities and options (git@github.com:ahmo06/intelligence-insider-V1-Frontend-DRAFT-.git) i will prompt you how to start but lets start by copying this repo into a dediccated reference folder and create a frontend folder for the new frontend to be developed with proper guidance and also build the layout and theme guidance to be read when developing each component\"}]}]}"
+            },
+            "sendToInteractionListener": true
+          }
+        },
+        "repoConfig": {
+          "repos": [
+            {
+              "repoUrl": "github.com/ahmo06/intelligence-insider-v1"
+            }
+          ]
+        },
+        "environmentName": "ahmo06/intelligence-insider-V1",
+        "usedEnvironmentVersion": {
+          "publicId": "4b3922ba-113d-4d44-8377-bc29d3b94e29",
+          "sourceKind": "ENVIRONMENT_VERSION_SOURCE_KIND_DATABASE_USER",
+          "environmentPublicId": "00782217-1774-4db4-8a80-d251f556d912",
+          "repoConfig": {
+            "repoUrls": [
+              "github.com/ahmo06/intelligence-insider-v1"
+            ]
+          },
+          "createdAtMs": "1781946845011",
+          "environmentName": "ahmo06/intelligence-insider-V1",
+          "snapshotId": "snapshot-20260620-a5376c4a-d836-468f-a039-c749f77eaee2",
+          "recordedVia": "SETUP_FLOW"
+        },
+        "requestedModel": {
+          "modelId": "default",
+          "maxMode": true
+        }
+      },
+      {
+        "composer": {
+          "bcId": "bc-6bf8ca49-69ae-486e-857c-3f36759346bf",
+          "createdAtMs": 1780528045331,
+          "workspaceRootPath": "/workspace",
+          "name": "(tab 1) intelligence insider.",
+          "branchName": "cursor/dev-environment-setup-aa66",
+          "hasStartedVm": true,
+          "repoUrl": "https://github.com/ahmo06/intelligence-insider-v0.0",
+          "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+          "source": "BACKGROUND_COMPOSER_SOURCE_GLASS",
+          "updatedAtMs": 1781902541097,
+          "prUrl": "https://github.com/ahmo06/intelligence-insider-V0.0/pull/2",
+          "linesAdded": 5042,
+          "linesRemoved": 151,
+          "filesChanged": 103,
+          "modelDetails": {
+            "modelName": "composer-2.5",
+            "maxMode": true
+          },
+          "visibility": "user",
+          "workflowId": "cloud-agent-turn-bc-6bf8ca49-69ae-486e-857c-3f36759346bf",
+          "lastMessageActivityAtMs": 1781442479875,
+          "prStatus": "PR_STATUS_OPEN",
+          "participantUserIds": [
+            317511232
+          ],
+          "requestedModel": {
+            "modelId": "composer-2.5",
+            "maxMode": true,
+            "parameters": [
+              {
+                "id": "fast",
+                "value": "false"
+              }
+            ]
+          },
+          "usePrivateWorker": false,
+          "repoUrls": [
+            "github.com/ahmo06/intelligence-insider-v0.0"
+          ]
+        },
+        "startingCommit": "a0a3316f31d1c99f5d557c47989613adfed16590",
+        "baseBranch": "cursor/dev-environment-setup-aa66",
+        "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "modelDetails": {
+          "modelName": "composer-2.5",
+          "maxMode": true
+        },
+        "openAsCursorGithubApp": false,
+        "skipReviewerRequest": false,
+        "videoAnnotations": [
+          {
+            "artifactPath": "/opt/cursor/artifacts/insider-dev-environment-browser-validation.mp4",
+            "annotation": {
+              "labeledChapters": [
+                {
+                  "startTime": {},
+                  "label": "Navigating to application URL",
+                  "shouldHide": true
+                },
+                {
+                  "startTime": {
+                    "seconds": 9
+                  },
+                  "label": "Validating application load",
+                  "shouldHide": true
+                },
+                {
+                  "startTime": {
+                    "seconds": 23
+                  },
+                  "label": "Browsing application features"
+                },
+                {
+                  "startTime": {
+                    "seconds": 33
+                  },
+                  "label": "Interacting with Dispatch feature"
+                }
+              ],
+              "thumbnailTimestamp": {
+                "seconds": 28
+              },
+              "trimStartSeconds": 0,
+              "trimEndSeconds": 2
+            }
+          },
+          {
+            "artifactPath": "/opt/cursor/artifacts/insider-chat-minimax-cli-check.mp4",
+            "annotation": {
+              "labeledChapters": [
+                {
+                  "startTime": {},
+                  "label": "Navigating and checking settings",
+                  "shouldHide": true
+                },
+                {
+                  "startTime": {
+                    "seconds": 14
+                  },
+                  "label": "Sending chat message"
+                },
+                {
+                  "startTime": {
+                    "seconds": 27
+                  },
+                  "label": "Inspecting console errors"
+                }
+              ],
+              "thumbnailTimestamp": {
+                "seconds": 38.5
+              },
+              "trimStartSeconds": 0,
+              "trimEndSeconds": 2
+            }
+          },
+          {
+            "artifactPath": "/opt/cursor/artifacts/crush-visual-validation-after-setup.mp4",
+            "annotation": {
+              "labeledChapters": [
+                {
+                  "startTime": {},
+                  "label": "Initial chat interaction"
+                },
+                {
+                  "startTime": {
+                    "seconds": 26
+                  },
+                  "label": "Setting up assistant",
+                  "shouldHide": true
+                },
+                {
+                  "startTime": {
+                    "seconds": 51
+                  },
+                  "label": "Navigating and greeting response"
+                },
+                {
+                  "startTime": {
+                    "minutes": 1,
+                    "seconds": 9
+                  },
+                  "label": "Agent responds to math"
+                },
+                {
+                  "startTime": {
+                    "minutes": 1,
+                    "seconds": 34
+                  },
+                  "label": "Reloading and new math query"
+                },
+                {
+                  "startTime": {
+                    "minutes": 2
+                  },
+                  "label": "Observing token donut bug"
+                }
+              ],
+              "thumbnailTimestamp": {
+                "minutes": 1,
+                "seconds": 25
+              },
+              "trimStartSeconds": 0,
+              "trimEndSeconds": 2
+            }
+          }
+        ],
+        "autoBranch": true,
+        "prs": [
+          {
+            "branchName": "cursor/duplicate-three-repos-46bf",
+            "baseBranch": "cursor/dev-environment-setup-aa66",
+            "scmRepoNodeId": "R_kgDOR6VJxQ",
+            "pullNumber": 12,
+            "prStatus": "PR_STATUS_DRAFT",
+            "prUrl": "https://github.com/ahmo06/intelligence-insider-V0.0/pull/12",
+            "scmProvider": "GITHUB"
+          },
+          {
+            "branchName": "cursor/quota-error-handling-46bf",
+            "baseBranch": "cursor/crush-wiring-long-46bf",
+            "scmRepoNodeId": "R_kgDOR6VJxQ",
+            "pullNumber": 11,
+            "prStatus": "PR_STATUS_DRAFT",
+            "prUrl": "https://github.com/ahmo06/intelligence-insider-V0.0/pull/11",
+            "scmProvider": "GITHUB"
+          },
+          {
+            "branchName": "cursor/crush-wiring-long-46bf",
+            "baseBranch": "cursor/dev-environment-setup-aa66",
+            "scmRepoNodeId": "R_kgDOR6VJxQ",
+            "pullNumber": 10,
+            "prStatus": "PR_STATUS_DRAFT",
+            "prUrl": "https://github.com/ahmo06/intelligence-insider-V0.0/pull/10",
+            "scmProvider": "GITHUB"
+          },
+          {
+            "branchName": "cursor/heartbeat-thinking-ui-46bf",
+            "baseBranch": "cursor/dev-environment-setup-aa66",
+            "scmRepoNodeId": "R_kgDOR6VJxQ",
+            "pullNumber": 9,
+            "prStatus": "PR_STATUS_DRAFT",
+            "prUrl": "https://github.com/ahmo06/intelligence-insider-V0.0/pull/9",
+            "scmProvider": "GITHUB"
+          },
+          {
+            "branchName": "cursor/crush-parity-46bf",
+            "baseBranch": "cursor/dev-environment-setup-aa66",
+            "scmRepoNodeId": "R_kgDOR6VJxQ",
+            "pullNumber": 8,
+            "prStatus": "PR_STATUS_DRAFT",
+            "prUrl": "https://github.com/ahmo06/intelligence-insider-V0.0/pull/8",
+            "scmProvider": "GITHUB"
+          },
+          {
+            "branchName": "cursor/m4-brain-46bf",
+            "baseBranch": "cursor/s10-post-cutover-46bf",
+            "scmRepoNodeId": "R_kgDOR6VJxQ",
+            "pullNumber": 7,
+            "prStatus": "PR_STATUS_DRAFT",
+            "prUrl": "https://github.com/ahmo06/intelligence-insider-V0.0/pull/7",
+            "scmProvider": "GITHUB"
+          },
+          {
+            "branchName": "cursor/s10-post-cutover-46bf",
+            "baseBranch": "cursor/s9-cli-decommission-46bf",
+            "scmRepoNodeId": "R_kgDOR6VJxQ",
+            "pullNumber": 6,
+            "prStatus": "PR_STATUS_DRAFT",
+            "prUrl": "https://github.com/ahmo06/intelligence-insider-V0.0/pull/6",
+            "scmProvider": "GITHUB"
+          },
+          {
+            "branchName": "cursor/s9-cli-decommission-46bf",
+            "baseBranch": "cursor/dev-environment-setup-aa66",
+            "scmRepoNodeId": "R_kgDOR6VJxQ",
+            "pullNumber": 5,
+            "prStatus": "PR_STATUS_DRAFT",
+            "prUrl": "https://github.com/ahmo06/intelligence-insider-V0.0/pull/5",
+            "scmProvider": "GITHUB"
+          },
+          {
+            "branchName": "cursor/crush-chat-runtime-plan-46bf",
+            "baseBranch": "cursor/dev-environment-setup-aa66",
+            "scmRepoNodeId": "R_kgDOR6VJxQ",
+            "pullNumber": 4,
+            "prStatus": "PR_STATUS_OPEN",
+            "prUrl": "https://github.com/ahmo06/intelligence-insider-V0.0/pull/4",
+            "scmProvider": "GITHUB"
+          },
+          {
+            "branchName": "cursor/dev-environment-setup-aa66",
+            "baseBranch": "main",
+            "scmRepoNodeId": "R_kgDOR6VJxQ",
+            "pullNumber": 2,
+            "prStatus": "PR_STATUS_DRAFT",
+            "prUrl": "https://github.com/ahmo06/intelligence-insider-V0.0/pull/2",
+            "scmProvider": "GITHUB"
+          }
+        ],
+        "originalConversationAction": {
+          "userMessageAction": {
+            "userMessage": {
+              "text": "do you have access to the whole dev environment ?",
+              "messageId": "8b8427b1-a60e-4add-94e5-57a718e3b4f0",
+              "selectedContext": {},
+              "mode": "AGENT_MODE_AGENT",
+              "richText": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"do you have access to the whole dev environment ?\"}]}]}"
+            },
+            "sendToInteractionListener": true
+          }
+        },
+        "environmentName": "intelligence-insider-v0.0",
+        "requestedModel": {
+          "modelId": "composer-2.5",
+          "maxMode": true,
+          "parameters": [
+            {
+              "id": "fast",
+              "value": "false"
+            }
+          ]
+        }
+      },
+      {
+        "composer": {
+          "bcId": "bc-91342439-9842-40c4-a14b-08d11dc86941",
+          "createdAtMs": 1781529535225,
+          "workspaceRootPath": "/workspace",
+          "name": "Circularity roadmap review",
+          "branchName": "cursor/ce-roadmap-review-report-6941",
+          "hasStartedVm": true,
+          "repoUrl": "https://github.com/ahmo06/ce-roadmap-review-",
+          "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+          "source": "BACKGROUND_COMPOSER_SOURCE_GLASS",
+          "updatedAtMs": 1781610724010,
+          "prUrl": "https://github.com/ahmo06/CE-roadmap-review-/pull/1",
+          "linesAdded": 8959,
+          "linesRemoved": 38,
+          "filesChanged": 98,
+          "modelDetails": {
+            "modelName": "claude-opus-4-8-thinking-xhigh",
+            "maxMode": true
+          },
+          "visibility": "user",
+          "workflowId": "cloud-agent-turn-bc-91342439-9842-40c4-a14b-08d11dc86941",
+          "lastMessageActivityAtMs": 1781610646339,
+          "prStatus": "PR_STATUS_DRAFT",
+          "participantUserIds": [
+            317511232
+          ],
+          "requestedModel": {
+            "modelId": "claude-opus-4-8",
+            "maxMode": true,
+            "parameters": [
+              {
+                "id": "thinking",
+                "value": "true"
+              },
+              {
+                "id": "context",
+                "value": "300k"
+              },
+              {
+                "id": "effort",
+                "value": "xhigh"
+              },
+              {
+                "id": "fast",
+                "value": "false"
+              }
+            ]
+          },
+          "usePrivateWorker": false,
+          "repoUrls": [
+            "github.com/ahmo06/ce-roadmap-review-"
+          ]
+        },
+        "startingCommit": "32271ca47e29284d29ba35eb6ad00113e52bd4a1",
+        "baseBranch": "main",
+        "prompt": {},
+        "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "modelDetails": {
+          "modelName": "claude-opus-4-8-thinking-xhigh",
+          "maxMode": true
+        },
+        "openAsCursorGithubApp": false,
+        "skipReviewerRequest": false,
+        "autoBranch": true,
+        "prs": [
+          {
+            "branchName": "cursor/ce-roadmap-review-report-6941",
+            "baseBranch": "main",
+            "scmRepoNodeId": "R_kgDOS7Vnnw",
+            "pullNumber": 1,
+            "prStatus": "PR_STATUS_DRAFT",
+            "prUrl": "https://github.com/ahmo06/CE-roadmap-review-/pull/1",
+            "scmProvider": "GITHUB"
+          }
+        ],
+        "originalConversationAction": {
+          "userMessageAction": {
+            "userMessage": {
+              "text": "i want us to review in depth and in parts (standalone sections and then total cross section review) the new version of the roadmap to ensure proper review the updated circularity roadmap please .... the most things i want us to review is consistancy of things presented between sections especially those in section 5 and I want us to review the flow and content and logic fully. this is work is under the circularity roadmap this is the most recent draft. if you use subagents only use frontier models please.. my role (which is not yours) is to give it a read as a new person and cross check things within ... so seperate content and section and anything for the model to review such as pictures and diagrams to use multimodal capabilities and other things i want it to read and write thoughts and things to check. the file is in the repo. I want a brief report 3 pages with bullet point notes on things recommendations. another thing after is to go over the references used and give a 1 pager on them so could be 2 subagents doing the work in a plan",
+              "messageId": "31f3d468-39b7-4eee-acc3-d758cc1f5478",
+              "selectedContext": {},
+              "mode": "AGENT_MODE_AGENT",
+              "richText": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"i want us to review in depth and in parts (standalone sections and then total cross section review) the new version of the roadmap to ensure proper review the updated circularity roadmap please .... the most things i want us to review is consistancy of things presented between sections especially those in section 5 and I want us to review the flow and content and logic fully. this is work is under the circularity roadmap this is the most recent draft. if you use subagents only use frontier models please.. my role (which is not yours) is to give it a read as a new person and cross check things within ... so seperate content and section and anything for the model to review such as pictures and diagrams to use multimodal capabilities and other things i want it to read and write thoughts and things to check. the file is in the repo. I want a brief report 3 pages with bullet point notes on things recommendations. another thing after is to go over the references used and give a 1 pager on them so could be 2 subagents doing the work in a plan\"}]}]}"
+            },
+            "sendToInteractionListener": true
+          }
+        },
+        "environmentName": "ahmo06/CE-roadmap-review-",
+        "requestedModel": {
+          "modelId": "claude-opus-4-8",
+          "maxMode": true,
+          "parameters": [
+            {
+              "id": "thinking",
+              "value": "true"
+            },
+            {
+              "id": "context",
+              "value": "300k"
+            },
+            {
+              "id": "effort",
+              "value": "xhigh"
+            },
+            {
+              "id": "fast",
+              "value": "false"
+            }
+          ]
+        }
+      },
+      {
+        "composer": {
+          "bcId": "bc-f430c572-3eae-400c-a541-09562e44d5ad",
+          "createdAtMs": 1781455827177,
+          "workspaceRootPath": "/workspace",
+          "name": "Environment github system setup",
+          "branchName": "cursor/setup-agent-system-d5ad",
+          "hasStartedVm": true,
+          "repoUrl": "https://github.com/ahmo06/intelligence-insider-kimi-",
+          "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+          "source": "BACKGROUND_COMPOSER_SOURCE_GLASS",
+          "updatedAtMs": 1781460637983,
+          "prUrl": "https://github.com/ahmo06/intelligence-insider-kimi-/pull/1",
+          "linesAdded": 52824,
+          "linesRemoved": 1,
+          "filesChanged": 226,
+          "modelDetails": {
+            "modelName": "default",
+            "maxMode": false
+          },
+          "visibility": "user",
+          "workflowId": "cloud-agent-turn-bc-f430c572-3eae-400c-a541-09562e44d5ad",
+          "lastMessageActivityAtMs": 1781460415368,
+          "prStatus": "PR_STATUS_OPEN",
+          "participantUserIds": [
+            317511232
+          ],
+          "requestedModel": {
+            "modelId": "default",
+            "maxMode": true
+          },
+          "usePrivateWorker": false,
+          "repoUrls": [
+            "github.com/ahmo06/intelligence-insider-kimi-"
+          ]
+        },
+        "startingCommit": "85972ac1c401759a05a6ac79b1b9554b2ff528ec",
+        "baseBranch": "main",
+        "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "modelDetails": {
+          "modelName": "default",
+          "maxMode": true
+        },
+        "openAsCursorGithubApp": false,
+        "skipReviewerRequest": false,
+        "autoBranch": true,
+        "prs": [
+          {
+            "branchName": "cursor/setup-agent-system-d5ad",
+            "baseBranch": "main",
+            "scmRepoNodeId": "R_kgDOS6kzrw",
+            "pullNumber": 1,
+            "prStatus": "PR_STATUS_OPEN",
+            "prUrl": "https://github.com/ahmo06/intelligence-insider-kimi-/pull/1",
+            "scmProvider": "GITHUB"
+          }
+        ],
+        "originalConversationAction": {
+          "userMessageAction": {
+            "userMessage": {
+              "text": "please set this up in our environment and the github with all variables and system.",
+              "messageId": "a69f7636-445c-45dc-a1b6-5c162096a941",
+              "selectedContext": {},
+              "mode": "AGENT_MODE_AGENT",
+              "richText": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"please set this up in our environment and the github with all variables and system.\"}]}]}"
+            },
+            "sendToInteractionListener": true
+          }
+        },
+        "environmentName": "ahmo06/intelligence-insider-kimi-",
+        "requestedModel": {
+          "modelId": "default",
+          "maxMode": true
+        }
+      },
+      {
+        "composer": {
+          "bcId": "bc-773361b1-8875-4853-80fb-1540cd28b9ca",
+          "createdAtMs": 1781006703504,
+          "workspaceRootPath": "/workspace",
+          "name": "Portal environment and libreoffice",
+          "branchName": "cursor/organize-portal-libreoffice-b9ca",
+          "hasStartedVm": true,
+          "repoUrl": "https://github.com/ahmo06/climate-risk-model",
+          "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+          "source": "BACKGROUND_COMPOSER_SOURCE_GLASS",
+          "updatedAtMs": 1781436892368,
+          "prUrl": "https://github.com/ahmo06/climate-risk-model/pull/4",
+          "modelDetails": {
+            "modelName": "composer-2.5",
+            "maxMode": true
+          },
+          "visibility": "user",
+          "workflowId": "cloud-agent-turn-bc-773361b1-8875-4853-80fb-1540cd28b9ca",
+          "lastMessageActivityAtMs": 1781349394918,
+          "prStatus": "PR_STATUS_OPEN",
+          "participantUserIds": [
+            317511232
+          ],
+          "requestedModel": {
+            "modelId": "composer-2.5",
+            "maxMode": true,
+            "parameters": [
+              {
+                "id": "fast",
+                "value": "false"
+              }
+            ]
+          },
+          "usePrivateWorker": false,
+          "repoUrls": [
+            "github.com/ahmo06/climate-risk-model"
+          ]
+        },
+        "startingCommit": "3f7899f3522e6164270e99437f92a50af14843db",
+        "baseBranch": "main",
+        "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "modelDetails": {
+          "modelName": "composer-2.5",
+          "maxMode": true
+        },
+        "openAsCursorGithubApp": false,
+        "skipReviewerRequest": false,
+        "autoBranch": true,
+        "prs": [
+          {
+            "branchName": "cursor/organize-portal-libreoffice-b9ca",
+            "baseBranch": "main",
+            "scmRepoNodeId": "R_kgDOS1W-Ng",
+            "pullNumber": 4,
+            "prStatus": "PR_STATUS_OPEN",
+            "prUrl": "https://github.com/ahmo06/climate-risk-model/pull/4",
+            "scmProvider": "GITHUB"
+          },
+          {
+            "branchName": "cursor/remediation-blast-radius-b9ca",
+            "baseBranch": "cursor/excel-live-review-register-b9ca",
+            "scmRepoNodeId": "R_kgDOS1W-Ng",
+            "pullNumber": 3,
+            "prStatus": "PR_STATUS_OPEN",
+            "prUrl": "https://github.com/ahmo06/climate-risk-model/pull/3",
+            "scmProvider": "GITHUB"
+          },
+          {
+            "branchName": "cursor/excel-live-review-register-b9ca",
+            "baseBranch": "cursor/organize-portal-libreoffice-b9ca",
+            "scmRepoNodeId": "R_kgDOS1W-Ng",
+            "pullNumber": 2,
+            "prStatus": "PR_STATUS_OPEN",
+            "prUrl": "https://github.com/ahmo06/climate-risk-model/pull/2",
+            "scmProvider": "GITHUB"
+          }
+        ],
+        "originalConversationAction": {
+          "userMessageAction": {
+            "userMessage": {
+              "text": "please study the repo unpack the files and organize everything in it in the portal and let prepare the environment with libre office for docx and excel review and working with them",
+              "messageId": "044c328e-ab81-49c4-8f28-e8690b76fef0",
+              "selectedContext": {},
+              "mode": "AGENT_MODE_AGENT",
+              "richText": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"please study the repo unpack the files and organize everything in it in the portal and let prepare the environment with libre office for docx and excel review and working with them \"}]}]}"
+            },
+            "sendToInteractionListener": true
+          }
+        },
+        "environmentName": "ahmo06/climate-risk-model",
+        "requestedModel": {
+          "modelId": "composer-2.5",
+          "maxMode": true,
+          "parameters": [
+            {
+              "id": "fast",
+              "value": "false"
+            }
+          ]
+        }
+      },
+      {
+        "composer": {
+          "bcId": "bc-a06de87e-6bbc-42f5-8ca8-05047b81be2a",
+          "createdAtMs": 1781270713226,
+          "workspaceRootPath": "/workspace",
+          "name": "Vscode live repository sync",
+          "branchName": "cursor/live-site-backup-be2a",
+          "hasStartedVm": true,
+          "repoUrl": "github.com/ahmo06/iyaf-website",
+          "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+          "source": "BACKGROUND_COMPOSER_SOURCE_WEBSITE",
+          "updatedAtMs": 1781293742674,
+          "prUrl": "https://github.com/ahmo06/iyaf-website/pull/1",
+          "linesAdded": 23927,
+          "linesRemoved": 37,
+          "filesChanged": 2868,
+          "modelDetails": {
+            "modelName": "composer-2.5",
+            "maxMode": true
+          },
+          "visibility": "user",
+          "workflowId": "cloud-agent-turn-bc-a06de87e-6bbc-42f5-8ca8-05047b81be2a",
+          "lastMessageActivityAtMs": 1781278230788,
+          "prStatus": "PR_STATUS_DRAFT",
+          "participantUserIds": [
+            317511232
+          ],
+          "requestedModel": {
+            "modelId": "composer-2.5",
+            "maxMode": true,
+            "builtInModel": true
+          },
+          "usePrivateWorker": false,
+          "repoUrls": [
+            "github.com/ahmo06/iyaf-website"
+          ]
+        },
+        "startingCommit": "32c08ac3dfec90cf680cd0fcb0d041d940fdc037",
+        "baseBranch": "main",
+        "prompt": {
+          "conversationHistory": [
+            {
+              "text": "could you access this vscode site and w want to create a connection to pull and push any changes we make live between it and our current repo always \n\nhttps://vscode-c7c763b9-2886-4547-b699-e645b9c885bd.preview.emergentagent.com/\n\npass: 2040c081",
+              "type": "MESSAGE_TYPE_HUMAN",
+              "richText": "could you access this vscode site and w want to create a connection to pull and push any changes we make live between it and our current repo always \n\nhttps://vscode-c7c763b9-2886-4547-b699-e645b9c885bd.preview.emergentagent.com/\n\npass: 2040c081",
+              "cursorCommandsExplicitlySet": true,
+              "pastChatsExplicitlySet": true
+            }
+          ]
+        },
+        "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "modelDetails": {
+          "modelName": "composer-2.5",
+          "maxMode": true
+        },
+        "openAsCursorGithubApp": false,
+        "skipReviewerRequest": false,
+        "autoBranch": true,
+        "prs": [
+          {
+            "branchName": "cursor/phase2-arm-i18n-be2a",
+            "baseBranch": "main",
+            "scmRepoNodeId": "R_kgDOS4pj-Q",
+            "pullNumber": 3,
+            "prStatus": "PR_STATUS_DRAFT",
+            "prUrl": "https://github.com/ahmo06/iyaf-website/pull/3",
+            "scmProvider": "GITHUB"
+          },
+          {
+            "branchName": "cursor/deploy-new-site-be2a",
+            "baseBranch": "main",
+            "scmRepoNodeId": "R_kgDOS4pj-Q",
+            "pullNumber": 2,
+            "prStatus": "PR_STATUS_OPEN",
+            "prUrl": "https://github.com/ahmo06/iyaf-website/pull/2",
+            "scmProvider": "GITHUB"
+          },
+          {
+            "branchName": "cursor/live-site-backup-be2a",
+            "baseBranch": "main",
+            "scmRepoNodeId": "R_kgDOS4pj-Q",
+            "pullNumber": 1,
+            "prStatus": "PR_STATUS_DRAFT",
+            "prUrl": "https://github.com/ahmo06/iyaf-website/pull/1",
+            "scmProvider": "GITHUB"
+          },
+          {
+            "branchName": "cursor/emergent-live-sync-be2a",
+            "baseBranch": "main",
+            "scmRepoNodeId": "R_kgDOS4pj-Q",
+            "scmProvider": "GITHUB"
+          }
+        ],
+        "originalConversationAction": {
+          "userMessageAction": {
+            "userMessage": {
+              "text": "could you access this vscode site and w want to create a connection to pull and push any changes we make live between it and our current repo always \n\nhttps://vscode-c7c763b9-2886-4547-b699-e645b9c885bd.preview.emergentagent.com/\n\npass: 2040c081",
+              "messageId": "de398532-0811-4a5d-9684-434f3d6a4c16",
+              "selectedContext": {},
+              "richText": "{\"root\":{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"could you access this vscode site and w want to create a connection to pull and push any changes we make live between it and our current repo always \",\"type\":\"text\",\"version\":1},{\"type\":\"linebreak\",\"version\":1},{\"type\":\"linebreak\",\"version\":1},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"https://vscode-c7c763b9-2886-4547-b699-e645b9c885bd.preview.emergentagent.com/\",\"type\":\"text\",\"version\":1},{\"type\":\"linebreak\",\"version\":1},{\"type\":\"linebreak\",\"version\":1},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"pass: 2040c081\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}}"
+            },
+            "sendToInteractionListener": true
+          }
+        },
+        "requestedModel": {
+          "modelId": "composer-2.5",
+          "maxMode": true,
+          "builtInModel": true
+        }
+      },
+      {
+        "composer": {
+          "bcId": "bc-88d4e925-b1a3-466d-8475-9feaeaa5341a",
+          "createdAtMs": 1771003315147,
+          "workspaceRootPath": "/workspace",
+          "name": "Sustainability car rental events",
+          "branchName": "cursor/sustainability-car-rental-events-5e7b",
+          "hasStartedVm": true,
+          "repoUrl": "github.com/ahmo06/General",
+          "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+          "source": "BACKGROUND_COMPOSER_SOURCE_WEBSITE",
+          "updatedAtMs": 1773561602671,
+          "prUrl": "https://github.com/ahmo06/General/pull/1",
+          "linesAdded": 72,
+          "linesRemoved": 1,
+          "filesChanged": 2,
+          "modelDetails": {
+            "modelName": "composer-1.5",
+            "maxMode": true
+          },
+          "visibility": "user",
+          "workflowId": "cloud-agent-turn-bc-88d4e925-b1a3-466d-8475-9feaeaa5341a",
+          "lastMessageActivityAtMs": 1771006048957,
+          "prStatus": "PR_STATUS_DRAFT",
+          "participantUserIds": [
+            317511232
+          ],
+          "usePrivateWorker": false,
+          "repoUrls": [
+            "github.com/ahmo06/General"
+          ]
+        },
+        "startingCommit": "c39fa15616ad0d2bd22187e8c558e6486feca97b",
+        "baseBranch": "main",
+        "prompt": {
+          "conversationHistory": [
+            {
+              "text": "research sustainability and car rental related exhibitions and conferencers in Vancouver and in UAE and in KSA for the coming 12 months separately for each city and each topic please in phases and according to a plan",
+              "type": "MESSAGE_TYPE_HUMAN",
+              "richText": "research sustainability and car rental related exhibitions and conferencers in Vancouver and in UAE and in KSA for the coming 12 months separately for each city and each topic please in phases and according to a plan",
+              "cursorCommandsExplicitlySet": true,
+              "pastChatsExplicitlySet": true
+            }
+          ]
+        },
+        "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "modelDetails": {
+          "modelName": "composer-1.5",
+          "maxMode": true
+        },
+        "openAsCursorGithubApp": false,
+        "skipReviewerRequest": false,
+        "autoBranch": true
+      },
+      {
+        "composer": {
+          "bcId": "bc-8728ab0f-e9a0-4752-86b4-3bc9515733ae",
+          "createdAtMs": 1773405755794,
+          "workspaceRootPath": "/workspace",
+          "name": "Partnership proposal response",
+          "branchName": "cursor/partnership-proposal-response-fb3a",
+          "hasStartedVm": true,
+          "repoUrl": "github.com/ahmo06/General",
+          "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+          "source": "BACKGROUND_COMPOSER_SOURCE_WEBSITE",
+          "updatedAtMs": 1773406323629,
+          "modelDetails": {
+            "modelName": "composer-1.5",
+            "maxMode": true
+          },
+          "visibility": "user",
+          "workflowId": "cloud-agent-turn-bc-8728ab0f-e9a0-4752-86b4-3bc9515733ae",
+          "lastMessageActivityAtMs": 1773406309767,
+          "participantUserIds": [
+            317511232
+          ],
+          "usePrivateWorker": false,
+          "repoUrls": [
+            "github.com/ahmo06/General"
+          ]
+        },
+        "startingCommit": "c39fa15616ad0d2bd22187e8c558e6486feca97b",
+        "baseBranch": "main",
+        "prompt": {
+          "conversationHistory": [
+            {
+              "text": "write response to this \n\nDear Mr. Ameer,\n\nI hope this message finds you well. It was a genuine pleasure meeting you in Amman, and I wanted to follow up on our conversation from Tuesday.\n\nOur discussion around Insider's ESG platform was both insightful and encouraging. Walking through the platform's architecture, modules, and core functionality gave me a clear picture of the value it can deliver to organizations looking to strengthen their ESG practices. It is evident that the platform is well-positioned to address the growing compliance and reporting demands that many of our clients in the Kingdom of Saudi Arabia (KSA) are now facing.\n\nGiven the alignment between Insider's capabilities and the needs of our client base in KSA \u2014 particularly in light of Vision 2030 sustainability goals \u2014 I believe there is a meaningful opportunity for us to collaborate and bring this solution to market together.\n\nAs a next step, I would like to propose a follow-up meeting to discuss a potential partnership framework and define what a collaboration could look like in practice. I am available on:\n\n\u00a0 \u2022 Monday, 6th April 2026 at 11:00 AM\n\u00a0 \u2022 Tuesday, 7th April 2026 at 11:00 AM\n\nPlease let me know which date works best for you, and whether you would prefer the meeting to be held virtually or in person. I am happy to accommodate your preference.\n\nLooking forward to continuing the conversation.\n\nBest regards,",
+              "type": "MESSAGE_TYPE_HUMAN",
+              "richText": "write response to this \n\nDear Mr. Ameer,\n\nI hope this message finds you well. It was a genuine pleasure meeting you in Amman, and I wanted to follow up on our conversation from Tuesday.\n\nOur discussion around Insider's ESG platform was both insightful and encouraging. Walking through the platform's architecture, modules, and core functionality gave me a clear picture of the value it can deliver to organizations looking to strengthen their ESG practices. It is evident that the platform is well-positioned to address the growing compliance and reporting demands that many of our clients in the Kingdom of Saudi Arabia (KSA) are now facing.\n\nGiven the alignment between Insider's capabilities and the needs of our client base in KSA \u2014 particularly in light of Vision 2030 sustainability goals \u2014 I believe there is a meaningful opportunity for us to collaborate and bring this solution to market together.\n\nAs a next step, I would like to propose a follow-up meeting to discuss a potential partnership framework and define what a collaboration could look like in practice. I am available on:\n\n\u00a0 \u2022 Monday, 6th April 2026 at 11:00 AM\n\u00a0 \u2022 Tuesday, 7th April 2026 at 11:00 AM\n\nPlease let me know which date works best for you, and whether you would prefer the meeting to be held virtually or in person. I am happy to accommodate your preference.\n\nLooking forward to continuing the conversation.\n\nBest regards,",
+              "cursorCommandsExplicitlySet": true,
+              "pastChatsExplicitlySet": true
+            }
+          ]
+        },
+        "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "modelDetails": {
+          "modelName": "composer-1.5",
+          "maxMode": true
+        },
+        "openAsCursorGithubApp": false,
+        "skipReviewerRequest": false,
+        "autoBranch": true
+      }
+    ],
+    "participants": [
+      {
+        "userId": 317511232,
+        "displayName": "Ameer Mubaslat",
+        "email": "ameermobaslat@gmail.com",
+        "profilePictureUrl": "https://workoscdn.com/images/v1/jNVlQ10SkKP1kaaKrNfTbllAc03iXQvMKY5fwdZcDXo"
+      }
+    ]
+  }
+}

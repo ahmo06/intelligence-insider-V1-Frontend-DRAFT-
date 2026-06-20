@@ -1,0 +1,349 @@
+{
+  "url": "https://cursor.com/api/background-composer/list",
+  "path": "/api/background-composer/list",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:27:30.575167+00:00",
+  "page_slug": "agents-list",
+  "body": {
+    "composers": [
+      {
+        "bcId": "bc-8a1aa238-5ae6-4404-bb94-833462fbcb05",
+        "createdAtMs": 1781917618462,
+        "workspaceRootPath": "/workspace",
+        "name": "Development environment setup",
+        "hasStartedVm": true,
+        "repoUrl": "https://github.com/ahmo06/intelligence-insider-v1-frontend-draft-",
+        "status": "BACKGROUND_COMPOSER_STATUS_RUNNING",
+        "isUnread": true,
+        "source": "BACKGROUND_COMPOSER_SOURCE_GLASS",
+        "updatedAtMs": 1781950447956,
+        "modelDetails": {
+          "modelName": "default",
+          "maxMode": false
+        },
+        "visibility": "user",
+        "workflowId": "cloud-agent-turn-bc-8a1aa238-5ae6-4404-bb94-833462fbcb05",
+        "lastMessageActivityAtMs": 1781950140898,
+        "participantUserIds": [
+          317511232
+        ],
+        "requestedModel": {
+          "modelId": "default",
+          "maxMode": true
+        },
+        "usePrivateWorker": false,
+        "repoUrls": [
+          "github.com/ahmo06/intelligence-insider-v1-frontend-draft-"
+        ],
+        "environmentName": "ahmo06/intelligence-insider-v1-frontend-draft-"
+      },
+      {
+        "bcId": "bc-b11c3ab1-6cbe-43e0-b147-c453cc2ee38b",
+        "createdAtMs": 1781947482497,
+        "workspaceRootPath": "/workspace",
+        "name": "Frontend Development",
+        "branchName": "cursor/frontend-scaffold-e38b",
+        "hasStartedVm": true,
+        "repoUrl": "https://github.com/ahmo06/intelligence-insider-v1",
+        "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "isUnread": true,
+        "source": "BACKGROUND_COMPOSER_SOURCE_GLASS",
+        "updatedAtMs": 1781949299570,
+        "prUrl": "https://github.com/ahmo06/intelligence-insider-V1/pull/89",
+        "linesAdded": 8669,
+        "linesRemoved": 1,
+        "filesChanged": 43,
+        "modelDetails": {
+          "modelName": "default",
+          "maxMode": false
+        },
+        "visibility": "user",
+        "workflowId": "cloud-agent-turn-bc-b11c3ab1-6cbe-43e0-b147-c453cc2ee38b",
+        "lastMessageActivityAtMs": 1781949299188,
+        "prStatus": "PR_STATUS_DRAFT",
+        "participantUserIds": [
+          317511232
+        ],
+        "requestedModel": {
+          "modelId": "default",
+          "maxMode": true
+        },
+        "usePrivateWorker": false,
+        "repoUrls": [
+          "github.com/ahmo06/intelligence-insider-v1"
+        ],
+        "environmentName": "ahmo06/intelligence-insider-V1"
+      },
+      {
+        "bcId": "bc-91342439-9842-40c4-a14b-08d11dc86941",
+        "createdAtMs": 1781529535225,
+        "workspaceRootPath": "/workspace",
+        "name": "Circularity roadmap review",
+        "branchName": "cursor/ce-roadmap-review-report-6941",
+        "hasStartedVm": true,
+        "repoUrl": "https://github.com/ahmo06/ce-roadmap-review-",
+        "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "source": "BACKGROUND_COMPOSER_SOURCE_GLASS",
+        "updatedAtMs": 1781610724010,
+        "prUrl": "https://github.com/ahmo06/CE-roadmap-review-/pull/1",
+        "linesAdded": 8959,
+        "linesRemoved": 38,
+        "filesChanged": 98,
+        "modelDetails": {
+          "modelName": "claude-opus-4-8-thinking-xhigh",
+          "maxMode": true
+        },
+        "visibility": "user",
+        "workflowId": "cloud-agent-turn-bc-91342439-9842-40c4-a14b-08d11dc86941",
+        "lastMessageActivityAtMs": 1781610646339,
+        "prStatus": "PR_STATUS_DRAFT",
+        "participantUserIds": [
+          317511232
+        ],
+        "requestedModel": {
+          "modelId": "claude-opus-4-8",
+          "maxMode": true,
+          "parameters": [
+            {
+              "id": "thinking",
+              "value": "true"
+            },
+            {
+              "id": "context",
+              "value": "300k"
+            },
+            {
+              "id": "effort",
+              "value": "xhigh"
+            },
+            {
+              "id": "fast",
+              "value": "false"
+            }
+          ]
+        },
+        "usePrivateWorker": false,
+        "repoUrls": [
+          "github.com/ahmo06/ce-roadmap-review-"
+        ]
+      },
+      {
+        "bcId": "bc-f430c572-3eae-400c-a541-09562e44d5ad",
+        "createdAtMs": 1781455827177,
+        "workspaceRootPath": "/workspace",
+        "name": "Environment github system setup",
+        "branchName": "cursor/setup-agent-system-d5ad",
+        "hasStartedVm": true,
+        "repoUrl": "https://github.com/ahmo06/intelligence-insider-kimi-",
+        "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "source": "BACKGROUND_COMPOSER_SOURCE_GLASS",
+        "updatedAtMs": 1781460637983,
+        "prUrl": "https://github.com/ahmo06/intelligence-insider-kimi-/pull/1",
+        "linesAdded": 52824,
+        "linesRemoved": 1,
+        "filesChanged": 226,
+        "modelDetails": {
+          "modelName": "default",
+          "maxMode": false
+        },
+        "visibility": "user",
+        "workflowId": "cloud-agent-turn-bc-f430c572-3eae-400c-a541-09562e44d5ad",
+        "lastMessageActivityAtMs": 1781460415368,
+        "prStatus": "PR_STATUS_OPEN",
+        "participantUserIds": [
+          317511232
+        ],
+        "requestedModel": {
+          "modelId": "default",
+          "maxMode": true
+        },
+        "usePrivateWorker": false,
+        "repoUrls": [
+          "github.com/ahmo06/intelligence-insider-kimi-"
+        ]
+      },
+      {
+        "bcId": "bc-6bf8ca49-69ae-486e-857c-3f36759346bf",
+        "createdAtMs": 1780528045331,
+        "workspaceRootPath": "/workspace",
+        "name": "(tab 1) intelligence insider.",
+        "branchName": "cursor/dev-environment-setup-aa66",
+        "hasStartedVm": true,
+        "repoUrl": "https://github.com/ahmo06/intelligence-insider-v0.0",
+        "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "source": "BACKGROUND_COMPOSER_SOURCE_GLASS",
+        "updatedAtMs": 1781902541097,
+        "prUrl": "https://github.com/ahmo06/intelligence-insider-V0.0/pull/2",
+        "linesAdded": 5042,
+        "linesRemoved": 151,
+        "filesChanged": 103,
+        "modelDetails": {
+          "modelName": "composer-2.5",
+          "maxMode": true
+        },
+        "visibility": "user",
+        "workflowId": "cloud-agent-turn-bc-6bf8ca49-69ae-486e-857c-3f36759346bf",
+        "lastMessageActivityAtMs": 1781442479875,
+        "prStatus": "PR_STATUS_OPEN",
+        "participantUserIds": [
+          317511232
+        ],
+        "requestedModel": {
+          "modelId": "composer-2.5",
+          "maxMode": true,
+          "parameters": [
+            {
+              "id": "fast",
+              "value": "false"
+            }
+          ]
+        },
+        "usePrivateWorker": false,
+        "repoUrls": [
+          "github.com/ahmo06/intelligence-insider-v0.0"
+        ]
+      },
+      {
+        "bcId": "bc-773361b1-8875-4853-80fb-1540cd28b9ca",
+        "createdAtMs": 1781006703504,
+        "workspaceRootPath": "/workspace",
+        "name": "Portal environment and libreoffice",
+        "branchName": "cursor/organize-portal-libreoffice-b9ca",
+        "hasStartedVm": true,
+        "repoUrl": "https://github.com/ahmo06/climate-risk-model",
+        "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "source": "BACKGROUND_COMPOSER_SOURCE_GLASS",
+        "updatedAtMs": 1781436892368,
+        "prUrl": "https://github.com/ahmo06/climate-risk-model/pull/4",
+        "modelDetails": {
+          "modelName": "composer-2.5",
+          "maxMode": true
+        },
+        "visibility": "user",
+        "workflowId": "cloud-agent-turn-bc-773361b1-8875-4853-80fb-1540cd28b9ca",
+        "lastMessageActivityAtMs": 1781349394918,
+        "prStatus": "PR_STATUS_OPEN",
+        "participantUserIds": [
+          317511232
+        ],
+        "requestedModel": {
+          "modelId": "composer-2.5",
+          "maxMode": true,
+          "parameters": [
+            {
+              "id": "fast",
+              "value": "false"
+            }
+          ]
+        },
+        "usePrivateWorker": false,
+        "repoUrls": [
+          "github.com/ahmo06/climate-risk-model"
+        ]
+      },
+      {
+        "bcId": "bc-a06de87e-6bbc-42f5-8ca8-05047b81be2a",
+        "createdAtMs": 1781270713226,
+        "workspaceRootPath": "/workspace",
+        "name": "Vscode live repository sync",
+        "branchName": "cursor/live-site-backup-be2a",
+        "hasStartedVm": true,
+        "repoUrl": "github.com/ahmo06/iyaf-website",
+        "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "source": "BACKGROUND_COMPOSER_SOURCE_WEBSITE",
+        "updatedAtMs": 1781293742674,
+        "prUrl": "https://github.com/ahmo06/iyaf-website/pull/1",
+        "linesAdded": 23927,
+        "linesRemoved": 37,
+        "filesChanged": 2868,
+        "modelDetails": {
+          "modelName": "composer-2.5",
+          "maxMode": true
+        },
+        "visibility": "user",
+        "workflowId": "cloud-agent-turn-bc-a06de87e-6bbc-42f5-8ca8-05047b81be2a",
+        "lastMessageActivityAtMs": 1781278230788,
+        "prStatus": "PR_STATUS_DRAFT",
+        "participantUserIds": [
+          317511232
+        ],
+        "requestedModel": {
+          "modelId": "composer-2.5",
+          "maxMode": true,
+          "builtInModel": true
+        },
+        "usePrivateWorker": false,
+        "repoUrls": [
+          "github.com/ahmo06/iyaf-website"
+        ]
+      },
+      {
+        "bcId": "bc-8728ab0f-e9a0-4752-86b4-3bc9515733ae",
+        "createdAtMs": 1773405755794,
+        "workspaceRootPath": "/workspace",
+        "name": "Partnership proposal response",
+        "branchName": "cursor/partnership-proposal-response-fb3a",
+        "hasStartedVm": true,
+        "repoUrl": "github.com/ahmo06/General",
+        "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "source": "BACKGROUND_COMPOSER_SOURCE_WEBSITE",
+        "updatedAtMs": 1773406323629,
+        "modelDetails": {
+          "modelName": "composer-1.5",
+          "maxMode": true
+        },
+        "visibility": "user",
+        "workflowId": "cloud-agent-turn-bc-8728ab0f-e9a0-4752-86b4-3bc9515733ae",
+        "lastMessageActivityAtMs": 1773406309767,
+        "participantUserIds": [
+          317511232
+        ],
+        "usePrivateWorker": false,
+        "repoUrls": [
+          "github.com/ahmo06/General"
+        ]
+      },
+      {
+        "bcId": "bc-88d4e925-b1a3-466d-8475-9feaeaa5341a",
+        "createdAtMs": 1771003315147,
+        "workspaceRootPath": "/workspace",
+        "name": "Sustainability car rental events",
+        "branchName": "cursor/sustainability-car-rental-events-5e7b",
+        "hasStartedVm": true,
+        "repoUrl": "github.com/ahmo06/General",
+        "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "source": "BACKGROUND_COMPOSER_SOURCE_WEBSITE",
+        "updatedAtMs": 1773561602671,
+        "prUrl": "https://github.com/ahmo06/General/pull/1",
+        "linesAdded": 72,
+        "linesRemoved": 1,
+        "filesChanged": 2,
+        "modelDetails": {
+          "modelName": "composer-1.5",
+          "maxMode": true
+        },
+        "visibility": "user",
+        "workflowId": "cloud-agent-turn-bc-88d4e925-b1a3-466d-8475-9feaeaa5341a",
+        "lastMessageActivityAtMs": 1771006048957,
+        "prStatus": "PR_STATUS_DRAFT",
+        "participantUserIds": [
+          317511232
+        ],
+        "usePrivateWorker": false,
+        "repoUrls": [
+          "github.com/ahmo06/General"
+        ]
+      }
+    ],
+    "didLoadStatus": true,
+    "participants": [
+      {
+        "userId": 317511232,
+        "displayName": "Ameer Mubaslat",
+        "email": "ameermobaslat@gmail.com",
+        "profilePictureUrl": "https://workoscdn.com/images/v1/jNVlQ10SkKP1kaaKrNfTbllAc03iXQvMKY5fwdZcDXo"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-bugbot-suggested-repos",
+  "path": "/api/dashboard/get-bugbot-suggested-repos",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:20.777320+00:00",
+  "page_slug": "bugbot",
+  "body": {
+    "repos": [
+      {
+        "installationId": "104838127",
+        "repoNodeId": "R_kgDOS6gNPA",
+        "owner": "ahmo06",
+        "name": "intelligence-insider-V1",
+        "htmlUrl": "https://github.com/ahmo06/intelligence-insider-V1",
+        "prCountLastWeek": 89
+      }
+    ],
+    "canEnable": true
+  }
+}

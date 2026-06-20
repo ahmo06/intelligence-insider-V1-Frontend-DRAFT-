@@ -1,0 +1,9 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-user-api-keys",
+  "path": "/api/dashboard/get-user-api-keys",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:20.709922+00:00",
+  "page_slug": "bugbot",
+  "body": {}
+}

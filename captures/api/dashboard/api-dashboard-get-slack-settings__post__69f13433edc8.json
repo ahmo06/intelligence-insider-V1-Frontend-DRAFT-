@@ -1,0 +1,11 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-slack-settings",
+  "path": "/api/dashboard/get-slack-settings",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:08.159356+00:00",
+  "page_slug": "dashboard",
+  "body": {
+    "available": true
+  }
+}

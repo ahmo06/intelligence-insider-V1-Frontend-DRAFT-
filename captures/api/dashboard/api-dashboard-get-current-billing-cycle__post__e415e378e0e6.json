@@ -1,0 +1,12 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-current-billing-cycle",
+  "path": "/api/dashboard/get-current-billing-cycle",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:08.180081+00:00",
+  "page_slug": "dashboard",
+  "body": {
+    "startDateEpochMillis": "1781523241000",
+    "endDateEpochMillis": "1784115241000"
+  }
+}

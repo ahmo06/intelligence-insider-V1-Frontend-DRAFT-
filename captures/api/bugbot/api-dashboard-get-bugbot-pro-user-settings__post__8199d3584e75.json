@@ -1,0 +1,12 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-bugbot-pro-user-settings",
+  "path": "/api/dashboard/get-bugbot-pro-user-settings",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:20.755118+00:00",
+  "page_slug": "bugbot",
+  "body": {
+    "bugbotBillingMode": "BUGBOT_BILLING_MODE_SEAT",
+    "bugbotUsageBasedOnEnable": true
+  }
+}

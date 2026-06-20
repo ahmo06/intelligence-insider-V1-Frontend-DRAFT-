@@ -1,0 +1,30 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-github-installations",
+  "path": "/api/dashboard/get-github-installations",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:37.857670+00:00",
+  "page_slug": "thread-merged-portal",
+  "body": {
+    "installations": [
+      {
+        "installationId": "-1",
+        "settings": {
+          "suppressNoBugsComments": true,
+          "isPrSummaryEnabled": true,
+          "bugbotAutofixMode": "BUGBOT_AUTOFIX_MODE_OFF",
+          "bugbotAutofixSeverityFilter": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "canModify": true,
+        "totalPages": 1,
+        "canModifyInstallationSettings": true
+      }
+    ],
+    "gheHostname": "gitlab.com",
+    "gheAppSlug": "cursor"
+  }
+}

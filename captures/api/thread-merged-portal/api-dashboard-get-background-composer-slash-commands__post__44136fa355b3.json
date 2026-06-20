@@ -1,0 +1,9 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-background-composer-slash-commands",
+  "path": "/api/dashboard/get-background-composer-slash-commands",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:37.929243+00:00",
+  "page_slug": "thread-merged-portal",
+  "body": {}
+}

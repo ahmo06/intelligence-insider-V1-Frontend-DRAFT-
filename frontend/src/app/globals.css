@@ -1,0 +1,14 @@
+/* No Tailwind — all styling comes from captured cursor.com CSS chunks. */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.captured-root {
+  width: 100%;
+  height: 100%;
+}

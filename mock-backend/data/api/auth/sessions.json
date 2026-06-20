@@ -1,1 +1,88 @@
-{"sessions":[{"sessionId":"cc78176058a66415bfb42113c30269069c4d8243779ac9fa1d7d138a7e2eecac","type":"SESSION_TYPE_CLIENT","createdAt":"2026-04-21T07:35:10.000Z","expiresAt":"2026-06-20T07:35:10.000Z"},{"sessionId":"68cc9473dead5c18ebbfdf223cf1dbf02a1f2e25b1f3194847038e32b8c8ad3f","type":"SESSION_TYPE_CLIENT","createdAt":"2026-04-28T07:38:53.000Z","expiresAt":"2026-06-27T07:38:53.000Z"},{"sessionId":"693488ce9502f2d3a2c83ee9c240401c0e8b8ce37f14c7fd8e691e5852ddd24b","type":"SESSION_TYPE_CLIENT","createdAt":"2026-05-05T03:17:45.000Z","expiresAt":"2026-07-04T03:17:45.000Z"},{"sessionId":"6353b5319dabc339a2032ec048bfbd927a8b5aebabaa96c4b4d969791f955180","type":"SESSION_TYPE_CLIENT","createdAt":"2026-05-12T13:14:20.000Z","expiresAt":"2026-07-11T13:14:20.000Z"},{"sessionId":"b118e124c8110de30bea7619641343ca1da47ceb5c59f01fd0af63fbf5a566f4","type":"SESSION_TYPE_CLIENT","createdAt":"2026-05-19T20:27:44.000Z","expiresAt":"2026-07-18T20:27:44.000Z"},{"sessionId":"33143edcb476c5c4d457e45550b8cd244bd7d16f2bda7c2642758bd5b6b1c636","type":"SESSION_TYPE_CLIENT","createdAt":"2026-05-21T06:42:55.000Z","expiresAt":"2026-07-20T06:42:55.000Z"},{"sessionId":"da16b142c5258c4f208cd0a886489d4431592753b29317798d732b336f2d38d3","type":"SESSION_TYPE_CLIENT","createdAt":"2026-05-26T22:00:09.000Z","expiresAt":"2026-07-25T22:00:09.000Z"},{"sessionId":"63427b855cf5fedf13f410d6b76d849205a98356991dcb3d2eca5375b1e18cfa","type":"SESSION_TYPE_CLIENT","createdAt":"2026-06-02T19:34:43.000Z","expiresAt":"2026-08-01T19:34:43.000Z"},{"sessionId":"0b4adaa191127bf3aa3dd1434b44b41266cb1c6174a39101273b03d144d8ff53","type":"SESSION_TYPE_WEB","createdAt":"2026-06-05T09:48:12.000Z","expiresAt":"2026-08-04T09:48:12.000Z"},{"sessionId":"92b827f3e90c85b27319baf004f89637080b19698798f155462a099bf5788420","type":"SESSION_TYPE_CLIENT","createdAt":"2026-06-10T06:05:04.000Z","expiresAt":"2026-08-09T06:05:04.000Z"},{"sessionId":"b828695af288dab33324507d78056a6bd0dc7d1ffb7d7786b2840470d2b29667","type":"SESSION_TYPE_WEB","createdAt":"2026-06-12T14:49:15.000Z","expiresAt":"2026-08-11T14:49:15.000Z"},{"sessionId":"1e3c598a6d6fad716ad8cc752ac5f8b82927cf40116753d50cc658d79f4e6850","type":"SESSION_TYPE_WEB","createdAt":"2026-06-14T20:54:29.000Z","expiresAt":"2026-08-13T20:54:29.000Z"},{"sessionId":"d97c5645f7f46238134ec0f8a8331f468f4856607d5e4d2045a55c7e9e9282b8","type":"SESSION_TYPE_CLIENT","createdAt":"2026-06-17T15:18:25.000Z","expiresAt":"2026-08-16T15:18:25.000Z"},{"sessionId":"1e483ec1e733b6b0fd6d89d107928f8daa8b0d1c6ac122509c1c01f0c37283cf","type":"SESSION_TYPE_WEB","createdAt":"2026-06-19T21:00:48.000Z","expiresAt":"2026-08-18T21:00:48.000Z"}]}
+{
+  "sessions": [
+    {
+      "sessionId": "68cc9473dead5c18ebbfdf223cf1dbf02a1f2e25b1f3194847038e32b8c8ad3f",
+      "type": "SESSION_TYPE_CLIENT",
+      "createdAt": "2026-04-28T07:38:53.000Z",
+      "expiresAt": "2026-06-27T07:38:53.000Z"
+    },
+    {
+      "sessionId": "693488ce9502f2d3a2c83ee9c240401c0e8b8ce37f14c7fd8e691e5852ddd24b",
+      "type": "SESSION_TYPE_CLIENT",
+      "createdAt": "2026-05-05T03:17:45.000Z",
+      "expiresAt": "2026-07-04T03:17:45.000Z"
+    },
+    {
+      "sessionId": "6353b5319dabc339a2032ec048bfbd927a8b5aebabaa96c4b4d969791f955180",
+      "type": "SESSION_TYPE_CLIENT",
+      "createdAt": "2026-05-12T13:14:20.000Z",
+      "expiresAt": "2026-07-11T13:14:20.000Z"
+    },
+    {
+      "sessionId": "b118e124c8110de30bea7619641343ca1da47ceb5c59f01fd0af63fbf5a566f4",
+      "type": "SESSION_TYPE_CLIENT",
+      "createdAt": "2026-05-19T20:27:44.000Z",
+      "expiresAt": "2026-07-18T20:27:44.000Z"
+    },
+    {
+      "sessionId": "33143edcb476c5c4d457e45550b8cd244bd7d16f2bda7c2642758bd5b6b1c636",
+      "type": "SESSION_TYPE_CLIENT",
+      "createdAt": "2026-05-21T06:42:55.000Z",
+      "expiresAt": "2026-07-20T06:42:55.000Z"
+    },
+    {
+      "sessionId": "da16b142c5258c4f208cd0a886489d4431592753b29317798d732b336f2d38d3",
+      "type": "SESSION_TYPE_CLIENT",
+      "createdAt": "2026-05-26T22:00:09.000Z",
+      "expiresAt": "2026-07-25T22:00:09.000Z"
+    },
+    {
+      "sessionId": "63427b855cf5fedf13f410d6b76d849205a98356991dcb3d2eca5375b1e18cfa",
+      "type": "SESSION_TYPE_CLIENT",
+      "createdAt": "2026-06-02T19:34:43.000Z",
+      "expiresAt": "2026-08-01T19:34:43.000Z"
+    },
+    {
+      "sessionId": "0b4adaa191127bf3aa3dd1434b44b41266cb1c6174a39101273b03d144d8ff53",
+      "type": "SESSION_TYPE_WEB",
+      "createdAt": "2026-06-05T09:48:12.000Z",
+      "expiresAt": "2026-08-04T09:48:12.000Z"
+    },
+    {
+      "sessionId": "92b827f3e90c85b27319baf004f89637080b19698798f155462a099bf5788420",
+      "type": "SESSION_TYPE_CLIENT",
+      "createdAt": "2026-06-10T06:05:04.000Z",
+      "expiresAt": "2026-08-09T06:05:04.000Z"
+    },
+    {
+      "sessionId": "b828695af288dab33324507d78056a6bd0dc7d1ffb7d7786b2840470d2b29667",
+      "type": "SESSION_TYPE_WEB",
+      "createdAt": "2026-06-12T14:49:15.000Z",
+      "expiresAt": "2026-08-11T14:49:15.000Z"
+    },
+    {
+      "sessionId": "d97c5645f7f46238134ec0f8a8331f468f4856607d5e4d2045a55c7e9e9282b8",
+      "type": "SESSION_TYPE_CLIENT",
+      "createdAt": "2026-06-17T15:18:25.000Z",
+      "expiresAt": "2026-08-16T15:18:25.000Z"
+    },
+    {
+      "sessionId": "1e483ec1e733b6b0fd6d89d107928f8daa8b0d1c6ac122509c1c01f0c37283cf",
+      "type": "SESSION_TYPE_WEB",
+      "createdAt": "2026-06-19T21:00:48.000Z",
+      "expiresAt": "2026-08-18T21:00:48.000Z"
+    },
+    {
+      "sessionId": "806192839389ec2629a63ce756472dcf487b33a341241a03946c9d0dda3c1a55",
+      "type": "SESSION_TYPE_WEB",
+      "createdAt": "2026-06-20T00:37:06.000Z",
+      "expiresAt": "2026-08-19T00:37:06.000Z"
+    },
+    {
+      "sessionId": "aa1a1f00b384ba2d35e5569cae2c04fa795a7419dea38e0108adede6bce050d6",
+      "type": "SESSION_TYPE_WEB",
+      "createdAt": "2026-06-20T10:01:53.000Z",
+      "expiresAt": "2026-08-19T10:01:53.000Z"
+    }
+  ]
+}

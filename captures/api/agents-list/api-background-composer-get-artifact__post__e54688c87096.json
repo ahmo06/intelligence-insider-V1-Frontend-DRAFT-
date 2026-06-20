@@ -1,0 +1,12 @@
+{
+  "url": "https://cursor.com/api/background-composer/get-artifact",
+  "path": "/api/background-composer/get-artifact",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:27:30.347194+00:00",
+  "page_slug": "agents-list",
+  "body": {
+    "url": "https://cloud-agent-artifacts.s3.us-east-1.amazonaws.com/artifacts/bc-773361b1-8875-4853-80fb-1540cd28b9ca/opt/cursor/artifacts/assets/deep_credit_dashboard.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIA5YTTCJ6RSE3QFDB7%2F20260620%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260620T101410Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAoaCXVzLWVhc3QtMSJHMEUCIQDN1FF5JkIjeweqvv3X1I6xDsGf86WwGuayOAuPPy21MwIgJTfPm7FCVRuTo1NwX1%2F41lbZlQJWdbcgAh9VU0hjynkq%2FAMI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgw5NDYyMDc4NzA4ODMiDFLTvAe3OSyt%2FrVeSSrQA9cQE8unnNFUGtaJ4rNVuvL3nC%2FgruwWnoR5eRwpx72TDY1xkHRqIGknzavErNirYJTbwHOrD5TS4lb6LSsULQ0bKKPS1714j1C9Zu1KIZAAlVEbOgDZUiDFp4b6x7MvBhmtESZ1cwab1zVW5m8QpM9U9Cwt%2BHnHhkofvaZ16c0AeYfLd0%2FHvIbzsMOVnbGol8klZSfc7cAYQvI2Yns1sVrjvIP5XsRgku%2FvF5EelqqH3oxnitg3EYCSMu5R8u6puLDW1euC%2FZ4dAfwJ8NSch9mVx7gkSAORA5uiqtPBYxxTNg9bxPkcZjurPUPxbiNql%2BxVT6LqzvP3AWZRmrBNF9OSnDVa9ns7ZM1szugDf0J9el6GbO3eFBErbY4mnG0oWtmP5wbb20H9END4onu2C0OT93jbN4LJnk4KBkq88PJ6w9%2BtlhEQEwqpek3NP36Q80FH0jrjP00SPsRH3lAFglFjIO6RtXW2YOozdbQ2ev34vEn7T4VrADmR02S54S8iaXmPlnwwMKxMvhNg1PHN9ELoLPsLojykAAgUbDHIXbveych%2B2EFhYsOqd3qjN20xuNLgzQ0h55MZC1ECJwfWCCNl8Nt8Gufl3RAnl%2FXBXbfxMKHH2dEGOqUBR2LC9maDJ0bRuyl7yLYpaVjqzNFQFcWc76SF8%2FJ%2BaARStnsy3EtihD0cjATZ%2FG1r5r4Sv38DJuT3ADHMgdsHv6beYDtZrN0wG%2FWHSUY11nviwiRkKkB%2FlTKSskzvbG5UWFOtuG89cTTSwUwuJZx2QUJ3u6seK5NunG0p%2FVtf01UolIa3igXjIQ%2Frbkuledvh5bAwd0zyRUBDRvKp6ECbpT4NrEFA&X-Amz-Signature=eb50e04dcb77a7fd981a4c180dfaacec48a0743901deea26a1952844310d9d8d&X-Amz-SignedHeaders=host&response-cache-control=private%2C%20max-age%3D604800%2C%20immutable&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiresAt": "2026-06-20T10:29:10.498Z"
+  }
+}

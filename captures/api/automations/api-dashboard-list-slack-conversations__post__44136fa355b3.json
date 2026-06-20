@@ -1,0 +1,9 @@
+{
+  "url": "https://cursor.com/api/dashboard/list-slack-conversations",
+  "path": "/api/dashboard/list-slack-conversations",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:15.544929+00:00",
+  "page_slug": "automations",
+  "body": {}
+}

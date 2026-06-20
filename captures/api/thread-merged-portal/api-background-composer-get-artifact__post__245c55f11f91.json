@@ -1,0 +1,12 @@
+{
+  "url": "https://cursor.com/api/background-composer/get-artifact",
+  "path": "/api/background-composer/get-artifact",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:37.920096+00:00",
+  "page_slug": "thread-merged-portal",
+  "body": {
+    "url": "https://cloud-agent-artifacts.s3.us-east-1.amazonaws.com/artifacts/bc-773361b1-8875-4853-80fb-1540cd28b9ca/opt/cursor/artifacts/assets/deep_scenario_control.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIA5YTTCJ6R3CG2X26J%2F20260620%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260620T103334Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAsaCXVzLWVhc3QtMSJHMEUCIQDCXpn3kiz%2BkaBHl2ADsh2ovp3yQ2I8ZQtcJU9npmS8dQIgVzbaFHEvzcNWA2bSehDux0r6eSxgfp6g7kYnmh2AP2Yq%2FAMI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgw5NDYyMDc4NzA4ODMiDNTiCE763fSCUZO93SrQAwXUf8WG8%2BKjDs66pqUV4pa7dT0VE5N0fenXG48PDa%2BgvPWSl30TNmr2kEOyPZvkIAo9UmjYFecLQp%2BBXrTKW%2FJ6G%2BJCSQI3umvzZR8blqy7xP0%2BSHmA5ZvzPd7OM9hFr4Fg1Ujrc0Gl3aVfXudpn2hMTR%2FSm8OC6RSppXz6DbtCyMvqfRV%2BLshpVNqMZMkR7QfyZCrEqLfVV%2BxI%2BQCeEdcvHLl%2F7QwZXJWNWTJEld3YvKW3DO6R9%2B5X7DDODoIw2opBge%2FhKt1YaKvwXZ6bUW6hi%2BXbrBeezWuSKrTyRFbBGD0F8yQxnxH2l7%2B5XOVkDV%2FdNinsCz6q9j5cB1xAVCDFn9biTHky0%2BnaZl4CNDLPyPgPPCkpBEL3KxWXhoG21hoHiSJZ7PXuZ27ycN2d4LcB%2Bwrs3yXzKpWQnI7f5hDZrtp1hM%2F1i92LBV5Gu7UKeLWzg33QH3KtmUw3Qbbir%2FB6aVxh0D1SvsCkJfuRzqKeklx4gSLmfqlufv0n%2BbvEkx1vBgwdfDtsRmerhz%2F%2FThI4045CfqS23rKcoCTSUKcd71tRtxcO%2Bqe3qD5e8FI0LIKDxgPMWJxVyf5u4kdbmjuUlQcrUlPvlpcBBnMqDmhKMNDT2dEGOqUBwuDM4i2%2BM%2BaP2dLk6uFXO0TQLOVt7mVh6cJw7DCGm3bTF%2F5XSnw7bgy5bTLGSYmL7STYmBiwSpKvb9zgsI3TKv0WZICJoMWZQbFtvReTxdM2%2FEmOd%2FwK0KSnUEmQa1Dt7%2B%2BleSVBVJlSvAje4isZDRg9%2BYY%2FA%2Fi2Kp3iW8x8TxTDhluBRzLiEgJ2BBrUXpG2QifuAASXRygLOJlJYobPTj%2BMLMSY&X-Amz-Signature=5c58b4b693f31a5aa09d65db02eb88b5a9a0a210cf70e4a7896047c1622f589c&X-Amz-SignedHeaders=host&response-cache-control=private%2C%20max-age%3D604800%2C%20immutable&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiresAt": "2026-06-20T10:48:34.718Z"
+  }
+}

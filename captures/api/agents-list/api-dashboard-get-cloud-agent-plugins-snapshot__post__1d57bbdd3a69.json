@@ -1,0 +1,11 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-cloud-agent-plugins-snapshot",
+  "path": "/api/dashboard/get-cloud-agent-plugins-snapshot",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:03.480059+00:00",
+  "page_slug": "agents-list",
+  "body": {
+    "snapshotToken": "ca220a4fef7f7c73305ba5cdb0ecc7cc3ba6ebf98c66990085183850438b5e3c"
+  }
+}

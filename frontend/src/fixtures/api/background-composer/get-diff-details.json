@@ -1,0 +1,43 @@
+{
+  "bcId": "bc-b11c3ab1-6cbe-43e0-b147-c453cc2ee38b",
+  "diff": {
+    "path": "frontend/src/lib/captured/rightPanelTransform.ts",
+    "language": "typescript",
+    "additions": 64,
+    "deletions": 12,
+    "hunks": [
+      {
+        "header": "@@ -98,9 +98,12 @@ function terminalPane(): string {",
+        "oldStart": 98,
+        "oldLines": 9,
+        "newStart": 98,
+        "newLines": 12,
+        "lines": [
+          { "type": "context", "oldLine": 98, "newLine": 98, "content": "/** Terminal pane — captured compact terminal preview. */" },
+          { "type": "del", "oldLine": 99, "content": "function terminalPane(): string {" },
+          { "type": "del", "oldLine": 100, "content": "  return STATIC_PREVIEW;" },
+          { "type": "add", "newLine": 99, "content": "function terminalPane(lines: TerminalLine[]): string {" },
+          { "type": "add", "newLine": 100, "content": "  const body = lines.length" },
+          { "type": "add", "newLine": 101, "content": "    ? renderTerminalLines(lines)" },
+          { "type": "add", "newLine": 102, "content": "    : STATIC_PREVIEW;" },
+          { "type": "context", "oldLine": 101, "newLine": 103, "content": "  return wrap(body);" },
+          { "type": "context", "oldLine": 102, "newLine": 104, "content": "}" }
+        ]
+      },
+      {
+        "header": "@@ -230,6 +233,10 @@ function buildPanel() {",
+        "oldStart": 230,
+        "oldLines": 6,
+        "newStart": 233,
+        "newLines": 10,
+        "lines": [
+          { "type": "context", "oldLine": 230, "newLine": 233, "content": "  const panes =" },
+          { "type": "del", "oldLine": 231, "content": "    terminalPane() +" },
+          { "type": "add", "newLine": 234, "content": "    terminalPane(terminalLines) +" },
+          { "type": "context", "oldLine": 232, "newLine": 235, "content": "    changesPane(changedFiles) +" },
+          { "type": "context", "oldLine": 233, "newLine": 236, "content": "    filesPane(workspaceFiles);" }
+        ]
+      }
+    ]
+  }
+}

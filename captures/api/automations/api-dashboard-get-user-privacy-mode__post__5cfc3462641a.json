@@ -1,0 +1,12 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-user-privacy-mode",
+  "path": "/api/dashboard/get-user-privacy-mode",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:15.474112+00:00",
+  "page_slug": "automations",
+  "body": {
+    "privacyMode": "PRIVACY_MODE_NO_TRAINING",
+    "hasAcknowledgedGracePeriodDisclaimer": true
+  }
+}

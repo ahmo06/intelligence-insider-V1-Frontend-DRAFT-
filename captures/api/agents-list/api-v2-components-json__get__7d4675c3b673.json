@@ -1,0 +1,109 @@
+{
+  "url": "https://status.cursor.com/api/v2/components.json",
+  "path": "/api/v2/components.json",
+  "method": "GET",
+  "status": 200,
+  "captured_at": "2026-06-20T10:27:30.978014+00:00",
+  "page_slug": "agents-list",
+  "body": {
+    "page": {
+      "id": "0tp9ssgtptvs",
+      "name": "Cursor",
+      "url": "https://status.cursor.com",
+      "time_zone": "Etc/UTC",
+      "updated_at": "2026-06-20T10:04:55.235Z"
+    },
+    "components": [
+      {
+        "id": "k0trcq273dr6",
+        "name": "Automations",
+        "status": "operational",
+        "created_at": "2026-04-09T12:49:50.813Z",
+        "updated_at": "2026-06-16T19:41:19.516Z",
+        "position": 7,
+        "description": null,
+        "showcase": true,
+        "start_date": "2026-01-01",
+        "group_id": null,
+        "page_id": "0tp9ssgtptvs",
+        "group": false,
+        "only_show_if_degraded": false
+      },
+      {
+        "id": "2x2chyqwmkzl",
+        "name": "Bugbot",
+        "status": "operational",
+        "created_at": "2026-04-09T12:50:23.139Z",
+        "updated_at": "2026-06-17T17:30:41.274Z",
+        "position": 8,
+        "description": null,
+        "showcase": true,
+        "start_date": "2026-01-01",
+        "group_id": null,
+        "page_id": "0tp9ssgtptvs",
+        "group": false,
+        "only_show_if_degraded": false
+      },
+      {
+        "id": "vsny1qv7v86c",
+        "name": "CLI",
+        "status": "operational",
+        "created_at": "2026-04-09T12:50:51.849Z",
+        "updated_at": "2026-06-17T17:19:45.766Z",
+        "position": 9,
+        "description": null,
+        "showcase": true,
+        "start_date": "2026-01-01",
+        "group_id": null,
+        "page_id": "0tp9ssgtptvs",
+        "group": false,
+        "only_show_if_degraded": false
+      },
+      {
+        "id": "mwv1g9sc7kdh",
+        "name": "Cloud Agents",
+        "status": "operational",
+        "created_at": "2026-04-09T12:51:12.021Z",
+        "updated_at": "2026-06-17T17:19:45.802Z",
+        "position": 10,
+        "description": null,
+        "showcase": true,
+        "start_date": "2026-01-01",
+        "group_id": null,
+        "page_id": "0tp9ssgtptvs",
+        "group": false,
+        "only_show_if_degraded": false
+      },
+      {
+        "id": "jh0714rgjgt4",
+        "name": "cursor.com",
+        "status": "operational",
+        "created_at": "2026-04-09T12:51:33.290Z",
+        "updated_at": "2026-06-10T19:46:52.600Z",
+        "position": 11,
+        "description": null,
+        "showcase": true,
+        "start_date": "2026-01-01",
+        "group_id": null,
+        "page_id": "0tp9ssgtptvs",
+        "group": false,
+        "only_show_if_degraded": false
+      },
+      {
+        "id": "rflc60xp5jp2",
+        "name": "IDE",
+        "status": "operational",
+        "created_at": "2026-04-09T12:51:46.876Z",
+        "updated_at": "2026-06-17T17:19:45.827Z",
+        "position": 12,
+        "description": null,
+        "showcase": true,
+        "start_date": "2026-01-01",
+        "group_id": null,
+        "page_id": "0tp9ssgtptvs",
+        "group": false,
+        "only_show_if_degraded": false
+      }
+    ]
+  }
+}

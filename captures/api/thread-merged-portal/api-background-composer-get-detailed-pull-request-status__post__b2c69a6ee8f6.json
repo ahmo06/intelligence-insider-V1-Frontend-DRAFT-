@@ -1,0 +1,23 @@
+{
+  "url": "https://cursor.com/api/background-composer/get-detailed-pull-request-status",
+  "path": "/api/background-composer/get-detailed-pull-request-status",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:37.927087+00:00",
+  "page_slug": "thread-merged-portal",
+  "body": {
+    "isMerged": true,
+    "isClosed": true,
+    "mergeableState": "unknown",
+    "state": "merged",
+    "title": "Portal documentation: SVG diagrams, data flow map, ELK linear routing",
+    "baseBranch": "main",
+    "headSha": "46a9d29f0334a1d644a5a581c78e1b2e8ddd6b7e",
+    "baseSha": "126b2798d1ff366cbe78c81672e1473ddd21e9c8",
+    "viewerCanEnableAutoMerge": false,
+    "additions": 5017,
+    "deletions": 3,
+    "commitCount": 14,
+    "reviewCount": 0
+  }
+}

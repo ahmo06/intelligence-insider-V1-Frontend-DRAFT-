@@ -1,0 +1,67 @@
+{
+  "url": "https://cursor.com/api/background-composer/list-artifacts",
+  "path": "/api/background-composer/list-artifacts",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:29:45.536527+00:00",
+  "page_slug": "agents-list",
+  "body": {
+    "artifacts": [
+      {
+        "absolutePath": "/opt/cursor/artifacts/assets/deep_credit_dashboard.png",
+        "sizeBytes": "1218049",
+        "updatedAtUnixMs": "1781008600000"
+      },
+      {
+        "absolutePath": "/opt/cursor/artifacts/assets/deep_quant_dashboard.png",
+        "sizeBytes": "1218063",
+        "updatedAtUnixMs": "1781008600000"
+      },
+      {
+        "absolutePath": "/opt/cursor/artifacts/assets/deep_scenario_control.png",
+        "sizeBytes": "1218063",
+        "updatedAtUnixMs": "1781008600000"
+      },
+      {
+        "absolutePath": "/opt/cursor/artifacts/assets/deep_stress_dashboard.png",
+        "sizeBytes": "1218073",
+        "updatedAtUnixMs": "1781008600000"
+      },
+      {
+        "absolutePath": "/opt/cursor/artifacts/assets/review_00_portal.png",
+        "sizeBytes": "1201287",
+        "updatedAtUnixMs": "1781008299000"
+      },
+      {
+        "absolutePath": "/opt/cursor/artifacts/assets/review_01_data_framework.png",
+        "sizeBytes": "350703",
+        "updatedAtUnixMs": "1781008314000"
+      },
+      {
+        "absolutePath": "/opt/cursor/artifacts/assets/review_02_quant_engine.png",
+        "sizeBytes": "344918",
+        "updatedAtUnixMs": "1781008299000"
+      },
+      {
+        "absolutePath": "/opt/cursor/artifacts/assets/review_04_credit_model.png",
+        "sizeBytes": "347085",
+        "updatedAtUnixMs": "1781008299000"
+      },
+      {
+        "absolutePath": "/opt/cursor/artifacts/assets/review_06_stress_testing.png",
+        "sizeBytes": "354716",
+        "updatedAtUnixMs": "1781008299000"
+      },
+      {
+        "absolutePath": "/opt/cursor/artifacts/assets/review_07_word_framework.png",
+        "sizeBytes": "338159",
+        "updatedAtUnixMs": "1781008314000"
+      },
+      {
+        "absolutePath": "/opt/cursor/artifacts/plans/blast_radius_edits_review_14f9fc2d.plan.md",
+        "sizeBytes": "12296",
+        "updatedAtUnixMs": "1781010113000"
+      }
+    ]
+  }
+}

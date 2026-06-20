@@ -1,0 +1,12 @@
+{
+  "url": "https://cursor.com/api/background-composer/get-artifact",
+  "path": "/api/background-composer/get-artifact",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:27:30.344981+00:00",
+  "page_slug": "agents-list",
+  "body": {
+    "url": "https://cloud-agent-artifacts.s3.us-east-1.amazonaws.com/artifacts/bc-91342439-9842-40c4-a14b-08d11dc86941/opt/cursor/artifacts/screenshots/issues_collapsed.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIA5YTTCJ6R24VPQ6DE%2F20260620%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260620T101410Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAsaCXVzLWVhc3QtMSJHMEUCIQCWS6ArclHdBqZl3eE66UTRhnCpcvq7%2FWxrrOHkh5NZ9wIgNcze6lGsxaAxcMtK5rd4ghL0O2rOIBwKzbecCRlnXLUq%2FAMI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgw5NDYyMDc4NzA4ODMiDG1ITW6bu8SOQJy2GyrQAxCPcBMCNtWHj8h%2FKY4QFs2xsQ05SYBknoHevhBIln8JR3uvXl3IVMZGp1d3ABw4aKDvPX%2FOBkV09c4d5%2B8m%2FSBAXbzpKJPT%2BrdiS5SViMApiOp%2BtzBZw1XF78mdzD5J9e8PF8EDH0pYL0Dt0UZ%2FC0VvAll6xxLgkB1%2FtOm0GuP%2F8Nx1I33wYgFA6oWzpnGgnTdqt69CulygOkQZCTuhQFqvm3QtozRUx0VwAPQ6ZkNv8pSVV%2BQwuulUscDREiCsO7S5p7Cv5pa9ZGoDelVJD2e0D3scwyrWyO0fMekZcqfWZNsaqQcfA9Lz3u0wzCULNoam4hb9R2DZYVBbAKEY1q3444Af2WOiLvF2HHt1%2B6%2B18bxkzxCIC9aOOoWfabFk7CnZO6HfeGxh%2BHsNwT5q4GtqPK25QBTmk058qsP3hnG9%2Bp6i9p0tLgpi1M1ORccXyUSLdtuZtAq3V6OCwV45PEDnqNsEE0jQ%2FJqnG004UYRsiX%2BST9PNhpp6C6K1eUtTS3SuaLaxuzd7a84rDtxL0X8QX55cAW00n9eVQy%2Br6es7Y%2BPxGHL9mboTUu69Ql5AlWAZ8bJo3zEPTNQf5CmgLck5eXMYP79RMn2WrrGkayx7MNHP2dEGOqUB1Q0uZAZ0pV4v9MH4BcH5uIPhmC04aZ8u8LjhvxcY6t7QftjKc0ZAJbwptK%2Fm3Pocz1Q%2BGUe0%2BemcU7BZFHM1ad6mo5tyiYEs8Ra4Fg0G%2BzN%2FGkotSjSGVsQ6XdTW%2FG7tO%2BoFGO4TXNrP6gvqteMKhvuP3csabR9ZDgrSJEqOhZsB5QzkbD%2B4%2FIA5qS9z5PepH1%2BoAaGrgFfhuI1qAyODUCqs0Tww&X-Amz-Signature=b07fb6e6891fc74248f1539d766896efd2d0242d6715072a2f0c1ee4920c629f&X-Amz-SignedHeaders=host&response-cache-control=private%2C%20max-age%3D604800%2C%20immutable&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiresAt": "2026-06-20T10:29:10.499Z"
+  }
+}

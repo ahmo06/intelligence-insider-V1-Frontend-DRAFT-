@@ -1,0 +1,12 @@
+{
+  "url": "https://cursor.com/api/dashboard/client-action",
+  "path": "/api/dashboard/client-action",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:20.759848+00:00",
+  "page_slug": "bugbot",
+  "body": {
+    "success": true,
+    "errorMessage": "{\"hasPendingSetupOnboardingCreditClaim\":false,\"isCloudEnvironmentSetupPromoActive\":false}"
+  }
+}

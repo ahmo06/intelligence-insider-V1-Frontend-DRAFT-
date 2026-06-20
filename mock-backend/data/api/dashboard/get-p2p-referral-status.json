@@ -1,1 +1,15 @@
-{"isEligible":true,"code":"4P33QMYZVYRD","urlPath":"/referral?code=4P33QMYZVYRD","remainingCap":10,"title":"Refer friends","description":"Earn up to $250 every month by referring friends. They get 50% off their first month; you get $25 in usage credit when they buy a plan. Valid for 10 rewards per month.","cycleStartMs":"1781523241000","capWindowLabel":"this billing cycle","referrerCreditCents":2500,"currency":"usd","referrerMode":"flat","refereeMode":"stripe_coupon","remainingRedemptionCap":100}
+{
+  "isEligible": true,
+  "code": "4P33QMYZVYRD",
+  "urlPath": "/referral?code=4P33QMYZVYRD",
+  "remainingCap": 10,
+  "title": "Refer friends",
+  "description": "Earn up to $250 every month by referring friends. They get 50% off their first month; you get $25 in usage credit when they buy a plan. Valid for 10 rewards per month.",
+  "cycleStartMs": "1781523241000",
+  "capWindowLabel": "this billing cycle",
+  "referrerCreditCents": 2500,
+  "currency": "usd",
+  "referrerMode": "flat",
+  "refereeMode": "stripe_coupon",
+  "remainingRedemptionCap": 100
+}

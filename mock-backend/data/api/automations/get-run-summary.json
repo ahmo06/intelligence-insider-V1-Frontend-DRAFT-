@@ -1,1 +1,87 @@
-{"windows":[{"key":"1h"},{"key":"24h"},{"key":"7d"}]}
+{
+  "windows": [
+    {
+      "key": "1h"
+    },
+    {
+      "key": "24h"
+    },
+    {
+      "key": "7d"
+    }
+  ],
+  "histogram": [
+    {
+      "startTime": "1781346791"
+    },
+    {
+      "startTime": "1781371991"
+    },
+    {
+      "startTime": "1781397191"
+    },
+    {
+      "startTime": "1781422391"
+    },
+    {
+      "startTime": "1781447591"
+    },
+    {
+      "startTime": "1781472791"
+    },
+    {
+      "startTime": "1781497991"
+    },
+    {
+      "startTime": "1781523191"
+    },
+    {
+      "startTime": "1781548391"
+    },
+    {
+      "startTime": "1781573591"
+    },
+    {
+      "startTime": "1781598791"
+    },
+    {
+      "startTime": "1781623991"
+    },
+    {
+      "startTime": "1781649191"
+    },
+    {
+      "startTime": "1781674391"
+    },
+    {
+      "startTime": "1781699591"
+    },
+    {
+      "startTime": "1781724791"
+    },
+    {
+      "startTime": "1781749991"
+    },
+    {
+      "startTime": "1781775191"
+    },
+    {
+      "startTime": "1781800391"
+    },
+    {
+      "startTime": "1781825591"
+    },
+    {
+      "startTime": "1781850791"
+    },
+    {
+      "startTime": "1781875991"
+    },
+    {
+      "startTime": "1781901191"
+    },
+    {
+      "startTime": "1781926391"
+    }
+  ]
+}

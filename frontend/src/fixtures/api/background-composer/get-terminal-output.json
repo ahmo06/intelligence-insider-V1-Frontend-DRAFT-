@@ -1,0 +1,19 @@
+{
+  "bcId": "bc-b11c3ab1-6cbe-43e0-b147-c453cc2ee38b",
+  "lines": [
+    { "type": "stdout", "text": "$ npm run build" },
+    { "type": "stdout", "text": "" },
+    { "type": "stdout", "text": "> intelligence-insider-frontend@0.1.0 build" },
+    { "type": "stdout", "text": "> next build" },
+    { "type": "stdout", "text": "" },
+    { "type": "stdout", "text": "  ▲ Next.js 15.5.4" },
+    { "type": "stdout", "text": "" },
+    { "type": "stdout", "text": "   Creating an optimized production build ..." },
+    { "type": "stdout", "text": " ✓ Compiled successfully" },
+    { "type": "stdout", "text": "   Linting and checking validity of types ..." },
+    { "type": "stderr", "text": "warning: 'unused' is assigned a value but never used." },
+    { "type": "stdout", "text": "   Collecting page data ..." },
+    { "type": "stdout", "text": "   Generating static pages (8/8)" },
+    { "type": "stdout", "text": " ✓ Build completed in 9.4s" }
+  ]
+}

@@ -27,28 +27,42 @@ by mock/representative data, with the dynamic/runtime states coded in (see §5).
 | `Product FAQ Agent - Automations \| Cursor` | `/agents` | Automations view + run-status vocabulary |
 | `Cursor Agent - Turn your ideas into code` | `/agents` | Agent list with a **running** agent row (indeterminate spinner) |
 | `Cursor - The best way to code with AI` | `/agents` | Usage **dashboard** (charts/tiles) |
+| `Archive 4.zip` → `Sign in` | authenticator.cursor.sh | **Login** page (email + OAuth) |
+| `Archive 4.zip` → `light theme` | `/agents/bc-…` | **Light/white theme** of the thread (`<html class="light">`) |
+| `Archive 4.zip` → `subagent tab running` | `/agents/bc-…` | Running **subagent rows** (synced spinners) |
+| `Archive 4.zip` → `running sub agent and finished sub agent` | `/agents/bc-…` | Present-tense **"Working for"** turn header (running) + finished subagents |
+| `Archive 4.zip` → `exploring auto expanded while during execution` | `/agents/bc-…` | Automations expanded during execution |
 | `cursor.com (2).zip` | — | Older partial scrape (RSC payloads only, not renderable). Reference only. |
+
+All captures are now built into the navigable multi-page `frontend/` (see §3). Serve with
+`python3 -m http.server 8102 --directory frontend`; `/_pages.html` lists every route.
 
 The renderable static reconstruction of the agent shell lives in `frontend/` (built by
 `scripts/reconstruct_site.py`). Serve with `python3 -m http.server 8102 --directory frontend`.
 
 ## 3. Page / route inventory
 
-| Route | Status in captures | Notes |
+| Route (in `frontend/`) | Status | Notes |
 |---|---|---|
-| `/agents` (shell + thread detail) | Captured, rebuilt in `frontend/` | Primary surface |
-| `/agents/:bcId?branch=…` | Captured (`thread`) | Thread detail with full component set |
-| `/automations` | Captured (automations) | Run history, statuses, templates |
-| `/dashboard` | Captured (usage dashboard) | Charts/tiles, bugbot legend |
-| `/dashboard/bugbot` | Referenced (links in DOM) | Not separately captured |
-| `/marketplace` | Referenced (nav/links) | **Missing** — request capture |
-| `/profile` | Referenced (sidebar footer) | **Missing** — request capture |
-| `/budget` | Referenced (sidebar nav "Budget") | **Missing** — request capture |
-| Login / auth | Not captured | **Missing** — request capture |
+| `/` and `/agents` | Built + navigable | Agents shell (dev-env thread) |
+| `/agents/bc-ea9f9e15-…` | Built + navigable | Rich thread (thinking/tool/todo/tables) |
+| `/automations` | Built + navigable | Automation config/run view |
+| `/dashboard` | Built + navigable | Usage dashboard (credits, heatmap, integrations) |
+| `/login` | Built + navigable | Sign in (email + Google/GitHub/Apple) |
+| `/_states/light-theme` | Built | Light/white theme thread |
+| `/_states/subagent-tab-running` | Built | Running subagent rows |
+| `/_states/subagent-running-finished` | Built | "Working for" running header + finished subagents |
+| `/_states/automations-running` | Built | Automations expanded during execution |
+| `/_states/agents-list-running` | Built | Agent list with running row |
+| `/_pages.html` | Built | Dev index linking all routes |
+| `/dashboard/bugbot` | Referenced only | Linked in DOM; not separately captured |
+| `/marketplace`, `/profile`, `/budget` | **Out of scope** | Per user direction — not needed |
 
-> The user will feed additional page captures. As each arrives: extract with
-> `scripts/reconstruct_site.py`-style parsing, add a route entry here, and add any new
-> components to `COMPONENT_REFERENCE.md`.
+> As new captures arrive (e.g. more login/running variants): drop them on `main`, then
+> rebuild with `python3 scripts/reconstruct_site.py`. Add new components to
+> `COMPONENT_REFERENCE.md`. The builder auto-discovers `*.webarchive.zip` and the loose
+> `.webarchive` files inside `Archive*.zip`; map new captures to routes via `PAGE_ROUTES`
+> in the script.
 
 ## 4. Layout / app shell map
 
@@ -86,8 +100,11 @@ These are real and documented in the bundles (see `COMPONENT_REFERENCE.md` §sta
   - Running → verb `"Thinking"` (no duration). Class `composer-run-title-verb`.
   - Done → verb `"Thought"` + `composer-run-title-rest` = `" for N second(s)"`
     (`N = max(1, round(ms/1000))`, pluralized). Collapsible; chevron rotates.
-- **Turn-level header** — `"Worked for 1m 46s"` collapse header (running variant likely
-  present-tense "Working for…"; present in `composer-run-title` family).
+- **Turn-level header** — present/past confirmed: `"Working for 5m 18s"` (running, wrapped
+  by `div[data-agent-turn-hidden-steps="N"]`) ↔ `"Worked for 1m 46s"` (done).
+- **Subagent rows** — spawned subagents render as `a.group/agent-row[data-subagent-task-id]`;
+  running rows show a phase-synced indeterminate spinner (`--cursor-spinner-sync-delay`),
+  finished rows show a status icon.
 - **Tool/command card** — `data-component="tool-display-card"`, expandable, shows
   `$ command` then `<pre>` output; status from a proto-backed enum; uses
   `deriveToolActionContext`. Shell log lines typed `stdout|stderr|json|status|error`.

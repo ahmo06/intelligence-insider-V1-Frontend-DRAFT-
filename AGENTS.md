@@ -10,9 +10,11 @@ visually in a browser inside the Cloud Agent VM.
 
 ### The front end you can see and edit: `frontend/`
 
-`frontend/` is a viewable, editable static reconstruction of the Cursor "agents"
-dashboard. It renders as the real dark-themed Cursor UI (sidebar, agent list, header,
-Files tab, etc.) and is the thing to modify for front-end work.
+`frontend/` is a viewable, editable, **navigable multi-page** static reconstruction of the
+Cursor "agents" UI. Routes (clicking sidebar links works): `/` & `/agents` (shell),
+`/automations`, `/dashboard`, `/agents/bc-ea9f9e15-…` (rich thread), `/login`, plus state
+variants under `/_states/*` (light theme, running subagents, etc.). `/_pages.html` lists
+all routes. It renders as the real Cursor UI and is the thing to modify for front-end work.
 
 Serve it and open it in Chrome (Node 22 / Python 3.12 available in the VM):
 
@@ -39,9 +41,13 @@ app.
 via `scripts/reconstruct_site.py`:
 
 ```
-python3 scripts/reconstruct_site.py            # rebuild ./frontend (static, no JS)
-python3 scripts/reconstruct_site.py --with-js  # full faithful copy incl. JS (will error on hydration)
+python3 scripts/reconstruct_site.py            # rebuild navigable multi-page ./frontend (static, no JS)
+python3 scripts/reconstruct_site.py --single   # just one capture at root
+python3 scripts/reconstruct_site.py --with-js  # keep JS (will error on hydration offline)
 ```
+
+The builder auto-discovers `*.webarchive.zip` and loose `.webarchive` files inside
+`Archive*.zip`; map new captures to routes via `PAGE_ROUTES` in the script.
 
 WARNING: re-running the script **overwrites** `frontend/`, discarding hand edits. Only
 regenerate when you want to reset to the original capture.

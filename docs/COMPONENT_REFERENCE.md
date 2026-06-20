@@ -72,14 +72,33 @@
 - No `assistant-message-card`; assistant output is Streamdown markdown inside `prose …` wrappers.
 - Plain text = bare `<p>` (no `data-streamdown` on the `<p>`).
 
-### B4. Turn footer "Worked for …" — Built/Partial
+### B4. Turn footer "Worked for …" / "Working for …" — Built (BOTH tenses confirmed)
+**Done** (capture: thread / dev):
 ```html
 <button class="group flex min-w-0 items-center gap-1 text-base text-secondary transition-colors cursor-pointer hover:text-primary">
   <span class="min-w-0 truncate"><span>Worked for </span>1m 46s</span>
-  <svg class="lucide lucide-chevron-right h-3 w-3 … transition-all duration-150 opacity-0 group-hover:opacity-80">…</svg>
+  <svg class="lucide lucide-chevron-right h-3 w-3 …">…</svg>
 </button>
 ```
+**Running** (capture: `running_sub_agent_and_finished_sub_agent`): same markup, present tense, wrapped by `div[data-agent-turn-hidden-steps="N"]`:
+```html
+<div data-agent-turn-hidden-steps="109">
+  <button class="group flex min-w-0 cursor-pointer items-center gap-1 text-base text-secondary transition-colors hover:text-primary">
+    <span class="min-w-0 truncate"><span>Working for </span>5m 18s</span><svg class="lucide lucide-chevron-right …">…</svg></button></div>
+```
+So the turn header mirrors ThinkingBlock: **"Working for"** (running) ↔ **"Worked for"** (done).
 - In-progress planning line: `div.flex.items-center.gap-1.text-base.text-brand-gray-300 > span.make-shine` = "Planning next moves".
+
+### B5. Subagent rows / "subagent tab" — Built (capture: `subagent_tab_running`)
+Spawned subagents render as a stack of linked rows (not ARIA tabs):
+```html
+<a data-subagent-task-id="hydrated-tool-call-bc-…-109-10"
+   class="group/agent-row relative flex items-center border border-transparent text-left no-underline transition-colors cursor-pointer rounded-[16px] …">
+  … <div class="ui-progress … ui-progress-ring size-[13px] ui-progress-indeterminate"
+       role="progressbar" style="--cursor-spinner-sync-duration:1000ms; --cursor-spinner-sync-delay:-253ms; width:14px; height:14px"> … </div> …
+</a>
+```
+- **Running** subagent row shows the indeterminate ring spinner; **finished** shows a status icon (check). Multiple spinners stay phase-synced via `--cursor-spinner-sync-delay`.
 
 ---
 

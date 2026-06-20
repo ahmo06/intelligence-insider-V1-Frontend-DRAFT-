@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://cdn.workos.com/fonts/CursorGothic-Regular.woff2) format('woff2');
+  src: url(/_ext/cdn.workos.com/fonts/CursorGothic-Regular.woff2) format('woff2');
 }
 
 @font-face {
@@ -11,5 +11,5 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://cdn.workos.com/fonts/CursorGothic-Bold.woff2) format('woff2');
+  src: url(/_ext/cdn.workos.com/fonts/CursorGothic-Bold.woff2) format('woff2');
 }

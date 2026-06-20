@@ -56,7 +56,7 @@ PAGE_ROUTES = [
     ("running sub agent and finished", "_states/subagent-running-finished", False),
     ("exploring auto expanded", "_states/automations-running", False),
     ("cursor agent - turn your ideas", "_states/agents-list-running", False),
-    ("sign in", "login", True),
+    ("sign in", "login", False),
 ]
 
 
@@ -100,6 +100,8 @@ def rewrite_cross_origin(text, root_host, asset_prefix=""):
     text = text.replace("https://cursor.com", asset_prefix)
     text = text.replace("https://www.cursor.com", asset_prefix)
     text = text.replace("https://workoscdn.com", "/_ext/workoscdn.com")
+    text = text.replace("https://cdn.workos.com", "/_ext/cdn.workos.com")
+    text = text.replace("https://workos.imgix.net", "/_ext/workos.imgix.net")
     text = text.replace(
         "https://cloud-agent-artifacts.s3.us-east-1.amazonaws.com",
         "/_ext/cloud-agent-artifacts.s3.us-east-1.amazonaws.com",

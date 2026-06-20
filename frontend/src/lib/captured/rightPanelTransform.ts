@@ -70,6 +70,26 @@ const ICON_FILES = lucide(
   '<path d="M20 7h-3a2 2 0 0 1-2-2V2"></path><path d="M9 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7l4 4v10a2 2 0 0 1-2 2Z"></path><path d="M3 7.6v12.8A1.6 1.6 0 0 0 4.6 22h9.8"></path>',
 );
 const ICON_CHEVRON_RIGHT = lucide("chevron-right", '<path d="m9 18 6-6-6-6"></path>', 13);
+const ICON_ARROW_LEFT = lucide(
+  "arrow-left",
+  '<path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path>',
+  15,
+);
+const ICON_ARROW_RIGHT = lucide(
+  "arrow-right",
+  '<path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>',
+  15,
+);
+const ICON_REFRESH = lucide(
+  "rotate-cw",
+  '<path d="M21 12a9 9 0 1 1-2.64-6.36"></path><polyline points="21 3 21 8 16 8"></polyline>',
+  14,
+);
+const ICON_GLOBE = lucide(
+  "globe",
+  '<circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path>',
+  12,
+);
 const ICON_FOLDER = lucide(
   "folder",
   '<path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path>',
@@ -216,14 +236,50 @@ function filesPane(artifacts: Artifact[]): string {
   );
 }
 
-/** Browser pane — empty state; embedded browser view is capture-blocked (WP-11). */
-function browserPane(): string {
+/** A browser-toolbar icon button (back/forward/refresh), reusing the tab hover pattern. */
+function browserToolButton(action: string, label: string, iconHtml: string): string {
   return (
-    `<div data-rp-pane="browser" class="hidden h-full items-center justify-center p-6">` +
-    `<div class="flex h-full flex-col items-center justify-center gap-2 text-center">` +
-    `<span class="inline-flex items-center text-icon-secondary">${cursorIcon("cloud", GLYPH_CLOUD, 22)}</span>` +
-    `<span class="text-base text-secondary">Browser view — capture required</span>` +
-    `</div></div>`
+    `<button type="button" data-rp-browser="${action}" aria-label="${escapeHtml(label)}" ` +
+    `class="flex size-7 flex-none items-center justify-center rounded-md text-secondary transition-colors duration-150 hover:bg-quaternary hover:text-primary">` +
+    `<span class="inline-flex items-center">${iconHtml}</span>` +
+    `</button>`
+  );
+}
+
+/**
+ * Browser pane (WP-11) — a captured-style embedded browser: a toolbar row
+ * (back / forward / refresh + an address field) over an `<iframe>` previewing
+ * the running frontend at `http://localhost:3000/agents`. A faithful *live*
+ * browser pane (the real Cursor "Browser" tab) is still capture-blocked and
+ * needs a live capture + a Browser MCP API (see BACKEND_GAPS Phase 6); this
+ * dev-time preview is the closest mappable stand-in. Back/forward/refresh are
+ * wired to the iframe (same-origin) in `CapturedShell`.
+ */
+const BROWSER_PREVIEW_URL = "http://localhost:3000/agents";
+const BROWSER_PREVIEW_SRC = "/agents";
+
+function browserPane(): string {
+  const toolbar =
+    `<div class="flex items-center gap-1 border-b border-tertiary px-2" style="height: 36px;">` +
+    browserToolButton("back", "Back", ICON_ARROW_LEFT) +
+    browserToolButton("forward", "Forward", ICON_ARROW_RIGHT) +
+    browserToolButton("refresh", "Refresh", ICON_REFRESH) +
+    `<div class="ml-1 flex min-w-0 flex-1 items-center gap-1.5 rounded-md border border-tertiary px-2 text-xs text-secondary" style="height: 24px; background: var(--bg-elevated);">` +
+    `<span class="inline-flex shrink-0 items-center text-icon-secondary">${ICON_GLOBE}</span>` +
+    `<span data-rp-browser-url="true" class="min-w-0 truncate">${escapeHtml(BROWSER_PREVIEW_URL)}</span>` +
+    `</div>` +
+    `</div>`;
+  const frame =
+    `<div class="relative overflow-hidden" style="height: calc(100% - 36px);">` +
+    `<iframe data-rp-browser-frame="true" title="Browser preview — ${escapeHtml(BROWSER_PREVIEW_URL)}" ` +
+    `src="${BROWSER_PREVIEW_SRC}" loading="lazy" referrerpolicy="no-referrer" ` +
+    `class="absolute inset-0 border-0" style="width: 100%; height: 100%; background: var(--bg-chrome);"></iframe>` +
+    `</div>`;
+  return (
+    `<div data-rp-pane="browser" class="hidden h-full overflow-hidden">` +
+    toolbar +
+    frame +
+    `</div>`
   );
 }
 

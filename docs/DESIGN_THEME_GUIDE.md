@@ -1,5 +1,9 @@
 # Design / Theme Guide — Cursor Agents Web UI
 
+> Note: this is the original condensed extract. The **canonical, expanded** design system
+> now lives in [`design-guidelines/`](./design-guidelines/). This file is kept for quick
+> reference and is consistent with it.
+
 > Extracted from the captured CSS bundles (`05~c6vvyucou2.css` = Tailwind v4 `@theme` +
 > utilities; `0c.v-yjrjb6e1.css` = anysphere tokens + components). All values quoted are
 > ground truth from the captures. The app runs **dark only** in these captures

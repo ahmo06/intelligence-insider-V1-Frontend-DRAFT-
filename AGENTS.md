@@ -34,11 +34,35 @@ the scripts lets the server-rendered DOM + CSS render faithfully and stay stable
 editable. So treat `frontend/` as an editable visual/markup template, not an interactive
 app.
 
+### Repo layout (post-reorg)
+
+- `archives/webarchives/` — Safari `.webarchive` captures (zipped), incl. `Archive 4.zip`.
+- `archives/legacy/` — `cursor.com (2).zip` (older scrape; source of the API fixtures).
+- `frontend/` — transitional static reconstruction (below).
+- `mock-backend/` — fake backend feeding the frontend (below).
+- `docs/` — `SYSTEM_MAP.md`, `COMPONENT_REFERENCE.md`, and `design-guidelines/` (canonical design system).
+- `scripts/reconstruct_site.py` — rebuilds `frontend/` from `archives/webarchives/`.
+
+### Fake backend: `mock-backend/`
+
+Serves ~95 captured cursor.com API JSON responses (the transitional "stubs") so a future
+dynamic frontend can develop against realistic data before the real backend exists.
+Dependency-free (stdlib only):
+
+```
+python3 mock-backend/server.py            # http://127.0.0.1:4000 (GET+POST, CORS)
+# /__mock/health, /__mock/endpoints, and /api/** mirror data/api/**.json
+```
+
+Fixtures live at `mock-backend/data/api/**`; add/override by dropping a `.json` there and
+updating `endpoints.json`. The frontend is currently static (no live fetch), so the mock
+backend is for the rebuilt dynamic frontend, not the static reconstruction.
+
 ### Regenerating `frontend/` from the source capture
 
-`frontend/` is generated from the committed Safari capture
-`*.webarchive.zip` (a binary-plist bundle of the fully rendered page + all subresources)
-via `scripts/reconstruct_site.py`:
+`frontend/` is generated from the captures in `archives/webarchives/` (Safari
+`.webarchive` binary-plist bundles of the fully rendered page + subresources) via
+`scripts/reconstruct_site.py`:
 
 ```
 python3 scripts/reconstruct_site.py            # rebuild navigable multi-page ./frontend (static, no JS)
@@ -46,34 +70,27 @@ python3 scripts/reconstruct_site.py --single   # just one capture at root
 python3 scripts/reconstruct_site.py --with-js  # keep JS (will error on hydration offline)
 ```
 
-The builder auto-discovers `*.webarchive.zip` and loose `.webarchive` files inside
-`Archive*.zip`; map new captures to routes via `PAGE_ROUTES` in the script.
+The builder auto-discovers captures under `archives/webarchives/` (`*.webarchive.zip` and
+loose `.webarchive` files inside `Archive*.zip`); map new captures to routes via
+`PAGE_ROUTES` in the script.
 
 WARNING: re-running the script **overwrites** `frontend/`, discarding hand edits. Only
 regenerate when you want to reset to the original capture.
 
 ### Rebuild reference docs (`docs/`)
 
-`docs/` contains the reverse-engineered map of the system for rebuilding/modifying the
-frontend, derived from the `*.webarchive.zip` captures:
-
 - `docs/SYSTEM_MAP.md` — system overview, route/page inventory, app-shell map, runtime
   states to build, and the piece-by-piece component build-up plan (built vs stub).
-- `docs/DESIGN_THEME_GUIDE.md` — design tokens (colors/type/spacing/radius/shadows) with
-  real values + `color-mix` formulas, and all `@keyframes`.
 - `docs/COMPONENT_REFERENCE.md` — per-component markup signatures, states, runtime labels
   (Thinking/Thought, "Worked for", running spinners), and status enums.
+- `docs/design-guidelines/` — canonical design system: colors/themes, typography/fonts,
+  spacing/layout, shadows, animations, component specs, the proposed questions flow
+  (`07-questions-flow.md`), and the master font-size reference (`08-font-size-master-reference.md`).
+- `docs/DESIGN_THEME_GUIDE.md` — condensed original extract (superseded by `design-guidelines/`).
 
-The captures are Safari `.webarchive` bundles (full rendered DOM + subresources). Parse
-them with the same binary-plist approach as `scripts/reconstruct_site.py`. The
-`AskUserForm`/questions interface is a stub (not present in any capture) — see reference §K.
-
-### Other contents
-
-- `cursor.com (2).zip` — an earlier partial scrape (mostly Next.js RSC stream payloads
-  and compiled chunks, with no full HTML document). Not directly renderable; use the
-  `.webarchive` capture / `frontend/` instead. Kept as a reference only.
-- `README.md` — placeholder title.
+The captures are Safari `.webarchive` bundles (full rendered DOM + subresources). The
+`AskUserForm`/questions interface is NOT in any capture — `07-questions-flow.md` is a
+proposed design.
 
 ### If a real Next.js source project is added later
 

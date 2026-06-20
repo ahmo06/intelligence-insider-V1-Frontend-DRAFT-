@@ -6,8 +6,14 @@ derived from the `*.webarchive.zip` captures in the repo root.
 | Doc | Purpose |
 |---|---|
 | [`SYSTEM_MAP.md`](./SYSTEM_MAP.md) | What the system is, page/route inventory, app-shell map, runtime/dynamic behavior to build, and the piece-by-piece component build-up plan (built vs stub). |
-| [`DESIGN_THEME_GUIDE.md`](./DESIGN_THEME_GUIDE.md) | Design tokens (colors/typography/spacing/radius/shadows) with real values + `color-mix` formulas, breakpoints, and all `@keyframes` animations. |
 | [`COMPONENT_REFERENCE.md`](./COMPONENT_REFERENCE.md) | Per-component catalog: exact markup signatures, `data-*` attributes, states, runtime labels (e.g. Thinking/Thought, Worked for, running spinners), and status enums. |
+| [`design-guidelines/`](./design-guidelines/) | **Canonical design system** — colors/themes, typography/fonts, spacing/layout, shadows, animations, component design specs, the proposed questions flow, and the master font-size reference (see its `README.md`). |
+| [`DESIGN_THEME_GUIDE.md`](./DESIGN_THEME_GUIDE.md) | Condensed original token/animation extract. Superseded by `design-guidelines/` (kept for quick reference). |
+
+### `design-guidelines/` contents
+- `01-colors-and-themes.md`, `02-typography-and-fonts.md`, `03-spacing-layout-radius.md`,
+  `04-shadows-and-elevation.md`, `05-animations-and-motion.md`, `06-components.md`,
+  `07-questions-flow.md` (PROPOSED), `08-font-size-master-reference.md`.
 
 ## How these were produced
 

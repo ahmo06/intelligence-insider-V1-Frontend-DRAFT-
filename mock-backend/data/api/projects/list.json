@@ -437,6 +437,8 @@
         "hasStartedVm": true,
         "repoUrl": "https://github.com/ahmo06/climate-risk-model",
         "status": "BACKGROUND_COMPOSER_STATUS_FINISHED",
+        "isUnread": true,
+        "hasPendingQuestion": true,
         "source": "BACKGROUND_COMPOSER_SOURCE_GLASS",
         "updatedAtMs": 1781436892368,
         "prUrl": "https://github.com/ahmo06/climate-risk-model/pull/4",

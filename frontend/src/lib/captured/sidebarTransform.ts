@@ -2,48 +2,50 @@ import type { AuthUser } from "@/types/auth";
 import type { ProjectGroup } from "@/types/project";
 
 /**
- * Server-side DOM-string surgery on the captured Cursor sidebar (WP-1/2/3).
+ * Server-side DOM-string surgery on the captured Cursor sidebar (WP-1/2/3+).
  *
- * GOD RULE: we do NOT hand-build React UI for visible layout. Instead we
- * transform the captured minified HTML and re-use the exact class strings that
- * already exist in `src/captured/agents-list.html` (and the shared sidebar in
- * `automations.html` / `thread-merged-portal.html`). Every new element below is
- * assembled from a class string lifted verbatim from those captures.
- *
- * The function only touches the sidebar inside `div.agents-page`; it anchors on
- * markers that appear exactly once per capture (the primary `<nav>`, the thread
- * list container, and the user footer "Ultra" line).
+ * GOD RULE: transform captured minified HTML; re-use exact class strings from
+ * `src/captured/agents-list.html`.
  */
 
-/**
- * `ui-*` class list shared by every captured `cursor-icon` `<i>` in the
- * sidebar nav (lifted from the `data-icon-name="agent"` / `"robot"` icons).
- */
 const ICON_CLASSES =
   "ui-icon ui-1j61x8r ui-etm3q0 ui-1tachi3 ui-1qt6sjn ui-o5v014 ui-3nfvp2 ui-6s0dn4 ui-l56j7k ui-1heor9g ui-1oai4fc ui-higkf7 ui-xymvpz ui-krqix3 ui-1403hyl ui-2b8uid ui-6mezaz ui-vmahel ui-lh3980 ui-87ps6o ui-1winvzj ui-1u4itkb ui-1q5xvfy ui-1yj7g93 cursor-icon";
 
-/**
- * Primary-nav anchor class string (lifted verbatim from the captured
- * "Automations" / "New Agent" nav rows).
- */
 const NAV_ROW_CLASSES =
   "box-border relative inline-flex whitespace-nowrap rounded-md disabled:pointer-events-none disabled:opacity-50 selection:text-current transition-colors duration-150 focus:outline-none motion-reduce:transition-none [&amp;&gt;svg]:shrink-0 bg-transparent hover:text-primary hover:bg-quaternary font-medium text-base [&amp;&gt;svg]:size-3.5 h-8 w-full items-center justify-start gap-2 px-2 text-primary";
 
-/** Thread-row anchor class string (lifted verbatim from a captured composer row). */
 const ROW_CLASSES =
   "group relative cursor-pointer rounded-md text-base hover:bg-quaternary-opaque hover:text-primary data-[selected='true']:bg-quaternary-opaque flex h-8 flex-row items-center px-1.5";
 
-/** Indeterminate running spinner markup (lifted verbatim from a captured running row). */
 const RUNNING_SPINNER =
   '<div class="ui-progress ui-78zum5 ui-6s0dn4 ui-l56j7k ui-2lah0s ui-progress-ring size-[13px] ui-progress-indeterminate" role="progressbar" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100" style="--cursor-spinner-sync-duration: 1000ms; width: 14px; height: 14px;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="ui-2lah0s ui-138fvbv ui-1aquc0h ui-lmf4m6 ui-1esw782 ui-a4qsjk ui-pvocbt ui-1so62im ui-19w4fkz" aria-hidden="true"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" class="ui-progress-ring-track ui-z5rk10" fill="none"></circle><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6.031857894892403 31.667253948185113" stroke-linecap="round" class="ui-progress-ring-fill ui-197sbye ui-1ib35zr ui-4wkmsb ui-1bqoo3p ui-6tor67" fill="none" style="transform: rotate(-90deg); transform-origin: center center;"></circle></svg></div>';
 
-/** Unread dot markup (lifted verbatim from the captured unread row). */
-const UNREAD_DOT =
-  '<span class="size-1.5 rounded-full bg-accent" title="Unread"></span>';
+/** Grey dot — opened / viewed session. */
+const GREY_DOT =
+  '<span class="size-[5px] flex-shrink-0 rounded-full" style="background: var(--text-tertiary);" title="Opened"></span>';
 
-/** Collapse chevron markup (lifted verbatim from the captured date-group header). */
-const HEADER_CHEVRON =
-  '<div class="shrink-0 opacity-0 transition duration-200 group-hover:opacity-60"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></div>';
+/** Green dot — finished, summary not yet viewed. */
+const GREEN_DOT =
+  '<span class="size-[5px] flex-shrink-0 rounded-full" style="background: var(--green);" title="Finished — summary not viewed"></span>';
+
+/** Orange question mark — pending user question in session. */
+const QUESTION_MARK =
+  '<span class="flex size-[13px] flex-shrink-0 items-center justify-center text-[10px] font-semibold" style="color: var(--orange);" title="Question pending">?</span>';
+
+const CHEVRON_RIGHT =
+  '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>';
+
+const CHEVRON_DOWN =
+  '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>';
+
+const ICON_PLUS =
+  '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>';
+
+const ICON_DOTS =
+  '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>';
+
+const ICON_BTN =
+  "box-border relative inline-flex items-center justify-center rounded-md disabled:pointer-events-none disabled:opacity-50 transition-colors duration-150 focus:outline-none bg-transparent text-secondary hover:text-primary hover:bg-quaternary h-6 w-6 p-0 shrink-0";
 
 function escapeHtml(value: string): string {
   return value
@@ -61,19 +63,18 @@ function isRunning(status: string | undefined): boolean {
   return Boolean(status && status.toUpperCase().endsWith("RUNNING"));
 }
 
-/**
- * Find the index just past the `</div>` that matches the `<div` beginning at
- * `start`, by counting nested `div` open/close tags.
- */
+function isFinished(status: string | undefined): boolean {
+  return Boolean(status && status.toUpperCase().endsWith("FINISHED"));
+}
+
 function matchDivEnd(html: string, start: number): number {
   const tagRe = /<(\/?)div\b/gi;
   tagRe.lastIndex = start;
   let depth = 0;
   let m: RegExpExecArray | null;
   while ((m = tagRe.exec(html))) {
-    if (m[1] === "") {
-      depth += 1;
-    } else {
+    if (m[1] === "") depth += 1;
+    else {
       depth -= 1;
       if (depth === 0) {
         const gt = html.indexOf(">", tagRe.lastIndex);
@@ -84,10 +85,7 @@ function matchDivEnd(html: string, start: number): number {
   return -1;
 }
 
-/**
- * (a/b/c) Remove the Dashboard, Bugbot and top-level "New Agent" nav links from
- * the primary `<nav>`; keep Automations (and anything else).
- */
+/** Remove Dashboard/Bugbot only; keep New Agent + Automations. */
 function transformNav(html: string): string {
   const navOpen = '<nav class="flex flex-col gap-px pb-1">';
   const start = html.indexOf(navOpen);
@@ -100,78 +98,79 @@ function transformNav(html: string): string {
   const kept = (inner.match(anchorRe) ?? []).filter((anchor) => {
     const hrefMatch = anchor.match(/href="([^"]*)"/i);
     const href = hrefMatch ? hrefMatch[1] : "";
-    if (href === "/dashboard" || href === "/dashboard/bugbot") return false;
-    // Top-level "New Agent" (href="/agents") moves under each project.
-    if (href === "/agents" && /New Agent/.test(anchor)) return false;
-    return true;
+    return href !== "/dashboard" && href !== "/dashboard/bugbot";
   });
 
-  return (
-    html.slice(0, start + navOpen.length) + kept.join("") + html.slice(end)
-  );
+  return html.slice(0, start + navOpen.length) + kept.join("") + html.slice(end);
 }
 
-/** Build the status-icon slot for a session child row. */
-function sessionStatusIcon(group: ProjectGroup["agents"][number]["sessions"][number]): string {
-  const composer = group.composer;
+function sessionStatusIcon(
+  session: ProjectGroup["agents"][number]["sessions"][number],
+): string {
+  const composer = session.composer;
+  if (composer.hasPendingQuestion) return QUESTION_MARK;
   if (isRunning(composer.status)) return RUNNING_SPINNER;
-  if (composer.isUnread) return UNREAD_DOT;
-  return "";
+  if (isFinished(composer.status) && composer.isUnread) return GREEN_DOT;
+  return GREY_DOT;
 }
 
-/** Session child row — re-uses the captured thread-row anchor, indented. */
 function sessionRow(
   session: ProjectGroup["agents"][number]["sessions"][number],
 ): string {
   const id = session.id;
   const name = escapeHtml(session.composer.name ?? id);
   return (
-    `<a id="composer-${escapeHtml(id)}" data-composer-item="true" data-composer-id="${escapeHtml(id)}" data-selected="false" class="${ROW_CLASSES} pl-6" href="/agents/${escapeHtml(id)}">` +
+    `<a id="composer-${escapeHtml(id)}" data-composer-item="true" data-composer-id="${escapeHtml(id)}" data-session-row="true" data-selected="false" class="${ROW_CLASSES} pl-4" href="/agents/${escapeHtml(id)}">` +
     `<div class="flex min-w-0 items-center flex-1 gap-2">` +
-    `<div class="flex w-[13px] flex-shrink-0 items-center justify-center text-icon-secondary">${sessionStatusIcon(session)}</div>` +
-    `<div class="min-w-0 flex-1 truncate text-base">${name}</div>` +
+    `<div class="flex w-[13px] flex-shrink-0 items-center justify-center">${sessionStatusIcon(session)}</div>` +
+    `<div class="min-w-0 flex-1 truncate text-base text-primary">${name}</div>` +
     `</div></a>`
   );
 }
 
-/** Agent row — re-uses the thread-row markup (non-link parent label). */
-function agentRow(agent: ProjectGroup["agents"][number]): string {
-  const name = escapeHtml(agent.agent.name);
-  const sessions = agent.sessions.map(sessionRow).join("");
+function projectMenu(projectId: string): string {
+  const pid = escapeHtml(projectId);
   return (
-    `<div class="${ROW_CLASSES} cursor-default pl-3">` +
-    `<div class="flex min-w-0 items-center flex-1 gap-2">` +
-    `<div class="flex w-[13px] flex-shrink-0 items-center justify-center text-icon-secondary">${icon("agent")}</div>` +
-    `<div class="min-w-0 flex-1 truncate text-base text-primary">${name}</div>` +
-    `</div></div>` +
-    sessions
+    `<div data-project-menu-panel="true" class="absolute right-0 top-full z-50 mt-0.5 hidden min-w-[180px] rounded-md border border-tertiary bg-quaternary py-1 shadow-md" data-project-id="${pid}">` +
+    `<button type="button" data-project-action="new-session" data-project-id="${pid}" class="flex w-full items-center gap-2 px-3 py-1.5 text-left text-base text-secondary hover:bg-quaternary hover:text-primary">${ICON_PLUS}<span>New session</span></button>` +
+    `<button type="button" data-project-action="rename" data-project-id="${pid}" class="flex w-full items-center gap-2 px-3 py-1.5 text-left text-base text-secondary hover:bg-quaternary hover:text-primary"><span class="w-[14px]"></span><span>Rename</span></button>` +
+    `<button type="button" data-project-action="archive" data-project-id="${pid}" class="flex w-full items-center gap-2 px-3 py-1.5 text-left text-base text-secondary hover:bg-quaternary hover:text-primary"><span class="w-[14px]"></span><span>Archive</span></button>` +
+    `<button type="button" data-project-action="show-archived" data-project-id="${pid}" class="flex w-full items-center gap-2 px-3 py-1.5 text-left text-base text-secondary hover:bg-quaternary hover:text-primary"><span class="w-[14px]"></span><span>Show archived sessions</span></button>` +
+    `</div>`
   );
 }
 
-/** Project group: header (package icon + name + per-project "New Agent") + rows. */
 function projectGroup(group: ProjectGroup): string {
   const name = escapeHtml(group.project.name);
   const projectId = escapeHtml(group.project.id);
-  const newAgent =
-    `<a class="${NAV_ROW_CLASSES} ml-auto !h-7 !w-auto shrink-0 opacity-0 transition group-hover:opacity-100" role="button" aria-label="New Agent" href="/agents/new?project=${projectId}">` +
-    `<span class="inline-flex shrink-0 items-center text-icon-secondary">${icon("agent")}</span>New Agent</a>`;
+  const sessions = group.agents.flatMap((a) => a.sessions);
+  const sessionHtml = sessions.map(sessionRow).join("");
+
   const header =
-    `<div class="group flex items-center gap-0.5 whitespace-nowrap px-1 py-2 text-sm text-tertiary transition-colors hover:text-primary cursor-pointer">` +
-    // "folder" is a cursor-icon glyph confirmed present in the captures;
-    // "package" (plan §5) is not in any capture and would render blank.
-    `<span class="inline-flex shrink-0 items-center text-icon-secondary mr-1.5">${icon("folder")}</span>` +
-    `<span class="truncate">${name}</span>` +
-    HEADER_CHEVRON +
-    newAgent +
+    `<div class="group relative flex min-w-0 items-center gap-1 px-2 py-1.5 text-sm transition-colors hover:text-primary cursor-pointer" data-project-header="true" data-project-id="${projectId}" data-project-expanded="false" role="button" tabindex="0" aria-expanded="false">` +
+    `<span class="flex w-[14px] shrink-0 items-center justify-center opacity-0 transition duration-200 group-hover:opacity-100 text-icon-secondary" data-project-chevron="true">${CHEVRON_RIGHT}</span>` +
+    `<span class="min-w-0 flex-1 truncate text-base text-primary">${name}</span>` +
+    `<button type="button" class="${ICON_BTN} opacity-0 transition duration-200 group-hover:opacity-100" data-project-menu="true" data-project-id="${projectId}" aria-label="Project options">${ICON_DOTS}</button>` +
+    projectMenu(group.project.id) +
     `</div>`;
-  const agents = group.agents.map(agentRow).join("");
-  return `<div class="flex flex-col gap-[1px]">${header}${agents}</div>`;
+
+  const body =
+    `<div class="hidden flex-col gap-[1px]" data-project-sessions="true" data-project-id="${projectId}">` +
+    sessionHtml +
+    `</div>`;
+
+  return `<div class="flex flex-col gap-[1px]" data-project-group="true" data-project-id="${projectId}">${header}${body}</div>`;
 }
 
-/**
- * (d) Replace the date-grouped thread list container with project-grouped rows.
- * WP-2: no repo URLs / github paths appear in the produced markup.
- */
+function projectsSectionHeader(): string {
+  return (
+    `<div class="group relative flex min-w-0 items-center gap-2 px-2 py-2" data-projects-section="true">` +
+    `<span class="text-sm font-medium text-tertiary">Projects</span>` +
+    `<button type="button" class="${ICON_BTN} ml-auto opacity-0 transition duration-200 group-hover:opacity-100" data-projects-add="true" aria-label="Add project">${ICON_PLUS}</button>` +
+    `</div>`
+  );
+}
+
 function transformThreadList(html: string, groups: ProjectGroup[]): string {
   const containerOpen = '<div class="flex flex-col gap-px px-2 pb-2">';
   const start = html.indexOf(containerOpen);
@@ -179,22 +178,15 @@ function transformThreadList(html: string, groups: ProjectGroup[]): string {
   const end = matchDivEnd(html, start);
   if (end === -1) return html;
 
-  const groupsHtml = groups.length
-    ? groups.map(projectGroup).join("")
-    : "";
-  const rebuilt = `${containerOpen}${groupsHtml}</div>`;
+  const groupsHtml = groups.length ? groups.map(projectGroup).join("") : "";
+  const rebuilt =
+    `${containerOpen}${projectsSectionHeader()}${groupsHtml}</div>`;
   return html.slice(0, start) + rebuilt + html.slice(end);
 }
 
-/**
- * (e) User footer: replace the "Ultra" plan line with `company`, append a
- * `position · department` line, and bind the avatar img to the user. Re-uses the
- * captured footer container classes verbatim.
- */
 function transformFooter(html: string, user: SidebarUser): string {
   let out = html;
 
-  // Bind avatar img (the capture already renders an <img>; rebind to user data).
   if (user.picture) {
     out = out.replace(
       /(<img alt=")[^"]*("[^>]*src=")[^"]*(")/,
@@ -210,8 +202,6 @@ function transformFooter(html: string, user: SidebarUser): string {
   if (close === -1) return out;
 
   const company = escapeHtml(user.company ?? "");
-  // The "Ultra" text node lives inside a `<div class="w-full min-w-0">` wrapper;
-  // we replace the line text and inject a sibling div for position · department.
   const wrapperClose = out.indexOf("</div>", close + "</span>".length);
   const replacedSpan =
     out.slice(0, idx + ultraOpen.length) + company + out.slice(close);
@@ -225,7 +215,6 @@ function transformFooter(html: string, user: SidebarUser): string {
     escapeHtml(orgParts.join(" · ")) +
     "</span></div>";
 
-  // Re-locate the wrapper close relative to the replaced string and inject after it.
   const reClose = replacedSpan.indexOf(
     "</div>",
     idx + ultraOpen.length + company.length,
@@ -235,26 +224,9 @@ function transformFooter(html: string, user: SidebarUser): string {
   return replacedSpan.slice(0, insertAt) + orgLine + replacedSpan.slice(insertAt);
 }
 
-/**
- * Center-panel anchor for the new-session banner (WP-8 remainder / Phase 3).
- *
- * Lifted verbatim from `src/captured/agents-list.html`: the `<main>` content
- * region and its centered `max-w-2xl` column wrapper. The banner is injected as
- * the first child of that column so it sits at the top of the center panel,
- * above the captured composer.
- */
 const NEW_SESSION_MAIN_ANCHOR =
   '<main class="flex flex-1 flex-col overflow-y-auto"><div class="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-4 px-4 py-8 md:gap-6 pb-[200px] md:pb-8 md:pt-18">';
 
-/**
- * Inject a project-scoped "new session" banner into the center panel of the
- * captured agents-list body (`/agents/new?project=<id>`).
- *
- * GOD RULE: no hand-built React layout — this is DOM-string surgery that re-uses
- * captured typography/surface tokens only (`bg-quaternary`, `rounded-md`,
- * `px-3 py-2`, `text-base text-secondary`, `text-primary`). If the center-panel
- * anchor is absent (non-agents-list capture) the input is returned unchanged.
- */
 export function injectNewSessionBanner(
   bodyHtml: string,
   projectName: string,
@@ -275,11 +247,6 @@ export type SidebarUser = Pick<
   "name" | "picture" | "company" | "position" | "department"
 >;
 
-/**
- * Transform the captured sidebar inside a captured body HTML string.
- * Safe to call on any capture that embeds the shared sidebar; if the anchors are
- * absent the input is returned unchanged.
- */
 export function transformCapturedSidebar(
   bodyHtml: string,
   groups: ProjectGroup[],

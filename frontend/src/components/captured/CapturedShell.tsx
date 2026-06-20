@@ -12,6 +12,12 @@ interface CapturedShellProps {
 
 const INTERNAL_PREFIXES = ["/agents", "/automations", "/login"];
 
+const CHEVRON_RIGHT_SVG =
+  '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>';
+
+const CHEVRON_DOWN_SVG =
+  '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>';
+
 function isInternalHref(href: string): boolean {
   if (!href || href.startsWith("#") || href.startsWith("http")) return false;
   return INTERNAL_PREFIXES.some(
@@ -152,6 +158,96 @@ export function CapturedShell({
       window.removeEventListener("mouseup", onUp);
     };
   }, [bodyHtml]);
+
+  // Sidebar: project expand/collapse, project menu, Projects + button.
+  useEffect(() => {
+    const container = rootRef.current;
+    if (!container) return;
+
+    const setProjectExpanded = (
+      projectId: string,
+      expanded: boolean,
+    ) => {
+      const header = container.querySelector<HTMLElement>(
+        `[data-project-header][data-project-id="${projectId}"]`,
+      );
+      const sessions = container.querySelector<HTMLElement>(
+        `[data-project-sessions][data-project-id="${projectId}"]`,
+      );
+      const chevron = header?.querySelector<HTMLElement>(
+        "[data-project-chevron]",
+      );
+      if (!header || !sessions) return;
+      header.setAttribute("data-project-expanded", String(expanded));
+      header.setAttribute("aria-expanded", String(expanded));
+      sessions.classList.toggle("hidden", !expanded);
+      sessions.classList.toggle("flex", expanded);
+      if (chevron) {
+        chevron.innerHTML = expanded ? CHEVRON_DOWN_SVG : CHEVRON_RIGHT_SVG;
+      }
+    };
+
+    const closeAllMenus = () => {
+      container
+        .querySelectorAll<HTMLElement>('[data-project-menu-panel="true"]')
+        .forEach((panel) => panel.classList.add("hidden"));
+    };
+
+    const onSidebarClick = (event: MouseEvent) => {
+      const target = event.target as Element;
+
+      const menuBtn = target.closest<HTMLElement>("[data-project-menu]");
+      if (menuBtn) {
+        event.stopPropagation();
+        const projectId = menuBtn.getAttribute("data-project-id");
+        if (!projectId) return;
+        const panel = container.querySelector<HTMLElement>(
+          `[data-project-menu-panel][data-project-id="${projectId}"]`,
+        );
+        if (!panel) return;
+        const wasHidden = panel.classList.contains("hidden");
+        closeAllMenus();
+        if (wasHidden) panel.classList.remove("hidden");
+        return;
+      }
+
+      const actionBtn = target.closest<HTMLElement>("[data-project-action]");
+      if (actionBtn) {
+        event.stopPropagation();
+        const action = actionBtn.getAttribute("data-project-action");
+        const projectId = actionBtn.getAttribute("data-project-id");
+        closeAllMenus();
+        if (action === "new-session" && projectId) {
+          router.push(`/agents/new?project=${encodeURIComponent(projectId)}`);
+        }
+        return;
+      }
+
+      const projectsAdd = target.closest<HTMLElement>("[data-projects-add]");
+      if (projectsAdd) {
+        event.preventDefault();
+        router.push("/agents/new");
+        return;
+      }
+
+      const header = target.closest<HTMLElement>("[data-project-header]");
+      if (header) {
+        const projectId = header.getAttribute("data-project-id");
+        if (!projectId) return;
+        const expanded = header.getAttribute("data-project-expanded") === "true";
+        setProjectExpanded(projectId, !expanded);
+      }
+    };
+
+    const onDocClick = () => closeAllMenus();
+
+    container.addEventListener("click", onSidebarClick);
+    document.addEventListener("click", onDocClick);
+    return () => {
+      container.removeEventListener("click", onSidebarClick);
+      document.removeEventListener("click", onDocClick);
+    };
+  }, [bodyHtml, router]);
 
   return (
     <>

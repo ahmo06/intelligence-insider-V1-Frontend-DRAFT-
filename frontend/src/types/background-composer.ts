@@ -40,6 +40,8 @@ export interface Composer {
   repoUrls: string[];
   environmentName?: string;
   isUnread?: boolean;
+  /** Session contains an unanswered user question (orange indicator). */
+  hasPendingQuestion?: boolean;
   projectId?: string;
   agentId?: string;
 }

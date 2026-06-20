@@ -1,0 +1,7 @@
+{
+  "bcId": "bc-773361b1-8875-4853-80fb-1540cd28b9ca",
+  "changedFiles": [
+    { "path": "frontend/src/lib/captured/sidebarTransform.ts", "additions": 142, "deletions": 0 },
+    { "path": "docs/BACKEND_GAPS.md", "additions": 28, "deletions": 3 }
+  ]
+}

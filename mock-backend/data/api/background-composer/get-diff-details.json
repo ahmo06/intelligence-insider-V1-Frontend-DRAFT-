@@ -1,3 +1,27 @@
 {
-  "diff": {}
+  "bcId": "bc-773361b1-8875-4853-80fb-1540cd28b9ca",
+  "diff": {
+    "files": [
+      {
+        "path": "frontend/src/lib/captured/sidebarTransform.ts",
+        "additions": 142,
+        "deletions": 0,
+        "unifiedDiff": "@@ -150,6 +150,18 @@ function transformNav(html: string): string {\n+/** Project group: header (package icon + name + per-project \"New Agent\") + rows. */\n+function projectGroup(group: ProjectGroup): string {\n+  const name = escapeHtml(group.project.name);\n+  const projectId = escapeHtml(group.project.id);\n+  const header =\n+    `<div class=\"group flex items-center gap-0.5 ...\">` +\n+    `<span class=\"truncate\">${name}</span>` +\n+    HEADER_CHEVRON +\n+    `</div>`;\n+  const agents = group.agents.map(agentRow).join(\"\");\n+  return `<div class=\"flex flex-col gap-[1px]\">${header}${agents}</div>`;\n+}\n",
+        "hunks": [
+          {
+            "header": "@@ -150,6 +150,18 @@ function transformNav(html: string): string {",
+            "lines": [
+              { "dataLine": "150", "dataLineType": "change-addition", "dataLineIndex": "149,149", "content": "/** Project group: header (package icon + name + per-project \"New Agent\") + rows. */" },
+              { "dataLine": "151", "dataLineType": "change-addition", "dataLineIndex": "150,150", "content": "function projectGroup(group: ProjectGroup): string {" },
+              { "dataLine": "152", "dataLineType": "change-addition", "dataLineIndex": "151,151", "content": "  const name = escapeHtml(group.project.name);" },
+              { "dataLine": "153", "dataLineType": "change-addition", "dataLineIndex": "152,152", "content": "  const projectId = escapeHtml(group.project.id);" },
+              { "dataLine": "154", "dataLineType": "change-addition", "dataLineIndex": "153,153", "content": "  const agents = group.agents.map(agentRow).join(\"\");" },
+              { "dataLine": "155", "dataLineType": "change-addition", "dataLineIndex": "154,154", "content": "  return `<div class=\"flex flex-col gap-[1px]\">${header}${agents}</div>`;" },
+              { "dataLine": "156", "dataLineType": "change-addition", "dataLineIndex": "155,155", "content": "}" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

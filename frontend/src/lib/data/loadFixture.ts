@@ -15,6 +15,10 @@ const fixtureLoaders: Record<FixtureKey, () => Promise<FixtureModule>> = {
     import("@/fixtures/api/background-composer/thread-turns-portal.json"),
   "background-composer/interaction-states": () =>
     import("@/fixtures/api/background-composer/interaction-states.json"),
+  "background-composer/list-changed-files": () =>
+    import("@/fixtures/api/background-composer/list-changed-files.json"),
+  "orchestration/portal-session": () =>
+    import("@/fixtures/api/orchestration/portal-session.json"),
   "projects/list": () => import("@/fixtures/api/projects/list.json"),
   "automations/list-automations": () =>
     import("@/fixtures/api/automations/list-automations.json"),

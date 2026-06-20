@@ -4,3 +4,9 @@
 /frontend/node_modules/
 /frontend/.env*.local
 /captures/screenshots/
+
+# Mock-backend runtime state (seeded lazily from fixtures; only .gitkeep tracked)
+/mock-backend/state/*
+!/mock-backend/state/.gitkeep
+/mock-backend/__pycache__/
+__pycache__/

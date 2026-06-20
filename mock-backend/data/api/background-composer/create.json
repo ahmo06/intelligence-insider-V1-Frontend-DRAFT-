@@ -1,0 +1,23 @@
+{
+  "composer": {
+    "bcId": "bc-00000000-0000-4000-8000-000000000000",
+    "createdAtMs": 1781951700000,
+    "workspaceRootPath": "/workspace",
+    "name": "New Session",
+    "hasStartedVm": true,
+    "repoUrl": "https://github.com/ahmo06/intelligence-insider-v1",
+    "status": "BACKGROUND_COMPOSER_STATUS_RUNNING",
+    "source": "BACKGROUND_COMPOSER_SOURCE_GLASS",
+    "updatedAtMs": 1781951700000,
+    "modelDetails": { "modelName": "default", "maxMode": false },
+    "visibility": "user",
+    "workflowId": "cloud-agent-turn-bc-00000000-0000-4000-8000-000000000000",
+    "lastMessageActivityAtMs": 1781951700000,
+    "participantUserIds": [317511232],
+    "requestedModel": { "modelId": "default", "maxMode": true },
+    "usePrivateWorker": false,
+    "repoUrls": ["github.com/ahmo06/intelligence-insider-v1"],
+    "projectId": "ahmo06-intelligence-insider-v1",
+    "agentId": "ahmo06-intelligence-insider-v1--new-session"
+  }
+}

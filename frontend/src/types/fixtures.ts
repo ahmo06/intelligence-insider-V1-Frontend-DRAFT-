@@ -5,6 +5,8 @@ export type FixtureKey =
   | "background-composer/list-artifacts"
   | "background-composer/thread-turns-portal"
   | "background-composer/interaction-states"
+  | "background-composer/list-changed-files"
+  | "orchestration/portal-session"
   | "projects/list"
   | "automations/list-automations"
   | "dashboard/get-current-period-usage"

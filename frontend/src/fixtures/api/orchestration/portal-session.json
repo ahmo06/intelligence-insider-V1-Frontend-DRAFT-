@@ -1,0 +1,13 @@
+{
+  "bcId": "bc-773361b1-8875-4853-80fb-1540cd28b9ca",
+  "orchestratorLabel": "Orchestrator",
+  "subAgents": [
+    { "id": "sub-frontend-wp1", "name": "Frontend WP-1 Sidebar", "model": "claude-opus-4-8-thinking-high", "status": "COMPLETED", "workedFor": "4m 12s", "changedFiles": ["frontend/src/lib/captured/sidebarTransform.ts"] },
+    { "id": "sub-backend-gaps", "name": "Backend Gaps Fixer", "model": "gpt-5.5-high", "status": "RUNNING", "workedFor": null },
+    { "id": "sub-changes-review", "name": "Changes Reviewer", "model": "composer-2.5", "status": "PENDING", "workedFor": null }
+  ],
+  "changedFiles": [
+    { "path": "frontend/src/lib/captured/sidebarTransform.ts", "additions": 142, "deletions": 0 },
+    { "path": "docs/BACKEND_GAPS.md", "additions": 28, "deletions": 3 }
+  ]
+}

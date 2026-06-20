@@ -118,3 +118,74 @@ export interface ThreadData {
   turns: ThreadTurnFixture[];
   artifacts: Artifact[];
 }
+
+/** A single entry from `POST /api/background-composer/list-workspace-files`. */
+export interface WorkspaceFile {
+  path: string;
+  type: "file" | "dir";
+  sizeBytes?: string;
+  updatedAtUnixMs?: string;
+}
+
+export interface ListWorkspaceFilesResponse {
+  bcId: string;
+  root: string;
+  files: WorkspaceFile[];
+}
+
+export type DiffLineType = "context" | "add" | "del";
+
+export interface DiffLine {
+  type: DiffLineType;
+  content: string;
+  oldLine?: number;
+  newLine?: number;
+}
+
+export interface DiffHunk {
+  header: string;
+  oldStart: number;
+  oldLines: number;
+  newStart: number;
+  newLines: number;
+  lines: DiffLine[];
+}
+
+export interface FileDiff {
+  path: string;
+  language?: string;
+  additions?: number;
+  deletions?: number;
+  hunks: DiffHunk[];
+}
+
+/** Response shape for `POST /api/background-composer/get-diff-details`. */
+export interface GetDiffDetailsResponse {
+  bcId?: string;
+  diff: FileDiff | Record<string, never>;
+}
+
+export type TerminalLineType = "stdout" | "stderr";
+
+export interface TerminalLine {
+  type: TerminalLineType;
+  text: string;
+}
+
+/** Response shape for `POST /api/background-composer/get-terminal-output`. */
+export interface TerminalOutputResponse {
+  bcId: string;
+  lines: TerminalLine[];
+}
+
+/** Request/response for `POST /api/background-composer/create`. */
+export interface CreateComposerRequest {
+  projectId: string;
+  agentName?: string;
+  model?: string;
+  prompt?: string;
+}
+
+export interface CreateComposerResponse {
+  composer: Composer;
+}

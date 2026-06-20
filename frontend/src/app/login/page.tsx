@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { CapturedDocument } from "@/components/captured";
 import {
   getPageBySlug,
@@ -5,11 +6,15 @@ import {
   loadManifest,
 } from "@/lib/captured/loader";
 
+export const metadata: Metadata = { title: "Sign in" };
+
 export default async function LoginPage() {
-  // No login capture yet — show agents shell capture as placeholder
+  // WP-10: real login capture (assembled from the live authenticator.cursor.sh
+  // "Sign in" page — Cursor wordmark, OAuth buttons, email + Continue) rendered
+  // via the captured pipeline. No longer the agents-list placeholder.
   const manifest = await loadManifest();
-  const page = getPageBySlug(manifest, "agents-list");
-  if (!page) throw new Error("agents-list capture missing");
-  const bodyHtml = await loadCapturedBody("agents-list");
+  const page = getPageBySlug(manifest, "login");
+  if (!page) throw new Error("login capture missing");
+  const bodyHtml = await loadCapturedBody("login");
   return <CapturedDocument page={page} bodyHtml={bodyHtml} />;
 }

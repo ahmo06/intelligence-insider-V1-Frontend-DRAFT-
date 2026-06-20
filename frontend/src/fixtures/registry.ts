@@ -12,6 +12,9 @@ export const FIXTURE_PATHS: Record<FixtureKey, string> = {
     "./api/background-composer/thread-turns-portal.json",
   "background-composer/interaction-states":
     "./api/background-composer/interaction-states.json",
+  "background-composer/list-changed-files":
+    "./api/background-composer/list-changed-files.json",
+  "orchestration/portal-session": "./api/orchestration/portal-session.json",
   "projects/list": "./api/projects/list.json",
   "automations/list-automations": "./api/automations/list-automations.json",
   "dashboard/get-current-period-usage":
@@ -35,6 +38,9 @@ export const API_ENDPOINTS: Record<FixtureKey, string> = {
     "/api/background-composer/get-detailed-composer",
   "background-composer/interaction-states":
     "/api/background-composer/get-detailed-composer",
+  "background-composer/list-changed-files":
+    "/api/background-composer/list-changed-files",
+  "orchestration/portal-session": "/api/orchestration/portal-session",
   "projects/list": "/api/projects/list",
   "automations/list-automations": "/api/automations/list-automations",
   "dashboard/get-current-period-usage":

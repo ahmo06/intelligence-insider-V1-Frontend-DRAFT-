@@ -154,8 +154,13 @@
     "endpoint": "/api/background-composer/get-diff-details",
     "fixture": "data/api/background-composer/get-diff-details.json",
     "json": true,
-    "bytes": 17,
-    "source": "live-capture"
+    "source": "derived"
+  },
+  {
+    "endpoint": "/api/background-composer/list-changed-files",
+    "fixture": "data/api/background-composer/list-changed-files.json",
+    "json": true,
+    "source": "derived"
   },
   {
     "endpoint": "/api/background-composer/get-machine",
@@ -666,6 +671,12 @@
     "json": true,
     "bytes": 24,
     "source": "live-capture"
+  },
+  {
+    "endpoint": "/api/orchestration/portal-session",
+    "fixture": "data/api/orchestration/portal-session.json",
+    "json": true,
+    "source": "derived"
   },
   {
     "endpoint": "/api/projects/list",

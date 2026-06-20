@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import re
@@ -40,6 +41,10 @@ ROUTE_MAP = {
     "thread-merged-portal": {
         "route": "/agents/bc-773361b1-8875-4853-80fb-1540cd28b9ca",
         "title": "Thread",
+    },
+    "login": {
+        "route": "/login",
+        "title": "Sign in",
     },
 }
 
@@ -189,7 +194,28 @@ def process_page(
     return entry
 
 
+def load_existing_manifest() -> dict:
+    if MANIFEST_PATH.exists():
+        try:
+            return json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            pass
+    return {"source": "live-capture", "origin": ORIGIN, "pages": [], "assets_cached": 0}
+
+
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--only",
+        metavar="SLUG",
+        help=(
+            "Materialize a single slug and MERGE it into the existing manifest "
+            "(other pages are left untouched). Use this to add a new page "
+            "without regenerating — or regressing — the others."
+        ),
+    )
+    args = parser.parse_args()
+
     CAPTURED_HTML.mkdir(parents=True, exist_ok=True)
     (PUBLIC / "_next" / "static" / "chunks").mkdir(parents=True, exist_ok=True)
     (PUBLIC / "_next" / "static" / "media").mkdir(parents=True, exist_ok=True)
@@ -198,6 +224,23 @@ def main() -> None:
     session = requests.Session()
     session.headers["User-Agent"] = "CursorCaptureMaterializer/1.0"
     cache: dict[str, str] = {}
+
+    if args.only:
+        slug = args.only
+        if slug not in ROUTE_MAP:
+            raise SystemExit(f"Unknown slug {slug!r}; add it to ROUTE_MAP first.")
+        print(f"Materializing {slug} (merge into existing manifest)...")
+        entry = process_page(session, slug, cache)
+        for font in ["/fonts/codicon.woff2", "/fonts/cursor-icons-16.woff2"]:
+            download_asset(session, font, cache)
+        manifest = load_existing_manifest()
+        pages = [p for p in manifest.get("pages", []) if p.get("slug") != slug]
+        pages.append(entry)
+        manifest["pages"] = pages
+        manifest["assets_cached"] = max(manifest.get("assets_cached", 0), len(cache))
+        MANIFEST_PATH.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+        print(f"\nDone. merged {slug} -> {len(pages)} pages in {MANIFEST_PATH}")
+        return
 
     pages = []
     for slug in ROUTE_MAP:

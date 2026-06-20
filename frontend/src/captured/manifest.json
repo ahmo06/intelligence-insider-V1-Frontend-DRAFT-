@@ -64,6 +64,28 @@
       "inlineStylesFile": "captured/thread-merged-portal.inline.css",
       "bodyFile": "captured/thread-merged-portal.html",
       "bytes": 835430
+    },
+    {
+      "slug": "login",
+      "route": "/login",
+      "title": "Sign in",
+      "htmlClass": "dark",
+      "stylesheets": [
+        "/captured-static/_next/static/chunks/03uzl1xm~yyyf.css",
+        "/captured-static/_next/static/chunks/05vyfd.w07p~~.css",
+        "/captured-static/_next/static/chunks/05z040qukrtkv.css",
+        "/captured-static/_next/static/chunks/0c.v-yjrjb6e1.css",
+        "/captured-static/_next/static/chunks/0kg5y2fj8~m1k.css",
+        "/captured-static/_next/static/chunks/0stl~p0j_-xu1.css",
+        "/captured-static/_next/static/chunks/0t91degr4k8_h.css",
+        "/captured-static/_next/static/chunks/0vbjbxpjd~evs.css",
+        "/captured-static/_next/static/chunks/0y2s0fg72aq-d.css",
+        "/captured-static/_next/static/chunks/0zz9o68817or3.css",
+        "/captured-static/_next/static/chunks/18d7iik7hearp.css"
+      ],
+      "inlineStylesFile": "captured/login.inline.css",
+      "bodyFile": "captured/login.html",
+      "bytes": 9966
     }
   ],
   "assets_cached": 235

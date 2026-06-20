@@ -102,3 +102,55 @@ visible label.
 
 `dashboard.html` and `bugbot.html` are intentionally kept as reference captures (per WP-9
 scope) and are no longer referenced by `manifest.json` after this work package.
+
+---
+
+## WP-7 — Project / Agent / Session data model
+
+### What the frontend now expects
+
+A `Project → Agent → Session` hierarchy (INCORPORATION_PLAN §2/§10) exposed via new types
+(`frontend/src/types/project.ts`), a `GET /api/projects/list` endpoint returning
+`{ projects, agents, sessions }`, and a `useProjects()` hook returning project-grouped data.
+The `Composer` interface gained optional `projectId` / `agentId` foreign keys.
+
+### Is the existing API sufficient?
+
+**For the transitional/static frontend: yes, by derivation.** There is no real
+project/agent API, so the hierarchy is **derived client-side** from `Composer` fields in
+`frontend/src/lib/projects/deriveProjects.ts`:
+
+- **Project** id/name from `environmentName` → `repoUrls[0]` → `repoUrl` pathname (id is a
+  slug of the canonical `owner/repo`; name is the humanized last path segment).
+- **Agent** = each unique `Composer.name` within a project.
+- **Session** = each `Composer` (keyed by `bcId`).
+
+`GET /api/projects/list` is served from a **derived fixture**
+(`frontend/src/fixtures/api/projects/list.json`, mirrored at
+`mock-backend/data/api/projects/list.json`), not a captured response.
+`useProjects()` loads that fixture and falls back to
+`deriveProjectsFromComposers(useAgents().composers)`.
+
+**For a real backend: derivation is lossy and must be replaced.**
+
+- **First-class `Project` entity.** No persistent project id/name/description exists.
+  Slugging the repo path means casing/host variations of the same repo can split into
+  separate projects, and renames are lossy. Backend should own
+  `Project { id, name, description, agentIds }`.
+- **First-class `Agent` entity.** Inferring agents from `Composer.name` breaks on run
+  renames and on two distinct agents sharing a name. Backend should own
+  `Agent { id, projectId, name, sessionIds }` and populate `Composer.projectId` /
+  `Composer.agentId` (the fields are already optional on the type for this).
+- **Real `GET /api/projects/list`.** Should return `{ projects, agents, sessions }`
+  directly so the derivation layer becomes a fallback only.
+- **Project metadata.** No human-authored description/icon/ordering exists; `description`
+  is currently just the canonical repo path.
+
+### What the real backend must persist
+
+| Entity | Source of truth | Notes |
+|---|---|---|
+| `Project` | Project/org store | Stable id + editable name/description; today derived from repo path |
+| `Agent` | Agent registry | Stable id + name scoped to a project; today derived from `Composer.name` |
+| `Session` ↔ `Composer` | Background-composer store | Add persistent `projectId` / `agentId` FKs to each composer |
+| `GET /api/projects/list` | New endpoint | Return `{ projects, agents, sessions }` instead of client derivation |

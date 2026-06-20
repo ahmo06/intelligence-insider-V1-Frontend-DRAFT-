@@ -5,6 +5,7 @@ export type FixtureKey =
   | "background-composer/list-artifacts"
   | "background-composer/thread-turns-portal"
   | "background-composer/interaction-states"
+  | "projects/list"
   | "automations/list-automations"
   | "dashboard/get-current-period-usage"
   | "dashboard/get-credit-grants-balance"

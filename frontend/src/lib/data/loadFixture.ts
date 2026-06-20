@@ -15,6 +15,7 @@ const fixtureLoaders: Record<FixtureKey, () => Promise<FixtureModule>> = {
     import("@/fixtures/api/background-composer/thread-turns-portal.json"),
   "background-composer/interaction-states": () =>
     import("@/fixtures/api/background-composer/interaction-states.json"),
+  "projects/list": () => import("@/fixtures/api/projects/list.json"),
   "automations/list-automations": () =>
     import("@/fixtures/api/automations/list-automations.json"),
   "dashboard/get-current-period-usage": () =>

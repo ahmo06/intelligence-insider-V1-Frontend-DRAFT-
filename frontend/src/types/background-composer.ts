@@ -40,6 +40,8 @@ export interface Composer {
   repoUrls: string[];
   environmentName?: string;
   isUnread?: boolean;
+  projectId?: string;
+  agentId?: string;
 }
 
 export interface ComposersListResponse {

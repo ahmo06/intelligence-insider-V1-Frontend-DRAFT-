@@ -668,6 +668,13 @@
     "source": "live-capture"
   },
   {
+    "endpoint": "/api/projects/list",
+    "fixture": "data/api/projects/list.json",
+    "json": true,
+    "bytes": 20565,
+    "source": "derived"
+  },
+  {
     "endpoint": "/api/usage",
     "fixture": "data/api/usage.json",
     "json": true,

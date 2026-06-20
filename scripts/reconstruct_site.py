@@ -41,6 +41,9 @@ import zipfile
 from urllib.parse import urlsplit, unquote
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Source captures live here (with a fallback to repo root for older layouts).
+ARCHIVES_DIR = os.path.join(REPO_ROOT, "archives", "webarchives")
+CAPTURE_DIRS = [ARCHIVES_DIR, REPO_ROOT]
 
 # Route map for the multi-page build: (filename-slug substring, route, isolated?)
 # `route == ""` is the site root. `isolated` pages get their assets under the route dir
@@ -64,19 +67,27 @@ def discover_captures():
     """Return list of (label, path-to-.webarchive)."""
     out = []
     tmp_root = tempfile.mkdtemp(prefix="captures_")
-    for z in sorted(glob.glob(os.path.join(REPO_ROOT, "*.webarchive.zip"))):
-        d = tempfile.mkdtemp(dir=tmp_root)
-        with zipfile.ZipFile(z) as zf:
-            zf.extractall(d)
-        was = glob.glob(os.path.join(d, "**", "*.webarchive"), recursive=True)
-        if was:
-            out.append((os.path.basename(z), was[0]))
-    for z in sorted(glob.glob(os.path.join(REPO_ROOT, "Archive*.zip"))):
-        d = tempfile.mkdtemp(dir=tmp_root)
-        with zipfile.ZipFile(z) as zf:
-            zf.extractall(d)
-        for wa in sorted(glob.glob(os.path.join(d, "**", "*.webarchive"), recursive=True)):
-            out.append((os.path.basename(wa), wa))
+    seen = set()
+    for base in CAPTURE_DIRS:
+        for z in sorted(glob.glob(os.path.join(base, "*.webarchive.zip"))):
+            if os.path.basename(z) in seen:
+                continue
+            seen.add(os.path.basename(z))
+            d = tempfile.mkdtemp(dir=tmp_root)
+            with zipfile.ZipFile(z) as zf:
+                zf.extractall(d)
+            was = glob.glob(os.path.join(d, "**", "*.webarchive"), recursive=True)
+            if was:
+                out.append((os.path.basename(z), was[0]))
+        for z in sorted(glob.glob(os.path.join(base, "Archive*.zip"))):
+            if os.path.basename(z) in seen:
+                continue
+            seen.add(os.path.basename(z))
+            d = tempfile.mkdtemp(dir=tmp_root)
+            with zipfile.ZipFile(z) as zf:
+                zf.extractall(d)
+            for wa in sorted(glob.glob(os.path.join(d, "**", "*.webarchive"), recursive=True)):
+                out.append((os.path.basename(wa), wa))
     return out
 
 
@@ -201,9 +212,11 @@ def find_single_zip(explicit):
         if not os.path.exists(path):
             sys.exit(f"Capture not found: {path}")
         return path
-    matches = sorted(glob.glob(os.path.join(REPO_ROOT, "*.webarchive.zip")))
+    matches = []
+    for base in CAPTURE_DIRS:
+        matches += sorted(glob.glob(os.path.join(base, "*.webarchive.zip")))
     if not matches:
-        sys.exit("No '*.webarchive.zip' found in repo root.")
+        sys.exit("No '*.webarchive.zip' found in archives/webarchives or repo root.")
     for m in matches:
         if os.path.basename(m).startswith("Development environment setup"):
             return m

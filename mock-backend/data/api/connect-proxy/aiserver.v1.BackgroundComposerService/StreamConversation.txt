@@ -1,0 +1,1 @@
+No Content: https://cursor.com/api/connect-proxy/aiserver.v1.BackgroundComposerService/StreamConversation

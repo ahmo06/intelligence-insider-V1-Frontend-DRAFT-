@@ -175,14 +175,17 @@ export function CapturedShell({
       const sessions = container.querySelector<HTMLElement>(
         `[data-project-sessions][data-project-id="${projectId}"]`,
       );
+      const group = container.querySelector<HTMLElement>(
+        `[data-project-group][data-project-id="${projectId}"]`,
+      );
       const chevron = header?.querySelector<HTMLElement>(
         "[data-project-chevron]",
       );
       if (!header || !sessions) return;
       header.setAttribute("data-project-expanded", String(expanded));
       header.setAttribute("aria-expanded", String(expanded));
-      sessions.classList.toggle("hidden", !expanded);
-      sessions.classList.toggle("flex", expanded);
+      sessions.setAttribute("data-expanded", String(expanded));
+      group?.setAttribute("data-project-expanded", String(expanded));
       if (chevron) {
         chevron.innerHTML = expanded ? CHEVRON_DOWN_SVG : CHEVRON_RIGHT_SVG;
       }
@@ -191,7 +194,35 @@ export function CapturedShell({
     const closeAllMenus = () => {
       container
         .querySelectorAll<HTMLElement>('[data-project-menu-panel="true"]')
-        .forEach((panel) => panel.classList.add("hidden"));
+        .forEach((panel) => panel.setAttribute("data-menu-open", "false"));
+    };
+
+    const setActionsVisible = (element: HTMLElement | null, visible: boolean) => {
+      if (!element) return;
+      element.classList.toggle("ii-sidebar-actions-visible", visible);
+    };
+
+    const onSidebarMouseOver = (event: MouseEvent) => {
+      const target = event.target as Element;
+      const projectsSection = target.closest<HTMLElement>("[data-projects-section]");
+      const projectHeader = target.closest<HTMLElement>("[data-project-header]");
+      container
+        .querySelectorAll<HTMLElement>(".ii-sidebar-actions-visible")
+        .forEach((el) => {
+          if (el !== projectsSection && el !== projectHeader) {
+            el.classList.remove("ii-sidebar-actions-visible");
+          }
+        });
+      setActionsVisible(projectsSection, true);
+      setActionsVisible(projectHeader, true);
+    };
+
+    const onSidebarMouseLeave = (event: MouseEvent) => {
+      const related = event.relatedTarget as Element | null;
+      if (related && container.contains(related)) return;
+      container
+        .querySelectorAll<HTMLElement>(".ii-sidebar-actions-visible")
+        .forEach((el) => el.classList.remove("ii-sidebar-actions-visible"));
     };
 
     const onSidebarClick = (event: MouseEvent) => {
@@ -206,9 +237,9 @@ export function CapturedShell({
           `[data-project-menu-panel][data-project-id="${projectId}"]`,
         );
         if (!panel) return;
-        const wasHidden = panel.classList.contains("hidden");
+        const wasOpen = panel.getAttribute("data-menu-open") === "true";
         closeAllMenus();
-        if (wasHidden) panel.classList.remove("hidden");
+        if (!wasOpen) panel.setAttribute("data-menu-open", "true");
         return;
       }
 
@@ -240,12 +271,30 @@ export function CapturedShell({
       }
     };
 
+    const onSidebarKeyDown = (event: KeyboardEvent) => {
+      const target = event.target as Element;
+      const header = target.closest<HTMLElement>("[data-project-header]");
+      if (!header) return;
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      const projectId = header.getAttribute("data-project-id");
+      if (!projectId) return;
+      const expanded = header.getAttribute("data-project-expanded") === "true";
+      setProjectExpanded(projectId, !expanded);
+    };
+
     const onDocClick = () => closeAllMenus();
 
     container.addEventListener("click", onSidebarClick);
+    container.addEventListener("keydown", onSidebarKeyDown);
+    container.addEventListener("mouseover", onSidebarMouseOver);
+    container.addEventListener("mouseleave", onSidebarMouseLeave);
     document.addEventListener("click", onDocClick);
     return () => {
       container.removeEventListener("click", onSidebarClick);
+      container.removeEventListener("keydown", onSidebarKeyDown);
+      container.removeEventListener("mouseover", onSidebarMouseOver);
+      container.removeEventListener("mouseleave", onSidebarMouseLeave);
       document.removeEventListener("click", onDocClick);
     };
   }, [bodyHtml, router]);

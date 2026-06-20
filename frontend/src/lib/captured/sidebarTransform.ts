@@ -48,31 +48,98 @@ const ICON_BTN =
   "box-border relative inline-flex items-center justify-center rounded-md disabled:pointer-events-none disabled:opacity-50 transition-colors duration-150 focus:outline-none bg-transparent text-secondary hover:text-primary hover:bg-quaternary h-6 w-6 p-0 shrink-0";
 
 /**
- * Hover rules for injected sidebar markup. Captured CSS chunks do not include
- * Tailwind `group-hover:*` utilities for our dynamic elements.
+ * Interaction + layout rules for injected sidebar markup. Avoid Tailwind utilities
+ * that may be missing from captured CSS chunks; use explicit ii-* classes.
  */
 export const SIDEBAR_INTERACTION_CSS = `
+.ii-projects-header {
+  display: flex;
+  align-items: center;
+  min-height: 28px;
+  height: 28px;
+  padding: 0 8px;
+  margin: 0;
+}
+.ii-projects-add-btn {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.ii-project-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+.ii-project-header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 32px;
+  height: 32px;
+  padding: 0 8px;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: color 150ms ease, background-color 150ms ease;
+}
+.ii-project-header:hover,
+.ii-project-header.ii-sidebar-actions-visible {
+  color: var(--text-primary);
+  background-color: var(--bg-quaternary);
+}
+.ii-projects-header:hover,
+.ii-projects-header.ii-sidebar-actions-visible {
+  background-color: transparent;
+}
+.ii-project-sessions {
+  display: none;
+  flex-direction: column;
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+}
+.ii-project-sessions[data-expanded="true"] {
+  display: flex;
+}
+.ii-project-menu-panel {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 50;
+  margin-top: 2px;
+  min-width: 180px;
+  border-radius: 6px;
+  border: 1px solid var(--border-tertiary);
+  background: var(--bg-quaternary);
+  padding: 4px 0;
+  box-shadow: 0 4px 12px var(--shadow-secondary, rgba(0, 0, 0, 0.15));
+}
+.ii-project-menu-panel[data-menu-open="true"] {
+  display: block;
+}
 .ii-sidebar-hover-only {
   opacity: 0;
   pointer-events: none;
   transition: opacity 150ms ease;
+  flex-shrink: 0;
+}
+.ii-sidebar-chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  color: var(--text-icon-secondary, var(--text-secondary));
 }
 [data-projects-section]:hover .ii-sidebar-hover-only,
+[data-projects-section].ii-sidebar-actions-visible .ii-sidebar-hover-only,
 [data-project-header]:hover .ii-sidebar-hover-only,
+[data-project-header].ii-sidebar-actions-visible .ii-sidebar-hover-only,
 [data-project-header][data-project-expanded="true"] .ii-sidebar-chevron {
   opacity: 1;
   pointer-events: auto;
-}
-[data-project-header] {
-  transition: color 150ms ease, background-color 150ms ease;
-  border-radius: 6px;
-}
-[data-project-header]:hover {
-  color: var(--text-primary);
-  background-color: var(--bg-quaternary);
-}
-[data-projects-section]:hover {
-  background-color: transparent;
 }
 `;
 
@@ -160,7 +227,7 @@ function sessionRow(
 function projectMenu(projectId: string): string {
   const pid = escapeHtml(projectId);
   return (
-    `<div data-project-menu-panel="true" class="absolute right-0 top-full z-50 mt-0.5 hidden min-w-[180px] rounded-md border border-tertiary bg-quaternary py-1 shadow-md" data-project-id="${pid}">` +
+    `<div data-project-menu-panel="true" class="ii-project-menu-panel" data-menu-open="false" data-project-id="${pid}">` +
     `<button type="button" data-project-action="new-session" data-project-id="${pid}" class="flex w-full items-center gap-2 px-3 py-1.5 text-left text-base text-secondary hover:bg-quaternary hover:text-primary">${ICON_PLUS}<span>New session</span></button>` +
     `<button type="button" data-project-action="rename" data-project-id="${pid}" class="flex w-full items-center gap-2 px-3 py-1.5 text-left text-base text-secondary hover:bg-quaternary hover:text-primary"><span class="w-[14px]"></span><span>Rename</span></button>` +
     `<button type="button" data-project-action="archive" data-project-id="${pid}" class="flex w-full items-center gap-2 px-3 py-1.5 text-left text-base text-secondary hover:bg-quaternary hover:text-primary"><span class="w-[14px]"></span><span>Archive</span></button>` +
@@ -176,26 +243,26 @@ function projectGroup(group: ProjectGroup): string {
   const sessionHtml = sessions.map(sessionRow).join("");
 
   const header =
-    `<div class="relative flex min-w-0 items-center gap-1 px-2 py-1.5 cursor-pointer" data-project-header="true" data-project-id="${projectId}" data-project-expanded="false" role="button" tabindex="0" aria-expanded="false">` +
+    `<div class="ii-project-header relative min-w-0" data-project-header="true" data-project-id="${projectId}" data-project-expanded="false" role="button" tabindex="0" aria-expanded="false">` +
     `<span class="min-w-0 flex-1 truncate text-left text-base text-primary">${name}</span>` +
-    `<span class="ii-sidebar-hover-only ii-sidebar-chevron flex shrink-0 items-center justify-center text-icon-secondary" data-project-chevron="true">${CHEVRON_RIGHT}</span>` +
+    `<span class="ii-sidebar-hover-only ii-sidebar-chevron" data-project-chevron="true">${CHEVRON_RIGHT}</span>` +
     `<button type="button" class="${ICON_BTN} ii-sidebar-hover-only" data-project-menu="true" data-project-id="${projectId}" aria-label="Project options">${ICON_DOTS}</button>` +
     projectMenu(group.project.id) +
     `</div>`;
 
   const body =
-    `<div class="hidden flex-col gap-[1px]" data-project-sessions="true" data-project-id="${projectId}">` +
+    `<div class="ii-project-sessions" data-project-sessions="true" data-expanded="false" data-project-id="${projectId}">` +
     sessionHtml +
     `</div>`;
 
-  return `<div class="flex flex-col gap-[1px]" data-project-group="true" data-project-id="${projectId}">${header}${body}</div>`;
+  return `<div class="ii-project-group" data-project-group="true" data-project-id="${projectId}">${header}${body}</div>`;
 }
 
 function projectsSectionHeader(): string {
   return (
-    `<div class="relative flex min-w-0 items-center px-2 py-2" data-projects-section="true">` +
+    `<div class="ii-projects-header relative min-w-0" data-projects-section="true">` +
     `<span class="text-sm font-medium text-tertiary">Projects</span>` +
-    `<button type="button" class="${ICON_BTN} ii-sidebar-hover-only ml-auto" data-projects-add="true" aria-label="Add project">${ICON_PLUS}</button>` +
+    `<button type="button" class="${ICON_BTN} ii-sidebar-hover-only ii-projects-add-btn" data-projects-add="true" aria-label="Add project">${ICON_PLUS}</button>` +
     `</div>`
   );
 }

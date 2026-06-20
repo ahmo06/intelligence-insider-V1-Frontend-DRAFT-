@@ -6,6 +6,34 @@
 
 ---
 
+## Mock-backend resolution status
+
+The mock backend now serves **dynamic** endpoints (`mock-backend/handlers.py`,
+wired into `server.py` ahead of the static fixtures; state persisted under
+`mock-backend/state/`). See `docs/MOCK_BACKEND_API.md` for the full contract.
+Each gap below is classified as:
+
+- **RESOLVED (mock)** — the transitional frontend has a working, realistically
+  shaped endpoint (dynamic handler + mirrored fixtures); enough to build the UI.
+- **STILL_NEEDED (real backend)** — a production backend must still own the
+  persistence / live behaviour; the mock is a development stand-in only.
+
+| Gap | Endpoint(s) | Mock status | Real-backend status |
+|---|---|---|---|
+| Create-session (Phase 3 / WP-8) | `POST /api/background-composer/create` | **RESOLVED (mock)** — generates `bcId`, persists composer + project/agent/session derivation in `state/` | **STILL_NEEDED** — real `startBackgroundComposer` that spawns a VM/worker and persists `Composer` |
+| `projects/list` is derived (WP-7) | `GET /api/projects/list` | **RESOLVED (mock)** — served from mutated `state/projects.json` after a create, else fixture | **STILL_NEEDED** — first-class `Project`/`Agent` entities + persistent `projectId`/`agentId` FKs |
+| Changed-files per session (WP-4 Changes) | `POST /api/background-composer/list-changed-files` | **RESOLVED (mock)** — sample `{ path, status, additions, deletions }` summary feeds the Changes tab | **STILL_NEEDED** — real per-session changed-files summary from the worker |
+| Workspace file tree (WP-4 Files) | `POST /api/background-composer/list-workspace-files` | **RESOLVED (mock)** — recursive tree (sample src + folded `list-artifacts`) | **STILL_NEEDED** — recursive dir listing of the live session workspace (type/size/mtime) |
+| Per-file diff (WP-4 Monaco) | `POST /api/background-composer/get-diff-details` | **RESOLVED (mock)** — enriched `FileDiff` with hunks; injects requested `path`/`language` (was empty `{}`) | **STILL_NEEDED** — real unified diff / hunks per file from the worker |
+| Terminal output (WP-4 Terminal) | `POST /api/background-composer/get-terminal-output` | **RESOLVED (mock)** — sample `{ lines: [{type, text}] }` build output feeds the Terminal tab | **STILL_NEEDED** — live PTY stream (websocket/SSE) of stdout/stderr |
+| Orchestrator → sub-agent flow (Phase 5) | `GET /api/orchestration/portal-session`, `POST /api/orchestration/spawn-subagent` | **RESOLVED (mock)** — flat `OrchestrationSession` (sub-agents + changed files); spawn appends `RUNNING` sub-agent to `state/` | **STILL_NEEDED** — real orchestration/delegation engine + sub-agent lifecycle |
+| Org identity (WP-8) | `POST /api/dashboard/get-user-profile` | **RESOLVED (mock)** — visibility settings **merged** with `company`/`position`/`department` from `auth/me` | **STILL_NEEDED** — profile/org store that *owns* (and can write) these fields |
+| Avatar / `auth/me` org fields | `GET /api/auth/me` | **RESOLVED (mock)** — fixture carries org fields inline | **STILL_NEEDED (long-term)** — keep `auth/me` thin; org fields belong to the profile endpoint above |
+| Browser tab (WP-11) | — | **NOT RESOLVED** — capture-blocked; dev-time `<iframe>` preview only | **STILL_NEEDED** — live capture + Browser MCP API |
+| Project icon / description / ordering / collapse persistence | — | **NOT RESOLVED** — no field/store | **STILL_NEEDED** — `Project` metadata + user-pref store |
+
+---
+
 ## WP-1 / WP-2 / WP-3 — Captured-sidebar project transform (IA + repo sweep + org footer)
 
 ### What the frontend now expects
@@ -255,6 +283,179 @@ toggles `display`/state on the already-injected elements.
 - **Resizable handle capture** — the original resizable panel/handle markup is
   not in the capture; the drag handle is composed from captured tokens
   (`cursor-col-resize`) and minimal JS.
+
+---
+
+## Phase 5 — Orchestrator + sub-agent surfacing (INCORPORATION_PLAN §7)
+
+### What the frontend now expects
+
+The captured thread (`thread-merged-portal.html`) now surfaces the
+**orchestrator → sub-agent delegation** flow via DOM-string surgery in
+`frontend/src/lib/captured/orchestratorTransform.ts`
+(`injectOrchestratorDelegation`), wired into `CapturedDocument` for the
+`thread-merged-portal` slug **after** `injectRightPanel`. It fires only on a
+thread page (`data-agent-turn` present) and injects, after the **last**
+`data-agent-turn-end`, a delegation section assembled entirely from
+`docs/COMPONENT_REFERENCE.md` signatures:
+
+- **Orchestrator header + footer** — §B4 "Working for …" (running) ↔ "Worked
+  for …" (done) button; running tense wraps in
+  `div[data-agent-turn-hidden-steps]`.
+- **Sub-agent rows** — §B5 `a[data-subagent-task-id].group/agent-row.rounded-[16px]`;
+  `RUNNING` rows show the `ui-progress-indeterminate` ring spinner (phase-synced
+  via `--cursor-spinner-sync-delay`), `COMPLETED` rows a check icon, `PENDING` a
+  clock, `ERROR`/`REJECTED` an x-circle. Each row shows model + run state
+  (`make-shine` "Working" for running, "Worked for …" for done).
+- **Delegation command** — one §D `div[data-component="tool-display-card"]`
+  showing a sample `cursor-agent delegate …` command + spawn summary.
+
+The right-panel **Changes** tab (§L `InlineChangedFiles`) is now **populated**
+from a changed-files summary instead of always showing "No changes yet":
+`injectRightPanel` accepts an optional `changedFiles` param, rendered as
+add/del-annotated rows with a live count.
+
+Data comes from two fixtures (mirrored to the mock backend):
+
+| Fixture | Endpoint | Feeds |
+|---|---|---|
+| `orchestration/portal-session.json` | `GET /api/orchestration/portal-session` | orchestrator label, sub-agent lifecycle rows, changed-files |
+| `background-composer/list-changed-files.json` | `POST /api/background-composer/list-changed-files` | Changes-tab `InlineChangedFiles` list |
+| `background-composer/get-diff-details.json` (enriched) | `POST /api/background-composer/get-diff-details` | sample unified-diff hunks (§A4 `data-line` attrs) for the Monaco diff |
+
+`useOrchestration()` exposes the session to data-binding consumers; the static
+render reads the fixtures server-side in `CapturedDocument`.
+
+### What still needs a real backend
+
+| Need | Status | Notes |
+|---|---|---|
+| **Spawn sub-agent API** | **Gap — does not exist** | No endpoint creates/spawns a frontier sub-agent. A real `POST /api/background-composer/spawn-subagent` (or equivalent) is required to launch a delegated worker with its boot context (frontend-design skill + requirements docs, INCORPORATION_PLAN §7). Today the rows are fixture-only. |
+| **Sub-agent status updates** | **Gap** | The lifecycle (`PENDING → RUNNING → CHECKING → COMPLETED / REJECTED → re-delegate / ERROR`) is static in the fixture. A real backend must persist + push status transitions (and orchestrator "checking"/"re-delegate" decisions). |
+| **Streaming progress** | **Gap** | Running rows show an indeterminate spinner and `make-shine` "Working", but there is no live stream of sub-agent step/turn progress. Needs the same StreamConversation/SSE channel the main composer uses, scoped per sub-agent task id. |
+| **Per-sub-agent `workedFor`** | **Gap** | Completed duration ("4m 12s") is a static sample; a real backend must compute it from sub-agent start/finish timestamps. |
+| **Changed-files summary** | **Gap (now wired to a fixture)** | The Changes tab reads `list-changed-files`; a real backend must return the actual per-session changed-files (the sub-agent `InlineChangedFiles` payload) with real add/del counts. |
+| **Monaco diff hunks** | **Gap (sample only)** | `get-diff-details` is enriched with sample §A4 `data-line` hunks for `sidebarTransform.ts`, but a real `get-diff-details` must return per-file unified diffs/hunks to feed the editor. The Monaco editor itself is not yet mounted in the Changes pane (only the changed-files list renders today). |
+| **Orchestrator delegation card** | **Composed, not captured** | The `tool-display-card` delegation command is assembled from §D chrome; no capture of a real spawn/delegate tool call exists (Risk R9). Confirm against a live capture when available. |
+| **Sub-agent row link target** | **Stub** | Rows use `href="#"`; a real backend would route to a sub-agent task thread / detail view. |
+
+### Could-not-map
+
+- **Orchestrator "checking" UI** — the §7 `CHECKING` state (orchestrator
+  validating a sub-agent's output against design rules) has no captured
+  representation; it is treated as a running variant for now.
+- **Re-delegation flow** — `REJECTED → re-delegate` has no captured affordance;
+  only the error icon + "Needs re-delegation" label are shown.
+- **`cursor-icon` glyphs** — the delegation header uses a Lucide `bot` SVG and
+  status icons use Lucide `circle-check`/`clock`/`circle-x` because the captured
+  `cursor-icon` font is painted from an inline `--cursor-icon-content` set by the
+  (stripped) JS; with JS removed those `<i>` glyphs render blank, so Lucide
+  (same family as the captured chevrons) is used for visible icons.
+
+---
+
+## Phase 6 — WP-10 (login capture) + WP-11 (browser tab)
+
+### WP-10 — Login page (real authenticator capture)
+
+#### What the frontend now expects
+
+`/login` (`frontend/src/app/login/page.tsx`) **no longer reuses the agents-list
+placeholder**. It now renders a dedicated `login` capture
+(`frontend/src/captured/login.html`, manifest slug `login`, `htmlClass: "dark"`)
+through the same `CapturedDocument` pipeline as every other page.
+
+How the capture was obtained (approach used): a headless Playwright session
+navigated to `https://cursor.com/login`, which performs the real WorkOS/AuthKit
+OAuth redirect to `https://authenticator.cursor.sh/?client_id=…`. Hitting
+authenticator **directly** is blocked by a Cloudflare interactive challenge
+(HTTP 403 / "Just a moment…"), but arriving through the signed `cursor.com/login`
+OAuth flow passes the challenge and yields the live "Sign in" DOM. From that
+capture we lifted the **authentic brand assets** — the Cursor hexagon+wordmark
+logo SVG (re-tinted to `currentColor`) and the Google / GitHub / Apple OAuth
+button icon SVGs — and reassembled the page using captured cursor.com design
+tokens (`--bg-chrome`, `--text-primary/secondary/tertiary`, `--border-tertiary`,
+`--bg-elevated`, `--border-focus`, Geist Sans). The source lives at
+`captures/pages/login/index.html` and is materialized via
+`python3 scripts/materialize_captures.py --only login` (a merge mode that adds
+one slug without regenerating/regressing the other pages).
+
+Why reassemble rather than ship the raw authenticator DOM: `authenticator.cursor.sh`
+is a **separate app/stack** (Radix Themes + AuthKit) whose CSS/asset graph is
+**not** part of the cursor.com `/_next/static` `captured-static` bundle the
+materialize pipeline mirrors. Rendering its raw markup would pull none of its
+styling. Reassembling with the captured cursor.com tokens makes it render
+faithfully (dark + light) inside the existing renderer and matches the live
+screenshot (logo top-left; "Welcome to Cursor" / "The new way to build
+software"; Continue-with Google/GitHub/Apple; Email + Continue; "Don't have an
+account? Sign up"; Terms/Privacy footer).
+
+#### Is the existing API sufficient?
+
+**For the transitional/static frontend: yes — it is presentation only.** The
+buttons/inputs are inert (`href="#"`, a non-submitting `<form action="#">`),
+matching the rest of the static reconstruction (stripped JS). No fixture feeds
+it; the email/OAuth controls do nothing.
+
+#### What a real backend / auth integration must provide
+
+| Need | Status | Notes |
+|---|---|---|
+| **OAuth start endpoints** | **Gap** | Each "Continue with {Google,GitHub,Apple}" must initiate the real provider flow. Live flow is `GET https://cursor.com/login` → 302 to `authenticator.cursor.sh/?client_id=client_01GS6W3C96KW4WRS6Z93JCE2RJ&redirect_uri=https://cursor.com/api/auth/callback&state=…&authorization_session_id=…` (WorkOS AuthKit). Today the buttons are `href="#"` stubs. |
+| **Email (passwordless / password) submit** | **Gap** | The email `<input name="email">` + Continue posts to AuthKit (the live form also carries hidden `signals`, `redirect_uri`, `authorization_session_id`, `state` fields). No submit/identify endpoint is wired. |
+| **OAuth callback** | **Gap** | `GET /api/auth/callback` must exchange the WorkOS code, set the session cookie, and redirect to `state.returnTo` (observed default `https://cursor.com/dashboard`). Not implemented. |
+| **CSRF / anti-bot signals** | **Gap (provider-owned)** | The live page injects a Cloudflare Turnstile-style hidden `signals` token + Cloudflare challenge. A real integration delegates this to WorkOS/Cloudflare; our static capture omits it. |
+| **Session → `auth/me`** | **Partial** | Post-login the app already reads identity via `auth/me` (fixture today, see WP-8). A real callback must establish the session that `auth/me` reflects. |
+| **"Sign up" route** | **Stub** | `Sign up` is `href="#"`; real target is the AuthKit sign-up screen. |
+
+#### Could-not-map
+
+- **Authenticator's own design system.** The live page's Radix/AuthKit CSS,
+  fonts and exact metrics are not in our `captured-static` bundle; the rebuild
+  approximates them with cursor.com tokens. A pixel-exact authenticator clone
+  would require capturing and bundling `authenticator.cursor.sh` assets (a
+  separate origin behind Cloudflare).
+- **Interactive states** (email validation, "magic link sent", 2FA/TOTP, error
+  toasts) are not captured — only the initial sign-in screen.
+
+### WP-11 — Browser tab (right-panel workspace)
+
+#### What the frontend now expects
+
+`rightPanelTransform.ts` `browserPane()` no longer renders the "capture
+required" empty state. It now injects a **captured-style embedded browser**:
+
+- a toolbar row (`height: 36px`, `border-b border-tertiary`) with **back /
+  forward / refresh** icon buttons (Lucide `arrow-left` / `arrow-right` /
+  `rotate-cw`, same inline-SVG family as the other tabs/chevrons) plus a
+  read-only address field (Lucide `globe` + `http://localhost:3000/agents`);
+- an `<iframe data-rp-browser-frame>` filling the rest of the pane, previewing
+  the running frontend at `http://localhost:3000/agents` (`src="/agents"`,
+  same-origin).
+
+Back / forward / refresh are wired in `CapturedShell` to the iframe's
+`contentWindow` (`history.back()/forward()`, `location.reload()`), guarded by a
+try/catch for the cross-origin case.
+
+#### Is this the real Browser tab?
+
+**No — it is a dev-time preview stand-in.** The real Cursor "Browser" tab
+(an in-agent embedded browser the agent can drive/screenshot) is **still
+capture-blocked**: its DOM/behavior is not present in any capture.
+
+| Need | Status | Notes |
+|---|---|---|
+| Faithful Browser-tab **markup** | **Blocked — needs live capture** | The real tab's chrome (URL bar affordances, viewport controls, screenshot/inspect actions) has never been captured. The current toolbar+iframe is assembled from captured tokens, not a capture of the real pane. |
+| **Browser MCP / control API** | **Gap** | A real browser pane needs a backend "Browser MCP" surface: navigate(url), back/forward/reload, screenshot, DOM snapshot, click/type, and a viewport stream. None exists; the iframe only previews the local app and cannot be agent-driven. |
+| **Live preview target** | **Stub** | `http://localhost:3000/agents` is the local dev server. A real session would point at the agent's actual workspace preview (per-session URL / port), which requires a backend-provided preview endpoint. |
+| Cross-origin navigation / history | **Limited** | Same-origin `/agents` allows `history`/`reload`; an arbitrary external URL would be blocked by the browser and needs the MCP-driven approach instead of a raw `<iframe>`. |
+
+#### Could-not-map
+
+- **Agent-driven actions** (the agent navigating, clicking, and screenshotting
+  inside the browser) — entirely dependent on the unbuilt Browser MCP API.
+- **Persisted browser state** (current URL, history, scroll) across navigation
+  — client-only and reset on remount, like the other right-panel panes.
 
 ---
 

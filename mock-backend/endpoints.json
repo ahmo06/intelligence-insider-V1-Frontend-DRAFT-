@@ -154,13 +154,36 @@
     "endpoint": "/api/background-composer/get-diff-details",
     "fixture": "data/api/background-composer/get-diff-details.json",
     "json": true,
-    "source": "derived"
+    "source": "derived",
+    "dynamic": true
   },
   {
     "endpoint": "/api/background-composer/list-changed-files",
     "fixture": "data/api/background-composer/list-changed-files.json",
     "json": true,
-    "source": "derived"
+    "source": "derived",
+    "dynamic": true
+  },
+  {
+    "endpoint": "/api/background-composer/list-workspace-files",
+    "fixture": "data/api/background-composer/list-workspace-files.json",
+    "json": true,
+    "source": "derived",
+    "dynamic": true
+  },
+  {
+    "endpoint": "/api/background-composer/get-terminal-output",
+    "fixture": "data/api/background-composer/get-terminal-output.json",
+    "json": true,
+    "source": "derived",
+    "dynamic": true
+  },
+  {
+    "endpoint": "/api/background-composer/create",
+    "fixture": "data/api/background-composer/create.json",
+    "json": true,
+    "source": "derived",
+    "dynamic": true
   },
   {
     "endpoint": "/api/background-composer/get-machine",

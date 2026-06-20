@@ -17,6 +17,14 @@ const fixtureLoaders: Record<FixtureKey, () => Promise<FixtureModule>> = {
     import("@/fixtures/api/background-composer/interaction-states.json"),
   "background-composer/list-changed-files": () =>
     import("@/fixtures/api/background-composer/list-changed-files.json"),
+  "background-composer/list-workspace-files": () =>
+    import("@/fixtures/api/background-composer/list-workspace-files.json"),
+  "background-composer/get-diff-details": () =>
+    import("@/fixtures/api/background-composer/get-diff-details.json"),
+  "background-composer/get-terminal-output": () =>
+    import("@/fixtures/api/background-composer/get-terminal-output.json"),
+  "background-composer/create": () =>
+    import("@/fixtures/api/background-composer/create.json"),
   "orchestration/portal-session": () =>
     import("@/fixtures/api/orchestration/portal-session.json"),
   "projects/list": () => import("@/fixtures/api/projects/list.json"),
@@ -30,6 +38,8 @@ const fixtureLoaders: Record<FixtureKey, () => Promise<FixtureModule>> = {
     import("@/fixtures/api/dashboard/get-current-billing-cycle.json"),
   "dashboard/get-user-analytics": () =>
     import("@/fixtures/api/dashboard/get-user-analytics.json"),
+  "dashboard/get-user-profile": () =>
+    import("@/fixtures/api/dashboard/get-user-profile.json"),
 };
 
 export async function loadFixture<T>(key: FixtureKey): Promise<T> {

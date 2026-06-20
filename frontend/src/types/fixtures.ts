@@ -6,10 +6,15 @@ export type FixtureKey =
   | "background-composer/thread-turns-portal"
   | "background-composer/interaction-states"
   | "background-composer/list-changed-files"
+  | "background-composer/list-workspace-files"
+  | "background-composer/get-diff-details"
+  | "background-composer/get-terminal-output"
+  | "background-composer/create"
   | "orchestration/portal-session"
   | "projects/list"
   | "automations/list-automations"
   | "dashboard/get-current-period-usage"
   | "dashboard/get-credit-grants-balance"
   | "dashboard/get-current-billing-cycle"
-  | "dashboard/get-user-analytics";
+  | "dashboard/get-user-analytics"
+  | "dashboard/get-user-profile";

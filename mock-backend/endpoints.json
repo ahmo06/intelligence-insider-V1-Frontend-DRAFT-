@@ -1,0 +1,590 @@
+[
+  {
+    "endpoint": "/api/analytics/track-events",
+    "fixture": "data/api/analytics/track-events.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/auth/attachBackgroundComposerLogs",
+    "fixture": "data/api/auth/attachBackgroundComposerLogs.txt",
+    "json": false,
+    "bytes": 194189
+  },
+  {
+    "endpoint": "/api/auth/get-login-scope",
+    "fixture": "data/api/auth/get-login-scope.json",
+    "json": true,
+    "bytes": 16
+  },
+  {
+    "endpoint": "/api/auth/is-impersonating",
+    "fixture": "data/api/auth/is-impersonating.json",
+    "json": true,
+    "bytes": 25
+  },
+  {
+    "endpoint": "/api/auth/me",
+    "fixture": "data/api/auth/me.json",
+    "json": true,
+    "bytes": 304
+  },
+  {
+    "endpoint": "/api/auth/sessions",
+    "fixture": "data/api/auth/sessions.json",
+    "json": true,
+    "bytes": 2634
+  },
+  {
+    "endpoint": "/api/auth/stripe",
+    "fixture": "data/api/auth/stripe.json",
+    "json": true,
+    "bytes": 440
+  },
+  {
+    "endpoint": "/api/automations/get-approval-agent-analytics",
+    "fixture": "data/api/automations/get-approval-agent-analytics.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/automations/get-run-summary",
+    "fixture": "data/api/automations/get-run-summary.json",
+    "json": true,
+    "bytes": 53
+  },
+  {
+    "endpoint": "/api/automations/get-securitybot-resolution-stats",
+    "fixture": "data/api/automations/get-securitybot-resolution-stats.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/automations/list-automations",
+    "fixture": "data/api/automations/list-automations.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/automations/list-workflow-templates",
+    "fixture": "data/api/automations/list-workflow-templates.json",
+    "json": true,
+    "bytes": 64133
+  },
+  {
+    "endpoint": "/api/background-composer/available-models",
+    "fixture": "data/api/background-composer/available-models.json",
+    "json": true,
+    "bytes": 69063
+  },
+  {
+    "endpoint": "/api/background-composer/batch-refresh-pull-request-status",
+    "fixture": "data/api/background-composer/batch-refresh-pull-request-status.json",
+    "json": true,
+    "bytes": 422
+  },
+  {
+    "endpoint": "/api/background-composer/get-artifact",
+    "fixture": "data/api/background-composer/get-artifact.json",
+    "json": true,
+    "bytes": 1800
+  },
+  {
+    "endpoint": "/api/background-composer/get-available-mcp-servers",
+    "fixture": "data/api/background-composer/get-available-mcp-servers.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/background-composer/get-background-composer-user-settings",
+    "fixture": "data/api/background-composer/get-background-composer-user-settings.json",
+    "json": true,
+    "bytes": 6164
+  },
+  {
+    "endpoint": "/api/background-composer/get-blob-for-agent-kv/bc-fef7af5b-1ebf-484e-8881-9644a59e1008/102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+    "fixture": "data/api/background-composer/get-blob-for-agent-kv/bc-fef7af5b-1ebf-484e-8881-9644a59e1008/102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604.txt",
+    "json": false,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/background-composer/get-detailed-composer",
+    "fixture": "data/api/background-composer/get-detailed-composer.json",
+    "json": true,
+    "bytes": 56991
+  },
+  {
+    "endpoint": "/api/background-composer/get-detailed-pull-request-status",
+    "fixture": "data/api/background-composer/get-detailed-pull-request-status.json",
+    "json": true,
+    "bytes": 8954
+  },
+  {
+    "endpoint": "/api/background-composer/get-diff-details",
+    "fixture": "data/api/background-composer/get-diff-details.json",
+    "json": true,
+    "bytes": 11
+  },
+  {
+    "endpoint": "/api/background-composer/get-machine",
+    "fixture": "data/api/background-composer/get-machine.json",
+    "json": true,
+    "bytes": 45
+  },
+  {
+    "endpoint": "/api/background-composer/get-mcp-config",
+    "fixture": "data/api/background-composer/get-mcp-config.json",
+    "json": true,
+    "bytes": 43
+  },
+  {
+    "endpoint": "/api/background-composer/get-pull-request-merge-status",
+    "fixture": "data/api/background-composer/get-pull-request-merge-status.json",
+    "json": true,
+    "bytes": 192
+  },
+  {
+    "endpoint": "/api/background-composer/get-repository-branches",
+    "fixture": "data/api/background-composer/get-repository-branches.json",
+    "json": true,
+    "bytes": 100
+  },
+  {
+    "endpoint": "/api/background-composer/list",
+    "fixture": "data/api/background-composer/list.json",
+    "json": true,
+    "bytes": 9187
+  },
+  {
+    "endpoint": "/api/background-composer/list-artifacts",
+    "fixture": "data/api/background-composer/list-artifacts.json",
+    "json": true,
+    "bytes": 749
+  },
+  {
+    "endpoint": "/api/background-composer/list-background-composer-secrets",
+    "fixture": "data/api/background-composer/list-background-composer-secrets.json",
+    "json": true,
+    "bytes": 467
+  },
+  {
+    "endpoint": "/api/background-composer/list-environments",
+    "fixture": "data/api/background-composer/list-environments.json",
+    "json": true,
+    "bytes": 976
+  },
+  {
+    "endpoint": "/api/background-composer/list-personal-environments",
+    "fixture": "data/api/background-composer/list-personal-environments.json",
+    "json": true,
+    "bytes": 547
+  },
+  {
+    "endpoint": "/api/background-composer/list-private-workers",
+    "fixture": "data/api/background-composer/list-private-workers.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/background-composer/list-repos-with-local-environment",
+    "fixture": "data/api/background-composer/list-repos-with-local-environment.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/background-composer/list-snapshot-statuses-by-bc-ids",
+    "fixture": "data/api/background-composer/list-snapshot-statuses-by-bc-ids.json",
+    "json": true,
+    "bytes": 382
+  },
+  {
+    "endpoint": "/api/background-composer/list-snapshots-by-bc-id",
+    "fixture": "data/api/background-composer/list-snapshots-by-bc-id.json",
+    "json": true,
+    "bytes": 146
+  },
+  {
+    "endpoint": "/api/background-composer/list-team-pool-workers",
+    "fixture": "data/api/background-composer/list-team-pool-workers.json",
+    "json": true,
+    "bytes": 14
+  },
+  {
+    "endpoint": "/api/background-composer/listPendingFollowups",
+    "fixture": "data/api/background-composer/listPendingFollowups.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/connect-proxy/aiserver.v1.BackgroundComposerService/StreamConversation",
+    "fixture": "data/api/connect-proxy/aiserver.v1.BackgroundComposerService/StreamConversation.txt",
+    "json": false,
+    "bytes": 105
+  },
+  {
+    "endpoint": "/api/dashboard/check-promotion-eligibility",
+    "fixture": "data/api/dashboard/check-promotion-eligibility.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/check-user-api-key-access",
+    "fixture": "data/api/dashboard/check-user-api-key-access.json",
+    "json": true,
+    "bytes": 18
+  },
+  {
+    "endpoint": "/api/dashboard/client-action",
+    "fixture": "data/api/dashboard/client-action.json",
+    "json": true,
+    "bytes": 127
+  },
+  {
+    "endpoint": "/api/dashboard/get-active-offboarding-banner",
+    "fixture": "data/api/dashboard/get-active-offboarding-banner.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/get-aggregated-usage-events",
+    "fixture": "data/api/dashboard/get-aggregated-usage-events.json",
+    "json": true,
+    "bytes": 962
+  },
+  {
+    "endpoint": "/api/dashboard/get-background-composer-slash-commands",
+    "fixture": "data/api/dashboard/get-background-composer-slash-commands.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/get-bugbot-analytics-v2",
+    "fixture": "data/api/dashboard/get-bugbot-analytics-v2.json",
+    "json": true,
+    "bytes": 27
+  },
+  {
+    "endpoint": "/api/dashboard/get-bugbot-pr-analytics",
+    "fixture": "data/api/dashboard/get-bugbot-pr-analytics.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/get-bugbot-pro-user-settings",
+    "fixture": "data/api/dashboard/get-bugbot-pro-user-settings.json",
+    "json": true,
+    "bytes": 80
+  },
+  {
+    "endpoint": "/api/dashboard/get-bugbot-suggested-repos",
+    "fixture": "data/api/dashboard/get-bugbot-suggested-repos.json",
+    "json": true,
+    "bytes": 220
+  },
+  {
+    "endpoint": "/api/dashboard/get-client-visible-credit-grants",
+    "fixture": "data/api/dashboard/get-client-visible-credit-grants.json",
+    "json": true,
+    "bytes": 121
+  },
+  {
+    "endpoint": "/api/dashboard/get-cloud-agent-plugins-snapshot",
+    "fixture": "data/api/dashboard/get-cloud-agent-plugins-snapshot.json",
+    "json": true,
+    "bytes": 84
+  },
+  {
+    "endpoint": "/api/dashboard/get-credit-grants-balance",
+    "fixture": "data/api/dashboard/get-credit-grants-balance.json",
+    "json": true,
+    "bytes": 72
+  },
+  {
+    "endpoint": "/api/dashboard/get-current-billing-cycle",
+    "fixture": "data/api/dashboard/get-current-billing-cycle.json",
+    "json": true,
+    "bytes": 77
+  },
+  {
+    "endpoint": "/api/dashboard/get-current-period-usage",
+    "fixture": "data/api/dashboard/get-current-period-usage.json",
+    "json": true,
+    "bytes": 821
+  },
+  {
+    "endpoint": "/api/dashboard/get-daily-spend-by-category",
+    "fixture": "data/api/dashboard/get-daily-spend-by-category.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/get-effective-user-plugins",
+    "fixture": "data/api/dashboard/get-effective-user-plugins.json",
+    "json": true,
+    "bytes": 202
+  },
+  {
+    "endpoint": "/api/dashboard/get-filtered-usage-events",
+    "fixture": "data/api/dashboard/get-filtered-usage-events.json",
+    "json": true,
+    "bytes": 50817
+  },
+  {
+    "endpoint": "/api/dashboard/get-github-installations",
+    "fixture": "data/api/dashboard/get-github-installations.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/get-global-commands",
+    "fixture": "data/api/dashboard/get-global-commands.json",
+    "json": true,
+    "bytes": 25368
+  },
+  {
+    "endpoint": "/api/dashboard/get-hard-limit",
+    "fixture": "data/api/dashboard/get-hard-limit.json",
+    "json": true,
+    "bytes": 28
+  },
+  {
+    "endpoint": "/api/dashboard/get-linear-status",
+    "fixture": "data/api/dashboard/get-linear-status.json",
+    "json": true,
+    "bytes": 36
+  },
+  {
+    "endpoint": "/api/dashboard/get-managed-skills",
+    "fixture": "data/api/dashboard/get-managed-skills.json",
+    "json": true,
+    "bytes": 111477
+  },
+  {
+    "endpoint": "/api/dashboard/get-monthly-billing-cycle",
+    "fixture": "data/api/dashboard/get-monthly-billing-cycle.json",
+    "json": true,
+    "bytes": 77
+  },
+  {
+    "endpoint": "/api/dashboard/get-monthly-invoice",
+    "fixture": "data/api/dashboard/get-monthly-invoice.json",
+    "json": true,
+    "bytes": 158
+  },
+  {
+    "endpoint": "/api/dashboard/get-no-zdr-model-consent-status",
+    "fixture": "data/api/dashboard/get-no-zdr-model-consent-status.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/get-p2p-referral-history",
+    "fixture": "data/api/dashboard/get-p2p-referral-history.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/get-p2p-referral-status",
+    "fixture": "data/api/dashboard/get-p2p-referral-status.json",
+    "json": true,
+    "bytes": 501
+  },
+  {
+    "endpoint": "/api/dashboard/get-pagerduty-status",
+    "fixture": "data/api/dashboard/get-pagerduty-status.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/get-plan-info",
+    "fixture": "data/api/dashboard/get-plan-info.json",
+    "json": true,
+    "bytes": 113
+  },
+  {
+    "endpoint": "/api/dashboard/get-scm-connection-status",
+    "fixture": "data/api/dashboard/get-scm-connection-status.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/get-sentry-status",
+    "fixture": "data/api/dashboard/get-sentry-status.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/get-service-account-spend-limit",
+    "fixture": "data/api/dashboard/get-service-account-spend-limit.json",
+    "json": true,
+    "bytes": 68
+  },
+  {
+    "endpoint": "/api/dashboard/get-slack-install-url",
+    "fixture": "data/api/dashboard/get-slack-install-url.json",
+    "json": true,
+    "bytes": 1033
+  },
+  {
+    "endpoint": "/api/dashboard/get-slack-model-options",
+    "fixture": "data/api/dashboard/get-slack-model-options.json",
+    "json": true,
+    "bytes": 322
+  },
+  {
+    "endpoint": "/api/dashboard/get-slack-repo-routing-rules",
+    "fixture": "data/api/dashboard/get-slack-repo-routing-rules.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/get-slack-settings",
+    "fixture": "data/api/dashboard/get-slack-settings.json",
+    "json": true,
+    "bytes": 18
+  },
+  {
+    "endpoint": "/api/dashboard/get-slack-user-settings",
+    "fixture": "data/api/dashboard/get-slack-user-settings.json",
+    "json": true,
+    "bytes": 179
+  },
+  {
+    "endpoint": "/api/dashboard/get-team-commands",
+    "fixture": "data/api/dashboard/get-team-commands.json",
+    "json": true,
+    "bytes": 356
+  },
+  {
+    "endpoint": "/api/dashboard/get-user-analytics",
+    "fixture": "data/api/dashboard/get-user-analytics.json",
+    "json": true,
+    "bytes": 40484
+  },
+  {
+    "endpoint": "/api/dashboard/get-user-api-keys",
+    "fixture": "data/api/dashboard/get-user-api-keys.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/get-user-organizations",
+    "fixture": "data/api/dashboard/get-user-organizations.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/get-user-privacy-mode",
+    "fixture": "data/api/dashboard/get-user-privacy-mode.json",
+    "json": true,
+    "bytes": 86
+  },
+  {
+    "endpoint": "/api/dashboard/get-user-profile",
+    "fixture": "data/api/dashboard/get-user-profile.json",
+    "json": true,
+    "bytes": 57
+  },
+  {
+    "endpoint": "/api/dashboard/is-on-new-pricing",
+    "fixture": "data/api/dashboard/is-on-new-pricing.json",
+    "json": true,
+    "bytes": 75
+  },
+  {
+    "endpoint": "/api/dashboard/list-github-enterprise-apps",
+    "fixture": "data/api/dashboard/list-github-enterprise-apps.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/list-gitlab-enterprise-instances",
+    "fixture": "data/api/dashboard/list-gitlab-enterprise-instances.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/list-invoice-cycles",
+    "fixture": "data/api/dashboard/list-invoice-cycles.json",
+    "json": true,
+    "bytes": 510
+  },
+  {
+    "endpoint": "/api/dashboard/list-invoices",
+    "fixture": "data/api/dashboard/list-invoices.json",
+    "json": true,
+    "bytes": 7087
+  },
+  {
+    "endpoint": "/api/dashboard/list-jira-user-links",
+    "fixture": "data/api/dashboard/list-jira-user-links.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/list-marketplace-plugins",
+    "fixture": "data/api/dashboard/list-marketplace-plugins.json",
+    "json": true,
+    "bytes": 1135849
+  },
+  {
+    "endpoint": "/api/dashboard/list-marketplaces",
+    "fixture": "data/api/dashboard/list-marketplaces.json",
+    "json": true,
+    "bytes": 202
+  },
+  {
+    "endpoint": "/api/dashboard/list-microsoft-teams-channels",
+    "fixture": "data/api/dashboard/list-microsoft-teams-channels.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/list-shared-canvases",
+    "fixture": "data/api/dashboard/list-shared-canvases.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/dashboard/teams",
+    "fixture": "data/api/dashboard/teams.json",
+    "json": true,
+    "bytes": 2
+  },
+  {
+    "endpoint": "/api/files/bc-fef7af5b-1ebf-484e-8881-9644a59e1008/list",
+    "fixture": "data/api/files/bc-fef7af5b-1ebf-484e-8881-9644a59e1008/list.json",
+    "json": true,
+    "bytes": 36
+  },
+  {
+    "endpoint": "/api/geo/country",
+    "fixture": "data/api/geo/country.json",
+    "json": true,
+    "bytes": 20
+  },
+  {
+    "endpoint": "/api/get-downgrade-options",
+    "fixture": "data/api/get-downgrade-options.json",
+    "json": true,
+    "bytes": 391
+  },
+  {
+    "endpoint": "/api/get-pending-downgrade",
+    "fixture": "data/api/get-pending-downgrade.json",
+    "json": true,
+    "bytes": 18
+  },
+  {
+    "endpoint": "/api/usage",
+    "fixture": "data/api/usage.json",
+    "json": true,
+    "bytes": 148
+  },
+  {
+    "endpoint": "/api/usage-summary",
+    "fixture": "data/api/usage-summary.json",
+    "json": true,
+    "bytes": 618
+  }
+]

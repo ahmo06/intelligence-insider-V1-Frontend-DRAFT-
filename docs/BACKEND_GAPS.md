@@ -70,3 +70,35 @@ endpoint added) for the real backend.
 `get-user-profile` beyond visibility flags or add a dedicated profile endpoint) that persists
 `company`/`position`/`department`. Until then the frontend reads them off `auth/me`, which is
 acceptable only because they are static, read-only sample values.
+
+---
+
+## WP-9 — Captured DOM cleanup needed
+
+WP-9 deleted the `/dashboard` and `/dashboard/bugbot` routes (`frontend/src/app/dashboard/`)
+and removed their `manifest.json` entries, and dropped `/dashboard` from
+`CapturedShell.INTERNAL_PREFIXES`. It did **not** edit any captured HTML — that sidebar DOM
+surgery is WP-1. The captured markup still contains `/dashboard` and `bugbot` references that
+WP-1 must remove when it transforms the sidebar.
+
+### Occurrence counts
+
+Measured against `frontend/src/captured/*.html` (`href="/dashboard*"` targets and
+case-insensitive `bugbot` matches):
+
+| Capture | `href="/dashboard"` | `href="/dashboard/bugbot"` | `bugbot` (any) | Notes |
+|---|---|---|---|---|
+| `agents-list.html` | 1 | 1 | 3 | **Active render — needs WP-1 cleanup** (shared sidebar nav) |
+| `automations.html` | 1 | 1 | 3 | **Active render — needs WP-1 cleanup** (shared sidebar nav) |
+| `thread-merged-portal.html` | 1 | 1 | 3 | **Active render — needs WP-1 cleanup** (shared sidebar nav) |
+| `dashboard.html` | 16 | (incl. above) | 7 | Reference capture only — not loaded by any route; retained in WP-9 |
+| `bugbot.html` | 15 | (incl. above) | 10 | Reference capture only — not loaded by any route; retained in WP-9 |
+
+**Active-render totals to clean in WP-1:** 3 `/dashboard` nav hrefs + 3 `/dashboard/bugbot`
+nav hrefs across `agents-list.html`, `automations.html`, and `thread-merged-portal.html`
+(each embeds the shared sidebar with one "Dashboard" link and one "Bugbot" link). The three
+`bugbot` matches per active capture are the link `href`, the `aria-label`/tooltip, and the
+visible label.
+
+`dashboard.html` and `bugbot.html` are intentionally kept as reference captures (per WP-9
+scope) and are no longer referenced by `manifest.json` after this work package.

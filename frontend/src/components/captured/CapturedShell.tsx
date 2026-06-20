@@ -10,7 +10,7 @@ interface CapturedShellProps {
   bodyHtml: string;
 }
 
-const INTERNAL_PREFIXES = ["/agents", "/dashboard", "/automations", "/login"];
+const INTERNAL_PREFIXES = ["/agents", "/automations", "/login"];
 
 function isInternalHref(href: string): boolean {
   if (!href || href.startsWith("#") || href.startsWith("http")) return false;

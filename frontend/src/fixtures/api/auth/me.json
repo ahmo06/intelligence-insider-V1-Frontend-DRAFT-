@@ -6,5 +6,8 @@
   "created_at": "2026-01-18T12:01:32.624Z",
   "updated_at": "2026-06-20T10:01:53.246Z",
   "picture": "https://workoscdn.com/images/v1/jNVlQ10SkKP1kaaKrNfTbllAc03iXQvMKY5fwdZcDXo",
-  "id": 317511232
+  "id": 317511232,
+  "company": "Intelligence Insider",
+  "position": "Platform Engineer",
+  "department": "Product Engineering"
 }

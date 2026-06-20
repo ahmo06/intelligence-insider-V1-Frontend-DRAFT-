@@ -25,29 +25,6 @@
       "bytes": 88217
     },
     {
-      "slug": "dashboard",
-      "route": "/dashboard",
-      "title": "Dashboard",
-      "htmlClass": "light",
-      "stylesheets": [
-        "/captured-static/_next/static/chunks/0-r3e.sjr2q9n.css",
-        "/captured-static/_next/static/chunks/03uzl1xm~yyyf.css",
-        "/captured-static/_next/static/chunks/05vyfd.w07p~~.css",
-        "/captured-static/_next/static/chunks/05z040qukrtkv.css",
-        "/captured-static/_next/static/chunks/08v.l.16egz0k.css",
-        "/captured-static/_next/static/chunks/095u-vw0u-s3n.css",
-        "/captured-static/_next/static/chunks/0c.v-yjrjb6e1.css",
-        "/captured-static/_next/static/chunks/0stl~p0j_-xu1.css",
-        "/captured-static/_next/static/chunks/0t91degr4k8_h.css",
-        "/captured-static/_next/static/chunks/0vbjbxpjd~evs.css",
-        "/captured-static/_next/static/chunks/0zz9o68817or3.css",
-        "/captured-static/_next/static/chunks/18d7iik7hearp.css"
-      ],
-      "inlineStylesFile": "captured/dashboard.inline.css",
-      "bodyFile": "captured/dashboard.html",
-      "bytes": 500196
-    },
-    {
       "slug": "automations",
       "route": "/automations",
       "title": "Automations",
@@ -65,29 +42,6 @@
       "inlineStylesFile": "captured/automations.inline.css",
       "bodyFile": "captured/automations.html",
       "bytes": 78856
-    },
-    {
-      "slug": "bugbot",
-      "route": "/dashboard/bugbot",
-      "title": "Bugbot",
-      "htmlClass": "light",
-      "stylesheets": [
-        "/captured-static/_next/static/chunks/0-r3e.sjr2q9n.css",
-        "/captured-static/_next/static/chunks/03uzl1xm~yyyf.css",
-        "/captured-static/_next/static/chunks/05vyfd.w07p~~.css",
-        "/captured-static/_next/static/chunks/05z040qukrtkv.css",
-        "/captured-static/_next/static/chunks/08v.l.16egz0k.css",
-        "/captured-static/_next/static/chunks/095u-vw0u-s3n.css",
-        "/captured-static/_next/static/chunks/0c.v-yjrjb6e1.css",
-        "/captured-static/_next/static/chunks/0stl~p0j_-xu1.css",
-        "/captured-static/_next/static/chunks/0t91degr4k8_h.css",
-        "/captured-static/_next/static/chunks/0vbjbxpjd~evs.css",
-        "/captured-static/_next/static/chunks/0zz9o68817or3.css",
-        "/captured-static/_next/static/chunks/18d7iik7hearp.css"
-      ],
-      "inlineStylesFile": "captured/bugbot.inline.css",
-      "bodyFile": "captured/bugbot.html",
-      "bytes": 29340
     },
     {
       "slug": "thread-merged-portal",

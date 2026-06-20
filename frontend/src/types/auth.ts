@@ -7,6 +7,9 @@ export interface AuthUser {
   created_at: string;
   updated_at: string;
   picture?: string;
+  company?: string;
+  position?: string;
+  department?: string;
 }
 
 export interface AuthSession {

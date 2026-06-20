@@ -1,0 +1,11 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-bugbot-analytics-v2",
+  "path": "/api/dashboard/get-bugbot-analytics-v2",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:20.769356+00:00",
+  "page_slug": "bugbot",
+  "body": {
+    "shouldSeeAnalytics": true
+  }
+}

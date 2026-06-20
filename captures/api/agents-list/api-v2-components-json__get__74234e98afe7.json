@@ -1,0 +1,9 @@
+{
+  "url": "https://status.cursor.com/api/v2/components.json",
+  "path": "/api/v2/components.json",
+  "method": "GET",
+  "status": 200,
+  "captured_at": "2026-06-20T10:29:37.631183+00:00",
+  "page_slug": "agents-list",
+  "body": null
+}

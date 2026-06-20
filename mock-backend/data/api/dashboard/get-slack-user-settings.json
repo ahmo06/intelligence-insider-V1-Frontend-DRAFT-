@@ -1,1 +1,7 @@
-{"defaultRepo":"ahmo06/intelligence-insider-V0.0","defaultBranch":"cursor/dev-environment-setup-aa66","defaultModel":"composer-2.5","canShow":true,"ciFailureFollowupEnabled":true}
+{
+  "defaultRepo": "ahmo06/intelligence-insider-V0.0",
+  "defaultBranch": "cursor/dev-environment-setup-aa66",
+  "defaultModel": "composer-2.5",
+  "canShow": true,
+  "ciFailureFollowupEnabled": true
+}

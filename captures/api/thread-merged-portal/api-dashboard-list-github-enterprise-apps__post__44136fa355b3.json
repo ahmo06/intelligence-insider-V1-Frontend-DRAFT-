@@ -1,0 +1,9 @@
+{
+  "url": "https://cursor.com/api/dashboard/list-github-enterprise-apps",
+  "path": "/api/dashboard/list-github-enterprise-apps",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:37.848437+00:00",
+  "page_slug": "thread-merged-portal",
+  "body": {}
+}

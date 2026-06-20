@@ -1,0 +1,20 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-effective-user-plugins",
+  "path": "/api/dashboard/get-effective-user-plugins",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:08.144824+00:00",
+  "page_slug": "dashboard",
+  "body": {
+    "marketplaces": [
+      {
+        "id": "34",
+        "name": "cursor-public",
+        "displayName": "Cursor Plugin Marketplace",
+        "description": "Official Cursor plugin marketplace",
+        "createdAt": "1770076838644",
+        "updatedAt": "1770076838644"
+      }
+    ]
+  }
+}

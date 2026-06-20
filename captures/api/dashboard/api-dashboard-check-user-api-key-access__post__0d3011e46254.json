@@ -1,0 +1,11 @@
+{
+  "url": "https://cursor.com/api/dashboard/check-user-api-key-access",
+  "path": "/api/dashboard/check-user-api-key-access",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:08.121924+00:00",
+  "page_slug": "dashboard",
+  "body": {
+    "hasAccess": true
+  }
+}

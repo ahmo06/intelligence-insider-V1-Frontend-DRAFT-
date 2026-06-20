@@ -1,0 +1,9 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-team-commands",
+  "path": "/api/dashboard/get-team-commands",
+  "method": "POST",
+  "status": 401,
+  "captured_at": "2026-06-20T10:32:55.571758+00:00",
+  "page_slug": "agents-list",
+  "body": null
+}

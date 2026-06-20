@@ -1,0 +1,9 @@
+{
+  "url": "https://cursor.com/api/dashboard/list-microsoft-teams-channels",
+  "path": "/api/dashboard/list-microsoft-teams-channels",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:15.508983+00:00",
+  "page_slug": "automations",
+  "body": {}
+}

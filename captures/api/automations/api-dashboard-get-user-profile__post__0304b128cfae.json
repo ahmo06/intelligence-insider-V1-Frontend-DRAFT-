@@ -1,0 +1,12 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-user-profile",
+  "path": "/api/dashboard/get-user-profile",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:15.483217+00:00",
+  "page_slug": "automations",
+  "body": {
+    "publicVisibilityAllowed": true,
+    "maxVisibility": "PUBLIC"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-slack-model-options",
+  "path": "/api/dashboard/get-slack-model-options",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:08.212375+00:00",
+  "page_slug": "dashboard",
+  "body": {
+    "modelOptions": [
+      "gpt-5.5-high",
+      "gpt-5.5-high-fast",
+      "gpt-5.4-high",
+      "gpt-5.4-high-fast",
+      "gpt-5.3-codex-high",
+      "gpt-5.3-codex-high-fast",
+      "claude-opus-4-8-thinking-high",
+      "claude-opus-4-8-thinking-high-fast",
+      "claude-opus-4-7-thinking-high",
+      "claude-opus-4-7-thinking-high-fast",
+      "claude-4.6-sonnet-high-thinking",
+      "composer-2.5"
+    ]
+  }
+}

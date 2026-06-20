@@ -1,0 +1,9 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-active-offboarding-banner",
+  "path": "/api/dashboard/get-active-offboarding-banner",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:08.142694+00:00",
+  "page_slug": "dashboard",
+  "body": {}
+}

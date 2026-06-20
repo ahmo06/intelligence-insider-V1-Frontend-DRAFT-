@@ -1,0 +1,15 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-slack-user-settings",
+  "path": "/api/dashboard/get-slack-user-settings",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:08.182546+00:00",
+  "page_slug": "dashboard",
+  "body": {
+    "defaultRepo": "ahmo06/intelligence-insider-V0.0",
+    "defaultBranch": "cursor/dev-environment-setup-aa66",
+    "defaultModel": "composer-2.5",
+    "canShow": true,
+    "ciFailureFollowupEnabled": true
+  }
+}

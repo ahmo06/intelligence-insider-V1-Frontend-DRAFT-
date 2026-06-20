@@ -1,0 +1,11 @@
+{
+  "url": "https://cursor.com/api/background-composer/get-mcp-config",
+  "path": "/api/background-composer/get-mcp-config",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:03.524314+00:00",
+  "page_slug": "agents-list",
+  "body": {
+    "configJson": "{\n  \"mcpServers\": {}\n}"
+  }
+}

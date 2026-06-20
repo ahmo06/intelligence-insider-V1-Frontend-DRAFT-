@@ -1,0 +1,9 @@
+{
+  "url": "https://cursor.com/api/background-composer/listPendingFollowups",
+  "path": "/api/background-composer/listPendingFollowups",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:37.883598+00:00",
+  "page_slug": "thread-merged-portal",
+  "body": {}
+}

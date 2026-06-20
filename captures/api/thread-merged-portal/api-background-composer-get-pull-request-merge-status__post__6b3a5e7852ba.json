@@ -1,0 +1,15 @@
+{
+  "url": "https://cursor.com/api/background-composer/get-pull-request-merge-status",
+  "path": "/api/background-composer/get-pull-request-merge-status",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:38.060858+00:00",
+  "page_slug": "thread-merged-portal",
+  "body": {
+    "mergeableState": "clean",
+    "state": "open",
+    "isDraft": true,
+    "title": "Crush wiring matrix: 152-test long integration gate",
+    "baseBranch": "cursor/dev-environment-setup-aa66"
+  }
+}

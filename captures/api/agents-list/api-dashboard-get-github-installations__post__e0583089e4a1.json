@@ -1,0 +1,125 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-github-installations",
+  "path": "/api/dashboard/get-github-installations",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:27:30.343246+00:00",
+  "page_slug": "agents-list",
+  "body": {
+    "installations": [
+      {
+        "installationId": "104838127",
+        "repos": [
+          {
+            "installationId": "104838127",
+            "repoNodeId": "R_kgDOS7Vnnw",
+            "owner": "ahmo06",
+            "name": "CE-roadmap-review-",
+            "htmlUrl": "https://github.com/ahmo06/CE-roadmap-review-",
+            "settings": {}
+          },
+          {
+            "installationId": "104838127",
+            "repoNodeId": "R_kgDOS1W-Ng",
+            "owner": "ahmo06",
+            "name": "climate-risk-model",
+            "htmlUrl": "https://github.com/ahmo06/climate-risk-model",
+            "settings": {}
+          },
+          {
+            "installationId": "104838127",
+            "repoNodeId": "R_kgDORb-Tgw",
+            "owner": "ahmo06",
+            "name": "esg-insider-V0.06.301",
+            "htmlUrl": "https://github.com/ahmo06/esg-insider-V0.06.301",
+            "settings": {}
+          },
+          {
+            "installationId": "104838127",
+            "repoNodeId": "R_kgDOQ_VZxw",
+            "owner": "ahmo06",
+            "name": "insurance-tool",
+            "htmlUrl": "https://github.com/ahmo06/insurance-tool",
+            "settings": {}
+          },
+          {
+            "installationId": "104838127",
+            "repoNodeId": "R_kgDOS6kzrw",
+            "owner": "ahmo06",
+            "name": "intelligence-insider-kimi-",
+            "htmlUrl": "https://github.com/ahmo06/intelligence-insider-kimi-",
+            "settings": {}
+          },
+          {
+            "installationId": "104838127",
+            "repoNodeId": "R_kgDOR6VJxQ",
+            "owner": "ahmo06",
+            "name": "intelligence-insider-V0.0",
+            "htmlUrl": "https://github.com/ahmo06/intelligence-insider-V0.0",
+            "settings": {}
+          },
+          {
+            "installationId": "104838127",
+            "repoNodeId": "R_kgDOS6gNPA",
+            "owner": "ahmo06",
+            "name": "intelligence-insider-V1",
+            "htmlUrl": "https://github.com/ahmo06/intelligence-insider-V1",
+            "settings": {}
+          },
+          {
+            "installationId": "104838127",
+            "repoNodeId": "R_kgDOS_skBQ",
+            "owner": "ahmo06",
+            "name": "intelligence-insider-V1-Frontend-DRAFT-",
+            "htmlUrl": "https://github.com/ahmo06/intelligence-insider-V1-Frontend-DRAFT-",
+            "settings": {}
+          },
+          {
+            "installationId": "104838127",
+            "repoNodeId": "R_kgDOS4pj-Q",
+            "owner": "ahmo06",
+            "name": "iyaf-website",
+            "htmlUrl": "https://github.com/ahmo06/iyaf-website",
+            "settings": {}
+          },
+          {
+            "installationId": "104838127",
+            "repoNodeId": "R_kgDOQ7DlHw",
+            "owner": "ahmo06",
+            "name": "main-site",
+            "htmlUrl": "https://github.com/ahmo06/main-site",
+            "settings": {}
+          },
+          {
+            "installationId": "104838127",
+            "repoNodeId": "R_kgDOQ4nSlg",
+            "owner": "ahmo06",
+            "name": "Main-site-mubaslat",
+            "htmlUrl": "https://github.com/ahmo06/Main-site-mubaslat",
+            "settings": {}
+          },
+          {
+            "installationId": "104838127",
+            "repoNodeId": "R_kgDORO7KCQ",
+            "owner": "ahmo06",
+            "name": "rent-insider-V0.0",
+            "htmlUrl": "https://github.com/ahmo06/rent-insider-V0.0",
+            "settings": {}
+          }
+        ],
+        "settings": {
+          "suppressNoBugsComments": true,
+          "isPrSummaryEnabled": true
+        },
+        "canModify": true,
+        "totalPages": 1,
+        "needsTeamScope": false,
+        "canModifyInstallationSettings": true
+      }
+    ],
+    "githubConnected": true,
+    "githubUsernames": [
+      "ahmo06"
+    ]
+  }
+}

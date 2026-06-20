@@ -1,0 +1,16 @@
+{
+  "url": "https://cursor.com/api/background-composer/get-pull-request-merge-status",
+  "path": "/api/background-composer/get-pull-request-merge-status",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:30:42.016108+00:00",
+  "page_slug": "agents-list",
+  "body": {
+    "mergeableState": "unstable",
+    "state": "open",
+    "isDraft": true,
+    "title": "Set up AI Agent System with Docker, CI/CD, and multi-agent test suite",
+    "baseBranch": "main",
+    "viewerCanEnableAutoMerge": false
+  }
+}

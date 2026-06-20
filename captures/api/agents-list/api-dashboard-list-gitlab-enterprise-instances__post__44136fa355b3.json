@@ -1,0 +1,9 @@
+{
+  "url": "https://cursor.com/api/dashboard/list-gitlab-enterprise-instances",
+  "path": "/api/dashboard/list-gitlab-enterprise-instances",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:03.455697+00:00",
+  "page_slug": "agents-list",
+  "body": {}
+}

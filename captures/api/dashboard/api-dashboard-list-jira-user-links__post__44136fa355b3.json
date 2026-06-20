@@ -1,0 +1,9 @@
+{
+  "url": "https://cursor.com/api/dashboard/list-jira-user-links",
+  "path": "/api/dashboard/list-jira-user-links",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:08.163455+00:00",
+  "page_slug": "dashboard",
+  "body": {}
+}

@@ -1,0 +1,102 @@
+{
+  "url": "https://cursor.com/api/background-composer/get-detailed-composer",
+  "path": "/api/background-composer/get-detailed-composer",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:27:30.576671+00:00",
+  "page_slug": "agents-list",
+  "body": {
+    "composers": [
+      {
+        "composer": {
+          "bcId": "bc-8a1aa238-5ae6-4404-bb94-833462fbcb05",
+          "createdAtMs": 1781917618462,
+          "workspaceRootPath": "/workspace",
+          "name": "Development environment setup",
+          "hasStartedVm": true,
+          "repoUrl": "https://github.com/ahmo06/intelligence-insider-v1-frontend-draft-",
+          "status": "BACKGROUND_COMPOSER_STATUS_RUNNING",
+          "isUnread": true,
+          "source": "BACKGROUND_COMPOSER_SOURCE_GLASS",
+          "updatedAtMs": 1781950447956,
+          "modelDetails": {
+            "modelName": "default",
+            "maxMode": false
+          },
+          "visibility": "user",
+          "workflowId": "cloud-agent-turn-bc-8a1aa238-5ae6-4404-bb94-833462fbcb05",
+          "lastMessageActivityAtMs": 1781950140898,
+          "participantUserIds": [
+            317511232
+          ],
+          "requestedModel": {
+            "modelId": "default",
+            "maxMode": true
+          },
+          "usePrivateWorker": false,
+          "repoUrls": [
+            "github.com/ahmo06/intelligence-insider-v1-frontend-draft-"
+          ],
+          "environmentName": "ahmo06/intelligence-insider-v1-frontend-draft-"
+        },
+        "startingCommit": "33bab524dfa20d5f8e655b6f0cfb61f7859ee9c5",
+        "baseBranch": "main",
+        "prompt": {},
+        "status": "BACKGROUND_COMPOSER_STATUS_RUNNING",
+        "modelDetails": {
+          "modelName": "default",
+          "maxMode": true
+        },
+        "unread": true,
+        "openAsCursorGithubApp": false,
+        "skipReviewerRequest": false,
+        "autoBranch": true,
+        "originalConversationAction": {
+          "userMessageAction": {
+            "userMessage": {
+              "text": "Please set up the development environment for this codebase. Run the application(s) in preperation for next steps.",
+              "messageId": "effd81ce-61ca-40dc-8bc0-f0fb5c500263",
+              "selectedContext": {},
+              "mode": "AGENT_MODE_AGENT",
+              "richText": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Please set up the development environment for this codebase. Run the application(s) in preperation for next steps.\"}]}]}"
+            },
+            "sendToInteractionListener": true
+          }
+        },
+        "repoConfig": {
+          "repos": [
+            {
+              "repoUrl": "github.com/ahmo06/intelligence-insider-v1-frontend-draft-"
+            }
+          ]
+        },
+        "environmentName": "ahmo06/intelligence-insider-v1-frontend-draft-",
+        "usedEnvironmentVersion": {
+          "publicId": "bfc95ed3-c1ae-4caa-8c66-cd199095872c",
+          "sourceKind": "ENVIRONMENT_VERSION_SOURCE_KIND_DATABASE_USER",
+          "environmentPublicId": "14cf1d78-0baa-443f-9b7b-8c3ddebf64ab",
+          "repoConfig": {
+            "repoUrls": [
+              "github.com/ahmo06/intelligence-insider-v1-frontend-draft-"
+            ]
+          },
+          "createdAtMs": "1781917561849",
+          "environmentName": "ahmo06/intelligence-insider-v1-frontend-draft-",
+          "recordedVia": "SETUP_FLOW"
+        },
+        "requestedModel": {
+          "modelId": "default",
+          "maxMode": true
+        }
+      }
+    ],
+    "participants": [
+      {
+        "userId": 317511232,
+        "displayName": "Ameer Mubaslat",
+        "email": "ameermobaslat@gmail.com",
+        "profilePictureUrl": "https://workoscdn.com/images/v1/jNVlQ10SkKP1kaaKrNfTbllAc03iXQvMKY5fwdZcDXo"
+      }
+    ]
+  }
+}

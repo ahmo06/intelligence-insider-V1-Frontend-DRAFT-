@@ -1,0 +1,11 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-hard-limit",
+  "path": "/api/dashboard/get-hard-limit",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:08.176278+00:00",
+  "page_slug": "dashboard",
+  "body": {
+    "noUsageBasedAllowed": true
+  }
+}

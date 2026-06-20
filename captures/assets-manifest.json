@@ -1,0 +1,182 @@
+[
+  {
+    "url": "https://cursor.com/_vercel/insights/script.js",
+    "path": "captures/assets/56bb241c12e619ac.js",
+    "bytes": 2495,
+    "page": "agents-list"
+  },
+  {
+    "url": "https://cursor.com/_vercel/speed-insights/script.js",
+    "path": "captures/assets/2376d7c0197f7add.js",
+    "bytes": 12567,
+    "page": "agents-list"
+  },
+  {
+    "url": "https://cursor.com/favicon.svg",
+    "path": "captures/assets/fb3bd2f3f19a9bcb.svg",
+    "bytes": 4190,
+    "page": "agents-list"
+  },
+  {
+    "url": "https://cursor.com/pwa/apple-touch-icon.png",
+    "path": "captures/assets/ec38c0924d7ff125.png",
+    "bytes": 8251,
+    "page": "agents-list"
+  },
+  {
+    "url": "https://cursor.com/pwa/icon-192x192.png",
+    "path": "captures/assets/0b0d47b96b5432f0.png",
+    "bytes": 8777,
+    "page": "agents-list"
+  },
+  {
+    "url": "https://cursor.com/pwa/icon-512x512.png",
+    "path": "captures/assets/597d4c38453e863a.png",
+    "bytes": 25283,
+    "page": "agents-list"
+  },
+  {
+    "url": "https://cursor.com/_vercel/insights/script.js",
+    "path": "captures/assets/56bb241c12e619ac.js",
+    "bytes": 2495,
+    "page": "automations"
+  },
+  {
+    "url": "https://cursor.com/_vercel/speed-insights/script.js",
+    "path": "captures/assets/2376d7c0197f7add.js",
+    "bytes": 12567,
+    "page": "automations"
+  },
+  {
+    "url": "https://cursor.com/favicon.svg",
+    "path": "captures/assets/fb3bd2f3f19a9bcb.svg",
+    "bytes": 4190,
+    "page": "automations"
+  },
+  {
+    "url": "https://cursor.com/pwa/apple-touch-icon.png",
+    "path": "captures/assets/ec38c0924d7ff125.png",
+    "bytes": 8251,
+    "page": "automations"
+  },
+  {
+    "url": "https://cursor.com/pwa/icon-192x192.png",
+    "path": "captures/assets/0b0d47b96b5432f0.png",
+    "bytes": 8777,
+    "page": "automations"
+  },
+  {
+    "url": "https://cursor.com/pwa/icon-512x512.png",
+    "path": "captures/assets/597d4c38453e863a.png",
+    "bytes": 25283,
+    "page": "automations"
+  },
+  {
+    "url": "https://cursor.com/_vercel/insights/script.js",
+    "path": "captures/assets/56bb241c12e619ac.js",
+    "bytes": 2495,
+    "page": "bugbot"
+  },
+  {
+    "url": "https://cursor.com/_vercel/speed-insights/script.js",
+    "path": "captures/assets/2376d7c0197f7add.js",
+    "bytes": 12567,
+    "page": "bugbot"
+  },
+  {
+    "url": "https://cursor.com/favicon.svg",
+    "path": "captures/assets/fb3bd2f3f19a9bcb.svg",
+    "bytes": 4190,
+    "page": "bugbot"
+  },
+  {
+    "url": "https://cursor.com/pwa/apple-touch-icon.png",
+    "path": "captures/assets/ec38c0924d7ff125.png",
+    "bytes": 8251,
+    "page": "bugbot"
+  },
+  {
+    "url": "https://cursor.com/pwa/icon-192x192.png",
+    "path": "captures/assets/0b0d47b96b5432f0.png",
+    "bytes": 8777,
+    "page": "bugbot"
+  },
+  {
+    "url": "https://cursor.com/pwa/icon-512x512.png",
+    "path": "captures/assets/597d4c38453e863a.png",
+    "bytes": 25283,
+    "page": "bugbot"
+  },
+  {
+    "url": "https://cursor.com/_vercel/insights/script.js",
+    "path": "captures/assets/56bb241c12e619ac.js",
+    "bytes": 2495,
+    "page": "dashboard"
+  },
+  {
+    "url": "https://cursor.com/_vercel/speed-insights/script.js",
+    "path": "captures/assets/2376d7c0197f7add.js",
+    "bytes": 12567,
+    "page": "dashboard"
+  },
+  {
+    "url": "https://cursor.com/favicon.svg",
+    "path": "captures/assets/fb3bd2f3f19a9bcb.svg",
+    "bytes": 4190,
+    "page": "dashboard"
+  },
+  {
+    "url": "https://cursor.com/pwa/apple-touch-icon.png",
+    "path": "captures/assets/ec38c0924d7ff125.png",
+    "bytes": 8251,
+    "page": "dashboard"
+  },
+  {
+    "url": "https://cursor.com/pwa/icon-192x192.png",
+    "path": "captures/assets/0b0d47b96b5432f0.png",
+    "bytes": 8777,
+    "page": "dashboard"
+  },
+  {
+    "url": "https://cursor.com/pwa/icon-512x512.png",
+    "path": "captures/assets/597d4c38453e863a.png",
+    "bytes": 25283,
+    "page": "dashboard"
+  },
+  {
+    "url": "https://cursor.com/_vercel/insights/script.js",
+    "path": "captures/assets/56bb241c12e619ac.js",
+    "bytes": 2495,
+    "page": "thread-merged-portal"
+  },
+  {
+    "url": "https://cursor.com/_vercel/speed-insights/script.js",
+    "path": "captures/assets/2376d7c0197f7add.js",
+    "bytes": 12567,
+    "page": "thread-merged-portal"
+  },
+  {
+    "url": "https://cursor.com/favicon.svg",
+    "path": "captures/assets/fb3bd2f3f19a9bcb.svg",
+    "bytes": 4190,
+    "page": "thread-merged-portal"
+  },
+  {
+    "url": "https://cursor.com/pwa/apple-touch-icon.png",
+    "path": "captures/assets/ec38c0924d7ff125.png",
+    "bytes": 8251,
+    "page": "thread-merged-portal"
+  },
+  {
+    "url": "https://cursor.com/pwa/icon-192x192.png",
+    "path": "captures/assets/0b0d47b96b5432f0.png",
+    "bytes": 8777,
+    "page": "thread-merged-portal"
+  },
+  {
+    "url": "https://cursor.com/pwa/icon-512x512.png",
+    "path": "captures/assets/597d4c38453e863a.png",
+    "bytes": 25283,
+    "page": "thread-merged-portal"
+  }
+]

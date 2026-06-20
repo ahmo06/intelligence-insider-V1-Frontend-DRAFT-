@@ -1,1 +1,4116 @@
-{"dailyMetrics":[{"date":"1768694400000","linesAdded":46945,"linesDeleted":17804,"acceptedLinesAdded":3971,"acceptedLinesDeleted":5,"totalApplies":27,"totalAccepts":5,"chatRequests":3,"agentRequests":34,"subscriptionIncludedReqs":32,"modelUsage":[{"name":"default","count":34},{"name":"claude-4.5-opus-high-thinking"}],"extensionUsage":[{"name":"html","count":1},{"name":"md","count":1},{"name":"js","count":1}]},{"date":"1768780800000","linesAdded":5193,"linesDeleted":5520,"totalApplies":2,"agentRequests":2,"subscriptionIncludedReqs":2,"modelUsage":[{"name":"claude-4.5-opus-high-thinking","count":2}],"extensionUsage":[{"name":"html","count":1}]},{"date":"1768867200000","linesAdded":9062,"linesDeleted":1,"acceptedLinesAdded":9062,"acceptedLinesDeleted":1,"totalApplies":19,"totalAccepts":19,"agentRequests":22,"subscriptionIncludedReqs":22,"modelUsage":[{"name":"claude-4.5-opus-high-thinking","count":3},{"name":"default","count":19}],"extensionUsage":[{"name":"jsx","count":1},{"name":"html","count":1},{"name":"css","count":1},{"name":"js","count":1}]},{"date":"1768953600000","linesAdded":14793,"linesDeleted":3,"acceptedLinesAdded":14793,"acceptedLinesDeleted":3,"totalApplies":104,"totalAccepts":104,"agentRequests":20,"subscriptionIncludedReqs":20,"modelUsage":[{"name":"default","count":17},{"name":"gpt-5.2","count":3}],"extensionUsage":[{"name":"js","count":1},{"name":"jsx","count":1},{"name":"py","count":1}]},{"date":"1769040000000","linesAdded":45139,"linesDeleted":252,"acceptedLinesAdded":45139,"acceptedLinesDeleted":252,"totalApplies":247,"totalAccepts":247,"agentRequests":100,"subscriptionIncludedReqs":100,"modelUsage":[{"name":"gpt-5.2","count":4},{"name":"default","count":96}],"extensionUsage":[{"name":"yaml","count":1},{"name":"css","count":1},{"name":"js","count":1},{"name":"py","count":1},{"name":"sh","count":1},{"name":"bat","count":1},{"name":"html","count":1},{"name":"md","count":1},{"name":"toml","count":1},{"name":"R","count":1},{"name":"example","count":1},{"name":"json","count":1},{"name":"csv","count":1},{"name":"ini","count":1},{"name":"txt","count":1}]},{"date":"1769212800000","linesAdded":71430,"linesDeleted":453,"acceptedLinesAdded":75,"totalApplies":57,"totalAccepts":1,"agentRequests":74,"subscriptionIncludedReqs":74,"modelUsage":[{"name":"claude-4.5-opus-high-thinking","count":17},{"name":"default","count":48},{"name":"claude-4.5-sonnet-thinking","count":2},{"name":"gpt-5.2-codex","count":7}],"extensionUsage":[{"name":"json","count":1},{"name":"tsx","count":1},{"name":"yml","count":1},{"name":"html","count":1},{"name":"js","count":1},{"name":"css","count":1},{"name":"sh","count":1},{"name":"md","count":1},{"name":"txt","count":1},{"name":"py","count":1},{"name":"example","count":1},{"name":"ts","count":1}]},{"date":"1769299200000","linesAdded":8524,"linesDeleted":260,"acceptedLinesAdded":651,"acceptedLinesDeleted":260,"totalApplies":17,"totalAccepts":2,"agentRequests":24,"subscriptionIncludedReqs":24,"modelUsage":[{"name":"default","count":24}],"extensionUsage":[{"name":"csv","count":1},{"name":"md","count":1},{"name":"py","count":1},{"name":"html","count":1},{"name":"txt","count":1},{"name":"example","count":1}]},{"date":"1769385600000","linesAdded":7801,"linesDeleted":1043,"acceptedLinesAdded":5474,"acceptedLinesDeleted":391,"totalApplies":79,"totalAccepts":79,"agentRequests":20,"subscriptionIncludedReqs":20,"modelUsage":[{"name":"default","count":20}],"extensionUsage":[{"name":"md","count":1},{"name":"py","count":1},{"name":"csv","count":1},{"name":"txt","count":1},{"name":"example","count":1}]},{"date":"1769472000000","linesAdded":8305,"linesDeleted":901,"acceptedLinesAdded":74,"totalApplies":22,"totalAccepts":2,"agentRequests":39,"subscriptionIncludedReqs":39,"modelUsage":[{"name":"default","count":39}],"extensionUsage":[{"name":"md","count":1},{"name":"py","count":1},{"name":"json","count":1},{"name":"html","count":1},{"name":"csv","count":1}]},{"date":"1769558400000","linesAdded":591,"linesDeleted":249,"totalApplies":3,"agentRequests":6,"subscriptionIncludedReqs":6,"modelUsage":[{"name":"default","count":6}],"extensionUsage":[{"name":"md","count":1}]},{"date":"1769644800000","linesAdded":23208,"totalApplies":8,"agentRequests":10,"subscriptionIncludedReqs":10,"modelUsage":[{"name":"claude-4.5-opus-high-thinking","count":1},{"name":"claude-4.5-sonnet-thinking","count":9}],"extensionUsage":[{"name":"md","count":1}]},{"date":"1769731200000","linesAdded":10680,"acceptedLinesAdded":10680,"totalApplies":29,"totalAccepts":29,"agentRequests":5,"subscriptionIncludedReqs":5,"modelUsage":[{"name":"claude-4.5-sonnet-thinking","count":2},{"name":"claude-4.5-opus-high-thinking","count":3}],"extensionUsage":[{"name":"md","count":1}]},{"date":"1769817600000","linesAdded":2482,"linesDeleted":11,"totalApplies":7,"agentRequests":7,"subscriptionIncludedReqs":7,"modelUsage":[{"name":"claude-4.5-sonnet-thinking","count":2},{"name":"composer-1","count":5}],"extensionUsage":[{"name":"md","count":1}]},{"date":"1770076800000","linesAdded":20855,"totalApplies":18,"agentRequests":19,"subscriptionIncludedReqs":19,"modelUsage":[{"name":"composer-1","count":1},{"name":"default","count":18}],"extensionUsage":[{"name":"md","count":1},{"name":"csv","count":1}]},{"date":"1770163200000","linesAdded":10733,"linesDeleted":42,"acceptedLinesAdded":10733,"acceptedLinesDeleted":42,"totalApplies":124,"totalAccepts":124,"agentRequests":27,"subscriptionIncludedReqs":27,"modelUsage":[{"name":"claude-4.5-sonnet-thinking","count":13},{"name":"default","count":5},{"name":"gemini-3-pro-preview","count":8},{"name":"gpt-5.2","count":1}],"extensionUsage":[{"name":"csv","count":1},{"name":"md","count":1}]},{"date":"1770249600000","linesAdded":167,"acceptedLinesAdded":167,"totalApplies":2,"totalAccepts":2,"agentRequests":2,"subscriptionIncludedReqs":2,"modelUsage":[{"name":"gemini-3-pro-preview","count":2}],"extensionUsage":[{"name":"md","count":1}]},{"date":"1770336000000","linesAdded":11477,"totalApplies":27,"agentRequests":31,"subscriptionIncludedReqs":31,"modelUsage":[{"name":"default","count":31}],"extensionUsage":[{"name":"md","count":1}]},{"date":"1770422400000","linesAdded":25606,"linesDeleted":1114,"acceptedLinesAdded":25606,"acceptedLinesDeleted":1114,"totalApplies":184,"totalAccepts":184,"agentRequests":37,"subscriptionIncludedReqs":37,"modelUsage":[{"name":"default","count":37}],"extensionUsage":[{"name":"py","count":1},{"name":"js","count":1},{"name":"html","count":1},{"name":"tsx","count":1},{"name":"json","count":1},{"name":"txt","count":1},{"name":"md","count":1},{"name":"ts","count":1},{"name":"csv","count":1},{"name":"css","count":1}]},{"date":"1770508800000","linesAdded":1017,"totalApplies":3,"agentRequests":12,"subscriptionIncludedReqs":12,"modelUsage":[{"name":"composer-1","count":1},{"name":"claude-4.6-opus-high-thinking","count":2},{"name":"grok-code-fast-1","count":1},{"name":"claude-4.5-haiku","count":1},{"name":"accounts/fireworks/models/kimi-k2-instruct-0905","count":1},{"name":"default","count":6}],"extensionUsage":[{"name":"md","count":1},{"name":"py","count":1}]},{"date":"1770595200000","linesAdded":4237,"linesDeleted":33,"acceptedLinesAdded":2806,"acceptedLinesDeleted":6,"totalApplies":28,"totalAccepts":28,"agentRequests":16,"subscriptionIncludedReqs":16,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":16}],"extensionUsage":[{"name":"md","count":1}]},{"date":"1770681600000","linesAdded":5777,"linesDeleted":177,"acceptedLinesAdded":162,"totalApplies":12,"totalAccepts":2,"agentRequests":19,"subscriptionIncludedReqs":13,"modelUsage":[{"name":"default","count":18},{"name":"claude-4.6-opus-high-thinking","count":1}],"extensionUsage":[{"name":"md","count":1},{"name":"py","count":1}]},{"date":"1770768000000","linesAdded":3961,"linesDeleted":606,"totalApplies":2,"agentRequests":7,"subscriptionIncludedReqs":7,"modelUsage":[{"name":"claude-4.5-sonnet-thinking","count":7}],"extensionUsage":[{"name":"md","count":1}]},{"date":"1770854400000","linesAdded":55403,"totalApplies":17,"agentRequests":23,"subscriptionIncludedReqs":23,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":14},{"name":"composer-1.5","count":9}],"extensionUsage":[{"name":"md","count":1},{"name":"py","count":1}]},{"date":"1770940800000","linesAdded":34401,"linesDeleted":400,"acceptedLinesAdded":34401,"acceptedLinesDeleted":400,"totalApplies":225,"totalAccepts":225,"agentRequests":67,"subscriptionIncludedReqs":67,"modelUsage":[{"name":"claude-4.5-sonnet-thinking","count":7},{"name":"composer-1.5","count":21},{"name":"default","count":25},{"name":"claude-4.5-sonnet","count":2},{"name":"claude-4.6-opus-high-thinking","count":12}],"extensionUsage":[{"name":"md","count":1},{"name":"example","count":1},{"name":"mdc","count":1},{"name":"html","count":1},{"name":"csv","count":1},{"name":"js","count":1},{"name":"ts","count":1},{"name":"json","count":1},{"name":"yml","count":1},{"name":"css","count":1},{"name":"tsx","count":1},{"name":"prisma","count":1},{"name":"sql","count":1}]},{"date":"1771027200000","linesAdded":33812,"linesDeleted":3018,"acceptedLinesAdded":1306,"acceptedLinesDeleted":4,"totalApplies":64,"totalAccepts":5,"agentRequests":134,"subscriptionIncludedReqs":134,"modelUsage":[{"name":"default","count":133},{"name":"composer-1.5","count":1}],"extensionUsage":[{"name":"ts","count":1},{"name":"html","count":1},{"name":"css","count":1},{"name":"tsx","count":1},{"name":"js","count":1},{"name":"example","count":1},{"name":"py","count":1},{"name":"json","count":1},{"name":"csv","count":1},{"name":"md","count":1}]},{"date":"1771113600000","linesAdded":409,"linesDeleted":88,"totalApplies":8,"agentRequests":11,"subscriptionIncludedReqs":11,"modelUsage":[{"name":"composer-1.5","count":11}],"extensionUsage":[{"name":"py","count":1},{"name":"md","count":1}]},{"date":"1771200000000","agentRequests":2,"subscriptionIncludedReqs":2,"modelUsage":[{"name":"composer-1.5","count":2}]},{"date":"1771286400000","linesAdded":10098,"linesDeleted":147,"acceptedLinesAdded":162,"totalApplies":15,"totalAccepts":1,"totalTabsShown":1,"agentRequests":45,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":45}],"extensionUsage":[{"name":"py","count":1},{"name":"html","count":1},{"name":"md","count":1}],"tabExtensionUsage":[{"name":"html","count":1}]},{"date":"1771372800000","linesAdded":3285,"linesDeleted":108,"acceptedLinesAdded":2970,"totalApplies":12,"totalAccepts":4,"agentRequests":40,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":26},{"name":"default","count":14}],"extensionUsage":[{"name":"py","count":1},{"name":"txt","count":1},{"name":"md","count":1}]},{"date":"1771459200000","linesAdded":6566,"linesDeleted":45,"acceptedLinesAdded":6220,"acceptedLinesDeleted":45,"totalApplies":20,"totalAccepts":20,"agentRequests":33,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":24},{"name":"claude-4.6-sonnet-medium-thinking","count":7},{"name":"default","count":2}],"extensionUsage":[{"name":"py","count":1},{"name":"html","count":1},{"name":"md","count":1}]},{"date":"1771545600000","linesAdded":1258,"linesDeleted":4,"totalApplies":19,"agentRequests":19,"modelUsage":[{"name":"claude-4.6-sonnet-medium-thinking","count":1},{"name":"claude-4.6-opus-high-thinking","count":10},{"name":"default","count":8}],"extensionUsage":[{"name":"mdc","count":1},{"name":"md","count":1}]},{"date":"1771632000000","linesAdded":40339,"linesDeleted":1182,"acceptedLinesAdded":26704,"acceptedLinesDeleted":189,"totalApplies":702,"totalAccepts":223,"agentRequests":43,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":39},{"name":"default","count":4}],"extensionUsage":[{"name":"md","count":1},{"name":"js","count":1},{"name":"tsx","count":1},{"name":"css","count":1},{"name":"ts","count":1},{"name":"prisma","count":1},{"name":"json","count":1},{"name":"sql","count":1}]},{"date":"1771718400000","linesAdded":22558,"linesDeleted":1851,"acceptedLinesAdded":1,"acceptedLinesDeleted":4,"totalApplies":339,"totalAccepts":1,"agentRequests":75,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":74},{"name":"composer-1.5","count":1}],"extensionUsage":[{"name":"tpl","count":1},{"name":"css","count":1},{"name":"js","count":1},{"name":"tfvars","count":1},{"name":"conf","count":1},{"name":"yaml","count":1},{"name":"sql","count":1},{"name":"tsx","count":1},{"name":"api","count":1},{"name":"json","count":1},{"name":"tf","count":1},{"name":"sh","count":1},{"name":"md","count":1},{"name":"ts","count":1},{"name":"yml","count":1},{"name":"html","count":1},{"name":"txt","count":1}]},{"date":"1771804800000","linesAdded":28109,"linesDeleted":2559,"acceptedLinesAdded":4160,"acceptedLinesDeleted":190,"totalApplies":693,"totalAccepts":48,"agentRequests":62,"apiKeyReqs":3,"usageBasedReqs":8,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":2},{"name":"claude-4.5-opus-high-thinking","count":10},{"name":"claude-4.6-sonnet-medium-thinking","count":50}],"extensionUsage":[{"name":"example","count":1},{"name":"tsx","count":1},{"name":"prisma","count":1},{"name":"json","count":1},{"name":"js","count":1},{"name":"yaml","count":1},{"name":"md","count":1},{"name":"ts","count":1},{"name":"conf","count":1},{"name":"yml","count":1},{"name":"sql","count":1},{"name":"tf","count":1},{"name":"sh","count":1},{"name":"tfvars","count":1},{"name":"api","count":1}]},{"date":"1771891200000","linesAdded":745,"linesDeleted":137,"totalApplies":36,"agentRequests":15,"usageBasedReqs":15,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":4},{"name":"claude-4.6-sonnet-medium-thinking","count":11}],"extensionUsage":[{"name":"md","count":1},{"name":"sh","count":1},{"name":"yml","count":1},{"name":"py","count":1},{"name":"conf","count":1},{"name":"sql","count":1},{"name":"ts","count":1}]},{"date":"1771977600000","linesAdded":3646,"linesDeleted":132,"totalApplies":67,"agentRequests":35,"usageBasedReqs":9,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":3},{"name":"claude-4.5-opus-high","count":4},{"name":"gpt-5.3-codex","count":2},{"name":"default","count":26}],"extensionUsage":[{"name":"sql","count":1},{"name":"md","count":1},{"name":"tsx","count":1},{"name":"ts","count":1},{"name":"sh","count":1},{"name":"yml","count":1}]},{"date":"1772064000000","linesAdded":14826,"linesDeleted":1145,"totalApplies":30,"totalTabsShown":1,"agentRequests":89,"usageBasedReqs":64,"modelUsage":[{"name":"default","count":4},{"name":"claude-4.6-opus-high-thinking","count":14},{"name":"claude-4.6-sonnet-medium-thinking","count":49},{"name":"composer-1","count":21},{"name":"claude-4.5-opus-high-thinking","count":1}],"extensionUsage":[{"name":"tf","count":1},{"name":"sql","count":1},{"name":"json","count":1},{"name":"md","count":1},{"name":"example","count":1},{"name":"tsx","count":1},{"name":"sh","count":1},{"name":"conf","count":1},{"name":"txt","count":1},{"name":"ts","count":1}],"tabExtensionUsage":[{"name":"json","count":1}]},{"date":"1772150400000","linesAdded":5019,"linesDeleted":97,"totalApplies":10,"agentRequests":41,"usageBasedReqs":28,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":5},{"name":"claude-4.5-opus-high-thinking","count":9},{"name":"claude-4.6-sonnet-medium-thinking","count":13},{"name":"composer-1","count":4},{"name":"claude-4.5-sonnet","count":1},{"name":"default","count":9}],"extensionUsage":[{"name":"production","count":1},{"name":"ts","count":1},{"name":"tsx","count":1},{"name":"md","count":1},{"name":"js","count":1}]},{"date":"1772236800000","linesAdded":18247,"linesDeleted":1329,"acceptedLinesAdded":12918,"acceptedLinesDeleted":1265,"totalApplies":107,"totalAccepts":107,"agentRequests":98,"usageBasedReqs":65,"modelUsage":[{"name":"composer-1.5","count":1},{"name":"claude-4.5-opus-high","count":6},{"name":"claude-4.6-opus-high-thinking","count":19},{"name":"claude-4.6-sonnet-medium-thinking","count":32},{"name":"claude-4.5-sonnet","count":5},{"name":"claude-4.5-opus-high-thinking","count":3},{"name":"composer-1","count":11},{"name":"default","count":21}],"extensionUsage":[{"name":"sql","count":1},{"name":"yaml","count":1},{"name":"css","count":1},{"name":"js","count":1},{"name":"py","count":1},{"name":"sh","count":1},{"name":"mdc","count":1},{"name":"md","count":1},{"name":"ts","count":1},{"name":"template","count":1},{"name":"yml","count":1},{"name":"tf","count":1},{"name":"example","count":1},{"name":"production","count":1},{"name":"json","count":1},{"name":"tfvars","count":1},{"name":"tsx","count":1},{"name":"conf","count":1},{"name":"prisma","count":1}]},{"date":"1772323200000","linesAdded":405,"linesDeleted":106,"totalApplies":7,"agentRequests":46,"usageBasedReqs":43,"modelUsage":[{"name":"claude-4.5-opus-high-thinking","count":7},{"name":"claude-4.6-opus-high-thinking","count":6},{"name":"composer-1.5","count":3},{"name":"claude-4.6-sonnet-medium-thinking","count":13},{"name":"gemini-3-pro-preview","count":14},{"name":"claude-4.5-sonnet","count":3}],"extensionUsage":[{"name":"tsx","count":1},{"name":"md","count":1},{"name":"ts","count":1}]},{"date":"1772409600000","linesAdded":23387,"linesDeleted":4,"totalApplies":40,"agentRequests":55,"usageBasedReqs":24,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":23},{"name":"claude-4.5-opus-high-thinking","count":1},{"name":"default","count":31}],"extensionUsage":[{"name":"md","count":1},{"name":"html","count":1}]},{"date":"1772496000000","linesAdded":23365,"linesDeleted":301,"totalApplies":30,"agentRequests":59,"usageBasedReqs":59,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":59}],"extensionUsage":[{"name":"html","count":1},{"name":"py","count":1},{"name":"js","count":1},{"name":"md","count":1}]},{"date":"1772582400000","linesAdded":5180,"linesDeleted":24,"acceptedLinesAdded":202,"totalApplies":16,"totalAccepts":1,"agentRequests":45,"usageBasedReqs":22,"modelUsage":[{"name":"claude-4.6-sonnet-medium-thinking","count":1},{"name":"default","count":23},{"name":"claude-4.6-opus-high-thinking","count":21}],"extensionUsage":[{"name":"md","count":1},{"name":"sh","count":1},{"name":"py","count":1}]},{"date":"1772668800000","linesAdded":1143,"linesDeleted":16,"totalApplies":3,"agentRequests":41,"usageBasedReqs":41,"modelUsage":[{"name":"claude-4.6-sonnet-high-thinking","count":3},{"name":"claude-4.6-opus-high-thinking","count":38}],"extensionUsage":[{"name":"md","count":1},{"name":"py","count":1}]},{"date":"1772755200000","agentRequests":1,"usageBasedReqs":1,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":1}]},{"date":"1772841600000","linesAdded":3999,"linesDeleted":33,"totalApplies":13,"agentRequests":70,"modelUsage":[{"name":"default","count":70}],"extensionUsage":[{"name":"tsx","count":1},{"name":"sh","count":1},{"name":"example","count":1},{"name":"css","count":1},{"name":"py","count":1},{"name":"txt","count":1},{"name":"html","count":1},{"name":"ini","count":1},{"name":"ts","count":1},{"name":"md","count":1}]},{"date":"1772928000000","linesAdded":1972,"totalApplies":10,"agentRequests":56,"usageBasedReqs":1,"modelUsage":[{"name":"default","count":55},{"name":"claude-4.5-opus-high-thinking","count":1}],"extensionUsage":[{"name":"tsx","count":1},{"name":"md","count":1},{"name":"sh","count":1},{"name":"css","count":1},{"name":"py","count":1}]},{"date":"1773014400000","linesAdded":857,"linesDeleted":2,"totalApplies":6,"agentRequests":26,"usageBasedReqs":4,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":4},{"name":"default","count":22}],"extensionUsage":[{"name":"csv","count":1},{"name":"md","count":1},{"name":"txt","count":1}]},{"date":"1773100800000","agentRequests":12,"usageBasedReqs":12,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":12}]},{"date":"1773187200000","linesAdded":2848,"linesDeleted":1,"totalApplies":5,"agentRequests":25,"usageBasedReqs":23,"modelUsage":[{"name":"claude-4.6-sonnet-medium-thinking","count":23},{"name":"default","count":2}],"extensionUsage":[{"name":"py","count":1},{"name":"md","count":1}]},{"date":"1773273600000","linesAdded":1832,"linesDeleted":2,"totalApplies":4,"agentRequests":22,"usageBasedReqs":18,"modelUsage":[{"name":"composer-1.5","count":3},{"name":"claude-4.6-sonnet-medium-thinking","count":6},{"name":"default","count":1},{"name":"claude-4.6-opus-high-thinking","count":12}],"extensionUsage":[{"name":"md","count":1},{"name":"py","count":1}]},{"date":"1773360000000","linesAdded":599,"acceptedLinesAdded":200,"totalApplies":6,"totalAccepts":3,"agentRequests":23,"usageBasedReqs":1,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":1},{"name":"default","count":16},{"name":"composer-1.5","count":6}],"extensionUsage":[{"name":"py","count":1},{"name":"txt","count":1},{"name":"html","count":1},{"name":"md","count":1}]},{"date":"1773446400000","agentRequests":2,"usageBasedReqs":2,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":2}]},{"date":"1773532800000","linesAdded":3660,"totalApplies":8,"agentRequests":31,"usageBasedReqs":31,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":31}],"extensionUsage":[{"name":"md","count":1},{"name":"py","count":1}]},{"date":"1773619200000","linesAdded":62798,"linesDeleted":20,"totalApplies":42,"agentRequests":134,"apiKeyReqs":56,"usageBasedReqs":72,"modelUsage":[{"name":"claude-4.6-opus-max-thinking","count":3},{"name":"qwen/qwen3.5-397b-a17b-20260216","count":42},{"name":"gpt-5.4-high","count":1},{"name":"accounts/fireworks/models/kimi-k2p5","count":63},{"name":"deepseek/deepseek-v3.2","count":4},{"name":"default","count":6},{"name":"deepseek/deepseek-v3.2-exp","count":2},{"name":"qwen/qwen3-coder:free","count":1},{"name":"meta-llama/llama-3.3-70b-instruct:free","count":1},{"name":"claude-4.6-opus-high-thinking","count":8},{"name":"openrouter/hunter-alpha","count":3}],"extensionUsage":[{"name":"html","count":1},{"name":"csv","count":1},{"name":"txt","count":1},{"name":"json","count":1},{"name":"md","count":1},{"name":"sh","count":1},{"name":"js","count":1},{"name":"py","count":1},{"name":"svg","count":1},{"name":"css","count":1}]},{"date":"1773705600000","linesAdded":484,"totalApplies":1,"agentRequests":9,"subscriptionIncludedReqs":9,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":8},{"name":"composer-1.5","count":1}],"extensionUsage":[{"name":"py","count":1}]},{"date":"1773792000000","linesAdded":4913,"totalApplies":10,"agentRequests":49,"subscriptionIncludedReqs":49,"modelUsage":[{"name":"accounts/fireworks/models/kimi-k2p5","count":32},{"name":"claude-4.6-opus-high-thinking","count":17}],"extensionUsage":[{"name":"md","count":1},{"name":"py","count":1}]},{"date":"1773878400000","linesAdded":10028,"linesDeleted":3,"totalApplies":23,"agentRequests":57,"subscriptionIncludedReqs":57,"modelUsage":[{"name":"composer-2-fast","count":1},{"name":"accounts/fireworks/models/kimi-k2p5","count":48},{"name":"composer-2","count":1},{"name":"claude-4.6-opus-high-thinking","count":7}],"extensionUsage":[{"name":"py","count":1},{"name":"json","count":1},{"name":"html","count":1},{"name":"md","count":1},{"name":"js","count":1},{"name":"css","count":1},{"name":"txt","count":1}]},{"date":"1774137600000","linesAdded":2748,"linesDeleted":7,"acceptedLinesAdded":314,"acceptedLinesDeleted":7,"totalApplies":4,"totalAccepts":2,"agentRequests":21,"subscriptionIncludedReqs":21,"modelUsage":[{"name":"composer-2-fast","count":1},{"name":"claude-4.6-opus-high-thinking","count":20}],"extensionUsage":[{"name":"md","count":1}]},{"date":"1774310400000","linesAdded":2211,"linesDeleted":4,"totalApplies":6,"agentRequests":26,"subscriptionIncludedReqs":26,"modelUsage":[{"name":"default","count":10},{"name":"claude-4.6-opus-high-thinking","count":16}],"extensionUsage":[{"name":"md","count":1}]},{"date":"1774396800000","linesAdded":313,"linesDeleted":1,"totalApplies":3,"agentRequests":17,"subscriptionIncludedReqs":17,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":8},{"name":"accounts/fireworks/models/kimi-k2p5","count":9}],"extensionUsage":[{"name":"md","count":1}]},{"date":"1774483200000","linesAdded":12520,"linesDeleted":15,"acceptedLinesAdded":12520,"acceptedLinesDeleted":15,"totalApplies":50,"totalAccepts":50,"agentRequests":7,"subscriptionIncludedReqs":7,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":7}],"extensionUsage":[{"name":"css","count":1},{"name":"js","count":1},{"name":"txt","count":1},{"name":"py","count":1},{"name":"json","count":1},{"name":"md","count":1},{"name":"html","count":1}]},{"date":"1774569600000","linesAdded":31,"totalApplies":1,"agentRequests":2,"subscriptionIncludedReqs":2,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":2}],"extensionUsage":[{"name":"md","count":1}]},{"date":"1774656000000","linesAdded":963,"linesDeleted":71,"totalApplies":10,"agentRequests":46,"subscriptionIncludedReqs":46,"modelUsage":[{"name":"composer-2","count":21},{"name":"claude-4.6-opus-high-thinking","count":25}],"extensionUsage":[{"name":"html","count":1},{"name":"md","count":1}]},{"date":"1774742400000","agentRequests":7,"subscriptionIncludedReqs":7,"modelUsage":[{"name":"composer-2","count":7}]},{"date":"1774828800000","linesAdded":1479,"totalApplies":7,"agentRequests":25,"subscriptionIncludedReqs":25,"modelUsage":[{"name":"composer-2","count":25}],"extensionUsage":[{"name":"md","count":1},{"name":"html","count":1}]},{"date":"1774915200000","linesAdded":2333,"linesDeleted":789,"acceptedLinesAdded":1018,"acceptedLinesDeleted":757,"totalApplies":42,"totalAccepts":24,"totalRejects":18,"agentRequests":59,"subscriptionIncludedReqs":59,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":1},{"name":"composer-2-fast","count":1},{"name":"composer-2","count":57}],"extensionUsage":[{"name":"html","count":1},{"name":"py","count":1},{"name":"md","count":1},{"name":"txt","count":1}]},{"date":"1775001600000","linesAdded":2011,"linesDeleted":46,"totalApplies":11,"agentRequests":26,"subscriptionIncludedReqs":26,"modelUsage":[{"name":"composer-2","count":26}],"extensionUsage":[{"name":"md","count":1},{"name":"py","count":1},{"name":"csv","count":1},{"name":"yaml","count":1}]},{"date":"1775088000000","agentRequests":5,"subscriptionIncludedReqs":5,"modelUsage":[{"name":"composer-2","count":5}]},{"date":"1775174400000","linesAdded":6,"totalApplies":1,"agentRequests":23,"subscriptionIncludedReqs":23,"modelUsage":[{"name":"composer-2","count":23}]},{"date":"1775347200000","agentRequests":1,"subscriptionIncludedReqs":1,"modelUsage":[{"name":"composer-2","count":1}]},{"date":"1775433600000","linesAdded":9504,"linesDeleted":1105,"acceptedLinesAdded":221,"totalApplies":47,"totalAccepts":1,"agentRequests":153,"subscriptionIncludedReqs":153,"modelUsage":[{"name":"composer-2-fast","count":91},{"name":"composer-2","count":62}],"extensionUsage":[{"name":"js","count":1},{"name":"env","count":1},{"name":"md","count":1},{"name":"conf","count":1},{"name":"css","count":1},{"name":"sh","count":1},{"name":"jsx","count":1},{"name":"py","count":1},{"name":"yml","count":1},{"name":"example","count":1}]},{"date":"1775520000000","linesAdded":1696,"linesDeleted":76,"totalApplies":20,"agentRequests":64,"subscriptionIncludedReqs":64,"modelUsage":[{"name":"composer-2","count":64}],"extensionUsage":[{"name":"example","count":1},{"name":"js","count":1},{"name":"jsx","count":1},{"name":"conf","count":1},{"name":"py","count":1},{"name":"env","count":1},{"name":"md","count":1},{"name":"json","count":1}]},{"date":"1775606400000","linesAdded":72,"totalApplies":1,"agentRequests":3,"subscriptionIncludedReqs":3,"modelUsage":[{"name":"composer-2","count":3}],"extensionUsage":[{"name":"py","count":1}]},{"date":"1776038400000","linesAdded":1980,"linesDeleted":1,"totalApplies":4,"agentRequests":26,"subscriptionIncludedReqs":2,"usageBasedReqs":24,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":9},{"name":"claude-4.6-opus-max-thinking","count":15},{"name":"composer-2","count":2}],"extensionUsage":[{"name":"py","count":1}]},{"date":"1776124800000","linesAdded":6916,"linesDeleted":9,"totalApplies":15,"agentRequests":76,"subscriptionIncludedReqs":12,"usageBasedReqs":64,"modelUsage":[{"name":"default","count":6},{"name":"composer-2-fast","count":6},{"name":"claude-4.6-opus-high-thinking","count":17},{"name":"claude-4.6-opus-max-thinking","count":47}],"extensionUsage":[{"name":"css","count":1},{"name":"js","count":1},{"name":"md","count":1},{"name":"sh","count":1},{"name":"py","count":1},{"name":"html","count":1}]},{"date":"1776211200000","linesAdded":11,"linesDeleted":43,"totalApplies":2,"agentRequests":39,"subscriptionIncludedReqs":17,"usageBasedReqs":22,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":13},{"name":"claude-4.6-opus-max-thinking","count":9},{"name":"composer-2-fast","count":1},{"name":"composer-2","count":16}],"extensionUsage":[{"name":"md","count":1}]},{"date":"1776297600000","linesAdded":1341,"linesDeleted":8,"totalApplies":6,"agentRequests":26,"subscriptionIncludedReqs":4,"usageBasedReqs":22,"modelUsage":[{"name":"claude-4.6-opus-high-thinking","count":5},{"name":"claude-4.6-opus-max-thinking","count":9},{"name":"default","count":1},{"name":"claude-4.5-opus-high-thinking","count":3},{"name":"composer-2","count":3},{"name":"claude-4.6-sonnet-medium-thinking","count":5}],"extensionUsage":[{"name":"md","count":1},{"name":"py","count":1}]},{"date":"1776470400000","linesAdded":11623,"linesDeleted":882,"totalApplies":10,"agentRequests":50,"subscriptionIncludedReqs":50,"modelUsage":[{"name":"claude-opus-4-7-thinking-high","count":17},{"name":"claude-4.6-opus-high-thinking","count":1},{"name":"composer-2-fast","count":28},{"name":"claude-4.5-sonnet","count":1},{"name":"composer-2","count":3}],"extensionUsage":[{"name":"py","count":1},{"name":"css","count":1},{"name":"example","count":1},{"name":"js","count":1},{"name":"sh","count":1},{"name":"md","count":1},{"name":"jsx","count":1}]},{"date":"1776556800000","linesAdded":29767,"linesDeleted":1504,"acceptedLinesAdded":29767,"acceptedLinesDeleted":1504,"totalApplies":272,"totalAccepts":272,"agentRequests":32,"subscriptionIncludedReqs":32,"modelUsage":[{"name":"composer-2-fast","count":3},{"name":"claude-opus-4-7-thinking-high","count":28},{"name":"claude-4.5-opus-high-thinking","count":1}],"extensionUsage":[{"name":"env","count":1},{"name":"json","count":1},{"name":"html","count":1},{"name":"sh","count":1},{"name":"txt","count":1},{"name":"md","count":1},{"name":"jsx","count":1},{"name":"js","count":1},{"name":"py","count":1},{"name":"svg","count":1},{"name":"example","count":1},{"name":"yml","count":1},{"name":"conf","count":1},{"name":"css","count":1}]},{"date":"1776643200000","linesAdded":10572,"linesDeleted":1248,"acceptedLinesAdded":10572,"acceptedLinesDeleted":1248,"totalApplies":229,"totalAccepts":229,"agentRequests":34,"subscriptionIncludedReqs":34,"modelUsage":[{"name":"composer-2-fast","count":5},{"name":"claude-opus-4-7-thinking-high","count":29}],"extensionUsage":[{"name":"js","count":1},{"name":"py","count":1},{"name":"jsx","count":1},{"name":"css","count":1}]},{"date":"1776729600000","linesAdded":417,"linesDeleted":29,"acceptedLinesAdded":417,"acceptedLinesDeleted":29,"totalApplies":12,"totalAccepts":12,"agentRequests":32,"subscriptionIncludedReqs":32,"modelUsage":[{"name":"claude-opus-4-7-thinking-high","count":1},{"name":"default","count":31}],"extensionUsage":[{"name":"py","count":1},{"name":"md","count":1}]},{"date":"1776816000000","linesAdded":5400,"linesDeleted":330,"acceptedLinesAdded":5400,"acceptedLinesDeleted":330,"totalApplies":117,"totalAccepts":117,"agentRequests":36,"subscriptionIncludedReqs":34,"usageBasedReqs":2,"modelUsage":[{"name":"claude-opus-4-7-thinking-high","count":34},{"name":"composer-2-fast","count":2}],"extensionUsage":[{"name":"html","count":1},{"name":"js","count":1},{"name":"css","count":1},{"name":"py","count":1},{"name":"jsx","count":1},{"name":"json","count":1}]},{"date":"1776902400000","linesAdded":5766,"linesDeleted":1639,"acceptedLinesAdded":5766,"acceptedLinesDeleted":1639,"totalApplies":130,"totalAccepts":130,"agentRequests":33,"subscriptionIncludedReqs":4,"usageBasedReqs":12,"modelUsage":[{"name":"claude-opus-4-7-thinking-high","count":24},{"name":"composer-2-fast","count":9}],"extensionUsage":[{"name":"js","count":1},{"name":"html","count":1},{"name":"css","count":1},{"name":"svg","count":1},{"name":"py","count":1},{"name":"jsx","count":1}]},{"date":"1776988800000","linesAdded":5654,"linesDeleted":1232,"acceptedLinesAdded":5654,"acceptedLinesDeleted":1232,"totalApplies":222,"totalAccepts":222,"agentRequests":43,"modelUsage":[{"name":"default","count":10},{"name":"claude-opus-4-7-thinking-high","count":15},{"name":"claude-opus-4-7-thinking-xhigh","count":18}],"extensionUsage":[{"name":"json","count":1},{"name":"js","count":1},{"name":"jsx","count":1},{"name":"py","count":1},{"name":"html","count":1},{"name":"svg","count":1},{"name":"css","count":1}]},{"date":"1777075200000","linesAdded":1671,"linesDeleted":86,"acceptedLinesAdded":1671,"acceptedLinesDeleted":86,"totalApplies":39,"totalAccepts":39,"agentRequests":12,"modelUsage":[{"name":"claude-opus-4-7-thinking-xhigh","count":3},{"name":"claude-opus-4-7-thinking-high","count":9}],"extensionUsage":[{"name":"jsx","count":1},{"name":"py","count":1},{"name":"sh","count":1},{"name":"txt","count":1}]},{"date":"1777161600000","linesAdded":5230,"linesDeleted":2072,"acceptedLinesAdded":5230,"acceptedLinesDeleted":2072,"totalApplies":138,"totalAccepts":138,"agentRequests":34,"modelUsage":[{"name":"claude-opus-4-7-thinking-high","count":30},{"name":"claude-opus-4-7-thinking-xhigh","count":2},{"name":"composer-2-fast","count":2}],"extensionUsage":[{"name":"js","count":1},{"name":"py","count":1},{"name":"jsx","count":1},{"name":"md","count":1}]},{"date":"1777248000000","linesAdded":398,"linesDeleted":81,"acceptedLinesAdded":398,"acceptedLinesDeleted":81,"totalApplies":19,"totalAccepts":19,"agentRequests":22,"modelUsage":[{"name":"claude-opus-4-7-thinking-high","count":16},{"name":"default","count":4},{"name":"composer-2-fast","count":2}],"extensionUsage":[{"name":"jsx","count":1},{"name":"md","count":1},{"name":"py","count":1}]},{"date":"1777334400000","linesAdded":1468,"linesDeleted":176,"acceptedLinesAdded":1468,"acceptedLinesDeleted":176,"totalApplies":92,"totalAccepts":92,"agentRequests":40,"modelUsage":[{"name":"claude-opus-4-7-thinking-high","count":1},{"name":"composer-2","count":9},{"name":"default","count":30}],"extensionUsage":[{"name":"py","count":1},{"name":"md","count":1},{"name":"txt","count":1},{"name":"yaml","count":1},{"name":"sql","count":1}]},{"date":"1777420800000","linesAdded":1318,"linesDeleted":269,"acceptedLinesAdded":1318,"acceptedLinesDeleted":269,"totalApplies":61,"totalAccepts":61,"agentRequests":7,"modelUsage":[{"name":"default","count":7}],"extensionUsage":[{"name":"md","count":1},{"name":"sql","count":1},{"name":"py","count":1},{"name":"yaml","count":1}]},{"date":"1777507200000","linesAdded":632,"linesDeleted":96,"acceptedLinesAdded":632,"acceptedLinesDeleted":96,"totalApplies":71,"totalAccepts":71,"agentRequests":23,"modelUsage":[{"name":"default","count":23}],"extensionUsage":[{"name":"yaml","count":1},{"name":"sql","count":1},{"name":"csv","count":1},{"name":"md","count":1},{"name":"py","count":1}]},{"date":"1777593600000","agentRequests":7,"modelUsage":[{"name":"default","count":7}]},{"date":"1777852800000","linesAdded":3260,"linesDeleted":1596,"acceptedLinesAdded":3260,"acceptedLinesDeleted":1596,"totalApplies":104,"totalAccepts":104,"agentRequests":55,"modelUsage":[{"name":"claude-opus-4-7-thinking-high","count":30},{"name":"claude-4.5-sonnet-thinking","count":5},{"name":"composer-2-fast","count":6},{"name":"claude-4.5-opus-high-thinking","count":13},{"name":"claude-opus-4-7-thinking-xhigh","count":1}],"extensionUsage":[{"name":"js","count":1},{"name":"py","count":1},{"name":"jsx","count":1}]},{"date":"1777939200000","linesAdded":4412,"linesDeleted":54,"acceptedLinesAdded":4412,"acceptedLinesDeleted":54,"totalApplies":50,"totalAccepts":50,"agentRequests":46,"modelUsage":[{"name":"claude-opus-4-7-thinking-high","count":9},{"name":"composer-2-fast","count":13},{"name":"claude-4.5-opus-high-thinking","count":21},{"name":"composer-2","count":1},{"name":"default","count":2}],"extensionUsage":[{"name":"sh","count":1},{"name":"md","count":1},{"name":"py","count":1}]},{"date":"1778025600000","linesAdded":7437,"linesDeleted":149,"acceptedLinesAdded":7437,"acceptedLinesDeleted":149,"totalApplies":88,"totalAccepts":88,"agentRequests":16,"modelUsage":[{"name":"composer-2-fast","count":6},{"name":"claude-opus-4-7-thinking-high","count":10}],"extensionUsage":[{"name":"jsx","count":1},{"name":"html","count":1},{"name":"md","count":1},{"name":"js","count":1},{"name":"py","count":1}]},{"date":"1778112000000","linesAdded":4326,"linesDeleted":345,"acceptedLinesAdded":4326,"acceptedLinesDeleted":345,"totalApplies":127,"totalAccepts":127,"agentRequests":48,"usageBasedReqs":4,"modelUsage":[{"name":"claude-opus-4-7-thinking-high","count":21},{"name":"composer-2","count":7},{"name":"claude-4.5-opus-high-thinking","count":13},{"name":"composer-2-fast","count":7}],"extensionUsage":[{"name":"js","count":1},{"name":"conf","count":1},{"name":"jsx","count":1},{"name":"md","count":1},{"name":"py","count":1},{"name":"sh","count":1}]},{"date":"1778198400000","linesAdded":2482,"linesDeleted":130,"acceptedLinesAdded":2482,"acceptedLinesDeleted":130,"totalApplies":63,"totalAccepts":63,"agentRequests":55,"modelUsage":[{"name":"default","count":42},{"name":"composer-2-fast","count":2},{"name":"composer-2","count":11}],"extensionUsage":[{"name":"py","count":1},{"name":"md","count":1}]},{"date":"1778284800000","linesAdded":112,"linesDeleted":16,"acceptedLinesAdded":112,"acceptedLinesDeleted":16,"totalApplies":8,"totalAccepts":8,"agentRequests":4,"modelUsage":[{"name":"default","count":4}],"extensionUsage":[{"name":"md","count":1}]},{"date":"1778371200000","linesAdded":1244,"linesDeleted":150,"acceptedLinesAdded":1244,"acceptedLinesDeleted":150,"totalApplies":61,"totalAccepts":61,"agentRequests":12,"modelUsage":[{"name":"default","count":9},{"name":"composer-2","count":3}],"extensionUsage":[{"name":"md","count":1},{"name":"txt","count":1}]},{"date":"1778457600000","linesAdded":412,"linesDeleted":31,"acceptedLinesAdded":412,"acceptedLinesDeleted":31,"totalApplies":13,"totalAccepts":13,"extensionUsage":[{"name":"md","count":1},{"name":"txt","count":1}]},{"date":"1778544000000","linesAdded":62,"linesDeleted":1,"acceptedLinesAdded":62,"acceptedLinesDeleted":1,"totalApplies":3,"totalAccepts":3,"extensionUsage":[{"name":"md","count":1}]},{"date":"1779062400000","linesAdded":70,"acceptedLinesAdded":70,"totalApplies":1,"totalAccepts":1,"extensionUsage":[{"name":"md","count":1}]},{"date":"1779321600000","linesAdded":20766,"linesDeleted":1306,"acceptedLinesAdded":20766,"acceptedLinesDeleted":1306,"totalApplies":317,"totalAccepts":317,"extensionUsage":[{"name":"html","count":1},{"name":"example","count":1},{"name":"md","count":1},{"name":"sh","count":1},{"name":"json","count":1},{"name":"py","count":1},{"name":"conf","count":1},{"name":"js","count":1},{"name":"txt","count":1},{"name":"css","count":1},{"name":"jsx","count":1},{"name":"csv","count":1}]},{"date":"1779667200000","linesAdded":178,"linesDeleted":14,"acceptedLinesAdded":178,"acceptedLinesDeleted":14,"totalApplies":17,"totalAccepts":17,"extensionUsage":[{"name":"md","count":1},{"name":"csv","count":1}]},{"date":"1780358400000","linesAdded":1037,"acceptedLinesAdded":1037,"totalApplies":6,"totalAccepts":6,"extensionUsage":[{"name":"sh","count":1},{"name":"md","count":1},{"name":"py","count":1}]},{"date":"1780444800000","linesAdded":1088,"linesDeleted":109,"acceptedLinesAdded":1088,"acceptedLinesDeleted":109,"totalApplies":33,"totalAccepts":33,"extensionUsage":[{"name":"py","count":1},{"name":"md","count":1},{"name":"cjs","count":1}]},{"date":"1780963200000","linesAdded":1940,"linesDeleted":1,"acceptedLinesAdded":1940,"acceptedLinesDeleted":1,"totalApplies":1,"totalAccepts":1,"extensionUsage":[{"name":"sh","count":1},{"name":"md","count":1},{"name":"html","count":1}]},{"date":"1781308800000","linesAdded":4922,"acceptedLinesAdded":4922,"totalApplies":1,"totalAccepts":1,"extensionUsage":[{"name":"svg","count":1},{"name":"mmd","count":1},{"name":"html","count":1},{"name":"md","count":1},{"name":"py","count":1},{"name":"sh","count":1},{"name":"json","count":1}]}],"period":{"startDate":"1750453522459","endDate":"1781903122459"},"totalMembersInTeam":0}
+{
+  "dailyMetrics": [
+    {
+      "date": "1768694400000",
+      "linesAdded": 46945,
+      "linesDeleted": 17804,
+      "acceptedLinesAdded": 3971,
+      "acceptedLinesDeleted": 5,
+      "totalApplies": 27,
+      "totalAccepts": 5,
+      "chatRequests": 3,
+      "agentRequests": 34,
+      "subscriptionIncludedReqs": 32,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 34
+        },
+        {
+          "name": "claude-4.5-opus-high-thinking"
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1768780800000",
+      "linesAdded": 5193,
+      "linesDeleted": 5520,
+      "totalApplies": 2,
+      "agentRequests": 2,
+      "subscriptionIncludedReqs": 2,
+      "modelUsage": [
+        {
+          "name": "claude-4.5-opus-high-thinking",
+          "count": 2
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "html",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1768867200000",
+      "linesAdded": 9062,
+      "linesDeleted": 1,
+      "acceptedLinesAdded": 9062,
+      "acceptedLinesDeleted": 1,
+      "totalApplies": 19,
+      "totalAccepts": 19,
+      "agentRequests": 22,
+      "subscriptionIncludedReqs": 22,
+      "modelUsage": [
+        {
+          "name": "claude-4.5-opus-high-thinking",
+          "count": 3
+        },
+        {
+          "name": "default",
+          "count": 19
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "jsx",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1768953600000",
+      "linesAdded": 14793,
+      "linesDeleted": 3,
+      "acceptedLinesAdded": 14793,
+      "acceptedLinesDeleted": 3,
+      "totalApplies": 104,
+      "totalAccepts": 104,
+      "agentRequests": 20,
+      "subscriptionIncludedReqs": 20,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 17
+        },
+        {
+          "name": "gpt-5.2",
+          "count": 3
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "jsx",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1769040000000",
+      "linesAdded": 45139,
+      "linesDeleted": 252,
+      "acceptedLinesAdded": 45139,
+      "acceptedLinesDeleted": 252,
+      "totalApplies": 247,
+      "totalAccepts": 247,
+      "agentRequests": 100,
+      "subscriptionIncludedReqs": 100,
+      "modelUsage": [
+        {
+          "name": "gpt-5.2",
+          "count": 4
+        },
+        {
+          "name": "default",
+          "count": 96
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "toml",
+          "count": 1
+        },
+        {
+          "name": "example",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "yaml",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "ini",
+          "count": 1
+        },
+        {
+          "name": "bat",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "csv",
+          "count": 1
+        },
+        {
+          "name": "R",
+          "count": 1
+        },
+        {
+          "name": "txt",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1769212800000",
+      "linesAdded": 71430,
+      "linesDeleted": 453,
+      "acceptedLinesAdded": 75,
+      "totalApplies": 57,
+      "totalAccepts": 1,
+      "agentRequests": 74,
+      "subscriptionIncludedReqs": 74,
+      "modelUsage": [
+        {
+          "name": "claude-4.5-opus-high-thinking",
+          "count": 17
+        },
+        {
+          "name": "gpt-5.2-codex",
+          "count": 7
+        },
+        {
+          "name": "default",
+          "count": 48
+        },
+        {
+          "name": "claude-4.5-sonnet-thinking",
+          "count": 2
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "ts",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "example",
+          "count": 1
+        },
+        {
+          "name": "tsx",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "txt",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "yml",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1769299200000",
+      "linesAdded": 8524,
+      "linesDeleted": 260,
+      "acceptedLinesAdded": 651,
+      "acceptedLinesDeleted": 260,
+      "totalApplies": 17,
+      "totalAccepts": 2,
+      "agentRequests": 24,
+      "subscriptionIncludedReqs": 24,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 24
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "csv",
+          "count": 1
+        },
+        {
+          "name": "example",
+          "count": 1
+        },
+        {
+          "name": "txt",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1769385600000",
+      "linesAdded": 7801,
+      "linesDeleted": 1043,
+      "acceptedLinesAdded": 5474,
+      "acceptedLinesDeleted": 391,
+      "totalApplies": 79,
+      "totalAccepts": 79,
+      "agentRequests": 20,
+      "subscriptionIncludedReqs": 20,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 20
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "txt",
+          "count": 1
+        },
+        {
+          "name": "csv",
+          "count": 1
+        },
+        {
+          "name": "example",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1769472000000",
+      "linesAdded": 8305,
+      "linesDeleted": 901,
+      "acceptedLinesAdded": 74,
+      "totalApplies": 22,
+      "totalAccepts": 2,
+      "agentRequests": 39,
+      "subscriptionIncludedReqs": 39,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 39
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "csv",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1769558400000",
+      "linesAdded": 591,
+      "linesDeleted": 249,
+      "totalApplies": 3,
+      "agentRequests": 6,
+      "subscriptionIncludedReqs": 6,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 6
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1769644800000",
+      "linesAdded": 23208,
+      "totalApplies": 8,
+      "agentRequests": 10,
+      "subscriptionIncludedReqs": 10,
+      "modelUsage": [
+        {
+          "name": "claude-4.5-opus-high-thinking",
+          "count": 1
+        },
+        {
+          "name": "claude-4.5-sonnet-thinking",
+          "count": 9
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1769731200000",
+      "linesAdded": 10680,
+      "acceptedLinesAdded": 10680,
+      "totalApplies": 29,
+      "totalAccepts": 29,
+      "agentRequests": 5,
+      "subscriptionIncludedReqs": 5,
+      "modelUsage": [
+        {
+          "name": "claude-4.5-opus-high-thinking",
+          "count": 3
+        },
+        {
+          "name": "claude-4.5-sonnet-thinking",
+          "count": 2
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1769817600000",
+      "linesAdded": 2482,
+      "linesDeleted": 11,
+      "totalApplies": 7,
+      "agentRequests": 7,
+      "subscriptionIncludedReqs": 7,
+      "modelUsage": [
+        {
+          "name": "composer-1",
+          "count": 5
+        },
+        {
+          "name": "claude-4.5-sonnet-thinking",
+          "count": 2
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1770076800000",
+      "linesAdded": 20855,
+      "totalApplies": 18,
+      "agentRequests": 19,
+      "subscriptionIncludedReqs": 19,
+      "modelUsage": [
+        {
+          "name": "composer-1",
+          "count": 1
+        },
+        {
+          "name": "default",
+          "count": 18
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "csv",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1770163200000",
+      "linesAdded": 10733,
+      "linesDeleted": 42,
+      "acceptedLinesAdded": 10733,
+      "acceptedLinesDeleted": 42,
+      "totalApplies": 124,
+      "totalAccepts": 124,
+      "agentRequests": 27,
+      "subscriptionIncludedReqs": 27,
+      "modelUsage": [
+        {
+          "name": "claude-4.5-sonnet-thinking",
+          "count": 13
+        },
+        {
+          "name": "gemini-3-pro-preview",
+          "count": 8
+        },
+        {
+          "name": "default",
+          "count": 5
+        },
+        {
+          "name": "gpt-5.2",
+          "count": 1
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "csv",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1770249600000",
+      "linesAdded": 167,
+      "acceptedLinesAdded": 167,
+      "totalApplies": 2,
+      "totalAccepts": 2,
+      "agentRequests": 2,
+      "subscriptionIncludedReqs": 2,
+      "modelUsage": [
+        {
+          "name": "gemini-3-pro-preview",
+          "count": 2
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1770336000000",
+      "linesAdded": 11477,
+      "totalApplies": 27,
+      "agentRequests": 31,
+      "subscriptionIncludedReqs": 31,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 31
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1770422400000",
+      "linesAdded": 25606,
+      "linesDeleted": 1114,
+      "acceptedLinesAdded": 25606,
+      "acceptedLinesDeleted": 1114,
+      "totalApplies": 184,
+      "totalAccepts": 184,
+      "agentRequests": 37,
+      "subscriptionIncludedReqs": 37,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 37
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "csv",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "txt",
+          "count": 1
+        },
+        {
+          "name": "ts",
+          "count": 1
+        },
+        {
+          "name": "tsx",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1770508800000",
+      "linesAdded": 1017,
+      "totalApplies": 3,
+      "agentRequests": 12,
+      "subscriptionIncludedReqs": 12,
+      "modelUsage": [
+        {
+          "name": "composer-1",
+          "count": 1
+        },
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 2
+        },
+        {
+          "name": "claude-4.5-haiku",
+          "count": 1
+        },
+        {
+          "name": "grok-code-fast-1",
+          "count": 1
+        },
+        {
+          "name": "default",
+          "count": 6
+        },
+        {
+          "name": "accounts/fireworks/models/kimi-k2-instruct-0905",
+          "count": 1
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1770595200000",
+      "linesAdded": 4237,
+      "linesDeleted": 33,
+      "acceptedLinesAdded": 2806,
+      "acceptedLinesDeleted": 6,
+      "totalApplies": 28,
+      "totalAccepts": 28,
+      "agentRequests": 16,
+      "subscriptionIncludedReqs": 16,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 16
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1770681600000",
+      "linesAdded": 5777,
+      "linesDeleted": 177,
+      "acceptedLinesAdded": 162,
+      "totalApplies": 12,
+      "totalAccepts": 2,
+      "agentRequests": 19,
+      "subscriptionIncludedReqs": 13,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 18
+        },
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 1
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1770768000000",
+      "linesAdded": 3961,
+      "linesDeleted": 606,
+      "totalApplies": 2,
+      "agentRequests": 7,
+      "subscriptionIncludedReqs": 7,
+      "modelUsage": [
+        {
+          "name": "claude-4.5-sonnet-thinking",
+          "count": 7
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1770854400000",
+      "linesAdded": 55403,
+      "totalApplies": 17,
+      "agentRequests": 23,
+      "subscriptionIncludedReqs": 23,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 14
+        },
+        {
+          "name": "composer-1.5",
+          "count": 9
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1770940800000",
+      "linesAdded": 34401,
+      "linesDeleted": 400,
+      "acceptedLinesAdded": 34401,
+      "acceptedLinesDeleted": 400,
+      "totalApplies": 225,
+      "totalAccepts": 225,
+      "agentRequests": 67,
+      "subscriptionIncludedReqs": 67,
+      "modelUsage": [
+        {
+          "name": "claude-4.5-sonnet-thinking",
+          "count": 7
+        },
+        {
+          "name": "composer-1.5",
+          "count": 21
+        },
+        {
+          "name": "default",
+          "count": 25
+        },
+        {
+          "name": "claude-4.5-sonnet",
+          "count": 2
+        },
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 12
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "yml",
+          "count": 1
+        },
+        {
+          "name": "mdc",
+          "count": 1
+        },
+        {
+          "name": "sql",
+          "count": 1
+        },
+        {
+          "name": "ts",
+          "count": 1
+        },
+        {
+          "name": "csv",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "prisma",
+          "count": 1
+        },
+        {
+          "name": "tsx",
+          "count": 1
+        },
+        {
+          "name": "example",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1771027200000",
+      "linesAdded": 33812,
+      "linesDeleted": 3018,
+      "acceptedLinesAdded": 1306,
+      "acceptedLinesDeleted": 4,
+      "totalApplies": 64,
+      "totalAccepts": 5,
+      "agentRequests": 134,
+      "subscriptionIncludedReqs": 134,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 133
+        },
+        {
+          "name": "composer-1.5",
+          "count": 1
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "tsx",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "ts",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "example",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "csv",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1771113600000",
+      "linesAdded": 409,
+      "linesDeleted": 88,
+      "totalApplies": 8,
+      "agentRequests": 11,
+      "subscriptionIncludedReqs": 11,
+      "modelUsage": [
+        {
+          "name": "composer-1.5",
+          "count": 11
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1771200000000",
+      "agentRequests": 2,
+      "subscriptionIncludedReqs": 2,
+      "modelUsage": [
+        {
+          "name": "composer-1.5",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "date": "1771286400000",
+      "linesAdded": 10098,
+      "linesDeleted": 147,
+      "acceptedLinesAdded": 162,
+      "totalApplies": 15,
+      "totalAccepts": 1,
+      "totalTabsShown": 1,
+      "agentRequests": 45,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 45
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        }
+      ],
+      "tabExtensionUsage": [
+        {
+          "name": "html",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1771372800000",
+      "linesAdded": 3285,
+      "linesDeleted": 108,
+      "acceptedLinesAdded": 2970,
+      "totalApplies": 12,
+      "totalAccepts": 4,
+      "agentRequests": 40,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 26
+        },
+        {
+          "name": "default",
+          "count": 14
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "txt",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1771459200000",
+      "linesAdded": 6566,
+      "linesDeleted": 45,
+      "acceptedLinesAdded": 6220,
+      "acceptedLinesDeleted": 45,
+      "totalApplies": 20,
+      "totalAccepts": 20,
+      "agentRequests": 33,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 2
+        },
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 24
+        },
+        {
+          "name": "claude-4.6-sonnet-medium-thinking",
+          "count": 7
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1771545600000",
+      "linesAdded": 1258,
+      "linesDeleted": 4,
+      "totalApplies": 19,
+      "agentRequests": 19,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 8
+        },
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 10
+        },
+        {
+          "name": "claude-4.6-sonnet-medium-thinking",
+          "count": 1
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "mdc",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1771632000000",
+      "linesAdded": 40339,
+      "linesDeleted": 1182,
+      "acceptedLinesAdded": 26704,
+      "acceptedLinesDeleted": 189,
+      "totalApplies": 702,
+      "totalAccepts": 223,
+      "agentRequests": 43,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 39
+        },
+        {
+          "name": "default",
+          "count": 4
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "ts",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "tsx",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "sql",
+          "count": 1
+        },
+        {
+          "name": "prisma",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1771718400000",
+      "linesAdded": 22558,
+      "linesDeleted": 1851,
+      "acceptedLinesAdded": 1,
+      "acceptedLinesDeleted": 4,
+      "totalApplies": 339,
+      "totalAccepts": 1,
+      "agentRequests": 75,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 74
+        },
+        {
+          "name": "composer-1.5",
+          "count": 1
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "api",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "tfvars",
+          "count": 1
+        },
+        {
+          "name": "tsx",
+          "count": 1
+        },
+        {
+          "name": "tpl",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "ts",
+          "count": 1
+        },
+        {
+          "name": "tf",
+          "count": 1
+        },
+        {
+          "name": "conf",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "yaml",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "yml",
+          "count": 1
+        },
+        {
+          "name": "txt",
+          "count": 1
+        },
+        {
+          "name": "sql",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1771804800000",
+      "linesAdded": 28109,
+      "linesDeleted": 2559,
+      "acceptedLinesAdded": 4160,
+      "acceptedLinesDeleted": 190,
+      "totalApplies": 693,
+      "totalAccepts": 48,
+      "agentRequests": 62,
+      "apiKeyReqs": 3,
+      "usageBasedReqs": 8,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 2
+        },
+        {
+          "name": "claude-4.6-sonnet-medium-thinking",
+          "count": 50
+        },
+        {
+          "name": "claude-4.5-opus-high-thinking",
+          "count": 10
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "sql",
+          "count": 1
+        },
+        {
+          "name": "conf",
+          "count": 1
+        },
+        {
+          "name": "yml",
+          "count": 1
+        },
+        {
+          "name": "tsx",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "ts",
+          "count": 1
+        },
+        {
+          "name": "prisma",
+          "count": 1
+        },
+        {
+          "name": "api",
+          "count": 1
+        },
+        {
+          "name": "tf",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "example",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "yaml",
+          "count": 1
+        },
+        {
+          "name": "tfvars",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1771891200000",
+      "linesAdded": 745,
+      "linesDeleted": 137,
+      "totalApplies": 36,
+      "agentRequests": 15,
+      "usageBasedReqs": 15,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 4
+        },
+        {
+          "name": "claude-4.6-sonnet-medium-thinking",
+          "count": 11
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "conf",
+          "count": 1
+        },
+        {
+          "name": "ts",
+          "count": 1
+        },
+        {
+          "name": "yml",
+          "count": 1
+        },
+        {
+          "name": "sql",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1771977600000",
+      "linesAdded": 3646,
+      "linesDeleted": 132,
+      "totalApplies": 67,
+      "agentRequests": 35,
+      "usageBasedReqs": 9,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 3
+        },
+        {
+          "name": "claude-4.5-opus-high",
+          "count": 4
+        },
+        {
+          "name": "gpt-5.3-codex",
+          "count": 2
+        },
+        {
+          "name": "default",
+          "count": 26
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "tsx",
+          "count": 1
+        },
+        {
+          "name": "yml",
+          "count": 1
+        },
+        {
+          "name": "sql",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "ts",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1772064000000",
+      "linesAdded": 14826,
+      "linesDeleted": 1145,
+      "totalApplies": 30,
+      "totalTabsShown": 1,
+      "agentRequests": 89,
+      "usageBasedReqs": 64,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 14
+        },
+        {
+          "name": "claude-4.5-opus-high-thinking",
+          "count": 1
+        },
+        {
+          "name": "default",
+          "count": 4
+        },
+        {
+          "name": "claude-4.6-sonnet-medium-thinking",
+          "count": 49
+        },
+        {
+          "name": "composer-1",
+          "count": 21
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "conf",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "tsx",
+          "count": 1
+        },
+        {
+          "name": "sql",
+          "count": 1
+        },
+        {
+          "name": "txt",
+          "count": 1
+        },
+        {
+          "name": "example",
+          "count": 1
+        },
+        {
+          "name": "tf",
+          "count": 1
+        },
+        {
+          "name": "ts",
+          "count": 1
+        }
+      ],
+      "tabExtensionUsage": [
+        {
+          "name": "json",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1772150400000",
+      "linesAdded": 5019,
+      "linesDeleted": 97,
+      "totalApplies": 10,
+      "agentRequests": 41,
+      "usageBasedReqs": 28,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-sonnet-medium-thinking",
+          "count": 13
+        },
+        {
+          "name": "claude-4.5-opus-high-thinking",
+          "count": 9
+        },
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 5
+        },
+        {
+          "name": "claude-4.5-sonnet",
+          "count": 1
+        },
+        {
+          "name": "composer-1",
+          "count": 4
+        },
+        {
+          "name": "default",
+          "count": 9
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "production",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "ts",
+          "count": 1
+        },
+        {
+          "name": "tsx",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1772236800000",
+      "linesAdded": 18247,
+      "linesDeleted": 1329,
+      "acceptedLinesAdded": 12918,
+      "acceptedLinesDeleted": 1265,
+      "totalApplies": 107,
+      "totalAccepts": 107,
+      "agentRequests": 98,
+      "usageBasedReqs": 65,
+      "modelUsage": [
+        {
+          "name": "composer-1.5",
+          "count": 1
+        },
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 19
+        },
+        {
+          "name": "claude-4.5-opus-high-thinking",
+          "count": 3
+        },
+        {
+          "name": "claude-4.5-opus-high",
+          "count": 6
+        },
+        {
+          "name": "claude-4.6-sonnet-medium-thinking",
+          "count": 32
+        },
+        {
+          "name": "claude-4.5-sonnet",
+          "count": 5
+        },
+        {
+          "name": "composer-1",
+          "count": 11
+        },
+        {
+          "name": "default",
+          "count": 21
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "tf",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "yaml",
+          "count": 1
+        },
+        {
+          "name": "conf",
+          "count": 1
+        },
+        {
+          "name": "sql",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "production",
+          "count": 1
+        },
+        {
+          "name": "ts",
+          "count": 1
+        },
+        {
+          "name": "yml",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "tfvars",
+          "count": 1
+        },
+        {
+          "name": "example",
+          "count": 1
+        },
+        {
+          "name": "mdc",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "template",
+          "count": 1
+        },
+        {
+          "name": "prisma",
+          "count": 1
+        },
+        {
+          "name": "tsx",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1772323200000",
+      "linesAdded": 405,
+      "linesDeleted": 106,
+      "totalApplies": 7,
+      "agentRequests": 46,
+      "usageBasedReqs": 43,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 6
+        },
+        {
+          "name": "gemini-3-pro-preview",
+          "count": 14
+        },
+        {
+          "name": "composer-1.5",
+          "count": 3
+        },
+        {
+          "name": "claude-4.5-opus-high-thinking",
+          "count": 7
+        },
+        {
+          "name": "claude-4.6-sonnet-medium-thinking",
+          "count": 13
+        },
+        {
+          "name": "claude-4.5-sonnet",
+          "count": 3
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "tsx",
+          "count": 1
+        },
+        {
+          "name": "ts",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1772409600000",
+      "linesAdded": 23387,
+      "linesDeleted": 4,
+      "totalApplies": 40,
+      "agentRequests": 55,
+      "usageBasedReqs": 24,
+      "modelUsage": [
+        {
+          "name": "claude-4.5-opus-high-thinking",
+          "count": 1
+        },
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 23
+        },
+        {
+          "name": "default",
+          "count": 31
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1772496000000",
+      "linesAdded": 23365,
+      "linesDeleted": 301,
+      "totalApplies": 30,
+      "agentRequests": 59,
+      "usageBasedReqs": 59,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 59
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1772582400000",
+      "linesAdded": 5180,
+      "linesDeleted": 24,
+      "acceptedLinesAdded": 202,
+      "totalApplies": 16,
+      "totalAccepts": 1,
+      "agentRequests": 45,
+      "usageBasedReqs": 22,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 21
+        },
+        {
+          "name": "claude-4.6-sonnet-medium-thinking",
+          "count": 1
+        },
+        {
+          "name": "default",
+          "count": 23
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1772668800000",
+      "linesAdded": 1143,
+      "linesDeleted": 16,
+      "totalApplies": 3,
+      "agentRequests": 41,
+      "usageBasedReqs": 41,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-sonnet-high-thinking",
+          "count": 3
+        },
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 38
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1772755200000",
+      "agentRequests": 1,
+      "usageBasedReqs": 1,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1772841600000",
+      "linesAdded": 3999,
+      "linesDeleted": 33,
+      "totalApplies": 13,
+      "agentRequests": 70,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 70
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "txt",
+          "count": 1
+        },
+        {
+          "name": "example",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "ts",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "ini",
+          "count": 1
+        },
+        {
+          "name": "tsx",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1772928000000",
+      "linesAdded": 1972,
+      "totalApplies": 10,
+      "agentRequests": 56,
+      "usageBasedReqs": 1,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 55
+        },
+        {
+          "name": "claude-4.5-opus-high-thinking",
+          "count": 1
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "tsx",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1773014400000",
+      "linesAdded": 857,
+      "linesDeleted": 2,
+      "totalApplies": 6,
+      "agentRequests": 26,
+      "usageBasedReqs": 4,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 4
+        },
+        {
+          "name": "default",
+          "count": 22
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "csv",
+          "count": 1
+        },
+        {
+          "name": "txt",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1773100800000",
+      "agentRequests": 12,
+      "usageBasedReqs": 12,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "date": "1773187200000",
+      "linesAdded": 2848,
+      "linesDeleted": 1,
+      "totalApplies": 5,
+      "agentRequests": 25,
+      "usageBasedReqs": 23,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-sonnet-medium-thinking",
+          "count": 23
+        },
+        {
+          "name": "default",
+          "count": 2
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1773273600000",
+      "linesAdded": 1832,
+      "linesDeleted": 2,
+      "totalApplies": 4,
+      "agentRequests": 22,
+      "usageBasedReqs": 18,
+      "modelUsage": [
+        {
+          "name": "composer-1.5",
+          "count": 3
+        },
+        {
+          "name": "default",
+          "count": 1
+        },
+        {
+          "name": "claude-4.6-sonnet-medium-thinking",
+          "count": 6
+        },
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 12
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1773360000000",
+      "linesAdded": 599,
+      "acceptedLinesAdded": 200,
+      "totalApplies": 6,
+      "totalAccepts": 3,
+      "agentRequests": 23,
+      "usageBasedReqs": 1,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 1
+        },
+        {
+          "name": "default",
+          "count": 16
+        },
+        {
+          "name": "composer-1.5",
+          "count": 6
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "txt",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1773446400000",
+      "agentRequests": 2,
+      "usageBasedReqs": 2,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "date": "1773532800000",
+      "linesAdded": 3660,
+      "totalApplies": 8,
+      "agentRequests": 31,
+      "usageBasedReqs": 31,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 31
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1773619200000",
+      "linesAdded": 62798,
+      "linesDeleted": 20,
+      "totalApplies": 42,
+      "agentRequests": 134,
+      "apiKeyReqs": 56,
+      "usageBasedReqs": 72,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-max-thinking",
+          "count": 3
+        },
+        {
+          "name": "deepseek/deepseek-v3.2",
+          "count": 4
+        },
+        {
+          "name": "deepseek/deepseek-v3.2-exp",
+          "count": 2
+        },
+        {
+          "name": "qwen/qwen3-coder:free",
+          "count": 1
+        },
+        {
+          "name": "gpt-5.4-high",
+          "count": 1
+        },
+        {
+          "name": "default",
+          "count": 6
+        },
+        {
+          "name": "accounts/fireworks/models/kimi-k2p5",
+          "count": 63
+        },
+        {
+          "name": "qwen/qwen3.5-397b-a17b-20260216",
+          "count": 42
+        },
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 8
+        },
+        {
+          "name": "meta-llama/llama-3.3-70b-instruct:free",
+          "count": 1
+        },
+        {
+          "name": "openrouter/hunter-alpha",
+          "count": 3
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "txt",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "svg",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "csv",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1773705600000",
+      "linesAdded": 484,
+      "totalApplies": 1,
+      "agentRequests": 9,
+      "subscriptionIncludedReqs": 9,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 8
+        },
+        {
+          "name": "composer-1.5",
+          "count": 1
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1773792000000",
+      "linesAdded": 4913,
+      "totalApplies": 10,
+      "agentRequests": 49,
+      "subscriptionIncludedReqs": 49,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 17
+        },
+        {
+          "name": "accounts/fireworks/models/kimi-k2p5",
+          "count": 32
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1773878400000",
+      "linesAdded": 10028,
+      "linesDeleted": 3,
+      "totalApplies": 23,
+      "agentRequests": 57,
+      "subscriptionIncludedReqs": 57,
+      "modelUsage": [
+        {
+          "name": "composer-2-fast",
+          "count": 1
+        },
+        {
+          "name": "accounts/fireworks/models/kimi-k2p5",
+          "count": 48
+        },
+        {
+          "name": "composer-2",
+          "count": 1
+        },
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 7
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "txt",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1774137600000",
+      "linesAdded": 2748,
+      "linesDeleted": 7,
+      "acceptedLinesAdded": 314,
+      "acceptedLinesDeleted": 7,
+      "totalApplies": 4,
+      "totalAccepts": 2,
+      "agentRequests": 21,
+      "subscriptionIncludedReqs": 21,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 20
+        },
+        {
+          "name": "composer-2-fast",
+          "count": 1
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1774310400000",
+      "linesAdded": 2211,
+      "linesDeleted": 4,
+      "totalApplies": 6,
+      "agentRequests": 26,
+      "subscriptionIncludedReqs": 26,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 16
+        },
+        {
+          "name": "default",
+          "count": 10
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1774396800000",
+      "linesAdded": 313,
+      "linesDeleted": 1,
+      "totalApplies": 3,
+      "agentRequests": 17,
+      "subscriptionIncludedReqs": 17,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 8
+        },
+        {
+          "name": "accounts/fireworks/models/kimi-k2p5",
+          "count": 9
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1774483200000",
+      "linesAdded": 12520,
+      "linesDeleted": 15,
+      "acceptedLinesAdded": 12520,
+      "acceptedLinesDeleted": 15,
+      "totalApplies": 50,
+      "totalAccepts": 50,
+      "agentRequests": 7,
+      "subscriptionIncludedReqs": 7,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 7
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "txt",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1774569600000",
+      "linesAdded": 31,
+      "totalApplies": 1,
+      "agentRequests": 2,
+      "subscriptionIncludedReqs": 2,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 2
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1774656000000",
+      "linesAdded": 963,
+      "linesDeleted": 71,
+      "totalApplies": 10,
+      "agentRequests": 46,
+      "subscriptionIncludedReqs": 46,
+      "modelUsage": [
+        {
+          "name": "composer-2",
+          "count": 21
+        },
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 25
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1774742400000",
+      "agentRequests": 7,
+      "subscriptionIncludedReqs": 7,
+      "modelUsage": [
+        {
+          "name": "composer-2",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "date": "1774828800000",
+      "linesAdded": 1479,
+      "totalApplies": 7,
+      "agentRequests": 25,
+      "subscriptionIncludedReqs": 25,
+      "modelUsage": [
+        {
+          "name": "composer-2",
+          "count": 25
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1774915200000",
+      "linesAdded": 2333,
+      "linesDeleted": 789,
+      "acceptedLinesAdded": 1018,
+      "acceptedLinesDeleted": 757,
+      "totalApplies": 42,
+      "totalAccepts": 24,
+      "totalRejects": 18,
+      "agentRequests": 59,
+      "subscriptionIncludedReqs": 59,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 1
+        },
+        {
+          "name": "composer-2",
+          "count": 57
+        },
+        {
+          "name": "composer-2-fast",
+          "count": 1
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "txt",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1775001600000",
+      "linesAdded": 2011,
+      "linesDeleted": 46,
+      "totalApplies": 11,
+      "agentRequests": 26,
+      "subscriptionIncludedReqs": 26,
+      "modelUsage": [
+        {
+          "name": "composer-2",
+          "count": 26
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "csv",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "yaml",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1775088000000",
+      "agentRequests": 5,
+      "subscriptionIncludedReqs": 5,
+      "modelUsage": [
+        {
+          "name": "composer-2",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "date": "1775174400000",
+      "linesAdded": 6,
+      "totalApplies": 1,
+      "agentRequests": 23,
+      "subscriptionIncludedReqs": 23,
+      "modelUsage": [
+        {
+          "name": "composer-2",
+          "count": 23
+        }
+      ]
+    },
+    {
+      "date": "1775347200000",
+      "agentRequests": 1,
+      "subscriptionIncludedReqs": 1,
+      "modelUsage": [
+        {
+          "name": "composer-2",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1775433600000",
+      "linesAdded": 9504,
+      "linesDeleted": 1105,
+      "acceptedLinesAdded": 221,
+      "totalApplies": 47,
+      "totalAccepts": 1,
+      "agentRequests": 153,
+      "subscriptionIncludedReqs": 153,
+      "modelUsage": [
+        {
+          "name": "composer-2-fast",
+          "count": 91
+        },
+        {
+          "name": "composer-2",
+          "count": 62
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "yml",
+          "count": 1
+        },
+        {
+          "name": "env",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "conf",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "jsx",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "example",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1775520000000",
+      "linesAdded": 1696,
+      "linesDeleted": 76,
+      "totalApplies": 20,
+      "agentRequests": 64,
+      "subscriptionIncludedReqs": 64,
+      "modelUsage": [
+        {
+          "name": "composer-2",
+          "count": 64
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "conf",
+          "count": 1
+        },
+        {
+          "name": "example",
+          "count": 1
+        },
+        {
+          "name": "jsx",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "env",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1775606400000",
+      "linesAdded": 72,
+      "totalApplies": 1,
+      "agentRequests": 3,
+      "subscriptionIncludedReqs": 3,
+      "modelUsage": [
+        {
+          "name": "composer-2",
+          "count": 3
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1776038400000",
+      "linesAdded": 1980,
+      "linesDeleted": 1,
+      "totalApplies": 4,
+      "agentRequests": 26,
+      "subscriptionIncludedReqs": 2,
+      "usageBasedReqs": 24,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-max-thinking",
+          "count": 15
+        },
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 9
+        },
+        {
+          "name": "composer-2",
+          "count": 2
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1776124800000",
+      "linesAdded": 6916,
+      "linesDeleted": 9,
+      "totalApplies": 15,
+      "agentRequests": 76,
+      "subscriptionIncludedReqs": 12,
+      "usageBasedReqs": 64,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-max-thinking",
+          "count": 47
+        },
+        {
+          "name": "composer-2-fast",
+          "count": 6
+        },
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 17
+        },
+        {
+          "name": "default",
+          "count": 6
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1776211200000",
+      "linesAdded": 11,
+      "linesDeleted": 43,
+      "totalApplies": 2,
+      "agentRequests": 39,
+      "subscriptionIncludedReqs": 17,
+      "usageBasedReqs": 22,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 13
+        },
+        {
+          "name": "claude-4.6-opus-max-thinking",
+          "count": 9
+        },
+        {
+          "name": "composer-2-fast",
+          "count": 1
+        },
+        {
+          "name": "composer-2",
+          "count": 16
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1776297600000",
+      "linesAdded": 1341,
+      "linesDeleted": 8,
+      "totalApplies": 6,
+      "agentRequests": 26,
+      "subscriptionIncludedReqs": 4,
+      "usageBasedReqs": 22,
+      "modelUsage": [
+        {
+          "name": "claude-4.6-opus-max-thinking",
+          "count": 9
+        },
+        {
+          "name": "default",
+          "count": 1
+        },
+        {
+          "name": "claude-4.5-opus-high-thinking",
+          "count": 3
+        },
+        {
+          "name": "composer-2",
+          "count": 3
+        },
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 5
+        },
+        {
+          "name": "claude-4.6-sonnet-medium-thinking",
+          "count": 5
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1776470400000",
+      "linesAdded": 11623,
+      "linesDeleted": 882,
+      "totalApplies": 10,
+      "agentRequests": 50,
+      "subscriptionIncludedReqs": 50,
+      "modelUsage": [
+        {
+          "name": "claude-4.5-sonnet",
+          "count": 1
+        },
+        {
+          "name": "composer-2-fast",
+          "count": 28
+        },
+        {
+          "name": "claude-4.6-opus-high-thinking",
+          "count": 1
+        },
+        {
+          "name": "claude-opus-4-7-thinking-high",
+          "count": 17
+        },
+        {
+          "name": "composer-2",
+          "count": 3
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "example",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "jsx",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1776556800000",
+      "linesAdded": 29767,
+      "linesDeleted": 1504,
+      "acceptedLinesAdded": 29767,
+      "acceptedLinesDeleted": 1504,
+      "totalApplies": 272,
+      "totalAccepts": 272,
+      "agentRequests": 32,
+      "subscriptionIncludedReqs": 32,
+      "modelUsage": [
+        {
+          "name": "claude-opus-4-7-thinking-high",
+          "count": 28
+        },
+        {
+          "name": "composer-2-fast",
+          "count": 3
+        },
+        {
+          "name": "claude-4.5-opus-high-thinking",
+          "count": 1
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "txt",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "env",
+          "count": 1
+        },
+        {
+          "name": "example",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "jsx",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "yml",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "svg",
+          "count": 1
+        },
+        {
+          "name": "conf",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1776643200000",
+      "linesAdded": 10572,
+      "linesDeleted": 1248,
+      "acceptedLinesAdded": 10572,
+      "acceptedLinesDeleted": 1248,
+      "totalApplies": 229,
+      "totalAccepts": 229,
+      "agentRequests": 34,
+      "subscriptionIncludedReqs": 34,
+      "modelUsage": [
+        {
+          "name": "composer-2-fast",
+          "count": 5
+        },
+        {
+          "name": "claude-opus-4-7-thinking-high",
+          "count": 29
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "jsx",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1776729600000",
+      "linesAdded": 417,
+      "linesDeleted": 29,
+      "acceptedLinesAdded": 417,
+      "acceptedLinesDeleted": 29,
+      "totalApplies": 12,
+      "totalAccepts": 12,
+      "agentRequests": 32,
+      "subscriptionIncludedReqs": 32,
+      "modelUsage": [
+        {
+          "name": "claude-opus-4-7-thinking-high",
+          "count": 1
+        },
+        {
+          "name": "default",
+          "count": 31
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1776816000000",
+      "linesAdded": 5400,
+      "linesDeleted": 330,
+      "acceptedLinesAdded": 5400,
+      "acceptedLinesDeleted": 330,
+      "totalApplies": 117,
+      "totalAccepts": 117,
+      "agentRequests": 36,
+      "subscriptionIncludedReqs": 34,
+      "usageBasedReqs": 2,
+      "modelUsage": [
+        {
+          "name": "claude-opus-4-7-thinking-high",
+          "count": 34
+        },
+        {
+          "name": "composer-2-fast",
+          "count": 2
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "jsx",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1776902400000",
+      "linesAdded": 5766,
+      "linesDeleted": 1639,
+      "acceptedLinesAdded": 5766,
+      "acceptedLinesDeleted": 1639,
+      "totalApplies": 130,
+      "totalAccepts": 130,
+      "agentRequests": 33,
+      "subscriptionIncludedReqs": 4,
+      "usageBasedReqs": 12,
+      "modelUsage": [
+        {
+          "name": "claude-opus-4-7-thinking-high",
+          "count": 24
+        },
+        {
+          "name": "composer-2-fast",
+          "count": 9
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "jsx",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "svg",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1776988800000",
+      "linesAdded": 5654,
+      "linesDeleted": 1232,
+      "acceptedLinesAdded": 5654,
+      "acceptedLinesDeleted": 1232,
+      "totalApplies": 222,
+      "totalAccepts": 222,
+      "agentRequests": 43,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 10
+        },
+        {
+          "name": "claude-opus-4-7-thinking-high",
+          "count": 15
+        },
+        {
+          "name": "claude-opus-4-7-thinking-xhigh",
+          "count": 18
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "svg",
+          "count": 1
+        },
+        {
+          "name": "jsx",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1777075200000",
+      "linesAdded": 1671,
+      "linesDeleted": 86,
+      "acceptedLinesAdded": 1671,
+      "acceptedLinesDeleted": 86,
+      "totalApplies": 39,
+      "totalAccepts": 39,
+      "agentRequests": 12,
+      "modelUsage": [
+        {
+          "name": "claude-opus-4-7-thinking-high",
+          "count": 9
+        },
+        {
+          "name": "claude-opus-4-7-thinking-xhigh",
+          "count": 3
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "jsx",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "txt",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1777161600000",
+      "linesAdded": 5230,
+      "linesDeleted": 2072,
+      "acceptedLinesAdded": 5230,
+      "acceptedLinesDeleted": 2072,
+      "totalApplies": 138,
+      "totalAccepts": 138,
+      "agentRequests": 34,
+      "modelUsage": [
+        {
+          "name": "claude-opus-4-7-thinking-high",
+          "count": 30
+        },
+        {
+          "name": "claude-opus-4-7-thinking-xhigh",
+          "count": 2
+        },
+        {
+          "name": "composer-2-fast",
+          "count": 2
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "jsx",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1777248000000",
+      "linesAdded": 398,
+      "linesDeleted": 81,
+      "acceptedLinesAdded": 398,
+      "acceptedLinesDeleted": 81,
+      "totalApplies": 19,
+      "totalAccepts": 19,
+      "agentRequests": 22,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 4
+        },
+        {
+          "name": "claude-opus-4-7-thinking-high",
+          "count": 16
+        },
+        {
+          "name": "composer-2-fast",
+          "count": 2
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "jsx",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1777334400000",
+      "linesAdded": 1468,
+      "linesDeleted": 176,
+      "acceptedLinesAdded": 1468,
+      "acceptedLinesDeleted": 176,
+      "totalApplies": 92,
+      "totalAccepts": 92,
+      "agentRequests": 40,
+      "modelUsage": [
+        {
+          "name": "claude-opus-4-7-thinking-high",
+          "count": 1
+        },
+        {
+          "name": "default",
+          "count": 30
+        },
+        {
+          "name": "composer-2",
+          "count": 9
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "yaml",
+          "count": 1
+        },
+        {
+          "name": "txt",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "sql",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1777420800000",
+      "linesAdded": 1318,
+      "linesDeleted": 269,
+      "acceptedLinesAdded": 1318,
+      "acceptedLinesDeleted": 269,
+      "totalApplies": 61,
+      "totalAccepts": 61,
+      "agentRequests": 7,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 7
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "yaml",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "sql",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1777507200000",
+      "linesAdded": 632,
+      "linesDeleted": 96,
+      "acceptedLinesAdded": 632,
+      "acceptedLinesDeleted": 96,
+      "totalApplies": 71,
+      "totalAccepts": 71,
+      "agentRequests": 23,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 23
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "csv",
+          "count": 1
+        },
+        {
+          "name": "sql",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "yaml",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1777593600000",
+      "agentRequests": 7,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "date": "1777852800000",
+      "linesAdded": 3260,
+      "linesDeleted": 1596,
+      "acceptedLinesAdded": 3260,
+      "acceptedLinesDeleted": 1596,
+      "totalApplies": 104,
+      "totalAccepts": 104,
+      "agentRequests": 55,
+      "modelUsage": [
+        {
+          "name": "claude-opus-4-7-thinking-high",
+          "count": 30
+        },
+        {
+          "name": "composer-2-fast",
+          "count": 6
+        },
+        {
+          "name": "claude-4.5-opus-high-thinking",
+          "count": 13
+        },
+        {
+          "name": "claude-4.5-sonnet-thinking",
+          "count": 5
+        },
+        {
+          "name": "claude-opus-4-7-thinking-xhigh",
+          "count": 1
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "jsx",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1777939200000",
+      "linesAdded": 4412,
+      "linesDeleted": 54,
+      "acceptedLinesAdded": 4412,
+      "acceptedLinesDeleted": 54,
+      "totalApplies": 50,
+      "totalAccepts": 50,
+      "agentRequests": 46,
+      "modelUsage": [
+        {
+          "name": "composer-2",
+          "count": 1
+        },
+        {
+          "name": "claude-opus-4-7-thinking-high",
+          "count": 9
+        },
+        {
+          "name": "composer-2-fast",
+          "count": 13
+        },
+        {
+          "name": "claude-4.5-opus-high-thinking",
+          "count": 21
+        },
+        {
+          "name": "default",
+          "count": 2
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1778025600000",
+      "linesAdded": 7437,
+      "linesDeleted": 149,
+      "acceptedLinesAdded": 7437,
+      "acceptedLinesDeleted": 149,
+      "totalApplies": 88,
+      "totalAccepts": 88,
+      "agentRequests": 16,
+      "modelUsage": [
+        {
+          "name": "composer-2-fast",
+          "count": 6
+        },
+        {
+          "name": "claude-opus-4-7-thinking-high",
+          "count": 10
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "jsx",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1778112000000",
+      "linesAdded": 4326,
+      "linesDeleted": 345,
+      "acceptedLinesAdded": 4326,
+      "acceptedLinesDeleted": 345,
+      "totalApplies": 127,
+      "totalAccepts": 127,
+      "agentRequests": 48,
+      "usageBasedReqs": 4,
+      "modelUsage": [
+        {
+          "name": "claude-opus-4-7-thinking-high",
+          "count": 21
+        },
+        {
+          "name": "composer-2",
+          "count": 7
+        },
+        {
+          "name": "claude-4.5-opus-high-thinking",
+          "count": 13
+        },
+        {
+          "name": "composer-2-fast",
+          "count": 7
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "jsx",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "conf",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1778198400000",
+      "linesAdded": 2482,
+      "linesDeleted": 130,
+      "acceptedLinesAdded": 2482,
+      "acceptedLinesDeleted": 130,
+      "totalApplies": 63,
+      "totalAccepts": 63,
+      "agentRequests": 55,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 42
+        },
+        {
+          "name": "composer-2-fast",
+          "count": 2
+        },
+        {
+          "name": "composer-2",
+          "count": 11
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1778284800000",
+      "linesAdded": 112,
+      "linesDeleted": 16,
+      "acceptedLinesAdded": 112,
+      "acceptedLinesDeleted": 16,
+      "totalApplies": 8,
+      "totalAccepts": 8,
+      "agentRequests": 4,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 4
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1778371200000",
+      "linesAdded": 1244,
+      "linesDeleted": 150,
+      "acceptedLinesAdded": 1244,
+      "acceptedLinesDeleted": 150,
+      "totalApplies": 61,
+      "totalAccepts": 61,
+      "agentRequests": 12,
+      "modelUsage": [
+        {
+          "name": "default",
+          "count": 9
+        },
+        {
+          "name": "composer-2",
+          "count": 3
+        }
+      ],
+      "extensionUsage": [
+        {
+          "name": "txt",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1778457600000",
+      "linesAdded": 412,
+      "linesDeleted": 31,
+      "acceptedLinesAdded": 412,
+      "acceptedLinesDeleted": 31,
+      "totalApplies": 13,
+      "totalAccepts": 13,
+      "extensionUsage": [
+        {
+          "name": "txt",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1778544000000",
+      "linesAdded": 62,
+      "linesDeleted": 1,
+      "acceptedLinesAdded": 62,
+      "acceptedLinesDeleted": 1,
+      "totalApplies": 3,
+      "totalAccepts": 3,
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1779062400000",
+      "linesAdded": 70,
+      "acceptedLinesAdded": 70,
+      "totalApplies": 1,
+      "totalAccepts": 1,
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1779321600000",
+      "linesAdded": 20766,
+      "linesDeleted": 1306,
+      "acceptedLinesAdded": 20766,
+      "acceptedLinesDeleted": 1306,
+      "totalApplies": 317,
+      "totalAccepts": 317,
+      "extensionUsage": [
+        {
+          "name": "csv",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "conf",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        },
+        {
+          "name": "jsx",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "example",
+          "count": 1
+        },
+        {
+          "name": "txt",
+          "count": 1
+        },
+        {
+          "name": "js",
+          "count": 1
+        },
+        {
+          "name": "css",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1779667200000",
+      "linesAdded": 178,
+      "linesDeleted": 14,
+      "acceptedLinesAdded": 178,
+      "acceptedLinesDeleted": 14,
+      "totalApplies": 17,
+      "totalAccepts": 17,
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "csv",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1780358400000",
+      "linesAdded": 1037,
+      "acceptedLinesAdded": 1037,
+      "totalApplies": 6,
+      "totalAccepts": 6,
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1780444800000",
+      "linesAdded": 1088,
+      "linesDeleted": 109,
+      "acceptedLinesAdded": 1088,
+      "acceptedLinesDeleted": 109,
+      "totalApplies": 33,
+      "totalAccepts": 33,
+      "extensionUsage": [
+        {
+          "name": "cjs",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1780963200000",
+      "linesAdded": 1940,
+      "linesDeleted": 1,
+      "acceptedLinesAdded": 1940,
+      "acceptedLinesDeleted": 1,
+      "totalApplies": 1,
+      "totalAccepts": 1,
+      "extensionUsage": [
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "date": "1781308800000",
+      "linesAdded": 4922,
+      "acceptedLinesAdded": 4922,
+      "totalApplies": 1,
+      "totalAccepts": 1,
+      "extensionUsage": [
+        {
+          "name": "md",
+          "count": 1
+        },
+        {
+          "name": "mmd",
+          "count": 1
+        },
+        {
+          "name": "svg",
+          "count": 1
+        },
+        {
+          "name": "json",
+          "count": 1
+        },
+        {
+          "name": "sh",
+          "count": 1
+        },
+        {
+          "name": "py",
+          "count": 1
+        },
+        {
+          "name": "html",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "period": {
+    "startDate": "1750501984304",
+    "endDate": "1781951584304"
+  },
+  "totalMembersInTeam": 0
+}

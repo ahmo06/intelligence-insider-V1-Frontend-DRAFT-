@@ -1,0 +1,9 @@
+{
+  "url": "https://cursor.com/api/auth/attachBackgroundComposerLogs",
+  "path": "/api/auth/attachBackgroundComposerLogs",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:29:37.634526+00:00",
+  "page_slug": "agents-list",
+  "body": null
+}

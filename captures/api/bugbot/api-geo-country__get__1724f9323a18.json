@@ -1,0 +1,11 @@
+{
+  "url": "https://cursor.com/api/geo/country",
+  "path": "/api/geo/country",
+  "method": "GET",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:20.730724+00:00",
+  "page_slug": "bugbot",
+  "body": {
+    "countryCode": "US"
+  }
+}

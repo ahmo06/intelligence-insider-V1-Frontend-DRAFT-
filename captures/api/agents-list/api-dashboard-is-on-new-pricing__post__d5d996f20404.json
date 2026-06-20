@@ -1,0 +1,13 @@
+{
+  "url": "https://cursor.com/api/dashboard/is-on-new-pricing",
+  "path": "/api/dashboard/is-on-new-pricing",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:03.487341+00:00",
+  "page_slug": "agents-list",
+  "body": {
+    "isOnNewPricing": true,
+    "hasAutoSpillover": true,
+    "dashboardUserId": 317511232
+  }
+}

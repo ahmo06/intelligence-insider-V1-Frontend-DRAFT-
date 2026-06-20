@@ -1,0 +1,15 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-monthly-invoice",
+  "path": "/api/dashboard/get-monthly-invoice",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:37.897255+00:00",
+  "page_slug": "thread-merged-portal",
+  "body": {
+    "pricingDescription": {
+      "id": "392eabec215b2d0381fb87ead3be48765ced78e4acfbac7b12e862e8c426875f"
+    },
+    "periodStartMs": "1781523241000",
+    "periodEndMs": "1784115241000"
+  }
+}

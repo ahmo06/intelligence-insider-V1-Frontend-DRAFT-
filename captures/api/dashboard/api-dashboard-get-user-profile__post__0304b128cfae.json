@@ -1,0 +1,12 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-user-profile",
+  "path": "/api/dashboard/get-user-profile",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:08.130730+00:00",
+  "page_slug": "dashboard",
+  "body": {
+    "publicVisibilityAllowed": true,
+    "maxVisibility": "PUBLIC"
+  }
+}

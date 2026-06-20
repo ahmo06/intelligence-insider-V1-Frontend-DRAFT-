@@ -1,2 +1,6 @@
 /.analysis/
 /frontend_interactive/
+/frontend/.next/
+/frontend/node_modules/
+/frontend/.env*.local
+/captures/screenshots/

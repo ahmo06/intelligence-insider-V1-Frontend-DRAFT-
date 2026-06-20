@@ -1,1 +1,7 @@
-{"mergeableState":"unstable","state":"open","isDraft":true,"title":"Set up AI Agent System with Docker, CI/CD, and multi-agent test suite","baseBranch":"main","viewerCanEnableAutoMerge":false}
+{
+  "mergeableState": "clean",
+  "state": "open",
+  "isDraft": true,
+  "title": "Crush wiring matrix: 152-test long integration gate",
+  "baseBranch": "cursor/dev-environment-setup-aa66"
+}

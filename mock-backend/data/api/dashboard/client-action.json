@@ -1,1 +1,4 @@
-{"success":true,"errorMessage":"{\"hasPendingSetupOnboardingCreditClaim\":false,\"isCloudEnvironmentSetupPromoActive\":false}"}
+{
+  "success": true,
+  "errorMessage": "{\"hasPendingSetupOnboardingCreditClaim\":false,\"isCloudEnvironmentSetupPromoActive\":false}"
+}

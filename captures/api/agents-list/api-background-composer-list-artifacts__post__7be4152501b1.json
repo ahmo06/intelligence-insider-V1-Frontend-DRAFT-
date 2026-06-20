@@ -1,0 +1,27 @@
+{
+  "url": "https://cursor.com/api/background-composer/list-artifacts",
+  "path": "/api/background-composer/list-artifacts",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:30:42.028875+00:00",
+  "page_slug": "agents-list",
+  "body": {
+    "artifacts": [
+      {
+        "absolutePath": "/opt/cursor/artifacts/crush-visual-validation-after-setup.mp4",
+        "sizeBytes": "25442269",
+        "updatedAtUnixMs": "1780992772000"
+      },
+      {
+        "absolutePath": "/opt/cursor/artifacts/insider-chat-minimax-cli-check.mp4",
+        "sizeBytes": "7886471",
+        "updatedAtUnixMs": "1780905820000"
+      },
+      {
+        "absolutePath": "/opt/cursor/artifacts/insider-dev-environment-browser-validation.mp4",
+        "sizeBytes": "5026555",
+        "updatedAtUnixMs": "1780578756000"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-user-organizations",
+  "path": "/api/dashboard/get-user-organizations",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:03.452721+00:00",
+  "page_slug": "agents-list",
+  "body": {}
+}

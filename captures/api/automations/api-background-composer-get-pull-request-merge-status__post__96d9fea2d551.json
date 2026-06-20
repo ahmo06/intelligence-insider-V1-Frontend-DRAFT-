@@ -1,0 +1,15 @@
+{
+  "url": "https://cursor.com/api/background-composer/get-pull-request-merge-status",
+  "path": "/api/background-composer/get-pull-request-merge-status",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:15.559566+00:00",
+  "page_slug": "automations",
+  "body": {
+    "mergeableState": "unstable",
+    "state": "open",
+    "isDraft": true,
+    "title": "Crush insider parity: fix superficial CLI\u2192Crush conversion gaps",
+    "baseBranch": "cursor/dev-environment-setup-aa66"
+  }
+}

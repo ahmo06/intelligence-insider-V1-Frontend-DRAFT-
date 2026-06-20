@@ -1,0 +1,9 @@
+{
+  "url": "https://cursor.com/api/background-composer/get-available-mcp-servers",
+  "path": "/api/background-composer/get-available-mcp-servers",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:03.492485+00:00",
+  "page_slug": "agents-list",
+  "body": {}
+}

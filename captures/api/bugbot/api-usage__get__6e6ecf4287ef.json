@@ -1,0 +1,18 @@
+{
+  "url": "https://cursor.com/api/usage?user=user_01KF8FPPZMV5XBDD3X99H61CVE",
+  "path": "/api/usage",
+  "method": "GET",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:20.700294+00:00",
+  "page_slug": "bugbot",
+  "body": {
+    "gpt-4": {
+      "numRequests": 0,
+      "numRequestsTotal": 0,
+      "numTokens": 0,
+      "maxTokenUsage": null,
+      "maxRequestUsage": null
+    },
+    "startOfMonth": "2026-06-15T11:34:01.000Z"
+  }
+}

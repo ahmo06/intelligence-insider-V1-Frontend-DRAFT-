@@ -1,1 +1,12 @@
-{"marketplaces":[{"id":"34","name":"cursor-public","displayName":"Cursor Plugin Marketplace","description":"Official Cursor plugin marketplace","createdAt":"1770076838644","updatedAt":"1770076838644"}]}
+{
+  "marketplaces": [
+    {
+      "id": "34",
+      "name": "cursor-public",
+      "displayName": "Cursor Plugin Marketplace",
+      "description": "Official Cursor plugin marketplace",
+      "createdAt": "1770076838644",
+      "updatedAt": "1770076838644"
+    }
+  ]
+}

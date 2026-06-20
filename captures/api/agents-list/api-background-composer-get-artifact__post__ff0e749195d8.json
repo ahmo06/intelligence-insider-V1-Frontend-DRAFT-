@@ -1,0 +1,12 @@
+{
+  "url": "https://cursor.com/api/background-composer/get-artifact",
+  "path": "/api/background-composer/get-artifact",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:03.522828+00:00",
+  "page_slug": "agents-list",
+  "body": {
+    "url": "https://cloud-agent-artifacts.s3.us-east-1.amazonaws.com/artifacts/bc-91342439-9842-40c4-a14b-08d11dc86941/opt/cursor/artifacts/screenshots/issues_collapsed.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIA5YTTCJ6RQ3G25BMD%2F20260620%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260620T103300Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAsaCXVzLWVhc3QtMSJGMEQCIHW4%2FAto%2Fg8UcTBwUYMepwPCknvu6Vl1ST55%2Fsm0x%2F5uAiBw8tVsS1O0h9X02iZA7E9TxuLGEGkGXummHNd9bUBVMSr8AwjT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDk0NjIwNzg3MDg4MyIMG9EzMloHhEayaV08KtAD%2FFsmndaBlfx%2BtR5bb0ig9Kv0oULloyMCt3%2FpTnQ4%2By1b%2FY3EitwHhdUeD%2F8GODOyjlQ89m8fo5ykz6eyTr2izTX6%2BvQByR1yOtmvkjCvMMGNBTtdA8n7XK%2BcdUY7LDCE94RYqwK8vETDlAAHATZwR8qIawodOenPYitpFg0yKkM4xzXhNbZhAKa0oDXlpXdTxlM8ewn8s3c31mZsfRVz2%2Fb9YpUpgxAA9BRMhnN73SLOQD9aM3NJIbaS5JlsNR13tCkt4pByDuEs1uTnh9ZHVvlB7eQ0iK6DzbJMfSsi7wx%2FZPaDIyTpsQKgNnia5fsBZuzmAbo3G1L0ikcI2pw5GuYEYI8L5h6zvzx7tT4KMeh%2BWLPIv11bqN3cQtPj82WqlkEyYWGZJ3mvWvfYh%2F%2FXjOLzvDOLHQ9PyEUEIXC91Kk9HAYPMW5pALBVGAi%2FaGhETzZyUVp5D02SyuYPQWiFfy%2F2%2FJ6rK6FX0EJ2dYGSamOXx7P%2FiMFytl%2BSsiSIuASxuZLsIVK2zpbULSBx4acKTQmWF8FeCwgA7a9DQabkP1VZtWMjtT4rm0LsntHoplUhTUIIaRZh8yZY1lLQGq42nI9N9E7ruou1sGg4IDCYNG8wvs7Z0QY6pgFdGFrhabP2d26pEg9bu6dGecqgYtlZeSqJAoFg83XnrjiA0%2BV9H0As%2BBatf8t%2BNV0NEHuszSKZsI13oLGlKnqUp7rs7N07vbsRUeT66%2Be6JjRRe6PlLSFlFUySJjig9EJUANUJPX%2BnUpRbBHDzelDpDLTFxmjb6OvOF1vH4oc8Jr7WeoliXDt0I3s%2FYz2Qd4Wm7J6mTrmpFZOjhwAjZUhiRzdLoL6c&X-Amz-Signature=090df676118250e457dad6e97eafa7daaeaf7431508f17902a71ac31002540ad&X-Amz-SignedHeaders=host&response-cache-control=private%2C%20max-age%3D604800%2C%20immutable&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiresAt": "2026-06-20T10:48:00.436Z"
+  }
+}

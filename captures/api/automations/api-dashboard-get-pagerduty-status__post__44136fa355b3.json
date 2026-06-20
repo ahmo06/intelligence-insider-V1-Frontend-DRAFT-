@@ -1,0 +1,9 @@
+{
+  "url": "https://cursor.com/api/dashboard/get-pagerduty-status",
+  "path": "/api/dashboard/get-pagerduty-status",
+  "method": "POST",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:15.528435+00:00",
+  "page_slug": "automations",
+  "body": {}
+}

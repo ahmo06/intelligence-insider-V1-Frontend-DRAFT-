@@ -1,0 +1,11 @@
+{
+  "url": "https://cursor.com/api/auth/is-impersonating",
+  "path": "/api/auth/is-impersonating",
+  "method": "GET",
+  "status": 200,
+  "captured_at": "2026-06-20T10:33:20.703746+00:00",
+  "page_slug": "bugbot",
+  "body": {
+    "isImpersonating": false
+  }
+}

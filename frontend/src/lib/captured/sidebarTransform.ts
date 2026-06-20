@@ -235,6 +235,41 @@ function transformFooter(html: string, user: SidebarUser): string {
   return replacedSpan.slice(0, insertAt) + orgLine + replacedSpan.slice(insertAt);
 }
 
+/**
+ * Center-panel anchor for the new-session banner (WP-8 remainder / Phase 3).
+ *
+ * Lifted verbatim from `src/captured/agents-list.html`: the `<main>` content
+ * region and its centered `max-w-2xl` column wrapper. The banner is injected as
+ * the first child of that column so it sits at the top of the center panel,
+ * above the captured composer.
+ */
+const NEW_SESSION_MAIN_ANCHOR =
+  '<main class="flex flex-1 flex-col overflow-y-auto"><div class="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-4 px-4 py-8 md:gap-6 pb-[200px] md:pb-8 md:pt-18">';
+
+/**
+ * Inject a project-scoped "new session" banner into the center panel of the
+ * captured agents-list body (`/agents/new?project=<id>`).
+ *
+ * GOD RULE: no hand-built React layout — this is DOM-string surgery that re-uses
+ * captured typography/surface tokens only (`bg-quaternary`, `rounded-md`,
+ * `px-3 py-2`, `text-base text-secondary`, `text-primary`). If the center-panel
+ * anchor is absent (non-agents-list capture) the input is returned unchanged.
+ */
+export function injectNewSessionBanner(
+  bodyHtml: string,
+  projectName: string,
+): string {
+  const anchorIndex = bodyHtml.indexOf(NEW_SESSION_MAIN_ANCHOR);
+  if (anchorIndex === -1) return bodyHtml;
+  const insertAt = anchorIndex + NEW_SESSION_MAIN_ANCHOR.length;
+  const banner =
+    '<div class="bg-quaternary rounded-md px-3 py-2 text-base text-secondary">' +
+    "Starting a new session for " +
+    `<span class="text-primary">${escapeHtml(projectName)}</span>` +
+    "</div>";
+  return bodyHtml.slice(0, insertAt) + banner + bodyHtml.slice(insertAt);
+}
+
 export type SidebarUser = Pick<
   AuthUser,
   "name" | "picture" | "company" | "position" | "department"

@@ -127,6 +127,52 @@ acceptable only because they are static, read-only sample values.
 
 ---
 
+## Phase 3 — WP-8 remainder: project-scoped new-session creation
+
+### What the frontend now expects
+
+A new route `/agents/new?project=<id>` (`frontend/src/app/agents/new/page.tsx`)
+renders the captured `agents-list` shell with a center-panel banner naming the
+target project. Each sidebar project group's hover-revealed "New Agent" action
+links here (`href="/agents/new?project=<id>"`, emitted by
+`projectGroup(...)` in `sidebarTransform.ts`). The banner is injected by
+`injectNewSessionBanner(bodyHtml, projectName)` (DOM-string surgery into the
+`<main>` center column, reusing captured tokens only). The project name is
+resolved from the `projects/list` fixture by id, with a graceful fallback to the
+raw id when unresolved. A missing `project` param redirects to `/agents`.
+`CapturedShell.INTERNAL_PREFIXES` already routes this client-side because
+`/agents/new?project=…` matches the `/agents` prefix — **no change required**.
+
+### Is the existing API sufficient?
+
+**For the transitional/static frontend: yes — but it is presentation only.** The
+page renders an *intent* to start a session in a project; it does **not** create
+anything. The captured composer in the center panel is static (its JS was
+stripped), so submitting it is a no-op. There is **no mock create endpoint**:
+`mock-backend/data/api/background-composer/` exposes only `list*` / `get-*`
+read fixtures (and `listPendingFollowups`); none accept a create/spawn POST.
+
+### What a real backend must provide
+
+| Need | Status | Notes |
+|---|---|---|
+| **Create-session endpoint** | **Gap — does not exist** | A real `POST /api/background-composer/create` (or equivalent `startBackgroundComposer` / `create-background-composer`) is required to actually spawn a Session (Composer / `bcId`). Today nothing is wired; the route is a visual stub. |
+| Request params | **Gap** | Minimum: `projectId` (from the `project` query param). Optional/expected: `agentName?` (label for the new Agent/Session, today `Composer.name`), `model?` matching the captured `requestedModel` shape `{ modelId, maxMode, builtInModel?, parameters?: [{ id, value }] }` (see `background-composer/available-models.json` + `requestedModel` in `projects/list.json` sessions), plus optionally `repoUrl`/`environmentName` and `branchName` derived from the project. |
+| Response | **Gap** | Should return the created `Composer` (at least `{ bcId, status, name, projectId, agentId }`) so the frontend can redirect to `/agents/<bcId>`. |
+| Post-create navigation | **Stub** | After a real create the page should `redirect("/agents/<newBcId>")`; today it only renders the captured shell + banner. |
+| `projectId` persistence | **Gap (see WP-7)** | The create call must persist `Composer.projectId` / `Composer.agentId` (already optional on the type) so the new session groups under the correct project without re-derivation. |
+
+### Could-not-map
+
+- **Composer/model defaults per project** — no source for a project's default
+  model or environment; the create call would need either client-selected values
+  (a real interactive composer) or backend-owned project defaults.
+- **Interactive composer** — the captured composer is static; a real create flow
+  needs the live Next.js composer (or a hand-built form, which the GOD RULES
+  disallow for now) to collect the prompt + model before POSTing.
+
+---
+
 ## WP-9 — Captured DOM cleanup needed
 
 WP-9 deleted the `/dashboard` and `/dashboard/bugbot` routes (`frontend/src/app/dashboard/`)

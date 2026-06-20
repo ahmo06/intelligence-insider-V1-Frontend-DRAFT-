@@ -101,6 +101,8 @@ export interface ThreadTurnFixture {
   assistantHtml: string;
   workedFor: string | null;
   isWorking: boolean;
+  thinking?: import("@/components/thread/ThinkingBlock").ThinkingBlockData;
+  toolCalls?: import("@/components/thread/ToolCallCard").ToolCallCardData[];
 }
 
 export interface ThreadTurnsResponse {

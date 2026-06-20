@@ -6,11 +6,18 @@ import { useAuth } from "@/hooks";
 import type { Composer } from "@/types";
 import { ThreadList } from "./ThreadList";
 
-const NAV_ITEMS = [
+const NAV_ITEMS: Array<{
+  href: string;
+  label: string;
+  exact?: boolean;
+  external?: boolean;
+  dev?: boolean;
+}> = [
   { href: "/agents", label: "New Agent", exact: true },
   { href: "/automations", label: "Automations" },
   { href: "/dashboard/bugbot", label: "Bugbot", external: false },
   { href: "/dashboard", label: "Dashboard" },
+  { href: "/states", label: "States", dev: true },
 ];
 
 interface SidebarProps {
@@ -46,7 +53,7 @@ export function Sidebar({ composers, activeThreadId }: SidebarProps) {
                 active
                   ? "bg-secondary text-primary"
                   : "text-secondary hover:bg-secondary hover:text-primary"
-              }`}
+              } ${item.dev ? "text-tertiary" : ""}`}
             >
               {item.label}
             </Link>

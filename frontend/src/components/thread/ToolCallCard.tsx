@@ -3,20 +3,24 @@
 import { useState } from "react";
 import { ProgressSpinner } from "@/components/ui/ProgressSpinner";
 
-interface ToolCallCardProps {
+export interface ToolCallCardData {
   command: string;
   output?: string;
   description?: string;
   isRunning?: boolean;
+  defaultExpanded?: boolean;
 }
+
+type ToolCallCardProps = ToolCallCardData;
 
 export function ToolCallCard({
   command,
   output,
   description,
   isRunning = false,
+  defaultExpanded = true,
 }: ToolCallCardProps) {
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(defaultExpanded);
 
   return (
     <div
@@ -27,6 +31,7 @@ export function ToolCallCard({
         type="button"
         className="flex w-full items-center gap-2 px-3 py-2 text-left text-sm text-secondary transition-colors duration-150 hover:text-primary focus:outline-none"
         onClick={() => setExpanded((v) => !v)}
+        aria-expanded={expanded}
       >
         {isRunning ? (
           <ProgressSpinner size={13} syncDelay={-200} />
@@ -58,16 +63,18 @@ export function ToolCallCard({
         </svg>
       </button>
       {expanded && (
-        <div className="border-t border-tertiary bg-theme-card-hex px-3 py-2">
+        <div className="ui-scroll-area border-t border-tertiary bg-theme-card-hex px-3 py-2">
           <code className="whitespace-pre-wrap break-words pt-1 text-primary">
             <span className="text-tertiary">$ </span>
             {command}
           </code>
-          {output && (
-            <pre className="ui-scroll-area whitespace-pre-wrap break-words pb-2 pt-1 text-sm text-secondary">
+          {output ? (
+            <pre className="ui-scroll-area__content whitespace-pre-wrap break-words pb-2 pt-1 text-sm text-secondary">
               {output}
             </pre>
-          )}
+          ) : isRunning ? (
+            <pre className="pb-2 pt-1 text-sm text-tertiary">Running…</pre>
+          ) : null}
         </div>
       )}
     </div>

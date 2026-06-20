@@ -1,5 +1,44 @@
 @import "tailwindcss";
 
+/* Light theme anchors — :root / .light */
+.light {
+  color-scheme: light;
+  --base: #141414;
+  --chrome: #f7f7f7;
+  --editor: #fcfcfc;
+  --sidebar: #f3f3f3;
+  --accent: #3c7cab;
+  --focus: #3c7cab;
+  --brand: #f54e00;
+  --danger: #cf2d56;
+  --success: #1f8a65;
+  --warn: #c08532;
+
+  --bg-chrome: var(--chrome);
+  --bg-elevated: var(--editor);
+  --bg-unified-elevated: var(--editor);
+  --bg-sidebar: var(--sidebar);
+  --bg-theme-bg: var(--chrome);
+  --bg-theme-card-hex: var(--editor);
+
+  --text-primary: color-mix(in oklab, var(--base) 94%, transparent);
+  --text-secondary: color-mix(in oklab, var(--base) 70%, transparent);
+  --text-tertiary: color-mix(in oklab, var(--base) 48%, transparent);
+  --text-inverted: var(--editor);
+  --text-accent: var(--accent);
+  --text-danger: var(--danger);
+  --text-success: var(--success);
+
+  --border-tertiary: color-mix(in oklab, var(--base) 12%, transparent);
+  --border-secondary: color-mix(in oklab, var(--base) 18%, transparent);
+  --border-focus: var(--focus);
+
+  --bg-primary: color-mix(in oklab, var(--base) 20%, transparent);
+  --bg-secondary: color-mix(in oklab, var(--base) 14%, transparent);
+  --bg-tertiary: color-mix(in oklab, var(--base) 8%, transparent);
+  --bg-quaternary: color-mix(in oklab, var(--base) 6%, transparent);
+}
+
 /* Dark theme anchors — from docs/design-guidelines/01-colors-and-themes.md */
 .dark {
   color-scheme: dark;
@@ -89,6 +128,20 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes make-shine {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.make-shine {
+  animation: make-shine 2s ease-in-out infinite;
 }
 
 .bg-theme-bg {

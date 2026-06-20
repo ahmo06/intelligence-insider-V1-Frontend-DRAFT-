@@ -10,6 +10,8 @@ export const FIXTURE_PATHS: Record<FixtureKey, string> = {
     "./api/background-composer/list-artifacts.json",
   "background-composer/thread-turns-portal":
     "./api/background-composer/thread-turns-portal.json",
+  "background-composer/interaction-states":
+    "./api/background-composer/interaction-states.json",
   "automations/list-automations": "./api/automations/list-automations.json",
   "dashboard/get-current-period-usage":
     "./api/dashboard/get-current-period-usage.json",
@@ -29,6 +31,8 @@ export const API_ENDPOINTS: Record<FixtureKey, string> = {
   "background-composer/list-artifacts":
     "/api/background-composer/list-artifacts",
   "background-composer/thread-turns-portal":
+    "/api/background-composer/get-detailed-composer",
+  "background-composer/interaction-states":
     "/api/background-composer/get-detailed-composer",
   "automations/list-automations": "/api/automations/list-automations",
   "dashboard/get-current-period-usage":

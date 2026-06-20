@@ -2,6 +2,8 @@ import type { ThreadTurnFixture } from "@/types";
 import { HumanMessageCard } from "./HumanMessageCard";
 import { AssistantContent } from "./AssistantContent";
 import { TurnFooter } from "./TurnFooter";
+import { ThinkingBlock } from "./ThinkingBlock";
+import { ToolCallCard } from "./ToolCallCard";
 
 interface TurnProps {
   turn: ThreadTurnFixture;
@@ -25,6 +27,10 @@ export function Turn({ turn }: TurnProps) {
       </div>
 
       <div className="mb-4">
+        {turn.thinking && <ThinkingBlock {...turn.thinking} />}
+        {turn.toolCalls?.map((tool, i) => (
+          <ToolCallCard key={i} {...tool} />
+        ))}
         <AssistantContent html={turn.assistantHtml} />
       </div>
 

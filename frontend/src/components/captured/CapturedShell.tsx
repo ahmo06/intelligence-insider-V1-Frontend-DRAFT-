@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
+import { SIDEBAR_INTERACTION_CSS } from "@/lib/captured/sidebarTransform";
 import type { CapturedPageMeta } from "@/lib/captured/loader";
 
 interface CapturedShellProps {
@@ -257,6 +258,7 @@ export function CapturedShell({
       {inlineStyles ? (
         <style dangerouslySetInnerHTML={{ __html: inlineStyles }} />
       ) : null}
+      <style dangerouslySetInnerHTML={{ __html: SIDEBAR_INTERACTION_CSS }} />
       <div
         ref={rootRef}
         className="captured-root"

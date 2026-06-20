@@ -47,6 +47,35 @@ const ICON_DOTS =
 const ICON_BTN =
   "box-border relative inline-flex items-center justify-center rounded-md disabled:pointer-events-none disabled:opacity-50 transition-colors duration-150 focus:outline-none bg-transparent text-secondary hover:text-primary hover:bg-quaternary h-6 w-6 p-0 shrink-0";
 
+/**
+ * Hover rules for injected sidebar markup. Captured CSS chunks do not include
+ * Tailwind `group-hover:*` utilities for our dynamic elements.
+ */
+export const SIDEBAR_INTERACTION_CSS = `
+.ii-sidebar-hover-only {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms ease;
+}
+[data-projects-section]:hover .ii-sidebar-hover-only,
+[data-project-header]:hover .ii-sidebar-hover-only,
+[data-project-header][data-project-expanded="true"] .ii-sidebar-chevron {
+  opacity: 1;
+  pointer-events: auto;
+}
+[data-project-header] {
+  transition: color 150ms ease, background-color 150ms ease;
+  border-radius: 6px;
+}
+[data-project-header]:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-quaternary);
+}
+[data-projects-section]:hover {
+  background-color: transparent;
+}
+`;
+
 function escapeHtml(value: string): string {
   return value
     .replace(/&/g, "&amp;")
@@ -147,10 +176,10 @@ function projectGroup(group: ProjectGroup): string {
   const sessionHtml = sessions.map(sessionRow).join("");
 
   const header =
-    `<div class="group relative flex min-w-0 items-center gap-1 px-2 py-1.5 text-sm transition-colors hover:text-primary cursor-pointer" data-project-header="true" data-project-id="${projectId}" data-project-expanded="false" role="button" tabindex="0" aria-expanded="false">` +
-    `<span class="flex w-[14px] shrink-0 items-center justify-center opacity-0 transition duration-200 group-hover:opacity-100 text-icon-secondary" data-project-chevron="true">${CHEVRON_RIGHT}</span>` +
-    `<span class="min-w-0 flex-1 truncate text-base text-primary">${name}</span>` +
-    `<button type="button" class="${ICON_BTN} opacity-0 transition duration-200 group-hover:opacity-100" data-project-menu="true" data-project-id="${projectId}" aria-label="Project options">${ICON_DOTS}</button>` +
+    `<div class="relative flex min-w-0 items-center gap-1 px-2 py-1.5 cursor-pointer" data-project-header="true" data-project-id="${projectId}" data-project-expanded="false" role="button" tabindex="0" aria-expanded="false">` +
+    `<span class="min-w-0 flex-1 truncate text-left text-base text-primary">${name}</span>` +
+    `<span class="ii-sidebar-hover-only ii-sidebar-chevron flex shrink-0 items-center justify-center text-icon-secondary" data-project-chevron="true">${CHEVRON_RIGHT}</span>` +
+    `<button type="button" class="${ICON_BTN} ii-sidebar-hover-only" data-project-menu="true" data-project-id="${projectId}" aria-label="Project options">${ICON_DOTS}</button>` +
     projectMenu(group.project.id) +
     `</div>`;
 
@@ -164,9 +193,9 @@ function projectGroup(group: ProjectGroup): string {
 
 function projectsSectionHeader(): string {
   return (
-    `<div class="group relative flex min-w-0 items-center gap-2 px-2 py-2" data-projects-section="true">` +
+    `<div class="relative flex min-w-0 items-center px-2 py-2" data-projects-section="true">` +
     `<span class="text-sm font-medium text-tertiary">Projects</span>` +
-    `<button type="button" class="${ICON_BTN} ml-auto opacity-0 transition duration-200 group-hover:opacity-100" data-projects-add="true" aria-label="Add project">${ICON_PLUS}</button>` +
+    `<button type="button" class="${ICON_BTN} ii-sidebar-hover-only ml-auto" data-projects-add="true" aria-label="Add project">${ICON_PLUS}</button>` +
     `</div>`
   );
 }

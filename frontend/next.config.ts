@@ -8,8 +8,12 @@ const nextConfig: NextConfig = {
         destination: "http://127.0.0.1:4000/api/:path*",
       },
       {
-        source: "/_states/:path*",
-        destination: "/states/:path*",
+        source: "/_next/static/:path*",
+        destination: "/captured-static/_next/static/:path*",
+      },
+      {
+        source: "/fonts/:path*",
+        destination: "/captured-static/fonts/:path*",
       },
     ];
   },

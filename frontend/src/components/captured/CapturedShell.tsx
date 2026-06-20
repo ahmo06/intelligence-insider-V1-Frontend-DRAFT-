@@ -50,6 +50,85 @@ export function CapturedShell({
     return () => container.removeEventListener("click", onClick);
   }, [router]);
 
+  // WP-4: minimal interaction glue for the injected right-panel workspace tabs.
+  // Toggles `display`/state on already-present captured elements only — no new
+  // UI is created here (layout lives in the captured-DOM transform).
+  useEffect(() => {
+    const container = rootRef.current;
+    if (!container) return;
+    const panel = container.querySelector<HTMLElement>("[data-right-panel]");
+    if (!panel) return;
+
+    const tabs = Array.from(
+      panel.querySelectorAll<HTMLElement>("[data-rp-tab]"),
+    );
+    const panes = Array.from(
+      panel.querySelectorAll<HTMLElement>("[data-rp-pane]"),
+    );
+
+    const activate = (name: string) => {
+      for (const tab of tabs) {
+        const active = tab.getAttribute("data-rp-tab") === name;
+        tab.setAttribute("data-rp-active", String(active));
+        tab.setAttribute("aria-selected", String(active));
+        tab.classList.toggle("text-primary", active);
+        tab.classList.toggle("text-secondary", !active);
+        const indicator = tab.querySelector<HTMLElement>("[data-rp-indicator]");
+        if (indicator) indicator.classList.toggle("hidden", !active);
+      }
+      for (const pane of panes) {
+        pane.classList.toggle(
+          "hidden",
+          pane.getAttribute("data-rp-pane") !== name,
+        );
+      }
+    };
+
+    const onTabClick = (event: MouseEvent) => {
+      const tab = (event.target as Element | null)?.closest<HTMLElement>(
+        "[data-rp-tab]",
+      );
+      if (!tab || !panel.contains(tab)) return;
+      const name = tab.getAttribute("data-rp-tab");
+      if (name) activate(name);
+    };
+    panel.addEventListener("click", onTabClick);
+
+    // Drag-to-resize the panel (clamped 280–720px).
+    const handle = panel.querySelector<HTMLElement>("[data-rp-resize]");
+    let dragging = false;
+    const onDown = (event: MouseEvent) => {
+      dragging = true;
+      event.preventDefault();
+      document.body.style.cursor = "col-resize";
+      document.body.style.userSelect = "none";
+    };
+    const onMove = (event: MouseEvent) => {
+      if (!dragging) return;
+      const width = Math.min(
+        720,
+        Math.max(280, panel.getBoundingClientRect().right - event.clientX),
+      );
+      panel.style.width = `${width}px`;
+    };
+    const onUp = () => {
+      if (!dragging) return;
+      dragging = false;
+      document.body.style.cursor = "";
+      document.body.style.userSelect = "";
+    };
+    handle?.addEventListener("mousedown", onDown);
+    window.addEventListener("mousemove", onMove);
+    window.addEventListener("mouseup", onUp);
+
+    return () => {
+      panel.removeEventListener("click", onTabClick);
+      handle?.removeEventListener("mousedown", onDown);
+      window.removeEventListener("mousemove", onMove);
+      window.removeEventListener("mouseup", onUp);
+    };
+  }, [bodyHtml]);
+
   return (
     <>
       {page.stylesheets.map((href) => (

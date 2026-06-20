@@ -205,6 +205,59 @@ scope) and are no longer referenced by `manifest.json` after this work package.
 
 ---
 
+## Phase 4 — WP-4 (+WP-5/WP-6 partial): right-panel workspace tab shell
+
+### What the frontend now expects
+
+The captured thread (`thread-merged-portal.html`) had **no visible right panel**,
+so one is **added** server-side by
+`frontend/src/lib/captured/rightPanelTransform.ts` (`injectRightPanel`), wired
+into `CapturedDocument` for the `thread-merged-portal` slug only (after
+`transformCapturedSidebar`). It is DOM-string surgery — the panel is appended as
+the third flex child of `div.agents-page` (after the sidebar and center column)
+and only fires when `data-agent-turn` is present. It re-uses captured markers
+(`data-inline-changed-files`, `ui-scroll-area`, `cursor-icon` `<i>`, Lucide
+`<svg>`) and design tokens; no hand-built React layout.
+
+The panel is a ~400px, drag-resizable (280–720px) workspace with a `h-[40px]`
+tab bar (**Terminal · Changes · Files · Browser**) and four panes. Tab switching
++ resize are wired in `CapturedShell` as minimal interaction glue that only
+toggles `display`/state on the already-injected elements.
+
+| Tab | Source today | Notes |
+|---|---|---|
+| **Terminal** | Static captured terminal-preview chrome (§D) with sample `npm run build` output | Mappable chrome; output is placeholder. |
+| **Changes** | `InlineChangedFiles` container (§L) + "No changes yet" empty state | The `list-artifacts` fixture holds generated assets/plans, not changed source files, so no rows are derived. |
+| **Files** | Directory tree built from `background-composer/list-artifacts.json` | Mappable; renders the artifact paths as a collapsed tree. |
+| **Browser** | Empty state ("Browser view — capture required") | WP-11, capture-blocked. |
+
+### What was mappable vs backend-needed
+
+| Need | Status | Notes |
+|---|---|---|
+| Right-panel **layout / tab bar** | **Mappable (done)** | Assembled from captured tokens + tab pattern (§A3); resizable shell injected via DOM surgery. |
+| **Files tree** data | **Partial — fixture only** | `list-artifacts` lists generated artifacts (PNGs, `.plan.md`), not the project working tree. A real **file-listing API** (recursive dir listing for the session workspace, with type/size/mtime) is required beyond `list-artifacts`. |
+| **Changes** tab — changed-files list | **Gap** | Needs a real changed-files summary per session (the sub-agent `InlineChangedFiles` payload). Today rendered empty. |
+| **Changes** tab — Monaco diff | **Gap** | Inline/side-by-side Monaco diff (captured `data-line` / `data-line-type` attributes, §A4) needs a **`get-diff-details` API** (per-file unified diff / hunks) to feed the editor. No such fixture/endpoint exists. |
+| **Terminal** tab — live output | **Gap** | The preview chrome is mappable but real output needs a **live PTY stream API** (e.g. websocket/SSE of stdout/stderr per session); today a static sample is shown. |
+| **Browser** tab | **Blocked (WP-11)** | Requires a **live capture** of the embedded browser pane before any faithful markup/API can be defined. Placeholder empty state only. |
+
+### Could-not-map
+
+- **cursor-icon glyphs for `terminal` / `file-arrow-right-up`** — these are not
+  in any capture (their PUA codepoints are injected by the stripped JS and are
+  not in the subsetted `cursor-icons-16.woff2`), so the Terminal and Files tabs
+  use **Lucide** inline SVGs (same family as the captured chevrons). The Changes
+  (`git-pull-request`) and Browser (`cloud`) tabs use real captured cursor-icon
+  glyphs, which are present in the font subset.
+- **Tab persistence / panel width** — the active tab and resized width are
+  client-only and reset on navigation; no user-pref store persists them.
+- **Resizable handle capture** — the original resizable panel/handle markup is
+  not in the capture; the drag handle is composed from captured tokens
+  (`cursor-col-resize`) and minimal JS.
+
+---
+
 ## WP-7 — Project / Agent / Session data model
 
 ### What the frontend now expects

@@ -5,6 +5,8 @@ derived from the `*.webarchive.zip` captures in the repo root.
 
 | Doc | Purpose |
 |---|---|
+| [`INCORPORATION_PLAN.md`](./INCORPORATION_PLAN.md) | **Intelligence Insider migration plan** — project-centric sidebar IA, three-panel layout, orchestrator/sub-agent architecture, work packages, hover map, API changes, phased rollout. |
+| [`skills/frontend-design-skill.md`](./skills/frontend-design-skill.md) | **Sub-agent skill** — rules for reusing captured elements and generating theme-faithful UI. Load with COMPONENT_REFERENCE + design-guidelines. |
 | [`SYSTEM_MAP.md`](./SYSTEM_MAP.md) | What the system is, page/route inventory, app-shell map, runtime/dynamic behavior to build, and the piece-by-piece component build-up plan (built vs stub). |
 | [`COMPONENT_REFERENCE.md`](./COMPONENT_REFERENCE.md) | Per-component catalog: exact markup signatures, `data-*` attributes, states, runtime labels (e.g. Thinking/Thought, Worked for, running spinners), and status enums. |
 | [`design-guidelines/`](./design-guidelines/) | **Canonical design system** — colors/themes, typography/fonts, spacing/layout, shadows, animations, component design specs, the proposed questions flow, and the master font-size reference (see its `README.md`). |

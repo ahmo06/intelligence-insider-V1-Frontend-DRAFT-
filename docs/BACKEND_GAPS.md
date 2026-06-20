@@ -6,6 +6,60 @@
 
 ---
 
+## WP-1 / WP-2 / WP-3 — Captured-sidebar project transform (IA + repo sweep + org footer)
+
+### What the frontend now expects
+
+The captured sidebar is rewritten server-side by
+`frontend/src/lib/captured/sidebarTransform.ts` (`transformCapturedSidebar`),
+wired into every `CapturedDocument` render via
+`frontend/src/lib/captured/loadSidebarData.ts`. It is DOM-string surgery on the
+captured HTML (no hand-built React layout), re-using class strings lifted
+verbatim from `src/captured/agents-list.html`. The transform:
+
+- **WP-1** — deletes the Dashboard, Bugbot and top-level "New Agent" nav links;
+  keeps Automations; replaces the `Today / Yesterday / Older` date-group thread
+  list with **Project → Agent → Session** groups (package-icon header,
+  per-project "New Agent" action, nested agent rows + session child rows with
+  running spinner / unread dot preserved).
+- **WP-2** — the produced sidebar markup surfaces **no** repo/`github.com` URLs;
+  project context lives only in the group header (project name).
+- **WP-3** — the user footer's "Ultra" plan line becomes `company`, with a new
+  `position · department` line and the avatar `<img>` rebound to `auth/me`.
+
+Data comes from the `projects/list` fixture (nested into `ProjectGroup[]`,
+falling back to `groupByProject(...)` over session composers) and the `auth/me`
+fixture.
+
+### Is the existing API sufficient?
+
+**For the transitional/static frontend: yes**, because both inputs are derived
+fixtures already flagged in WP-7 (`projects/list`) and WP-8 (`auth/me` org
+fields). The transform is pure presentation over that data.
+
+**For a real backend: the following gaps remain open:**
+
+| Need | Status | Notes |
+|---|---|---|
+| Dynamic sidebar requires real `GET /api/projects/list` | **Gap (already flagged in WP-7)** | Today derived/fixture; project & agent identity is inferred from `Composer` repo path / name. The sidebar now renders directly off this shape, so a real endpoint returning `{ projects, agents, sessions }` is the long-term source. |
+| Avatar image | **OK** | `auth/me.picture` (WorkOS CDN URL) is sufficient; footer `<img>` binds to it with a graceful no-op when absent. |
+| Project **icon** | **Gap — not in any API** | Header uses a fixed `cursor-icon` `data-icon-name="folder"` (a glyph confirmed present in the captures; plan §5's `package` is not in any capture and renders blank). No per-project icon field exists; a real `Project` entity would need an `icon`/`color` attribute. |
+| Project **description** | **Gap — repo-derived only** | `Project.description` is currently the canonical `owner/repo` path (deliberately NOT rendered in the sidebar per WP-2). A human-authored description has no source. |
+| Per-project **"New Agent"** target | **Route stub** | Emits `href="/agents/new?project=<id>"`. The create-in-project route/flow itself is WP-8 remainder (Phase 3); no backend create endpoint is wired yet. |
+| **Hover actions** on new project headers | **Assembled from existing patterns; not a distinct capture** | The header's hover-revealed "New Agent" affordance re-uses captured nav-row + `group-hover:opacity-100` classes (hover inventory item #15). There is **no capture** of a real project-header hover menu (collapse / rename / new session); those were composed from existing class strings and should be confirmed against a live capture when available. |
+| Session **secondary meta** (the old repo/env line) | **Dropped (WP-2)** | The captured row's repo/env secondary line is intentionally omitted. If a non-repo session subtitle is wanted later (e.g. last-activity, model), it needs a data source + a capture to match. |
+| Agent vs Session distinction | **Derived** | Agent rows are non-link parent labels; only Session rows route (`/agents/<bcId>`). Because agents are derived from `Composer.name`, an agent with no distinct identity mirrors its single session's name (cosmetic redundancy until a first-class `Agent` entity exists — see WP-7). |
+
+### Could-not-map
+
+- **Project collapse/expand persistence** — the header carries the captured
+  collapse chevron, but there is no captured collapsed state and no user-pref
+  store to persist per-project expand/collapse.
+- **Project ordering** — group order follows fixture/derivation order; no
+  backend-owned ordering field exists.
+
+---
+
 ## WP-8 — Auth org identity fields (company / position / department)
 
 ### What the frontend now expects

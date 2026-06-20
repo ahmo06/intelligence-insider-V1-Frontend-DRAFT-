@@ -1,17 +1,18 @@
 "use client";
 
 import { useCallback } from "react";
-import { apiFetch } from "@/lib/api/client";
+import { getData } from "@/lib/data/dataProvider";
+import type {
+  CreditGrantsBalanceResponse,
+  CurrentBillingCycleResponse,
+  CurrentPeriodUsageResponse,
+  DashboardData,
+  UserAnalyticsResponse,
+} from "@/types";
 import { useApiQuery } from "./useApiQuery";
 
-interface DashboardUsage {
-  currentPeriodUsage?: number;
-  creditBalance?: number;
-  billingCycle?: string;
-}
-
 interface UseDashboardResult {
-  usage: DashboardUsage | null;
+  dashboard: DashboardData | null;
   isLoading: boolean;
   error: Error | null;
   refetch: () => Promise<void>;
@@ -19,29 +20,28 @@ interface UseDashboardResult {
 
 export function useDashboard(): UseDashboardResult {
   const queryFn = useCallback(async () => {
-    const [period, credits, cycle] = await Promise.all([
-      apiFetch<Record<string, unknown>>(
-        "/api/dashboard/get-current-period-usage",
-      ),
-      apiFetch<Record<string, unknown>>(
-        "/api/dashboard/get-credit-grants-balance",
-      ),
-      apiFetch<Record<string, unknown>>(
-        "/api/dashboard/get-current-billing-cycle",
-      ),
-    ]);
-    return {
-      currentPeriodUsage: period.total as number | undefined,
-      creditBalance: credits.balance as number | undefined,
-      billingCycle: cycle.cycle as string | undefined,
-    };
+    const [periodUsage, creditGrants, billingCycle, analytics] =
+      await Promise.all([
+        getData<CurrentPeriodUsageResponse>(
+          "dashboard/get-current-period-usage",
+        ),
+        getData<CreditGrantsBalanceResponse>(
+          "dashboard/get-credit-grants-balance",
+        ),
+        getData<CurrentBillingCycleResponse>(
+          "dashboard/get-current-billing-cycle",
+        ),
+        getData<UserAnalyticsResponse>("dashboard/get-user-analytics"),
+      ]);
+
+    return { periodUsage, creditGrants, billingCycle, analytics };
   }, []);
 
-  const { data, isLoading, error, refetch } = useApiQuery<DashboardUsage | null>(
+  const { data, isLoading, error, refetch } = useApiQuery<DashboardData | null>(
     queryFn,
     null,
     [queryFn],
   );
 
-  return { usage: data, isLoading, error, refetch };
+  return { dashboard: data, isLoading, error, refetch };
 }

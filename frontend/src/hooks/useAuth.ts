@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback } from "react";
-import { apiFetch } from "@/lib/api/client";
+import { getData } from "@/lib/data/dataProvider";
 import type { AuthUser } from "@/types";
 import { useApiQuery } from "./useApiQuery";
 
@@ -13,7 +13,7 @@ interface UseAuthResult {
 }
 
 export function useAuth(): UseAuthResult {
-  const queryFn = useCallback(() => apiFetch<AuthUser>("/api/auth/me"), []);
+  const queryFn = useCallback(() => getData<AuthUser>("auth/me"), []);
   const { data, isLoading, error, refetch } = useApiQuery<AuthUser | null>(
     queryFn,
     null,

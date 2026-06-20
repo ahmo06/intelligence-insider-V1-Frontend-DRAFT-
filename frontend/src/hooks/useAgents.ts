@@ -1,35 +1,30 @@
 "use client";
 
 import { useCallback } from "react";
-import { apiFetch } from "@/lib/api/client";
-import type { AgentThread } from "@/types";
+import { getData } from "@/lib/data/dataProvider";
+import type { Composer, ComposersListResponse } from "@/types";
 import { useApiQuery } from "./useApiQuery";
 
 interface UseAgentsResult {
-  agents: AgentThread[];
+  composers: Composer[];
   isLoading: boolean;
   error: Error | null;
   refetch: () => Promise<void>;
 }
 
-interface AgentsListResponse {
-  agents?: AgentThread[];
-  threads?: AgentThread[];
-}
-
 export function useAgents(): UseAgentsResult {
   const queryFn = useCallback(async () => {
-    const data = await apiFetch<AgentsListResponse>(
-      "/api/dashboard/get-background-composer-slash-commands",
+    const data = await getData<ComposersListResponse>(
+      "background-composer/list",
     );
-    return data.agents ?? data.threads ?? [];
+    return data.composers ?? [];
   }, []);
 
-  const { data, isLoading, error, refetch } = useApiQuery<AgentThread[]>(
+  const { data, isLoading, error, refetch } = useApiQuery<Composer[]>(
     queryFn,
     [],
     [queryFn],
   );
 
-  return { agents: data, isLoading, error, refetch };
+  return { composers: data, isLoading, error, refetch };
 }

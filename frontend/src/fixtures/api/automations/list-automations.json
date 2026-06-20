@@ -1,0 +1,84 @@
+{
+  "workflows": [
+    {
+      "workflow": {
+        "name": "Untitled",
+        "workflow": {
+          "model": "gpt-5.5-high",
+          "memoryEnabled": true
+        },
+        "createdAt": "1781908674",
+        "updatedAt": "1781908674",
+        "automationId": "c6830a44-65fc-40df-809e-f989ba5c6e4b",
+        "scope": "AUTOMATION_SCOPE_USER"
+      },
+      "userId": 317511232,
+      "ownerName": "Ameer Mubaslat"
+    },
+    {
+      "workflow": {
+        "name": "Product FAQ Agent",
+        "workflow": {
+          "prompts": [
+            {
+              "prompt": "You are my Product FAQ agent.\n\nUse ReadSlackMessages with the channel and thread_ts from the Slack trigger payload to read the full Slack thread, including any screenshots and follow-up messages. The payload only contains the first message's text \u2014 the thread may have additional context, screenshots, and replies.\n\nUse @[Send to Slack](action:slack), @[MCP: Notion](action:mcp:Notion), @[MCP: Linear](action:mcp:Linear), @[MCP: GitHub](action:mcp:GitHub), and Slack context to answer product questions posted in the dedicated Product FAQ Slack channel.\n\nProcess:\n1. Read the triggering Slack thread with ReadSlackMessages.\n2. Search Slack first for prior answers to the same or similar question.\n3. Pull supporting context from Notion, Linear, and GitHub.\n4. Give the direct answer first.\n5. Include customer-facing wording when useful.\n6. Link to the best supporting sources.\n7. If sources conflict or confidence is low, say what is missing and suggest who should confirm.\n\nSlack reply format:\nDirect answer:\nCustomer-facing wording:\nSource / context:\nConfidence:\n\nRules:\n- Always check Slack for prior answers before writing a new answer.\n- Do not invent product behavior, pricing, roadmap commitments, launch dates, or policies.\n- Reply in the thread of the triggering Slack message.\n- Do not modify Notion, Linear, GitHub, or Slack except to send the thread reply."
+            }
+          ],
+          "model": "gpt-5.5-high",
+          "triggers": [
+            {
+              "slackTrigger": {
+                "slackCompletionReactionMode": "SLACK_COMPLETION_REACTION_MODE_ON",
+                "topLevelOnly": true
+              }
+            }
+          ],
+          "actions": [
+            {
+              "readSlack": {}
+            },
+            {
+              "slack": {
+                "respondInThread": true
+              }
+            },
+            {
+              "mcp": {
+                "server": {
+                  "name": "Notion"
+                }
+              }
+            },
+            {
+              "mcp": {
+                "server": {
+                  "name": "Linear"
+                }
+              }
+            },
+            {
+              "mcp": {
+                "server": {
+                  "name": "GitHub"
+                }
+              }
+            }
+          ],
+          "agentOptions": {
+            "skipInstall": true,
+            "environmentPublicId": "606b1134-7186-4763-b0cd-e249b55c1e9e"
+          },
+          "memoryEnabled": true
+        },
+        "createdAt": "1781908397",
+        "updatedAt": "1781908397",
+        "description": "Answer product questions in a dedicated Slack channel using Slack, Notion, Linear, and GitHub context",
+        "automationId": "ba12f688-e29b-4460-be19-e27c4f824915",
+        "scope": "AUTOMATION_SCOPE_USER",
+        "templateId": "product-faq-agent"
+      },
+      "userId": 317511232,
+      "ownerName": "Ameer Mubaslat"
+    }
+  ]
+}

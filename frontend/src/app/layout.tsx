@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Cursor Agents",
-  description: "Rebuildable Cursor Agents frontend with swappable hooks",
+  description: "Cursor Agents frontend rebuilt from live captures",
 };
 
 export default function RootLayout({
@@ -12,8 +12,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full dark">
-      <body className="min-h-full antialiased">{children}</body>
+    <html lang="en" className="dark h-full">
+      <body className="bg-theme-bg min-h-dvh-safe flex flex-col text-primary antialiased">
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,18 +1,12 @@
 "use client";
 
 import { useCallback } from "react";
-import { apiFetch } from "@/lib/api/client";
+import { getData } from "@/lib/data/dataProvider";
+import type { AutomationEntry, ListAutomationsResponse } from "@/types";
 import { useApiQuery } from "./useApiQuery";
 
-interface Automation {
-  id: string;
-  name: string;
-  status: string;
-  lastRunAt?: string;
-}
-
 interface UseAutomationsResult {
-  automations: Automation[];
+  automations: AutomationEntry[];
   isLoading: boolean;
   error: Error | null;
   refetch: () => Promise<void>;
@@ -20,13 +14,13 @@ interface UseAutomationsResult {
 
 export function useAutomations(): UseAutomationsResult {
   const queryFn = useCallback(async () => {
-    const data = await apiFetch<{ automations?: Automation[] }>(
-      "/api/dashboard/get-cloud-agent-plugins-snapshot",
+    const data = await getData<ListAutomationsResponse>(
+      "automations/list-automations",
     );
-    return data.automations ?? [];
+    return data.workflows ?? [];
   }, []);
 
-  const { data, isLoading, error, refetch } = useApiQuery<Automation[]>(
+  const { data, isLoading, error, refetch } = useApiQuery<AutomationEntry[]>(
     queryFn,
     [],
     [queryFn],

@@ -1,2 +1,5 @@
 export * from "./auth";
-export * from "./agent";
+export * from "./fixtures";
+export * from "./background-composer";
+export * from "./automations";
+export * from "./dashboard";

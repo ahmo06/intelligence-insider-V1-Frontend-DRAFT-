@@ -94,29 +94,6 @@ export function CapturedShell({
     };
     panel.addEventListener("click", onTabClick);
 
-    // WP-11: wire the Browser pane toolbar (back / forward / refresh) to the
-    // embedded preview iframe. Same-origin, so history/reload are permitted.
-    const onBrowserClick = (event: MouseEvent) => {
-      const btn = (event.target as Element | null)?.closest<HTMLElement>(
-        "[data-rp-browser]",
-      );
-      if (!btn || !panel.contains(btn)) return;
-      const frame = panel.querySelector<HTMLIFrameElement>(
-        "[data-rp-browser-frame]",
-      );
-      const win = frame?.contentWindow;
-      if (!win) return;
-      const action = btn.getAttribute("data-rp-browser");
-      try {
-        if (action === "back") win.history.back();
-        else if (action === "forward") win.history.forward();
-        else if (action === "refresh") win.location.reload();
-      } catch {
-        // Cross-origin navigation may block access; ignore.
-      }
-    };
-    panel.addEventListener("click", onBrowserClick);
-
     // Drag-to-resize the panel (clamped 280–720px).
     const handle = panel.querySelector<HTMLElement>("[data-rp-resize]");
     let dragging = false;
@@ -146,7 +123,6 @@ export function CapturedShell({
 
     return () => {
       panel.removeEventListener("click", onTabClick);
-      panel.removeEventListener("click", onBrowserClick);
       handle?.removeEventListener("mousedown", onDown);
       window.removeEventListener("mousemove", onMove);
       window.removeEventListener("mouseup", onUp);

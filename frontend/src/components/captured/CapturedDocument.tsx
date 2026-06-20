@@ -5,8 +5,14 @@ import type { CapturedPageMeta } from "@/lib/captured/loader";
 import { loadSidebarData } from "@/lib/captured/loadSidebarData";
 import { transformCapturedSidebar } from "@/lib/captured/sidebarTransform";
 import { injectRightPanel } from "@/lib/captured/rightPanelTransform";
+import { injectOrchestratorDelegation } from "@/lib/captured/orchestratorTransform";
 import { loadFixture } from "@/lib/data/loadFixture";
 import type { Artifact, ListArtifactsResponse } from "@/types/background-composer";
+import type {
+  ChangedFile,
+  ListChangedFilesResponse,
+  OrchestrationSession,
+} from "@/types/orchestration";
 
 interface CapturedDocumentProps {
   page: CapturedPageMeta;
@@ -22,6 +28,29 @@ async function loadThreadArtifacts(): Promise<Artifact[]> {
       "background-composer/list-artifacts",
     );
     return resp?.artifacts ?? [];
+  } catch {
+    return [];
+  }
+}
+
+/** Phase 5: orchestrator/sub-agent session for the captured portal thread. */
+async function loadOrchestration(): Promise<OrchestrationSession | null> {
+  try {
+    return await loadFixture<OrchestrationSession>(
+      "orchestration/portal-session",
+    );
+  } catch {
+    return null;
+  }
+}
+
+/** Phase 5: changed-files summary feeding the right-panel Changes tab (§L). */
+async function loadChangedFiles(): Promise<ChangedFile[]> {
+  try {
+    const resp = await loadFixture<ListChangedFilesResponse>(
+      "background-composer/list-changed-files",
+    );
+    return resp?.changedFiles ?? [];
   } catch {
     return [];
   }
@@ -49,9 +78,19 @@ export async function CapturedDocument({
 
   // WP-4 (+WP-5/6 partial): add the right-panel workspace tab shell to the
   // captured thread only. The injector is itself a no-op off the thread page.
+  // Phase 5: feed the Changes tab from the sub-agent changed-files summary and
+  // surface the orchestrator → sub-agent delegation flow in the thread.
   if (page.slug === THREAD_PORTAL_SLUG) {
-    const artifacts = await loadThreadArtifacts();
-    transformedBody = injectRightPanel(transformedBody, artifacts);
+    const [artifacts, changedFiles, orchestration] = await Promise.all([
+      loadThreadArtifacts(),
+      loadChangedFiles(),
+      loadOrchestration(),
+    ]);
+    transformedBody = injectRightPanel(transformedBody, artifacts, changedFiles);
+    transformedBody = injectOrchestratorDelegation(
+      transformedBody,
+      orchestration,
+    );
   }
 
   return (

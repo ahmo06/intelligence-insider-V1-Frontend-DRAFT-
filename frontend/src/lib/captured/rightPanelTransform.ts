@@ -1,4 +1,5 @@
 import type { Artifact } from "@/types/background-composer";
+import type { ChangedFile } from "@/types/orchestration";
 
 /**
  * Server-side DOM-string surgery that ADDS the right-panel workspace shell to
@@ -128,21 +129,46 @@ function terminalPane(): string {
   );
 }
 
+/** A single changed-file row inside the `InlineChangedFiles` list (§L). */
+function changedFileRow(file: ChangedFile): string {
+  const add = file.additions
+    ? `<span class="shrink-0" style="color: var(--green);">+${file.additions}</span>`
+    : "";
+  const del = file.deletions
+    ? `<span class="shrink-0" style="color: var(--red);">-${file.deletions}</span>`
+    : "";
+  return (
+    `<div class="flex items-center gap-2 border-t border-tertiary px-3 py-1.5 text-base hover:bg-quaternary">` +
+    `<span class="inline-flex shrink-0 items-center text-icon-secondary">${ICON_FILE}</span>` +
+    `<span class="min-w-0 flex-1 truncate text-secondary">${escapeHtml(file.path)}</span>` +
+    add +
+    del +
+    `</div>`
+  );
+}
+
 /**
- * Changes pane — `InlineChangedFiles` (§L) collapsible container + empty state.
- * The `list-artifacts` fixture holds generated assets/plans, not changed source
- * files, so the placeholder "No changes yet" is shown.
+ * Changes pane — `InlineChangedFiles` (§L) collapsible container. Populated from
+ * the sub-agent changed-files summary (`changedFiles`); falls back to the
+ * "No changes yet" empty state when none are reported.
  */
-function changesPane(): string {
+function changesPane(changedFiles: ChangedFile[]): string {
+  const count = changedFiles.length;
+  const rows = count ? changedFiles.map(changedFileRow).join("") : "";
+  const empty = count
+    ? ""
+    : `<div class="px-1 py-6 text-center text-base text-secondary">No changes yet</div>`;
   return (
     `<div data-rp-pane="changes" class="hidden h-full overflow-y-auto p-2">` +
     `<div data-inline-changed-files="true" class="overflow-hidden rounded-[12px] border border-tertiary">` +
     `<div class="flex items-center gap-1.5 px-3 py-2 text-base text-secondary">` +
     ICON_CHEVRON_RIGHT +
     `<span>Changed files</span>` +
-    `<span class="ml-auto text-tertiary">0</span>` +
-    `</div></div>` +
-    `<div class="px-1 py-6 text-center text-base text-secondary">No changes yet</div>` +
+    `<span class="ml-auto text-tertiary">${count}</span>` +
+    `</div>` +
+    rows +
+    `</div>` +
+    empty +
     `</div>`
   );
 }
@@ -283,7 +309,7 @@ function browserPane(): string {
   );
 }
 
-function buildPanel(artifacts: Artifact[]): string {
+function buildPanel(artifacts: Artifact[], changedFiles: ChangedFile[]): string {
   const tabBar =
     `<div role="tablist" class="flex h-[40px] flex-none items-center gap-1 border-b border-tertiary px-2">` +
     tab("terminal", "Terminal", ICON_TERMINAL, true) +
@@ -294,7 +320,7 @@ function buildPanel(artifacts: Artifact[]): string {
   const panes =
     `<div class="relative min-h-0 flex-1 overflow-hidden">` +
     terminalPane() +
-    changesPane() +
+    changesPane(changedFiles) +
     filesPane(artifacts) +
     browserPane() +
     `</div>`;
@@ -333,7 +359,11 @@ function matchDivCloseStart(html: string, openTagStart: number): number {
  * captured thread. No-op unless the body is the agents shell AND a thread is
  * rendered (`data-agent-turn`).
  */
-export function injectRightPanel(bodyHtml: string, artifacts: Artifact[]): string {
+export function injectRightPanel(
+  bodyHtml: string,
+  artifacts: Artifact[],
+  changedFiles: ChangedFile[] = [],
+): string {
   if (!bodyHtml.includes("agents-page")) return bodyHtml;
   if (!bodyHtml.includes("data-agent-turn")) return bodyHtml;
   if (bodyHtml.includes('data-right-panel="true"')) return bodyHtml; // idempotent
@@ -344,6 +374,6 @@ export function injectRightPanel(bodyHtml: string, artifacts: Artifact[]): strin
   const closeStart = matchDivCloseStart(bodyHtml, start);
   if (closeStart === -1) return bodyHtml;
 
-  const panel = buildPanel(artifacts ?? []);
+  const panel = buildPanel(artifacts ?? [], changedFiles ?? []);
   return bodyHtml.slice(0, closeStart) + panel + bodyHtml.slice(closeStart);
 }

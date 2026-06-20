@@ -1,4 +1,4 @@
-import type { Artifact } from "@/types/background-composer";
+import type { Artifact, TerminalLine } from "@/types/background-composer";
 import type { ChangedFile } from "@/types/orchestration";
 
 /**
@@ -117,14 +117,30 @@ function tab(id: string, label: string, iconHtml: string, active: boolean): stri
 }
 
 /** Terminal pane — captured compact terminal preview (COMPONENT_REFERENCE §D). */
-function terminalPane(): string {
+function terminalPane(lines: TerminalLine[]): string {
+  const body =
+    lines.length > 0
+      ? lines
+          .map((line) => {
+            const cls =
+              line.type === "stderr"
+                ? "text-base text-secondary"
+                : "text-base text-primary";
+            const prefix =
+              line.text.startsWith("$") && line.type === "stdout"
+                ? `<code class="block whitespace-pre-wrap break-words pt-1 ${cls}"><span class="text-tertiary">$ </span>${escapeHtml(line.text.replace(/^\$\s*/, ""))}</code>`
+                : `<pre class="whitespace-pre-wrap break-words pb-0.5 pt-0.5 ${cls}">${escapeHtml(line.text || " ")}</pre>`;
+            return prefix;
+          })
+          .join("")
+      : `<code class="block whitespace-pre-wrap break-words pt-1 text-base text-primary"><span class="text-tertiary">$ </span>npm run build</code>` +
+        `<pre class="whitespace-pre-wrap break-words pb-2 pt-1 text-base text-secondary">✓ Compiled successfully</pre>`;
+
   return (
     `<div data-rp-pane="terminal" class="h-full overflow-y-auto p-2">` +
     `<div class="rounded-lg border border-tertiary px-3 py-2" style="background: var(--bg-elevated);">` +
-    `<code class="block whitespace-pre-wrap break-words pt-1 text-base text-primary"><span class="text-tertiary">$ </span>npm run build</code>` +
-    `<pre class="whitespace-pre-wrap break-words pb-2 pt-1 text-base text-secondary">✓ Compiled successfully\n  Linting and checking validity of types ...\n  Generating static pages (8/8)</pre>` +
+    body +
     `</div>` +
-    `<div class="px-1 py-3 text-base text-secondary">Live terminal output requires a PTY stream (backend gap).</div>` +
     `</div>`
   );
 }
@@ -309,7 +325,11 @@ function browserPane(): string {
   );
 }
 
-function buildPanel(artifacts: Artifact[], changedFiles: ChangedFile[]): string {
+function buildPanel(
+  artifacts: Artifact[],
+  changedFiles: ChangedFile[],
+  terminalLines: TerminalLine[],
+): string {
   const tabBar =
     `<div role="tablist" class="flex h-[40px] flex-none items-center gap-1 border-b border-tertiary px-2">` +
     tab("terminal", "Terminal", ICON_TERMINAL, true) +
@@ -319,7 +339,7 @@ function buildPanel(artifacts: Artifact[], changedFiles: ChangedFile[]): string 
     `</div>`;
   const panes =
     `<div class="relative min-h-0 flex-1 overflow-hidden">` +
-    terminalPane() +
+    terminalPane(terminalLines) +
     changesPane(changedFiles) +
     filesPane(artifacts) +
     browserPane() +
@@ -363,6 +383,7 @@ export function injectRightPanel(
   bodyHtml: string,
   artifacts: Artifact[],
   changedFiles: ChangedFile[] = [],
+  terminalLines: TerminalLine[] = [],
 ): string {
   if (!bodyHtml.includes("agents-page")) return bodyHtml;
   if (!bodyHtml.includes("data-agent-turn")) return bodyHtml;
@@ -374,6 +395,6 @@ export function injectRightPanel(
   const closeStart = matchDivCloseStart(bodyHtml, start);
   if (closeStart === -1) return bodyHtml;
 
-  const panel = buildPanel(artifacts ?? [], changedFiles ?? []);
+  const panel = buildPanel(artifacts ?? [], changedFiles ?? [], terminalLines ?? []);
   return bodyHtml.slice(0, closeStart) + panel + bodyHtml.slice(closeStart);
 }

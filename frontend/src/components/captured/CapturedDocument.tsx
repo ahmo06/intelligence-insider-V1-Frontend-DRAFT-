@@ -7,7 +7,12 @@ import { transformCapturedSidebar } from "@/lib/captured/sidebarTransform";
 import { injectRightPanel } from "@/lib/captured/rightPanelTransform";
 import { injectOrchestratorDelegation } from "@/lib/captured/orchestratorTransform";
 import { loadFixture } from "@/lib/data/loadFixture";
-import type { Artifact, ListArtifactsResponse } from "@/types/background-composer";
+import type {
+  Artifact,
+  ListArtifactsResponse,
+  TerminalLine,
+  TerminalOutputResponse,
+} from "@/types/background-composer";
 import type {
   ChangedFile,
   ListChangedFilesResponse,
@@ -56,6 +61,17 @@ async function loadChangedFiles(): Promise<ChangedFile[]> {
   }
 }
 
+async function loadTerminalOutput(): Promise<TerminalLine[]> {
+  try {
+    const resp = await loadFixture<TerminalOutputResponse>(
+      "background-composer/get-terminal-output",
+    );
+    return resp?.lines ?? [];
+  } catch {
+    return [];
+  }
+}
+
 async function loadInlineStyles(page: CapturedPageMeta): Promise<string> {
   if (!page.inlineStylesFile) return "";
   const file = path.join(process.cwd(), "src", page.inlineStylesFile);
@@ -81,12 +97,19 @@ export async function CapturedDocument({
   // Phase 5: feed the Changes tab from the sub-agent changed-files summary and
   // surface the orchestrator → sub-agent delegation flow in the thread.
   if (page.slug === THREAD_PORTAL_SLUG) {
-    const [artifacts, changedFiles, orchestration] = await Promise.all([
+    const [artifacts, changedFiles, orchestration, terminalLines] =
+      await Promise.all([
       loadThreadArtifacts(),
       loadChangedFiles(),
       loadOrchestration(),
+      loadTerminalOutput(),
     ]);
-    transformedBody = injectRightPanel(transformedBody, artifacts, changedFiles);
+    transformedBody = injectRightPanel(
+      transformedBody,
+      artifacts,
+      changedFiles,
+      terminalLines,
+    );
     transformedBody = injectOrchestratorDelegation(
       transformedBody,
       orchestration,
